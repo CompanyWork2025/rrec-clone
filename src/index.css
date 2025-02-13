@@ -1,0 +1,15 @@
+/* src/global.css or src/tailwind.css */
+
+/* Importing Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Tailwind's base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Custom styling or font-face (though not necessary with Google Fonts) */
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
