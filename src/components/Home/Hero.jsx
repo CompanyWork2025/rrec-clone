@@ -62,7 +62,7 @@ const HeroSection = () => {
                                 <div className="w-10 h-[2px] bg-[#f2312d]" />
                                 <h1 className="text-sm lg:text-xl font-roboto font-bold mx-4 text-[#f2312d]">Top Universities Of Russia</h1>
                                 <div className="flex items-center lg:ml-4">
-                                    <div className="w-10 h-[2px] bg-[#f2312d]" />
+                                    <div className="w-4 lg:w-10 h-[2px] bg-[#f2312d]" />
                                     <div className="w-2 h-[2px] bg-transparent" /> {/* Gap between lines */}
                                     <div className="w-2 h-[2px] bg-[#f2312d]" />
                                     <div className="w-2 h-[2px] bg-transparent" />

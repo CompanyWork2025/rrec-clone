@@ -19,7 +19,7 @@ const MedicalUniversity = () => {
                 {/* Top Heading with Border Lines and Location Icon */}
                 <div className="flex items-center justify-center">
                     <div className="flex items-center lg:ml-4">
-                        <div className="w-4 lg:w-8 h-[2px] bg-[#f2312d]" />
+                        <div className="w-2 lg:w-8 h-[2px] bg-[#f2312d]" />
                         <div className="w-2 lg:w-2 h-[2px] bg-transparent" />
                         <div className="w-2 lg:w-2 h-[2px] bg-[#f2312d]" />
                         <div className="w-2 lg:w-2 h-[2px] bg-transparent" />
@@ -30,7 +30,7 @@ const MedicalUniversity = () => {
                         Top Universities Of Russia
                     </h1>
                     <div className="flex items-center lg:ml-4">
-                        <div className="w-10 h-[2px] bg-[#f2312d]" />
+                        <div className="w-6 lg:w-10 h-[2px] bg-[#f2312d]" />
                         <div className="w-2 h-[2px] bg-transparent" />
                         <div className="w-2 h-[2px] bg-[#f2312d]" />
                         <div className="w-2 h-[2px] bg-transparent" />
