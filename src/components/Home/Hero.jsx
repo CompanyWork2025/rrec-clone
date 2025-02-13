@@ -73,7 +73,7 @@ const HeroSection = () => {
 
                         {/* Heading Text */}
                         <motion.h1
-                            className="text-4xl lg:text-6xl text-center mt-4 font-bold"
+                            className="text-4xl lg:text-6xl text-center font-roboto mt-4 font-bold"
                             key={headings[bgImage]} // Ensure heading animates correctly with image change
                             initial={{ y: 50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
