@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { I18nextProvider } from 'react-i18next'; // Import I18nextProvider
-import i18n from './118n'; // Make sure i18n is configured properly
-import Navbar from './components/Navbar'; // Import Navbar
-import Footer from './components/Footer'; // Import Footer
+import { I18nextProvider } from 'react-i18next';
+import i18n from './118n';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop'; // Import ScrollToTop
 import Home from './pages/Home';
 import AboutRussia from './pages/AboutRussia';
 import ServicesForStudents from './pages/ServicesForStudents';
@@ -21,9 +22,10 @@ import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
-    <I18nextProvider i18n={i18n}> {/* Wrap the app in I18nextProvider */}
+    <I18nextProvider i18n={i18n}>
       <Router>
-        <Navbar /> {/* Add Navbar here */}
+        <ScrollToTop /> {/* Add ScrollToTop here */}
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about/rrec" element={<AboutRussia />} />
@@ -40,7 +42,7 @@ function App() {
           <Route path="/useful-info/page3" element={<UsefulInfoPage3 />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
-        <Footer /> {/* Add Footer here */}
+        <Footer />
       </Router>
     </I18nextProvider>
   );
