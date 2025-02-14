@@ -242,17 +242,17 @@ function Footer() {
             </div>
 
             <div className="hidden lg:flex justify-center md:justify-start space-x-6 mt-4 mb-14">
-              <a href="#" aria-label="Facebook" className="p-2 bg-[#f2312d] rounded-full transform hover:scale-90 transition duration-300">
+              <a href="https://www.facebook.com/RRECTeamOfficialpage/" aria-label="Facebook" className="p-2 bg-[#f2312d] rounded-full transform hover:scale-90 transition duration-300">
                 <FaFacebook className="text-white w-4 h-4" />
               </a>
-              <a href="#" aria-label="Instagram" className="p-2 bg-[#f2312d] rounded-full transform hover:scale-90 transition duration-300">
+              <a href="https://www.instagram.com/rrecrussia_officials/" aria-label="Instagram" className="p-2 bg-[#f2312d] rounded-full transform hover:scale-90 transition duration-300">
                 <FaInstagram className="text-white w-4 h-4" />
               </a>
-              <a href="#" aria-label="Youtube" className="p-2 bg-[#f2312d] rounded-full transform hover:scale-90 transition duration-300">
+              <a href="https://www.youtube.com/channel/UChb_aZlyYRcUqmsZsEs_tIA" aria-label="Youtube" className="p-2 bg-[#f2312d] rounded-full transform hover:scale-90 transition duration-300">
                 <FaYoutube className="text-white w-4 h-4" />
               </a>
               <a
-                href="https://www.linkedin.com/company/104643910/admin/dashboard/"
+                href="https://ru.linkedin.com/in/rrecrussiaofficials"
                 aria-label="Linkedin"
                 target="_blank"
                 rel="noopener noreferrer"
