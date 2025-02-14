@@ -51,7 +51,16 @@ const resources = {
       "moscowDescription": "Moscow is the capital of Russia. Within the Republic there are around 1,000 towns, of these, including Moscow, nine cities have a population of over a million (St.Petersburg, Volgograd, Rostov on Don, Nizhny Novgorod, Kazan, Ufa, Novosibirsk, Sverdlovsk, Chelyabinsk, and Omsk).",
       "russiaDescription": "Rus­sia, also offi­cially known as the Russ­ian Fed­er­a­tion, is a coun­try in north­ern Eura­sia. It is a fed­eral semi-presidential repub­lic, com­pris­ing 83 fed­eral sub­jects. From north­west to south­east, Rus­sia shares land bor­ders with Nor­way, Fin­land, Esto­nia, Latvia, Lithua­nia and Poland (both with Kalin­ingrad Oblast), Belarus, Ukraine, Geor­gia, Azer­bai­jan, Kaza­khstan, China, Mon­go­lia, and North Korea. It shares mar­itime bor­ders with Japan by the Sea of Okhotsk and the U.S. state of Alaska across the Bering Strait.",
       "experienceYears": "15 + Years Of",
-      "educationExperience": "Education Experience"
+      "educationExperience": "Education Experience",
+      "aboutRussia": "About Russia",
+      "aboutRussiaDescription": "Moscow is the capital of Russia. Within the Republic there are around 1,000 towns.",
+      "readMore": "Read More",
+      "mbbsInRussia": "MBBS in Russia",
+      "mbbsInRussiaDescription": "Becoming a doctor is a coveted dream for many aspirants in India. Hence in the pursuit.",
+      "admissionProcedure": "Admission Procedure",
+      "admissionProcedureDescription": "Students arriving to study in Russia must present their original documents personally.",
+      "feeStructure": "Fee Structure",
+      "feeStructureDescription": "Russia, due to its sublime supremacy in science and technology, has become the pivotal destination for higher education."
     }
   },
   es: {
@@ -106,7 +115,16 @@ const resources = {
       "learnRussian": "Aprende ruso en SfedU",
       "studyInRussia": "Estudia en Rusia",
       "studyInRussiaAndEnglish": "Estudia en Rusia e Inglés",
-      "readMore": "Leer Más"
+      "readMore": "Leer Más",
+      "aboutRussia": "Sobre Rusia",
+      "aboutRussiaDescription": "Moscú es la capital de Rusia. Dentro de la República hay alrededor de 1,000 ciudades.",
+      "readMore": "Leer Más",
+      "mbbsInRussia": "MBBS en Rusia",
+      "mbbsInRussiaDescription": "Convertirse en médico es un sueño codiciado por muchos aspirantes en India. Por lo tanto, en la búsqueda.",
+      "admissionProcedure": "Procedimiento de Admisión",
+      "admissionProcedureDescription": "Los estudiantes que lleguen para estudiar en Rusia deben presentar sus documentos originales en persona.",
+      "feeStructure": "Estructura de tarifas",
+      "feeStructureDescription": "Rusia, debido a su sublime supremacía en ciencia y tecnología, se ha convertido en el destino clave para la educación superior."
     }
   },
   fr: {
@@ -161,7 +179,16 @@ const resources = {
       "learnRussian": "Apprenez le russe à SfedU",
       "studyInRussia": "Étudier en Russie",
       "studyInRussiaAndEnglish": "Étudier en Russie et en anglais",
-      "readMore": "Lire la suite"
+      "readMore": "Lire la suite",
+      "aboutRussia": "À propos de la Russie",
+      "aboutRussiaDescription": "Moscou est la capitale de la Russie. Dans la République, il y a environ 1000 villes.",
+      "readMore": "Lire la suite",
+      "mbbsInRussia": "MBBS en Russie",
+      "mbbsInRussiaDescription": "Devenir médecin est un rêve convoité par de nombreux aspirants en Inde. Ainsi dans la quête.",
+      "admissionProcedure": "Procédure d'admission",
+      "admissionProcedureDescription": "Les étudiants arrivant pour étudier en Russie doivent présenter leurs documents originaux en personne.",
+      "feeStructure": "Structure des frais",
+      "feeStructureDescription": "La Russie, en raison de sa suprématie sublime en science et technologie, est devenue la destination clé pour l'enseignement supérieur."
     }
   },
   zh: {
@@ -216,7 +243,16 @@ const resources = {
       "learnRussian": "在SfedU学习俄语",
       "studyInRussia": "在俄罗斯学习",
       "studyInRussiaAndEnglish": "在俄罗斯和英语学习",
-      "readMore": "阅读更多"
+      "readMore": "阅读更多",
+      "aboutRussia": "关于俄罗斯",
+      "aboutRussiaDescription": "莫斯科是俄罗斯的首都。俄罗斯境内大约有1000个城市。",
+      "readMore": "阅读更多",
+      "mbbsInRussia": "俄罗斯MBBS",
+      "mbbsInRussiaDescription": "成为医生是印度许多考生渴望的梦想。因此，在追求中。",
+      "admissionProcedure": "入学程序",
+      "admissionProcedureDescription": "来俄罗斯留学的学生必须亲自提交原始文件。",
+      "feeStructure": "费用结构",
+      "feeStructureDescription": "俄罗斯由于其在科学和技术方面的卓越优势，已经成为高等教育的关键目的地。"
     }
   },
   ru: {
@@ -270,7 +306,16 @@ const resources = {
       "learnRussian": "Учите русский в СфедУ",
       "studyInRussia": "Учеба в России",
       "studyInRussiaAndEnglish": "Учеба в России и на английском",
-      "readMore": "Читать далее"
+      "readMore": "Читать далее",
+      "aboutRussia": "О России",
+      "aboutRussiaDescription": "Москва — столица России. В республике около 1000 городов.",
+      "readMore": "Читать далее",
+      "mbbsInRussia": "МББС в России",
+      "mbbsInRussiaDescription": "Стать врачом — заветная мечта многих претендентов в Индии. Поэтому в поисках.",
+      "admissionProcedure": "Процедура поступления",
+      "admissionProcedureDescription": "Студенты, прибывающие для учебы в России, должны лично предоставить свои оригинальные документы.",
+      "feeStructure": "Тарифы",
+      "feeStructureDescription": "Россия, благодаря своему превосходству в науке и технологиях, стала ключевым направлением для высшего образования."
     }
   },
   hi: {
@@ -321,7 +366,16 @@ const resources = {
       "moscowDescription": "मॉस्को रूस की राजधानी है। इस गणराज्य में लगभग 1,000 शहर हैं, इनमें से, मॉस्को सहित, नौ शहरों की जनसंख्या एक मिलियन से अधिक है (सेंट पीटर्सबर्ग, वोल्गोग्राड, रोस्तोव ऑन डॉन, निज़नी नोवगोरोड, कज़ान, उफा, नोवोसिबिर्स्क, स्वेरडलोव्स्क, चेल्याबिंस्क, और ओम्स्क)।",
       "russiaDescription": "रूस, जिसे आधिकारिक रूप से रूसी संघ के नाम से भी जाना जाता है, एक देश है जो उत्तरी यूरेशिया में स्थित है। यह एक संघीय अर्ध-राष्ट्रपति गणराज्य है, जिसमें 83 संघीय विषय शामिल हैं...",
       "experienceYears": "15 + वर्षों का",
-      "educationExperience": "शिक्षा का अनुभव"
+      "educationExperience": "शिक्षा का अनुभव",
+      "aboutRussia": "रूस के बारे में",
+      "aboutRussiaDescription": "मॉस्को रूस की राजधानी है। गणराज्य में लगभग 1000 शहर हैं।",
+      "readMore": "और पढ़ें",
+      "mbbsInRussia": "रूस में MBBS",
+      "mbbsInRussiaDescription": "डॉक्टर बनना भारत में कई अभ्यर्थियों का एक इच्छित सपना है। इस प्रकार, यह प्रयासों में है।",
+      "admissionProcedure": "प्रवेश प्रक्रिया",
+      "admissionProcedureDescription": "रूस में अध्ययन करने के लिए आने वाले छात्रों को अपनी मूल दस्तावेज़ व्यक्तिगत रूप से प्रस्तुत करने होंगे।",
+      "feeStructure": "फीस संरचना",
+      "feeStructureDescription": "रूस, विज्ञान और प्रौद्योगिकी में अपनी श्रेष्ठता के कारण, उच्च शिक्षा के लिए एक प्रमुख गंतव्य बन गया है।"
     }
   }
 
