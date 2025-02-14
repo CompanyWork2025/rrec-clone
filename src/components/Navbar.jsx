@@ -99,6 +99,7 @@ const Navbar = () => {
               <option value="es">{t('language')}: Spanish</option>
               <option value="fr">{t('language')}: French</option>
               <option value="zh">{t('language')}: Chinese</option>
+              <option value="hi">{t('language')}: Hindi</option>
             </select>
           </div>
 
