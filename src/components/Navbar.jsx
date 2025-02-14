@@ -130,19 +130,19 @@ const Navbar = () => {
         </div>
 
         <div className="flex ml-20 lg:-ml-4 items-center space-x-6 lg:space-x-4 ">
-          <a href="#" className="hover:text-gray-300">
+          <a href="https://www.facebook.com/RRECTeamOfficialpage/" className="hover:text-gray-300">
             <FaFacebookF className="h-4 w-4 lg:h-5 lg:w-5" />
           </a>
           <div className="border-l border-white h-6"></div>
-          <a href="#" className="hover:text-gray-300">
+          <a href="https://www.instagram.com/rrecrussia_officials/" className="hover:text-gray-300">
             <FaInstagram className="h-4 w-4 lg:h-5 lg:w-5" />
           </a>
           <div className="border-l border-white h-6"></div>
-          <a href="#" className="hover:text-gray-300">
+          <a href="https://ru.linkedin.com/in/rrecrussiaofficials" className="hover:text-gray-300">
             <FaLinkedinIn className="h-4 w-4 lg:h-5 lg:w-5" />
           </a>
           <div className="border-l border-white h-6"></div>
-          <a href="#" className="hover:text-gray-300">
+          <a href="https://www.youtube.com/channel/UChb_aZlyYRcUqmsZsEs_tIA" className="hover:text-gray-300">
             <FaYoutube className="h-4 w-4 lg:h-5 lg:w-5" />
           </a>
         </div>
