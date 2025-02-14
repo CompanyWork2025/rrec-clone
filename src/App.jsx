@@ -1,4 +1,7 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { I18nextProvider } from 'react-i18next'; // Import I18nextProvider
+import i18n from './118n'; // Make sure i18n is configured properly
 import Navbar from './components/Navbar'; // Import Navbar
 import Footer from './components/Footer'; // Import Footer
 import Home from './pages/Home';
@@ -18,26 +21,28 @@ import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
-    <Router>
-      <Navbar /> {/* Add Navbar here */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about/russia" element={<AboutRussia />} />
-        <Route path="/about/services" element={<ServicesForStudents />} />
-        <Route path="/universities/medical" element={<MedicalUniversities />} />
-        <Route path="/universities/technical" element={<TechnicalUniversities />} />
-        <Route path="/universities/courses" element={<CoursesInRussia />} />
-        <Route path="/fee-structure/page1" element={<FeePage1 />} />
-        <Route path="/fee-structure/page2" element={<FeePage2 />} />
-        <Route path="/fee-structure/page3" element={<FeePage3 />} />
-        <Route path="/fee-structure/page4" element={<FeePage4 />} />
-        <Route path="/useful-info/page1" element={<UsefulInfoPage1 />} />
-        <Route path="/useful-info/page2" element={<UsefulInfoPage2 />} />
-        <Route path="/useful-info/page3" element={<UsefulInfoPage3 />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-      </Routes>
-      <Footer /> {/* Add Footer here */}
-    </Router>
+    <I18nextProvider i18n={i18n}> {/* Wrap the app in I18nextProvider */}
+      <Router>
+        <Navbar /> {/* Add Navbar here */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about/russia" element={<AboutRussia />} />
+          <Route path="/about/services" element={<ServicesForStudents />} />
+          <Route path="/universities/medical" element={<MedicalUniversities />} />
+          <Route path="/universities/technical" element={<TechnicalUniversities />} />
+          <Route path="/universities/courses" element={<CoursesInRussia />} />
+          <Route path="/fee-structure/page1" element={<FeePage1 />} />
+          <Route path="/fee-structure/page2" element={<FeePage2 />} />
+          <Route path="/fee-structure/page3" element={<FeePage3 />} />
+          <Route path="/fee-structure/page4" element={<FeePage4 />} />
+          <Route path="/useful-info/page1" element={<UsefulInfoPage1 />} />
+          <Route path="/useful-info/page2" element={<UsefulInfoPage2 />} />
+          <Route path="/useful-info/page3" element={<UsefulInfoPage3 />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+        </Routes>
+        <Footer /> {/* Add Footer here */}
+      </Router>
+    </I18nextProvider>
   );
 }
 

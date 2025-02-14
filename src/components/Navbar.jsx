@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import logo from "../assets/logo.png";
 import arrow from "../assets/down-arrow.png";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
+import '../118n'; // Import your i18n.js
 import { FaEnvelope, FaPhone, FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaBars, FaTimes, FaArrowRight } from "react-icons/fa";
 
 const Navbar = () => {
@@ -16,13 +18,16 @@ const Navbar = () => {
   const [isPaused, setIsPaused] = useState(false);
   const [dropdown, setDropdown] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  // Function to handle language change
+  const handleLanguageChange = (event) => {
+    const selectedLanguage = event.target.value;
+    i18n.changeLanguage(selectedLanguage);
+  };
 
   const toggleDropdown = (menu) => {
     setDropdown(dropdown === menu ? null : menu);
-  };
-
-  const handleLanguageChange = (e) => {
-    setSelectedLanguage(e.target.value);
   };
 
   const handleMouseEnter = () => {
@@ -45,7 +50,7 @@ const Navbar = () => {
         <div className="max-w-screen-2xl mx-auto px-6 flex items-center font-roboto">
           {/* Moving Text on the left */}
           <h1 className="lg:mr-4 font-bold lg:text-xl animate-colorCycle">
-            <span className="inline-block animate-colorCycle">Breaking News :</span>
+            <span className="inline-block animate-colorCycle">{t('breakingNews')}:</span>
           </h1>
           <div className="overflow-hidden ml-24 w-[60%]">
             <p
@@ -57,17 +62,18 @@ const Navbar = () => {
               }}
             >
               <span className="inline-block animate-colorCycle mr-2">
-                Admission is open for 2025.
+                {t('admissionOpenFor2025')}
               </span>
-              <span className="inline-block mr-2">Book your seat today with</span>
+              <span className="inline-block mr-2">
+                {t('bookYourSeatTodayWith')}
+              </span>
               <span className="inline-block animate-colorCycle mr-2 text-red-500 font-bold">
-                RREC Team,
+                {t('rrecTeam')}
               </span>
               <span className="lg:text-md inline-block">
-                Official Admission Partner of Top Russian Medical Universities; RostSMU, UralSMU,
-                CrimeaFU, VolSMU, KazanFU, KazanSMU, NWSMU, NoSMA, KurskSMU, PFUR, UNN Nizhny
-                Novgorod. Direct Admission with Less Processing fees.
+                {t('officialAdmissionPartner')}
               </span>
+
             </p>
           </div>
 
@@ -82,20 +88,17 @@ const Navbar = () => {
               />
             </div>
 
-            {/* Dropdown for selecting language on the right */}
+            {/* Language dropdown */}
             <select
-              defaultValue=""
-              onChange={handleLanguageChange}
+              value={i18n.language} // This will bind the current language to the dropdown
+              onChange={handleLanguageChange} // Calls the language change function on change
               className="text-black p-1 rounded-md ml-2"
             >
-              <option value="" disabled hidden>
-                Select Language
-              </option>
-              <option value="English">English</option>
-              <option value="Russian">Russian</option>
-              <option value="Spanish">Spanish</option>
-              <option value="French">French</option>
-              <option value="Chinese">Chinese</option>
+              <option value="en">{t('language')}: English</option>
+              <option value="ru">{t('language')}: Russian</option>
+              <option value="es">{t('language')}: Spanish</option>
+              <option value="fr">{t('language')}: French</option>
+              <option value="zh">{t('language')}: Chinese</option>
             </select>
           </div>
 
@@ -157,7 +160,7 @@ const Navbar = () => {
           <nav>
             <ul className="hidden lg:flex space-x-5">
               {/* Home */}
-              <li><Link to="/" className="hover:text-[#f2312d] uppercase">Home</Link></li>
+              <li><Link to="/" className="hover:text-[#f2312d] uppercase">{t('home')}</Link></li>
 
               <li
                 className="relative group"
@@ -166,15 +169,15 @@ const Navbar = () => {
               >
                 <div className="flex items-center space-x-2">
                   <button className="hover:text-[#f2312d] focus:outline-none uppercase">
-                    About US
+                    {t('aboutUs')}
                   </button>
-                  {/* Dropdown button */}
                   <img
                     src={arrow}
                     alt="Down Arrow"
                     className="w-2 h-2 transition-transform duration-300 group-hover:rotate-180"
                   />
                 </div>
+
 
                 {/* AnimatePresence for About dropdown */}
                 <AnimatePresence>
@@ -193,7 +196,7 @@ const Navbar = () => {
                           to="/about/rrec"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          About Russia
+                          {t('aboutRussia')} {/* Translate "About Russia" */}
                         </Link>
                       </li>
                       <li className="flex items-center">
@@ -203,7 +206,7 @@ const Navbar = () => {
                           to="/about/services"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          Services for Students
+                          {t('servicesForStudents')} {/* Translate "Services for Students" */}
                         </Link>
                       </li>
                     </motion.ul>

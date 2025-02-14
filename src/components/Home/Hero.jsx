@@ -1,18 +1,21 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
 const HeroSection = () => {
     const [bgImage, setBgImage] = useState(0);
+    const { t } = useTranslation();
+
     const images = [
         'url(https://static.vecteezy.com/system/resources/previews/034/340/735/non_2x/silhouettes-of-graduates-on-the-background-of-the-sunset-graduation-concept-rear-perspective-of-a-group-of-university-graduates-their-silhouettes-distinct-against-the-ai-generated-free-photo.jpg)',
         'url(https://www.reavizmu.net/wp-content/themes/reavizmu/extra-images/banner-1.jpg)',
-        'url(https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/76XEW2R74YI6PEUORKN4SGUUY4.jpg?auth=074b8a1c4ae1cca3bb2da380997a72b51298aa07847278321b2ba5a7214b9e03&width=1440)' // placeholder for testing
+        'url(https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/76XEW2R74YI6PEUORKN4SGUUY4.jpg?auth=074b8a1c4ae1cca3bb2da380997a72b51298aa07847278321b2ba5a7214b9e03&width=1440)', // placeholder for testing
     ];
 
     const headings = [
-        'Study in Russia A Global Experience',
-        'Become A Doctor Study In Abroad',
-        'Medical Students In Russia'
+        t('studyInRussia'),
+        t('becomeDoctor'),
+        t('medicalStudents')
     ];
 
     useEffect(() => {
@@ -60,7 +63,9 @@ const HeroSection = () => {
                                     <div className="w-2 h-[2px] bg-[#f2312d]" />
                                 </div>
                                 <div className="w-10 h-[2px] bg-[#f2312d]" />
-                                <h1 className="text-sm lg:text-xl font-roboto font-bold mx-4 text-[#f2312d]">Top Universities Of Russia</h1>
+                                <h1 className="text-sm lg:text-xl font-roboto font-bold mx-4 text-[#f2312d]">
+                                    {t('topUniversities')}
+                                </h1>
                                 <div className="flex items-center lg:ml-4">
                                     <div className="w-4 lg:w-10 h-[2px] bg-[#f2312d]" />
                                     <div className="w-2 h-[2px] bg-transparent" /> {/* Gap between lines */}
@@ -102,7 +107,7 @@ const HeroSection = () => {
 
                             {/* Button text */}
                             <span className="w-full text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
-                                Read More
+                                {t('readMore')}
                             </span>
                         </motion.button>
                     </motion.div>
