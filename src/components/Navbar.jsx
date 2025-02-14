@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from "../assets/logo.png";
 import arrow from "../assets/down-arrow.png";
 import { AnimatePresence, motion } from "framer-motion";
-import { FaEnvelope, FaPhone, FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaBars, FaTimes } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaBars, FaTimes, FaArrowRight } from "react-icons/fa";
 
 const Navbar = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("English");
@@ -186,7 +186,9 @@ const Navbar = () => {
                       transition={{ duration: 0.3, ease: "easeOut" }}
                       className="absolute bg-white text-black shadow-lg mt-0 py-2 w-56 origin-top transform z-50"
                     >
-                      <li>
+                      <li className="flex items-center">
+                        {/* Top-right pointing arrow */}
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/about/rrec"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -194,7 +196,9 @@ const Navbar = () => {
                           About Russia
                         </Link>
                       </li>
-                      <li>
+                      <li className="flex items-center">
+                        {/* Top-right pointing arrow */}
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/about/services"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -233,7 +237,8 @@ const Navbar = () => {
                       transition={{ duration: 0.3, ease: "easeOut" }}
                       className="absolute bg-white text-black shadow-lg mt-0 py-2 w-56 origin-top transform z-50"
                     >
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/universities/medical"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -241,7 +246,8 @@ const Navbar = () => {
                           Medical Universities
                         </Link>
                       </li>
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/universities/technical"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -249,7 +255,8 @@ const Navbar = () => {
                           Technical Universities
                         </Link>
                       </li>
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/universities/courses"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -289,7 +296,8 @@ const Navbar = () => {
                       transition={{ duration: 0.3, ease: "easeOut" }}
                       className="absolute bg-white text-black shadow-lg mt-0 py-2 w-80 origin-top transform z-50"
                     >
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/fee-structure/page1"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -297,7 +305,8 @@ const Navbar = () => {
                           Fee Structure For MBBS, BDS, Pharmacy
                         </Link>
                       </li>
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/fee-structure/page2"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -305,7 +314,8 @@ const Navbar = () => {
                           Fee Structure For Technical Universities
                         </Link>
                       </li>
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/fee-structure/page3"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -313,12 +323,13 @@ const Navbar = () => {
                           Fee Structure For Russian Language Courses
                         </Link>
                       </li>
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/fee-structure/page4"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          MBA In English Medium -SfedU, Russia
+                          MBA In English Medium - SfedU, Russia
                         </Link>
                       </li>
                     </motion.ul>
@@ -353,7 +364,8 @@ const Navbar = () => {
                       transition={{ duration: 0.3, ease: "easeOut" }}
                       className="absolute bg-white text-black shadow-lg mt-0 py-2 w-56 origin-top transform z-50"
                     >
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/useful-info/page1"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -361,7 +373,8 @@ const Navbar = () => {
                           MBBS In Russia
                         </Link>
                       </li>
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/useful-info/page2"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -369,7 +382,8 @@ const Navbar = () => {
                           Admission Procedure
                         </Link>
                       </li>
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/useful-info/page3"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -411,7 +425,8 @@ const Navbar = () => {
                       transition={{ duration: 0.3, ease: "easeOut" }}
                       className="absolute bg-white text-black shadow-lg mt-0 py-2 w-56 origin-top transform z-50"
                     >
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/photo/gallery"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -419,7 +434,8 @@ const Navbar = () => {
                           Photo Gallery
                         </Link>
                       </li>
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/video/gallery"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -459,7 +475,8 @@ const Navbar = () => {
                       transition={{ duration: 0.3, ease: "easeOut" }}
                       className="absolute bg-white text-black shadow-lg mt-0 py-2 w-56 origin-top transform z-50"
                     >
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/fee-structure/page1"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -467,7 +484,8 @@ const Navbar = () => {
                           Blog
                         </Link>
                       </li>
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/fee-structure/page2"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -475,7 +493,8 @@ const Navbar = () => {
                           NEET
                         </Link>
                       </li>
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/fee-structure/page3"
                           className="block px-4 py-2 hover:text-[#f2312d]"
@@ -483,7 +502,8 @@ const Navbar = () => {
                           FAQ's
                         </Link>
                       </li>
-                      <li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/fee-structure/page4"
                           className="block px-4 py-2 hover:text-[#f2312d]"
