@@ -46,6 +46,12 @@ const resources = {
       "upcomingEvents": "Upcoming Events", // Added translation for Upcoming Events
       "faq": "FAQ", // Added translation for FAQ
       "contactUs": "Contact Us", // Added translation for Contact Us
+      "aboutUs": "ABOUT US",
+      "welcomeToRREC": "Welcome to RREC",
+      "moscowDescription": "Moscow is the capital of Russia. Within the Republic there are around 1,000 towns, of these, including Moscow, nine cities have a population of over a million (St.Petersburg, Volgograd, Rostov on Don, Nizhny Novgorod, Kazan, Ufa, Novosibirsk, Sverdlovsk, Chelyabinsk, and Omsk).",
+      "russiaDescription": "Rus­sia, also offi­cially known as the Russ­ian Fed­er­a­tion, is a coun­try in north­ern Eura­sia. It is a fed­eral semi-presidential repub­lic, com­pris­ing 83 fed­eral sub­jects. From north­west to south­east, Rus­sia shares land bor­ders with Nor­way, Fin­land, Esto­nia, Latvia, Lithua­nia and Poland (both with Kalin­ingrad Oblast), Belarus, Ukraine, Geor­gia, Azer­bai­jan, Kaza­khstan, China, Mon­go­lia, and North Korea. It shares mar­itime bor­ders with Japan by the Sea of Okhotsk and the U.S. state of Alaska across the Bering Strait.",
+      "experienceYears": "15 + Years Of",
+      "educationExperience": "Education Experience"
     }
   },
   es: {
@@ -91,6 +97,12 @@ const resources = {
       "upcomingEvents": "Próximos Eventos",
       "faq": "FAQ",
       "contactUs": "Contáctenos",
+      "aboutUs": "SOBRE NOSOTROS",
+      "welcomeToRREC": "Bienvenido a RREC",
+      "moscowDescription": "Moscú es la capital de Rusia. Dentro de la República hay alrededor de 1,000 ciudades, de las cuales, incluyendo Moscú, nueve ciudades tienen una población de más de un millón (San Petersburgo, Volgogrado, Rostov del Don, Nizhni Nóvgorod, Kazán, Ufa, Novosibirsk, Sverdlovsk, Cheliábinsk y Omsk).",
+      "russiaDescription": "Rusia, oficialmente conocida también como la Federación Rusa, es un país en el norte de Eurasia. Es una república federal semipresidencial, compuesta por 83 sujetos federales...",
+      "experienceYears": "Más de 15 años de",
+      "educationExperience": "Experiencia educativa"
     }
   },
   fr: {
@@ -117,7 +129,7 @@ const resources = {
       "medicalUniversities": "Universités Médicales",
       "technicalUniversities": "Universités Techniques",
       "coursesInRussia": "Cours en Russie",
-    "feeStructure": "Tarifs 2025",
+      "feeStructure": "Tarifs 2025",
       "mbbsBdsPharmacyFee": "Structure des Frais pour MBBS, BDS, Pharmacie",
       "technicalUniversitiesFee": "Structure des Frais pour Universités Techniques",
       "languageCoursesFee": "Structure des Frais pour Cours de Langue Russe",
@@ -136,6 +148,12 @@ const resources = {
       "upcomingEvents": "Événements à Venir",
       "faq": "FAQ",
       "contactUs": "Contactez-nous",
+      "aboutUs": "À PROPOS DE NOUS",
+      "welcomeToRREC": "Bienvenue à RREC",
+      "moscowDescription": "Moscou est la capitale de la Russie. Dans la République, il y a environ 1 000 villes, dont neuf ont une population de plus d'un million d'habitants (Saint-Pétersbourg, Volgograd, Rostov-sur-le-Don, Nijni Novgorod, Kazan, Oufa, Novossibirsk, Sverdlovsk, Tcheliabinsk et Omsk).",
+      "russiaDescription": "La Russie, officiellement connue sous le nom de Fédération de Russie, est un pays d'Eurasie du Nord. C'est une république fédérale semi-présidentielle, composée de 83 sujets fédéraux...",
+      "experienceYears": "Plus de 15 ans d'",
+      "educationExperience": "Expérience éducative"
     }
   },
   zh: {
@@ -181,6 +199,12 @@ const resources = {
       "upcomingEvents": "即将举行的活动",
       "faq": "常见问题",
       "contactUs": "联系我们",
+      "aboutUs": "关于我们",
+      "welcomeToRREC": "欢迎来到RREC",
+      "moscowDescription": "莫斯科是俄罗斯的首都。在该共和国中大约有1000个城市，其中包括莫斯科在内的九个城市人口超过一百万（圣彼得堡、伏尔加格勒、罗斯托夫、下诺夫哥罗德、喀山、乌法、诺夫西比尔斯克、斯韦尔德洛夫斯克、车里雅宾斯克和鄂木斯克）。",
+      "russiaDescription": "俄罗斯，正式名称为俄罗斯联邦，是位于欧亚北部的一个国家。它是一个联邦半总统制共和国，由83个联邦主体组成...",
+      "experienceYears": "超过15年的",
+      "educationExperience": "教育经验"
     }
   },
   ru: {
@@ -225,6 +249,12 @@ const resources = {
       "upcomingEvents": "Предстоящие события", // Russian translation for Upcoming Events
       "faq": "Вопросы", // Shortened Russian translation for FAQ
       "contactUs": "Контакты", // Shortened Russian translation for Contact Us
+      "aboutUs": "О НАС",
+      "welcomeToRREC": "Добро пожаловать в RREC",
+      "moscowDescription": "Москва — столица России. В республике около 1 000 городов, из которых, включая Москву, девять городов имеют население более миллиона (Санкт-Петербург, Волгоград, Ростов-на-Дону, Нижний Новгород, Казань, Уфа, Новосибирск, Свердловск, Челябинск и Омск).",
+      "russiaDescription": "Россия, официально известная как Российская Федерация, — страна в Северной Евразии. Это федеральная полупрезидентская республика, состоящая из 83 федеральных субъектов...",
+      "experienceYears": "Более 15 лет",
+      "educationExperience": "Образовательного опыта"
     }
   },
   hi: {
@@ -270,9 +300,15 @@ const resources = {
       "upcomingEvents": "आगामी घटनाएँ",
       "faq": "FAQ",
       "contactUs": "संपर्क करें",
+      "aboutUs": "हमारे बारे में",
+      "welcomeToRREC": "RREC में आपका स्वागत है",
+      "moscowDescription": "मॉस्को रूस की राजधानी है। इस गणराज्य में लगभग 1,000 शहर हैं, इनमें से, मॉस्को सहित, नौ शहरों की जनसंख्या एक मिलियन से अधिक है (सेंट पीटर्सबर्ग, वोल्गोग्राड, रोस्तोव ऑन डॉन, निज़नी नोवगोरोड, कज़ान, उफा, नोवोसिबिर्स्क, स्वेरडलोव्स्क, चेल्याबिंस्क, और ओम्स्क)।",
+      "russiaDescription": "रूस, जिसे आधिकारिक रूप से रूसी संघ के नाम से भी जाना जाता है, एक देश है जो उत्तरी यूरेशिया में स्थित है। यह एक संघीय अर्ध-राष्ट्रपति गणराज्य है, जिसमें 83 संघीय विषय शामिल हैं...",
+      "experienceYears": "15 + वर्षों का",
+      "educationExperience": "शिक्षा का अनुभव"
     }
   }
-  
+
 
   // Add more languages like Spanish, French, etc.
 };
