@@ -102,7 +102,11 @@ const resources = {
       "moscowDescription": "Moscú es la capital de Rusia. Dentro de la República hay alrededor de 1,000 ciudades, de las cuales, incluyendo Moscú, nueve ciudades tienen una población de más de un millón (San Petersburgo, Volgogrado, Rostov del Don, Nizhni Nóvgorod, Kazán, Ufa, Novosibirsk, Sverdlovsk, Cheliábinsk y Omsk).",
       "russiaDescription": "Rusia, oficialmente conocida también como la Federación Rusa, es un país en el norte de Eurasia. Es una república federal semipresidencial, compuesta por 83 sujetos federales...",
       "experienceYears": "Más de 15 años de",
-      "educationExperience": "Experiencia educativa"
+      "educationExperience": "Experiencia educativa",
+      "learnRussian": "Aprende ruso en SfedU",
+      "studyInRussia": "Estudia en Rusia",
+      "studyInRussiaAndEnglish": "Estudia en Rusia e Inglés",
+      "readMore": "Leer Más"
     }
   },
   fr: {
@@ -153,7 +157,11 @@ const resources = {
       "moscowDescription": "Moscou est la capitale de la Russie. Dans la République, il y a environ 1 000 villes, dont neuf ont une population de plus d'un million d'habitants (Saint-Pétersbourg, Volgograd, Rostov-sur-le-Don, Nijni Novgorod, Kazan, Oufa, Novossibirsk, Sverdlovsk, Tcheliabinsk et Omsk).",
       "russiaDescription": "La Russie, officiellement connue sous le nom de Fédération de Russie, est un pays d'Eurasie du Nord. C'est une république fédérale semi-présidentielle, composée de 83 sujets fédéraux...",
       "experienceYears": "Plus de 15 ans d'",
-      "educationExperience": "Expérience éducative"
+      "educationExperience": "Expérience éducative",
+      "learnRussian": "Apprenez le russe à SfedU",
+      "studyInRussia": "Étudier en Russie",
+      "studyInRussiaAndEnglish": "Étudier en Russie et en anglais",
+      "readMore": "Lire la suite"
     }
   },
   zh: {
@@ -204,7 +212,11 @@ const resources = {
       "moscowDescription": "莫斯科是俄罗斯的首都。在该共和国中大约有1000个城市，其中包括莫斯科在内的九个城市人口超过一百万（圣彼得堡、伏尔加格勒、罗斯托夫、下诺夫哥罗德、喀山、乌法、诺夫西比尔斯克、斯韦尔德洛夫斯克、车里雅宾斯克和鄂木斯克）。",
       "russiaDescription": "俄罗斯，正式名称为俄罗斯联邦，是位于欧亚北部的一个国家。它是一个联邦半总统制共和国，由83个联邦主体组成...",
       "experienceYears": "超过15年的",
-      "educationExperience": "教育经验"
+      "educationExperience": "教育经验",
+      "learnRussian": "在SfedU学习俄语",
+      "studyInRussia": "在俄罗斯学习",
+      "studyInRussiaAndEnglish": "在俄罗斯和英语学习",
+      "readMore": "阅读更多"
     }
   },
   ru: {
@@ -254,7 +266,11 @@ const resources = {
       "moscowDescription": "Москва — столица России. В республике около 1 000 городов, из которых, включая Москву, девять городов имеют население более миллиона (Санкт-Петербург, Волгоград, Ростов-на-Дону, Нижний Новгород, Казань, Уфа, Новосибирск, Свердловск, Челябинск и Омск).",
       "russiaDescription": "Россия, официально известная как Российская Федерация, — страна в Северной Евразии. Это федеральная полупрезидентская республика, состоящая из 83 федеральных субъектов...",
       "experienceYears": "Более 15 лет",
-      "educationExperience": "Образовательного опыта"
+      "educationExperience": "Образовательного опыта",
+      "learnRussian": "Учите русский в СфедУ",
+      "studyInRussia": "Учеба в России",
+      "studyInRussiaAndEnglish": "Учеба в России и на английском",
+      "readMore": "Читать далее"
     }
   },
   hi: {
