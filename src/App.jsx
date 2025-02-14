@@ -26,7 +26,7 @@ function App() {
         <Navbar /> {/* Add Navbar here */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about/russia" element={<AboutRussia />} />
+          <Route path="/about/rrec" element={<AboutRussia />} />
           <Route path="/about/services" element={<ServicesForStudents />} />
           <Route path="/universities/medical" element={<MedicalUniversities />} />
           <Route path="/universities/technical" element={<TechnicalUniversities />} />
