@@ -60,7 +60,19 @@ const resources = {
       "admissionProcedure": "Admission Procedure",
       "admissionProcedureDescription": "Students arriving to study in Russia must present their original documents personally.",
       "feeStructure": "Fee Structure",
-      "feeStructureDescription": "Russia, due to its sublime supremacy in science and technology, has become the pivotal destination for higher education."
+      "feeStructureDescription": "Russia, due to its sublime supremacy in science and technology, has become the pivotal destination for higher education.",
+      "whyUs": "WHY US",
+      "whatOurStudentsSay": "What Our Students Say",
+      "testimonialText": "Studying MBBS in Russia is gaining popularity among Indian students who wish to pursue MBBS abroad at affordable rates while ensuring high-quality education. Russian universities provide courses in English and encourage international students.",
+      "testimonialText2": "Studying MBBS in Russia offers an affordable alternative for Indian students, while maintaining a high standard of medical education. With many universities offering courses in English, Russia has become a sought-after destination for international students aiming to pursue their medical career in a globally recognized system.",
+      "technicalUniversities": "Technical Universities Of Russia",
+      "topUniversities": "Top Universities Of Russia",
+      "readMore": "Read More",
+      "subscribeTitle": "MBBS in Russia",
+      "subscribeText": "Presented by RREC Team Officials Russia",
+      "emailPlaceholder": "Enter your email",
+      "subscribeButton": "SUBSCRIBE",
+      "footerPara": "Moscow is the capital of Russia. Within the Republic there are around 1,000 towns, of these, including Moscow, nine cities have a population of over a million (St.Petersburg, Volgograd, Rostov on Don, Nizhny Novgorod, Kazan, Ufa, Novosibirsk, Sverdlovsk, Chelyabinsk, and Omsk)."
     }
   },
   es: {
@@ -124,7 +136,16 @@ const resources = {
       "admissionProcedure": "Procedimiento de Admisión",
       "admissionProcedureDescription": "Los estudiantes que lleguen para estudiar en Rusia deben presentar sus documentos originales en persona.",
       "feeStructure": "Estructura de tarifas",
-      "feeStructureDescription": "Rusia, debido a su sublime supremacía en ciencia y tecnología, se ha convertido en el destino clave para la educación superior."
+      "feeStructureDescription": "Rusia, debido a su sublime supremacía en ciencia y tecnología, se ha convertido en el destino clave para la educación superior.",
+      "whyUs": "¿POR QUÉ NOSOTROS?",
+      "whatOurStudentsSay": "Lo que dicen nuestros estudiantes",
+      "testimonialText": "Estudiar MBBS en Rusia está ganando popularidad entre los estudiantes indios que desean estudiar MBBS en el extranjero a precios asequibles, asegurando una educación de alta calidad. Las universidades rusas ofrecen cursos en inglés y fomentan la presencia de estudiantes internacionales.",
+      "testimonialText2": "Estudiar MBBS en Rusia ofrece una alternativa asequible para los estudiantes indios, manteniendo un alto estándar de educación médica. Con muchas universidades que ofrecen cursos en inglés, Rusia se ha convertido en un destino muy buscado para estudiantes internacionales que desean seguir su carrera médica en un sistema reconocido globalmente.",
+      "subscribeTitle": "MBBS en Rusia",
+      "subscribeText": "Presentado por el equipo oficial de RREC Rusia",
+      "emailPlaceholder": "Introduce tu correo electrónico",
+      "subscribeButton": "SUSCRIBIRSE",
+      "footerPara": "Moscú es la capital de Rusia. Dentro de la República hay alrededor de 1,000 ciudades, de las cuales, incluida Moscú, nueve tienen una población de más de un millón (San Petersburgo, Volgogrado, Rostov del Don, Nizhni Nóvgorod, Kazán, Ufá, Novosibirsk, Sverdlovsk, Cheliábinsk y Omsk).",
     }
   },
   fr: {
@@ -188,7 +209,25 @@ const resources = {
       "admissionProcedure": "Procédure d'admission",
       "admissionProcedureDescription": "Les étudiants arrivant pour étudier en Russie doivent présenter leurs documents originaux en personne.",
       "feeStructure": "Structure des frais",
-      "feeStructureDescription": "La Russie, en raison de sa suprématie sublime en science et technologie, est devenue la destination clé pour l'enseignement supérieur."
+      "feeStructureDescription": "La Russie, en raison de sa suprématie sublime en science et technologie, est devenue la destination clé pour l'enseignement supérieur.",
+      "topUniversities": "Top Universités de Russie",
+      "medicalUniversities": "Universités Médicales de Russie",
+      "readMore": "Lire la suite",
+      "whyUs": "POURQUOI NOUS",
+      "whatOurStudentsSay": "Ce que nos étudiants disent",
+      "testimonialText": "Étudier la médecine en Russie gagne en popularité parmi les étudiants indiens qui souhaitent poursuivre leurs études de médecine à l'étranger à des prix abordables tout en garantissant une éducation de haute qualité. Les universités russes proposent des cours en anglais et encouragent les étudiants internationaux.",
+      "testimonialText2": "Étudier la médecine en Russie offre une alternative abordable pour les étudiants indiens, tout en maintenant un niveau élevé d'éducation médicale. De nombreuses universités proposent des cours en anglais, et la Russie est devenue une destination recherchée par les étudiants internationaux souhaitant poursuivre leur carrière médicale dans un système reconnu mondialement.",
+      "technicalUniversities": "Universidades Técnicas de Rusia",
+      "topUniversities": "Las mejores universidades de Rusia",
+      "readMore": "Leer más",
+      "technicalUniversities": "Universités techniques de Russie",
+      "topUniversities": "Les meilleures universités de Russie",
+      "readMore": "Lire la suite",
+      "subscribeTitle": "MBBS en Russie",
+      "subscribeText": "Présenté par l'équipe officielle RREC Russie",
+      "emailPlaceholder": "Entrez votre email",
+      "subscribeButton": "S'ABONNER",
+      "footerPara": "Moscou est la capitale de la Russie. À l'intérieur de la République, il y a environ 1 000 villes, dont neuf, y compris Moscou, ont une population de plus d'un million (Saint-Pétersbourg, Volgograd, Rostov-sur-le-Don, Nijni Novgorod, Kazan, Oufa, Novossibirsk, Sverdlovsk, Tcheliabinsk et Omsk)."
     }
   },
   zh: {
@@ -252,7 +291,22 @@ const resources = {
       "admissionProcedure": "入学程序",
       "admissionProcedureDescription": "来俄罗斯留学的学生必须亲自提交原始文件。",
       "feeStructure": "费用结构",
-      "feeStructureDescription": "俄罗斯由于其在科学和技术方面的卓越优势，已经成为高等教育的关键目的地。"
+      "feeStructureDescription": "俄罗斯由于其在科学和技术方面的卓越优势，已经成为高等教育的关键目的地。",
+      "topUniversities": "俄罗斯顶级大学",
+      "medicalUniversities": "俄罗斯医学大学",
+      "readMore": "阅读更多",
+      "whyUs": "为什么选择我们",
+      "whatOurStudentsSay": "我们的学生怎么说",
+      "testimonialText": "在俄罗斯学习MBBS正受到印度学生的青睐，他们希望以负担得起的价格在国外攻读MBBS，同时确保获得高质量的教育。俄罗斯的大学提供英语授课，并鼓励国际学生。",
+      "testimonialText2": "在俄罗斯学习MBBS为印度学生提供了一种负担得起的选择，同时保持高标准的医学教育。许多大学提供英语课程，俄罗斯已成为国际学生追求全球认可医学事业的热门目的地。",
+      "technicalUniversities": "俄罗斯的技术大学",
+      "topUniversities": "俄罗斯顶尖大学",
+      "readMore": "阅读更多",
+      "subscribeTitle": "俄罗斯的MBBS课程",
+      "subscribeText": "由RREC俄罗斯团队官员提供",
+      "emailPlaceholder": "输入您的电子邮件",
+      "subscribeButton": "订阅",
+      "footerPara": "莫斯科是俄罗斯的首都。在俄罗斯共和国内，大约有1000个城市，其中包括莫斯科在内的九个城市人口超过一百万（圣彼得堡、伏尔加格勒、罗斯托夫-顿河、下诺夫哥罗德、喀山、乌法、新西伯利亚、斯维尔德洛夫斯克、车里雅宾斯克和鄂木斯克）。"
     }
   },
   ru: {
@@ -315,7 +369,26 @@ const resources = {
       "admissionProcedure": "Процедура поступления",
       "admissionProcedureDescription": "Студенты, прибывающие для учебы в России, должны лично предоставить свои оригинальные документы.",
       "feeStructure": "Тарифы",
-      "feeStructureDescription": "Россия, благодаря своему превосходству в науке и технологиях, стала ключевым направлением для высшего образования."
+      "feeStructureDescription": "Россия, благодаря своему превосходству в науке и технологиях, стала ключевым направлением для высшего образования.",
+      "topUniversities": "Лучшие университеты России",
+      "medicalUniversities": "Медицинские университеты России",
+      "readMore": "Читать далее",
+      "whyUs": "ПОЧЕМУ МЫ",
+      "whatOurStudentsSay": "Что говорят наши студенты",
+      "testimonialText": "Учеба в России по программе MBBS набирает популярность среди студентов Индии, которые хотят получить медицинское образование за границей по доступным ценам при высоком качестве образования. Российские университеты предлагают курсы на английском языке и приветствуют международных студентов.",
+      "testimonialText2": "Учеба в России по программе MBBS предлагает доступную альтернативу для студентов Индии, обеспечивая при этом высокий стандарт медицинского образования. Многие университеты предлагают курсы на английском языке, и Россия стала популярным направлением для иностранных студентов, стремящихся продолжить медицинскую карьеру в международно признанной системе.",
+      "whyUs": "ПОЧЕМУ МЫ",
+      "whatOurStudentsSay": "Что говорят наши студенты",
+      "testimonialText": "Учеба в России по программе MBBS набирает популярность среди студентов Индии, которые хотят получить медицинское образование за границей по доступным ценам при высоком качестве образования. Российские университеты предлагают курсы на английском языке и приветствуют международных студентов.",
+      "testimonialText2": "Учеба в России по программе MBBS предлагает доступную альтернативу для студентов Индии, обеспечивая при этом высокий стандарт медицинского образования. Многие университеты предлагают курсы на английском языке, и Россия стала популярным направлением для иностранных студентов, стремящихся продолжить медицинскую карьеру в международно признанной системе.",
+      "technicalUniversities": "Технические университеты России",
+      "topUniversities": "Топ университеты России",
+      "readMore": "Читать далее",
+      "subscribeTitle": "МББС в России",
+      "subscribeText": "Представлено командой официальных представителей RREC в России",
+      "emailPlaceholder": "Введите ваш email",
+      "subscribeButton": "ПОДПИСАТЬСЯ",
+      "footerPara": "Москва — столица России. В Республике около 1000 городов, из которых, включая Москву, девять имеют население более миллиона (Санкт-Петербург, Волгоград, Ростов-на-Дону, Нижний Новгород, Казань, Уфа, Новосибирск, Свердловск, Челябинск и Омск)."
     }
   },
   hi: {
@@ -375,7 +448,22 @@ const resources = {
       "admissionProcedure": "प्रवेश प्रक्रिया",
       "admissionProcedureDescription": "रूस में अध्ययन करने के लिए आने वाले छात्रों को अपनी मूल दस्तावेज़ व्यक्तिगत रूप से प्रस्तुत करने होंगे।",
       "feeStructure": "फीस संरचना",
-      "feeStructureDescription": "रूस, विज्ञान और प्रौद्योगिकी में अपनी श्रेष्ठता के कारण, उच्च शिक्षा के लिए एक प्रमुख गंतव्य बन गया है।"
+      "feeStructureDescription": "रूस, विज्ञान और प्रौद्योगिकी में अपनी श्रेष्ठता के कारण, उच्च शिक्षा के लिए एक प्रमुख गंतव्य बन गया है।",
+      "topUniversities": "रूस के शीर्ष विश्वविद्यालय",
+      "medicalUniversities": "रूस के मेडिकल विश्वविद्यालय",
+      "readMore": "और पढ़ें",
+      "whyUs": "क्यों हम",
+      "whatOurStudentsSay": "हमारे छात्र क्या कहते हैं",
+      "testimonialText": "रूस में MBBS अध्ययन भारतीय छात्रों के बीच बढ़ती हुई लोकप्रियता प्राप्त कर रहा है जो विदेश में कम दरों पर MBBS करना चाहते हैं, साथ ही उच्च गुणवत्ता की शिक्षा सुनिश्चित करते हैं। रूसी विश्वविद्यालय अंग्रेजी में पाठ्यक्रम प्रदान करते हैं और अंतर्राष्ट्रीय छात्रों का स्वागत करते हैं।",
+      "testimonialText2": "रूस में MBBS अध्ययन भारतीय छात्रों के लिए एक किफायती विकल्प प्रदान करता है, जबकि उच्च मानक की चिकित्सा शिक्षा बनाए रखते हुए। कई विश्वविद्यालय अंग्रेजी में पाठ्यक्रम प्रदान करते हैं, और रूस अंतर्राष्ट्रीय छात्रों के लिए एक लोकप्रिय गंतव्य बन गया है जो अपनी चिकित्सा करियर को एक वैश्विक स्तर पर मान्यता प्राप्त प्रणाली में बनाना चाहते हैं।",
+      "technicalUniversities": "रूस के तकनीकी विश्वविद्यालय",
+      "topUniversities": "रूस के शीर्ष विश्वविद्यालय",
+      "readMore": "और पढ़ें",
+      "subscribeTitle": "रूस में MBBS",
+      "subscribeText": "RREC टीम अधिकारियों द्वारा प्रस्तुत रूस",
+      "emailPlaceholder": "अपना ईमेल दर्ज करें",
+      "subscribeButton": "सदस्यता लें",
+      "footerPara": "मॉस्को रूस की राजधानी है। गणराज्य में लगभग 1,000 शहर हैं, जिनमें से, मॉस्को सहित, नौ शहरों की जनसंख्या एक मिलियन से अधिक है (सेंट पीटर्सबर्ग, वोल्गोग्राद, रोस्तोव ऑन डॉन, निज़नी नोवगोरोड, कज़ान, उफ़ा, नोवोसिबिर्स्क, Sverdlovsk, चेलेयाबिंस्क, और ओम्स्क)।"
     }
   }
 

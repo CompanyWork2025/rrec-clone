@@ -5,6 +5,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import 'swiper/css'; // Import base Swiper CSS
 import 'swiper/css/navigation'; // If using navigation
 import 'swiper/css/pagination'; // If using pagination
+import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 
 const testimonialsData = [
   {
@@ -65,17 +66,19 @@ const TestimonialCard = ({ name, university, rating, text }) => {
 };
 
 const Testimonials = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col lg:flex-row justify-between bg-[#f2312d] py-8 lg:py-16 lg:px-24 px-4">
       {/* Left Side - Content Section */}
       <div className="w-full lg:w-2/5 lg:mt-8 text-white">
-        <h1 className="text-xl font-bold font-roboto text-center lg:text-start">WHY US</h1>
-        <h2 className="mt-1 text-xl font-roboto text-center lg:text-start">What Our Students Say</h2>
+        <h1 className="text-xl font-bold font-roboto text-center lg:text-start">{t('whyUs')}</h1>
+        <h2 className="mt-1 text-xl font-roboto text-center lg:text-start">{t('whatOurStudentsSay')}</h2>
         <p className="mt-6 text-md text-left text-justify font-roboto">
-          Studying MBBS in Russia is gaining popularity among Indian students who wish to pursue MBBS abroad at affordable rates while ensuring high-quality education. Russian universities provide courses in English and encourage international students.
+          {t('testimonialText')}
         </p>
         <p className="mt-6 text-md text-left text-justify font-roboto">
-          Studying MBBS in Russia offers an affordable alternative for Indian students, while maintaining a high standard of medical education. With many universities offering courses in English, Russia has become a sought-after destination for international students aiming to pursue their medical career in a globally recognized system.
+          {t('testimonialText2')}
         </p>
       </div>
 
@@ -108,7 +111,6 @@ const Testimonials = () => {
 
       </div>
     </div>
-
   );
 };
 

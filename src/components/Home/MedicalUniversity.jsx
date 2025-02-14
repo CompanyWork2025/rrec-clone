@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FiMapPin } from 'react-icons/fi'; // For location icon
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 
 const universities = [
     { name: 'Rostov State Medical University', imageUrl: 'https://rrecrussia.com/public/upload/home-block/1801933868147775.jpg.webp' },
@@ -12,6 +13,7 @@ const universities = [
 
 const MedicalUniversity = () => {
     const [selectedUniversity, setSelectedUniversity] = useState(universities[0]);
+    const { t } = useTranslation(); // Initialize the translation hook
 
     return (
         <div className="w-full py-6 lg:py-12 lg:px-8">
@@ -27,7 +29,7 @@ const MedicalUniversity = () => {
                     </div>
                     <div className="w-10 h-[2px] bg-[#f2312d]" />
                     <h1 className="text-lg lg:text-xl font-roboto font-bold mx-4 text-[#f2312d]">
-                        Top Universities Of Russia
+                        {t('topUniversities')}
                     </h1>
                     <div className="flex items-center lg:ml-4">
                         <div className="w-6 lg:w-10 h-[2px] bg-[#f2312d]" />
@@ -39,7 +41,7 @@ const MedicalUniversity = () => {
                 </div>
                 <div className="flex justify-center items-center mt-4">
                     <h2 className="text-2xl lg:text-3xl text-center font-roboto font-bold text-gray-800 mt-2">
-                        Medical Universities Of Russia
+                        {t('medicalUniversities')}
                     </h2>
                 </div>
             </div>
@@ -77,7 +79,7 @@ const MedicalUniversity = () => {
 
                                     {/* Button text */}
                                     <span className="w-full text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
-                                        Read More
+                                        {t('readMore')}
                                     </span>
                                 </motion.button>
                             </motion.div>

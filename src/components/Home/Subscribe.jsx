@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const SubscriptionForm = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div
@@ -12,23 +15,23 @@ const SubscriptionForm = () => {
         <div className="text-white flex flex-col items-center -mt-2 lg:-mt-2 justify-center h-full text-center">
           {/* Top Heading */}
           <h2 className="text-2xl lg:text-3xl font-roboto font-bold mb-2">
-            MBBS in Russia
+            {t("subscribeTitle")}
           </h2>
 
           {/* Paragraph */}
           <p className="text-sm font-roboto lg:text-base mb-4">
-             Presented by RREC Team Officials Russia
+            {t("subscribeText")}
           </p>
 
           {/* Input Field and Subscribe Button */}
           <div className="flex items-center justify-center gap-2 w-full lg:w-[600px]">
             <input
               type="email"
-              placeholder="Enter your email"
+              placeholder={t("emailPlaceholder")}
               className="w-full py-2 px-4 lg:py-4 font-roboto text-black rounded-lg outline-none"
             />
             <button className="bg-black text-white font-semibold py-2 lg:py-4 px-6 rounded-lg hover:bg-gray-100 hover:text-black transition">
-              SUBSCRIBE
+              {t("subscribeButton")}
             </button>
           </div>
         </div>

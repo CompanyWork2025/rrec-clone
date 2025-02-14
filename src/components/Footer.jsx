@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaArrowRight, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -9,6 +10,7 @@ import logo from '../assets/logo.png';
 
 function Footer() {
   const location = useLocation();
+  const { t } = useTranslation();
 
   // Check if the current page is the homepage
   const isHomepage = location.pathname === "/";
@@ -36,7 +38,7 @@ function Footer() {
           <div>
             <div className="text-center mt-6 lg:-mt-4 lg:w-[500px] md:text-left">
               <p className="text-white text-sm md:text-sm text-justify">
-                Moscow is the capital of Russia. Within the Republic there are around 1,000 towns, of these, including Moscow, nine cities have a population of over a million (St.Petersburg, Volgograd, Rostov on Don, Nizhny Novgorod, Kazan, Ufa, Novosibirsk, Sverdlovsk, Chelyabinsk, and Omsk).
+                {t("footerPara")}
               </p>
             </div>
 
