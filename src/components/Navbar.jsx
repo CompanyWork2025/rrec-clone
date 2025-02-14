@@ -221,7 +221,7 @@ const Navbar = () => {
               >
                 <div className="flex items-center space-x-2">
                   <button className="hover:text-[#f2312d] focus:outline-none uppercase">
-                    Universities
+                    {t('universities')} {/* Translation for 'Universities' */}
                   </button>
                   <img
                     src={arrow}
@@ -246,7 +246,7 @@ const Navbar = () => {
                           to="/universities/medical"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          Medical Universities
+                          {t('medicalUniversities')} {/* Translation for 'Medical Universities' */}
                         </Link>
                       </li>
                       <li className="flex items-center">
@@ -255,7 +255,7 @@ const Navbar = () => {
                           to="/universities/technical"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          Technical Universities
+                          {t('technicalUniversities')} {/* Translation for 'Technical Universities' */}
                         </Link>
                       </li>
                       <li className="flex items-center">
@@ -264,7 +264,7 @@ const Navbar = () => {
                           to="/universities/courses"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          Courses In Russia
+                          {t('coursesInRussia')} {/* Translation for 'Courses In Russia' */}
                         </Link>
                       </li>
                     </motion.ul>
@@ -272,7 +272,6 @@ const Navbar = () => {
                 </AnimatePresence>
               </li>
 
-              {/* Fee Structure 2025 Dropdown */}
               <li
                 className="relative group"
                 onMouseEnter={() => setOpenFeeStructure(true)}
@@ -280,7 +279,7 @@ const Navbar = () => {
               >
                 <div className="flex items-center space-x-2">
                   <button className="hover:text-[#f2312d] focus:outline-none uppercase">
-                    Fee Structure 2025
+                    {t('feeStructure')} {/* Dynamic translation for "Fee Structure 2025" */}
                   </button>
                   <img
                     src={arrow}
@@ -305,7 +304,7 @@ const Navbar = () => {
                           to="/fee-structure/page1"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          Fee Structure For MBBS, BDS, Pharmacy
+                          {t('mbbsBdsPharmacyFee')} {/* Dynamic translation for MBBS, BDS, Pharmacy Fee */}
                         </Link>
                       </li>
                       <li className="flex items-center">
@@ -314,7 +313,7 @@ const Navbar = () => {
                           to="/fee-structure/page2"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          Fee Structure For Technical Universities
+                          {t('technicalUniversitiesFee')} {/* Dynamic translation for Technical Universities Fee */}
                         </Link>
                       </li>
                       <li className="flex items-center">
@@ -323,7 +322,7 @@ const Navbar = () => {
                           to="/fee-structure/page3"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          Fee Structure For Russian Language Courses
+                          {t('languageCoursesFee')} {/* Dynamic translation for Language Courses Fee */}
                         </Link>
                       </li>
                       <li className="flex items-center">
@@ -332,7 +331,7 @@ const Navbar = () => {
                           to="/fee-structure/page4"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          MBA In English Medium - SfedU, Russia
+                          {t('mbaInEnglishFee')} {/* Dynamic translation for MBA Fee */}
                         </Link>
                       </li>
                     </motion.ul>
@@ -340,7 +339,6 @@ const Navbar = () => {
                 </AnimatePresence>
               </li>
 
-              {/* Useful Info Dropdown */}
               <li
                 className="relative group"
                 onMouseEnter={() => setOpenUsefulInfo(true)}
@@ -348,7 +346,7 @@ const Navbar = () => {
               >
                 <div className="flex items-center space-x-2">
                   <button className="hover:text-[#f2312d] focus:outline-none uppercase">
-                    Useful Info
+                    {t('usefulInfo')} {/* Dynamic translation for "Useful Info" */}
                   </button>
                   <img
                     src={arrow}
@@ -373,7 +371,7 @@ const Navbar = () => {
                           to="/useful-info/page1"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          MBBS In Russia
+                          {t('mbbsInRussia')} {/* Dynamic translation for "MBBS In Russia" */}
                         </Link>
                       </li>
                       <li className="flex items-center">
@@ -382,7 +380,7 @@ const Navbar = () => {
                           to="/useful-info/page2"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          Admission Procedure
+                          {t('admissionProcedure')} {/* Dynamic translation for "Admission Procedure" */}
                         </Link>
                       </li>
                       <li className="flex items-center">
@@ -391,7 +389,7 @@ const Navbar = () => {
                           to="/useful-info/page3"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          Preparatory Faculty
+                          {t('preparatoryFaculty')} {/* Dynamic translation for "Preparatory Faculty" */}
                         </Link>
                       </li>
                     </motion.ul>
@@ -400,7 +398,6 @@ const Navbar = () => {
               </li>
 
 
-              {/* Gallery */}
               <li
                 className="relative group"
                 onMouseEnter={() => setOpenGallery(true)}
@@ -408,7 +405,7 @@ const Navbar = () => {
               >
                 <div className="flex items-center space-x-2">
                   <button className="hover:text-[#f2312d] focus:outline-none uppercase">
-                    Gallery
+                    {t('gallery')} {/* Dynamic translation for "Gallery" */}
                   </button>
                   {/* Dropdown button */}
                   <img
@@ -434,7 +431,7 @@ const Navbar = () => {
                           to="/photo/gallery"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          Photo Gallery
+                          {t('photoGallery')} {/* Dynamic translation for "Photo Gallery" */}
                         </Link>
                       </li>
                       <li className="flex items-center">
@@ -443,7 +440,7 @@ const Navbar = () => {
                           to="/video/gallery"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          Video Gallery
+                          {t('videoGallery')} {/* Dynamic translation for "Video Gallery" */}
                         </Link>
                       </li>
                     </motion.ul>
@@ -451,7 +448,6 @@ const Navbar = () => {
                 </AnimatePresence>
               </li>
 
-              {/* Resources Dropdown */}
               <li
                 className="relative group"
                 onMouseEnter={() => setOpenResources(true)}
@@ -459,8 +455,9 @@ const Navbar = () => {
               >
                 <div className="flex items-center space-x-2">
                   <button className="hover:text-[#f2312d] focus:outline-none uppercase">
-                    Resources
+                    {t('resources')} {/* Dynamic translation for "Resources" */}
                   </button>
+                  {/* Dropdown button */}
                   <img
                     src={arrow}
                     alt="Down Arrow"
@@ -481,49 +478,56 @@ const Navbar = () => {
                       <li className="flex items-center">
                         <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/fee-structure/page1"
+                          to="/blog"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          Blog
+                          {t('blog')} {/* Dynamic translation for "Blog" */}
                         </Link>
                       </li>
                       <li className="flex items-center">
                         <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/fee-structure/page2"
+                          to="/neet"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          NEET
+                          {t('neet')} {/* Dynamic translation for "NEET" */}
                         </Link>
                       </li>
                       <li className="flex items-center">
                         <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/fee-structure/page3"
+                          to="/faqs"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          FAQ's
+                          {t('faqs')} {/* Dynamic translation for "FAQ's" */}
                         </Link>
                       </li>
                       <li className="flex items-center">
                         <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/fee-structure/page4"
+                          to="/upcoming-events"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
-                          Upcoming Events
+                          {t('upcomingEvents')} {/* Dynamic translation for "Upcoming Events" */}
                         </Link>
                       </li>
                     </motion.ul>
                   )}
                 </AnimatePresence>
               </li>
-
               {/* FAQ */}
-              <li><Link to="/faq" className="hover:text-[#f2312d] uppercase">FAQ</Link></li>
+              <li>
+                <Link to="/faq" className="hover:text-[#f2312d] uppercase">
+                  {t('faq')} {/* Dynamic translation for FAQ */}
+                </Link>
+              </li>
 
               {/* Contact Us */}
-              <li><Link to="/contact-us" className="hover:text-[#f2312d] uppercase">Contact Us</Link></li>
+              <li>
+                <Link to="/contact-us" className="hover:text-[#f2312d] uppercase">
+                  {t('contactUs')} {/* Dynamic translation for Contact Us */}
+                </Link>
+              </li>
             </ul>
 
             {/* Mobile Header */}
