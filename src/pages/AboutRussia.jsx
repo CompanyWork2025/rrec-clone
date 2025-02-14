@@ -26,7 +26,7 @@ function AboutRussia() {
       {/* Main Content */}
       <div className="py-12 lg:px-24 font-roboto px-6">
         <div className="text-left text-justify mb-8">
-          <h2 className="text-3xl font-semibold text-gray-800">Brief About Russia – Best Country for study abroad
+          <h2 className="text-2xl lg:text-3xl font-semibold text-gray-800">Brief About Russia – Best Country for study abroad
             Education in Russia <span className='text-blue-400'>(Study in Russia – MBBS in Russia)</span></h2>
           <p className="text-lg text-gray-600 mt-4">
             Rus­sia, also offi­cially known as the Russ­ian Fed­er­a­tion, is a coun­try in north­ern Eura­sia. It is a fed­eral semi-presidential repub­lic, com­pris­ing 83 fed­eral sub­jects. From north­west to south­east, Rus­sia shares land bor­ders with Nor­way, Fin­land, Esto­nia, Latvia, Lithua­nia and Poland (both with Kalin­ingrad Oblast), Belarus, Ukraine, Geor­gia, Azer­bai­jan, Kaza­khstan, China, Mon­go­lia, and North Korea. It shares mar­itime bor­ders with Japan by the Sea of Okhotsk and the U.S. state of Alaska across the Bering Strait. At 17,075,400 square kilo­me­tres (6,592,800 sq mi), Rus­sia is the largest coun­try in the world, cov­er­ing more than one- eighth of the Earth’s inhab­ited land area.
@@ -76,7 +76,7 @@ function AboutRussia() {
 
       {/* Bottom Colorful Banner */}
       <div className="bg-[#f2312d] py-12">
-        <div className="max-w-4xl mx-auto text-center fonr-roboto text-white">
+        <div className="max-w-4xl mx-auto text-center font-roboto text-white">
         <h2 className="text-2xl lg:text-4xl mb-4 font-semibold">A gateway to study in Russia</h2>
           <h3 className="text-2xl font-semibold">( Reliable Russian Educational Consultants )</h3>
           <p className="mt-4 text-lg lg:text-2xl">
