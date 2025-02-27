@@ -61,6 +61,7 @@ function MedicalUniversities() {
           {currentUniversities.map((university) => (
             <div
               key={university.id}
+              
               className="relative group bg-gray-200 rounded-xl overflow-hidden shadow-lg"
             >
               <img
