@@ -162,7 +162,7 @@ function FeePage1() {
       {/* Main Content */}
       <div className="py-6 lg:px-24 font-roboto px-6">
         <div className="text-left text-justify mb-8">
-          <h2 className="text-2xl lg:text-3xl font-semibold text-[#f2312d]">Fees for 2024-25 Academic Year (For International Students)</h2>
+          <h2 className="text-2xl lg:text-3xl font-semibold text-[#f2312d]">Fees for 2025-26 Academic Year (For International Students)</h2>
           <p className="text-md text-gray-600 mt-4">
             A Dream Universities for MBBS Aspirants.Get complete information regarding tuition fees, hostel fees, and medical insurance.
           </p>
