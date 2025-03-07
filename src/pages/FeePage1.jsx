@@ -173,7 +173,7 @@ function FeePage1() {
         <p className="text-md text-gray-600 mt-4 text-justify">
           Russian Medical Universities are well known for their high quality of Medical Education and highly professional teaching staff. Russia is quite an affordable study abroad destination for international students. It is quite budget-friendly for Indian students as well as for foreign students. For an Indian student, you will be delighted to know that you will be charged four times lesser as compared to any Indian private medical college or university. That is the reason why study MBBS in Russia attracts students from all over the world. It will be a delightful opportunity for deserving candidates who want to pursue MBBS abroad.
         </p>
-        <h2 className="text-xl lg:text-2xl text-center font-semibold mt-10 text-blue-800">Fees Structure of Top Rank Medical Universities of Russia | 2024-25 Academic Year | Study MBBS in Russia</h2>
+        <h2 className="text-xl lg:text-2xl text-center font-semibold mt-10 text-blue-800">Fees Structure of Top Rank Medical Universities of Russia | 2025-26 Academic Year | Study MBBS in Russia</h2>
       </div>
       {universityData.map((university, index) => (
         <div key={index} className="bg-white shadow-lg lg:px-24 -mt-8 font-roboto rounded-lg p-5 mb-8">
