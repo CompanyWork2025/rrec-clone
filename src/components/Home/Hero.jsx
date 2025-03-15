@@ -1,118 +1,98 @@
-import { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import video from "../../assets/Video.mp4";
 
 const HeroSection = () => {
-    const [bgImage, setBgImage] = useState(0);
-    const { t } = useTranslation();
-
-    const images = [
-        'url(https://static.vecteezy.com/system/resources/previews/034/340/735/non_2x/silhouettes-of-graduates-on-the-background-of-the-sunset-graduation-concept-rear-perspective-of-a-group-of-university-graduates-their-silhouettes-distinct-against-the-ai-generated-free-photo.jpg)',
-        'url(https://www.reavizmu.net/wp-content/themes/reavizmu/extra-images/banner-1.jpg)',
-        'url(https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/76XEW2R74YI6PEUORKN4SGUUY4.jpg?auth=074b8a1c4ae1cca3bb2da380997a72b51298aa07847278321b2ba5a7214b9e03&width=1440)', // placeholder for testing
-    ];
-
-    const headings = [
-        t('studyInRussia'),
-        t('becomeDoctor'),
-        t('medicalStudents')
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const slides = [
+        {
+            text: "Become A Doctor - Study In Abroad",
+            buttonText: "Discover more about MBBS",
+        },
+        {
+            text: "Medical Studies In Russia",
+            buttonText: "Explore top universities",
+        },
+        {
+            text: "Admission Open for 2025",
+            buttonText: "Apply Now",
+        },
     ];
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setBgImage((prev) => (prev + 1) % images.length);
-        }, 5000); // Change image every 5 seconds
+            setCurrentSlide((prev) => (prev + 1) % slides.length);
+        }, 5000);
         return () => clearInterval(interval);
-    }, []);
-
+    }, [slides.length]);
+                                                                                        
     return (
-        <div className="relative w-full lg:h-[600px] h-[300px]">
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+        <div className="relative w-full h-[600px] font-roboto flex items-center overflow-hidden">
+            {/* Background Video */}
+            <video className="absolute w-full h-full object-cover" autoPlay loop muted src={video} />
+            <div className="absolute left-[53%] top-0 w-[60%] h-full bg-[#f2312d] opacity-40 clip-path-secondary z-0" />
 
-            {/* Animated Background Image using motion.div */}
-            <motion.div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-                style={{ backgroundImage: images[bgImage] }}
-                key={bgImage} // Ensure the background image is properly animated when changing
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1 }} // Smooth fade transition
-            ></motion.div>
+            {/* Right Section - Main Content */}
+            <div className="absolute right-0 top-0 w-[45%] h-full bg-gradient-to-r from-[#f2312d] to-red-700 flex items-center justify-center p-12 clip-path-main z-10 shadow-lg">
+                <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent clip-path-main z-0" />
 
-            {/* Content */}
-            <div className="relative z-10 flex justify-center items-center w-full h-full text-white px-4">
-                <div className="flex flex-col items-center w-full max-w-screen-lg mx-auto">
-                    {/* Content Animating from Bottom */}
-                    <motion.div
-                        className="text-4xl font-semibold text-left max-w-xl w-full"
-                        initial={{ y: 50, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        exit={{ y: 50, opacity: 0 }}
-                        transition={{ type: "spring", stiffness: 200, damping: 25, duration: 0.8 }}
-                    >
-                        <div className="mx-auto items-center w-full -mt-6">
-                            {/* Centered Heading with Border Lines */}
-                            <div className="flex items-center justify-center">
-                                <div className="flex items-center lg:ml-4">
-                                    <div className="w-8 h-[2px] bg-[#f2312d]" />
-                                    <div className="w-2 h-[2px] bg-transparent" /> {/* Gap between lines */}
-                                    <div className="w-2 h-[2px] bg-[#f2312d]" />
-                                    <div className="w-2 h-[2px] bg-transparent" />
-                                    <div className="w-2 h-[2px] bg-[#f2312d]" />
-                                </div>
-                                <div className="w-10 h-[2px] bg-[#f2312d]" />
-                                <h1 className="text-sm lg:text-xl font-roboto font-bold mx-4 text-[#f2312d]">
-                                    {t('topUniversities')}
-                                </h1>
-                                <div className="flex items-center lg:ml-4">
-                                    <div className="w-4 lg:w-10 h-[2px] bg-[#f2312d]" />
-                                    <div className="w-2 h-[2px] bg-transparent" /> {/* Gap between lines */}
-                                    <div className="w-2 h-[2px] bg-[#f2312d]" />
-                                    <div className="w-2 h-[2px] bg-transparent" />
-                                    <div className="w-2 h-[2px] bg-[#f2312d]" />
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Heading Text */}
+                {/* Text Content */}
+                <div className="relative z-20 text-white text-left max-w-md pl-12">
+                    <AnimatePresence exitBeforeEnter>
                         <motion.h1
-                            className="text-4xl lg:text-6xl text-center font-roboto mt-4 font-bold"
-                            key={headings[bgImage]} // Ensure heading animates correctly with image change
-                            initial={{ y: 50, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            exit={{ y: 50, opacity: 0 }}
-                            transition={{ type: "spring", stiffness: 200, damping: 25, duration: 0.8 }}
+                            key={currentSlide}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.5 }}
+                            className="text-5xl font-extrabold tracking-wide leading-snug drop-shadow-lg"
                         >
-                            {headings[bgImage]}
+                            {slides[currentSlide].text}
                         </motion.h1>
-                    </motion.div>
+                    </AnimatePresence>
 
                     {/* Button */}
-                    <motion.div
-                        className="mt-6"
-                        initial={{ y: 50, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        exit={{ y: 50, opacity: 0 }}
-                        transition={{ type: "spring", stiffness: 200, damping: 25, duration: 0.8 }}
+                    <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="mt-6 px-5 py-3 bg-gradient-to-r from-black to-gray-800 text-white rounded-full flex items-center gap-3 shadow-xl hover:bg-gray-700 transition-all"
                     >
-                        <motion.button
-                            className="relative inline-flex items-center justify-start overflow-hidden px-4 py-2 lg:px-6 lg:py-3 text-xl font-semibold text-white border-2 border-white rounded-md bg-transparent transition-all duration-300 ease-in-out group"
-                            whileHover={{ scale: 1.1 }} // Button hover animation
-                            whileTap={{ scale: 0.95 }} // Button tap animation
-                        >
-                            {/* Background expansion */}
-                            <span className="w-0 h-0 rounded bg-[#f2312d] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                        {slides[currentSlide].buttonText}
 
-                            {/* Button text */}
-                            <span className="w-full text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
-                                {t('readMore')}
-                            </span>
-                        </motion.button>
-                    </motion.div>
+                        {/* Circular Arrow */}
+                        <div className="ml-auto w-10 h-10 bg-white text-black rounded-full flex justify-center items-center shadow-lg">
+                            <img src="https://cdn-icons-png.flaticon.com/512/664/664866.png" alt="Arrow" className="w-5 h-5" />
+                        </div>
+                    </motion.button>
+
+
                 </div>
             </div>
+
+            {/* Bottom Navigation */}
+            <div className="absolute bottom-0 left-0 w-full flex justify-start p-4 bg-gradient-to-t from-black via-black/50 to-transparent z-20">
+                <div className="bg-red-600 h-12 rounded-lg shadow-lg flex justify-center items-center px-2 space-x-2">
+                    <button className="px-4 py-1 bg-white text-black font-bold shadow-lg rounded-md hover:text-red-600 transition-all">
+                        Faculties
+                    </button>
+                    <button className="px-4 py-1 bg-white text-black font-bold shadow-lg rounded-md hover:text-red-600 transition-all">
+                        Medical Universities
+                    </button>
+                    <button className="px-4 py-1 bg-white text-black font-bold shadow-lg rounded-md hover:text-red-600 transition-all">
+                        Fees
+                    </button>
+                </div>
+            </div>
+
+            {/* Custom Tailwind Clip Paths */}
+            <style jsx>{`
+        .clip-path-main {
+          clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
+        .clip-path-secondary {
+          clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
+      `}</style>
         </div>
     );
 };

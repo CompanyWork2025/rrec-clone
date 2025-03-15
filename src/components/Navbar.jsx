@@ -46,7 +46,7 @@ const Navbar = () => {
   return (
     <>
       {/* Slider Menu */}
-      <div className="hidden md:block bg-blue-800 text-white py-1">
+      <div className="hidden md:block bg-gray-800 font-roboto text-white py-1">
         <div className="max-w-screen-2xl mx-auto px-6 flex items-center font-roboto">
           {/* Moving Text on the left */}
           <h1 className="lg:mr-4 font-bold lg:text-xl animate-colorCycle">
@@ -106,7 +106,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="flex justify-between items-center lg:px-8 bg-[#f2312d] text-white p-2">
+      <div className="flex justify-between font-roboto items-center lg:px-8 bg-gradient-to-r from-[#f2312d] to-red-700 text-white p-2">
         <div className="hidden md:flex space-x-6 items-center">
           <div className="flex items-center space-x-2">
             <FaEnvelope className="h-5 w-5" />
@@ -150,16 +150,28 @@ const Navbar = () => {
       </div>
 
       {/* Navbar */}
-      <header className="bg-white shadow-lg text-sm text-black p-2 lg:p-0 font-roboto font-regular sticky top-0 z-50">
+      <header className="bg-white shadow-lg text-sm text-black p-2 lg:p-0 lg:px-20 font-roboto font-regular sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
-          <Link to="/">
-            <img src={logo} alt="Logo" className="h-14 w-auto md:h-24 md:w-full" />
+          <Link to="/" className="flex items-center justify-end space-x-4">
+            {/* Logo Image */}
+            <img src={logo} alt="Logo" className="h-14 w-auto md:h-24" />
+
+            {/* Text Content */}
+            <div className="">
+              <h1 className="font-roboto font-bold text-3xl text-red-600">
+                Official Representative
+              </h1>
+              <h2 className="font-roboto text-md font-semibold text-blue-700">
+                (Top Medical, Federal & Technical Universities Of Russia)
+              </h2>
+            </div>
           </Link>
+
 
           {/* Navigation */}
           <nav>
-            <ul className="hidden lg:flex space-x-5">
+            <ul className="hidden lg:flex space-x-4">
               {/* Home */}
               <li><Link to="/" className="hover:text-[#f2312d] uppercase">{t('home')}</Link></li>
 
