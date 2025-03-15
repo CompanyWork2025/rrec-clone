@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { FiMapPin } from 'react-icons/fi'; // For location icon
-import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
+import { FiMapPin } from 'react-icons/fi';
+import { motion, useInView } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 const universities = [
@@ -12,14 +12,19 @@ const universities = [
 ];
 
 const TechnicalUniversity = () => {
-  const { t } = useTranslation(); // Accessing translation function
-
-  const [selectedUniversity, setSelectedUniversity] = useState(universities[0]);
+  const { t } = useTranslation();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <div className="w-full py-6 lg:py-16 lg:px-8">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+      className="w-full py-6 lg:py-16 lg:px-8"
+    >
       <div className="mx-auto items-center w-full mt-4 lg:-mt-6">
-        {/* Top Heading with Border Lines and Location Icon */}
         <div className="flex items-center justify-center">
           <div className="flex items-center lg:ml-4">
             <div className="w-2 lg:w-8 h-[2px] bg-[#f2312d]" />
@@ -47,48 +52,60 @@ const TechnicalUniversity = () => {
         </div>
       </div>
 
-      {/* University Images with Hover Effect and Name with Read More Button */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8 px-4">
+      {/* University Cards */}
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8 px-4"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.8, ease: "easeOut", staggerChildren: 0.2 },
+          },
+        }}
+      >
         {universities.map((university, index) => (
-          <div key={index} className="relative group">
-            <img
+          <motion.div
+            key={index}
+            className="relative group overflow-hidden rounded-lg shadow-lg"
+            variants={{
+              hidden: { opacity: 0, y: 30 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { delay: index * 0.2, duration: 0.6 },
+              },
+            }}
+          >
+            {/* University Image */}
+            <motion.img
               src={university.imageUrl}
               alt={university.name}
-              className="w-full h-64 lg:h-96 object-cover shadow-lg rounded-lg transition-all duration-300 group-hover:opacity-80"
+              className="w-full h-64 lg:h-96 object-cover transition-transform duration-500 group-hover:scale-105"
             />
 
-            {/* Name and Location and Read More button on hover */}
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black bg-opacity-50 rounded-lg">
-              <div className="flex justify-center items-center mb-4 mt-2">
-                <FiMapPin className="text-xl text-white mr-2" />
-              </div>
-              <p className="text-white text-xl font-semibold">{university.name}</p>
-              <motion.div
-                className="mt-6"
-                initial={{ y: 50, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: 50, opacity: 0 }}
-                transition={{ type: "spring", stiffness: 200, damping: 25, duration: 0.8 }}
-              >
-                <motion.button
-                  className="relative inline-flex items-center justify-start overflow-hidden px-3 py-2 text-lg font-semibold text-white border-2 border-white rounded-md bg-transparent transition-all duration-300 ease-in-out group"
-                  whileHover={{ scale: 1.1 }} // Button hover animation
-                  whileTap={{ scale: 0.95 }} // Button tap animation
-                >
-                  {/* Background expansion */}
-                  <span className="w-0 h-0 rounded bg-[#f2312d] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+            {/* Hover Effect */}
+            <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <FiMapPin className="text-2xl text-white mb-2" />
+              <p className="text-white text-lg px-4 font-semibold text-center">
+                {university.name}
+              </p>
 
-                  {/* Button text */}
-                  <span className="w-full text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
-                    {t('readMore')}
-                  </span>
-                </motion.button>
-              </motion.div>
+              <motion.button
+                className="relative mt-4 px-4 py-2 text-lg font-semibold text-white border-2 border-white rounded-md bg-transparent overflow-hidden transition-all duration-300 group-hover:bg-[#f2312d]"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {t("readMore")}
+              </motion.button>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

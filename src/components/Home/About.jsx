@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
     const { t } = useTranslation();
@@ -7,21 +8,37 @@ const AboutSection = () => {
     return (
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 p-8 bg-gray-50">
             {/* Left side: Images */}
-            <div className="relative w-full lg:w-1/2">
+            <motion.div 
+                className="relative w-full lg:w-1/2"
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+            >
                 <img
                     src="https://www.canadaqbank.com/blog/storage/2019/08/medical-students-studying.jpg"
                     alt="Main"
                     className="rounded-2xl shadow-lg w-full"
                 />
-                <img
+                <motion.img
                     src="https://img.freepik.com/premium-photo/medical-concept-indian-beautiful-female-doctor-white-coat-with-stethoscope-waist-up-medical-student_255667-21448.jpg"
                     alt="Small"
                     className="hidden lg:block absolute lg:-bottom-20 lg:-right-14 lg:w-96 rounded-xl shadow-md border-8 border-white"
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
                 />
-            </div>
+            </motion.div>
 
             {/* Right side: Text */}
-            <div className="w-full lg:w-1/2 lg:px-8">
+            <motion.div 
+                className="w-full lg:w-1/2 lg:px-8"
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+            >
                 <div className="flex flex-col md:flex-row items-center w-full -mt-6">
                     <h1 className="text-lg font-bold mt-4 md:mt-0 text-[#f2312d]">{t('aboutUs')}</h1>
                     {/* Broken border line */}
@@ -42,7 +59,15 @@ const AboutSection = () => {
                 <p className="mt-4 font-roboto text-justify text-gray-600 leading-relaxed">
                     {t('russiaDescription')}
                 </p>
-                <div className="max-w-sm bg-white mt-4 shadow-lg rounded-lg overflow-hidden flex flex-row">
+                
+                {/* Experience Card */}
+                <motion.div 
+                    className="max-w-sm bg-white mt-4 shadow-lg rounded-lg overflow-hidden flex flex-row"
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                >
                     {/* Left side: Image */}
                     <div className="w-full sm:w-1/3 h-auto">
                         <img
@@ -59,8 +84,8 @@ const AboutSection = () => {
                             {t('educationExperience')}
                         </p>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </div>
     );
 };
