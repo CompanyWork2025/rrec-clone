@@ -155,7 +155,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center justify-end space-x-4">
             {/* Logo Image */}
-            <img src={logo} alt="Logo" className="h-14 w-auto md:h-24" />
+            <img src={logo} alt="Logo" className="h-14 -mr-2 w-auto md:h-24" />
 
             {/* Text Content */}
             <div className="">
