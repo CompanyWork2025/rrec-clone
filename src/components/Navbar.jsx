@@ -236,12 +236,12 @@ const Navbar = () => {
           {/* Pay Registration Fee Button */}
           <div className="flex justify-center pl-6 relative">
             <Link to="/fee-payment">
-              <button className="relative px-4 py-3 font-roboto text-red-600 font-bold text-lg rounded-full bg-yellow-400 animate-blink border-none shadow-lg transition-transform duration-200 hover:scale-105">
+              <button className="relative px-4 py-3 font-roboto text-yellow-400 font-bold text-lg rounded-full bg-blue-700 animate-blink border-none shadow-lg transition-transform duration-200 hover:scale-105">
                 Pay Registration Fee
                 <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 240 60">
                   <rect
                     x="2" y="2" width="236" height="56" rx="30" ry="30"
-                    fill="none" stroke="#DC2626" stroke-width="3"
+                    fill="none" stroke="#FCD34D" stroke-width="3"
                     stroke-dasharray="10 10" stroke-dashoffset="0"
                     className="animate-border"
                   />
