@@ -78,9 +78,9 @@ const HeroSection = () => {
                 </button>
             </div>
 
-            <div className="absolute left-[48%] w-80 top-0 h-full bg-red-600/50 clip-path-secondary z-10 pointer-events-none"></div>
+            <div className="absolute left-[54%] w-80 top-0 h-full bg-red-600/50 clip-path-secondary z-10 pointer-events-none"></div>
             {/* Right Section - Main Content */}
-            <div className="absolute right-0 top-0 w-full md:w-[50%] h-full bg-gradient-to-r from-[#f2312d] to-red-700 flex items-center justify-center p-4 md:p-12 clip-path-main z-10 shadow-lg">
+            <div className="absolute right-0 top-0 w-full md:w-[45%] h-full bg-gradient-to-r from-[#f2312d] to-red-700 flex items-center justify-center p-4 md:p-12 clip-path-main z-10 shadow-lg">
 
 
                 {/* Text Content */}
@@ -142,7 +142,7 @@ const HeroSection = () => {
     clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
   .clip-path-secondary {
-      clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%);
+      clip-path: polygon(45% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 `}</style>
 
