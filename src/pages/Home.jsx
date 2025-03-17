@@ -6,6 +6,7 @@ import DoctorSection from '../components/Home/DoctorSection.jsx';
 import MedicalUniversity from '../components/Home/MedicalUniversity.jsx';
 import Testimonials from '../components/Home/Testimonials.jsx';
 import TechnicalUniversity from '../components/Home/TechnicalUniversity.jsx';
+import Media from '../components/Home/Media.jsx';
 import Subscribe from '../components/Home/Subscribe.jsx';
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
      <MedicalUniversity />
      <Testimonials />
      <TechnicalUniversity />
+     <Media />
      <Subscribe />
     </>
   );
