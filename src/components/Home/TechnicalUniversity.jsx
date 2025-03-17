@@ -26,24 +26,11 @@ const TechnicalUniversity = () => {
     >
       <div className="mx-auto items-center w-full mt-4 lg:-mt-6">
         <div className="flex items-center justify-center">
-          <div className="flex items-center lg:ml-4">
-            <div className="w-2 lg:w-8 h-[2px] bg-[#f2312d]" />
-            <div className="w-2 lg:w-2 h-[2px] bg-transparent" />
-            <div className="w-2 lg:w-2 h-[2px] bg-[#f2312d]" />
-            <div className="w-2 lg:w-2 h-[2px] bg-transparent" />
-            <div className="w-2 lg:w-2 h-[2px] bg-[#f2312d]" />
-          </div>
           <div className="w-10 h-[2px] bg-[#f2312d]" />
           <h1 className="text-md lg:text-xl font-roboto font-bold mx-4 text-[#f2312d]">
             {t('technicalUniversities')}
           </h1>
-          <div className="flex items-center lg:ml-4">
-            <div className="w-2 lg:w-10 h-[2px] bg-[#f2312d]" />
-            <div className="w-2 h-[2px] bg-transparent" />
-            <div className="w-2 h-[2px] bg-[#f2312d]" />
-            <div className="w-2 h-[2px] bg-transparent" />
-            <div className="w-2 h-[2px] bg-[#f2312d]" />
-          </div>
+          <div className="w-10 h-[2px] bg-[#f2312d]" />
         </div>
         <div className="flex justify-center items-center mt-4">
           <h2 className="text-2xl lg:text-3xl text-center font-roboto font-bold text-gray-800 mt-2">
@@ -52,7 +39,6 @@ const TechnicalUniversity = () => {
         </div>
       </div>
 
-      {/* University Cards */}
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8 px-4"
         initial="hidden"
@@ -63,14 +49,14 @@ const TechnicalUniversity = () => {
           visible: {
             opacity: 1,
             y: 0,
-            transition: { duration: 0.8, ease: "easeOut", staggerChildren: 0.2 },
+            transition: { duration: 0.8, ease: 'easeOut', staggerChildren: 0.2 },
           },
         }}
       >
         {universities.map((university, index) => (
           <motion.div
             key={index}
-            className="relative group overflow-hidden rounded-lg shadow-lg"
+            className="relative group overflow-hidden rounded-2xl shadow-lg border border-transparent animate-border"
             variants={{
               hidden: { opacity: 0, y: 30 },
               visible: {
@@ -80,14 +66,32 @@ const TechnicalUniversity = () => {
               },
             }}
           >
-            {/* University Image */}
             <motion.img
               src={university.imageUrl}
               alt={university.name}
               className="w-full h-64 lg:h-96 object-cover transition-transform duration-500 group-hover:scale-105"
             />
 
-            {/* Hover Effect */}
+            <svg
+              className="hidden lg:absolute inset-0 w-full h-full pointer-events-none sm:block"
+              viewBox="0 0 240 324"
+            >
+              <rect
+                x="2"
+                y="2"
+                width="236"
+                height="320"
+                rx="15"
+                ry="15"
+                fill="none"
+                stroke="#DC2626"
+                strokeWidth="3"
+                strokeDasharray="10 10"
+                strokeDashoffset="0"
+                className="animate-border"
+              />
+            </svg>
+
             <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               <FiMapPin className="text-2xl text-white mb-2" />
               <p className="text-white text-lg px-4 font-semibold text-center">
@@ -99,12 +103,24 @@ const TechnicalUniversity = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
-                {t("readMore")}
+                {t('readMore')}
               </motion.button>
             </div>
           </motion.div>
         ))}
       </motion.div>
+
+      <style>
+        {`
+          @keyframes borderAnimation {
+            0% { stroke-dashoffset: 100; }
+            100% { stroke-dashoffset: 0; }
+          }
+          .animate-border {
+            animation: borderAnimation 2s linear infinite;
+          }
+        `}
+      </style>
     </motion.div>
   );
 };
