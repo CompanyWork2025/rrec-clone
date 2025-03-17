@@ -52,7 +52,7 @@ const Banner = () => {
   }, [lockScroll]);
 
   return (
-    <div className="relative w-full lg:mt-28 h-screen">
+    <div className="relative w-full lg:mt-28 h-screen lg:h-[500px]">
       <Canvas camera={{ position: [10, -7.5, -5] }} className="bg-slate-900">
         <ZoomHandler onZoomChange={setZoomLevel} />
         <OrbitControls
