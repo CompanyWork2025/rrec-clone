@@ -17,23 +17,35 @@ const DoctorSection = () => {
         visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
       }}
     >
-      {/* Left side: Image */}
-      <motion.div 
-        className="w-full md:w-1/2 mb-8 md:mb-0"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={{
-          hidden: { scale: 0.9, opacity: 0 },
-          visible: { scale: 1, opacity: 1, transition: { duration: 0.6 } }
-        }}
-      >
-        <img
-          src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=1200:*"
-          alt="Doctor"
-          className="w-full h-auto lg:h-[650px] rounded-xl shadow-lg"
-        />
-      </motion.div>
+         <motion.div
+      className="relative w-full md:w-1/2 mb-8 md:mb-0 group overflow-hidden rounded-xl"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={{
+        hidden: { scale: 0.9, opacity: 0 },
+        visible: { scale: 1, opacity: 1, transition: { duration: 0.6 } },
+      }}
+    >
+      {/* Image with Inner Zoom Effect */}
+      <img
+        src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=1200:*"
+        alt="Doctor"
+        className="w-full h-auto lg:h-[650px] rounded-xl shadow-lg transition-transform duration-500 group-hover:scale-110"
+      />
+
+      {/* White Animated Border Lines */}
+      <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
+        {/* Top Left Corner */}
+        <div className="absolute top-6 left-6 w-10 h-10 border-t-2 border-l-2 border-white opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:top-4 group-hover:left-4"></div>
+        {/* Top Right Corner */}
+        <div className="absolute top-6 right-6 w-10 h-10 border-t-2 border-r-2 border-white opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:top-4 group-hover:right-4"></div>
+        {/* Bottom Left Corner */}
+        <div className="absolute bottom-6 left-6 w-10 h-10 border-b-2 border-l-2 border-white opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-4 group-hover:left-4"></div>
+        {/* Bottom Right Corner */}
+        <div className="absolute bottom-6 right-6 w-10 h-10 border-b-2 border-r-2 border-white opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-4 group-hover:right-4"></div>
+      </div>
+    </motion.div>
 
       {/* Right side: Text */}
       <motion.div 
