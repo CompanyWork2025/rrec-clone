@@ -29,15 +29,15 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about/rrec" element={<AboutRussia />} />
-          <Route path="/about/services" element={<ServicesForStudents />} />
-          <Route path="/universities/medical" element={<MedicalUniversities />} />
-          <Route path="/universities/technical" element={<TechnicalUniversities />} />
-          <Route path="/universities/courses" element={<CoursesInRussia />} />
-          <Route path="/fee-structure/page1" element={<FeePage1 />} />
-          <Route path="/fee-structure/page2" element={<FeePage2 />} />
-          <Route path="/fee-structure/page3" element={<FeePage3 />} />
-          <Route path="/fee-structure/page4" element={<FeePage4 />} />
+          <Route path="/russia" element={<AboutRussia />} />
+          <Route path="/services-for-students" element={<ServicesForStudents />} />
+          <Route path="/medical-universities-in-russia" element={<MedicalUniversities />} />
+          <Route path="/technical-universities-in-russia" element={<TechnicalUniversities />} />
+          <Route path="/courses-in-russia" element={<CoursesInRussia />} />
+          <Route path="/fee-structure" element={<FeePage1 />} />
+          <Route path="/fee-for-technical-universities" element={<FeePage2 />} />
+          <Route path="/fees-for-russian-language-courses" element={<FeePage3 />} />
+          <Route path="/study-mba-in-southern-federal-university-russia-in-english-medium" element={<FeePage4 />} />
           <Route path="/useful-info/page1" element={<UsefulInfoPage1 />} />
           <Route path="/useful-info/page2" element={<UsefulInfoPage2 />} />
           <Route path="/useful-info/page3" element={<UsefulInfoPage3 />} />

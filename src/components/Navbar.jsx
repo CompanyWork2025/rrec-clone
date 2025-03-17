@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import logo from "../assets/logo.png";
 import arrow from "../assets/down-arrow.png";
 import { AnimatePresence, motion } from "framer-motion";
+import LiveChatPopup from "./LiveChatPopup";
 import { useTranslation } from 'react-i18next';
-import '../118n'; // Import your i18n.js
-import { FaEnvelope, FaPhone, FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaBars, FaTimes, FaArrowRight } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaYoutube, FaLinkedin, FaInstagram, FaBars, FaTimes, FaArrowRight } from "react-icons/fa";
 
 const Navbar = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("English");
+  const [isChatOpen, setIsChatOpen] = useState(false);
   const [openFeeStructure, setOpenFeeStructure] = useState(false);
   const [openUsefulInfo, setOpenUsefulInfo] = useState(false);
   const [openUniversities, setOpenUniversities] = useState(false);
@@ -46,11 +47,11 @@ const Navbar = () => {
   return (
     <>
       {/* Slider Menu */}
-      <div className="hidden md:block bg-gray-800 font-roboto text-white py-1">
+      <div className="hidden lg:block bg-gray-800 text-white py-1">
         <div className="max-w-screen-2xl mx-auto px-6 flex items-center font-roboto">
           {/* Moving Text on the left */}
           <h1 className="lg:mr-4 font-bold lg:text-xl animate-colorCycle">
-            <span className="inline-block animate-colorCycle">{t('breakingNews')}:</span>
+            <span className="inline-block animate-colorCycle">Breaking News:</span>
           </h1>
           <div className="overflow-hidden ml-24 w-[60%]">
             <p
@@ -73,107 +74,224 @@ const Navbar = () => {
               <span className="lg:text-md inline-block">
                 {t('officialAdmissionPartner')}
               </span>
-
             </p>
           </div>
 
-          {/* Right-side Button Section */}
-          <div className="flex justify-end items-center space-x-2 lg:ml-28 bg-white rounded-lg p-0">
-            {/* Replace the Google Icon with a PNG image */}
-            <div>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" // Replace this with the actual path of your PNG image
-                alt="Google"
-                className="w-6 h-6 ml-2" // Adjust size of image as per your requirement
-              />
+          {/* Admission Helpline on the right */}
+          <p className="bg-white px-2 text-sm py-1 font-semibold rounded-md -ml-52 md:ml-auto animate-colorCycle">
+            Admission Helpline: +91-7669533991
+          </p>
+        </div>
+      </div>
+
+      <div className="hidden lg:block relative w-full border-t mx-auto">
+        {/* Parent container with diagonal split */}
+        <div className="relative flex items-center justify-between w-full h-8 overflow-hidden">
+          <div className="relative w-[60%] h-full bg-black flex items-center justify-center space-x-10 p-5 z-20" >
+            {/* First Item */}
+            <Link to="/apply-now" className="flex items-center space-x-3 border-r border-gray-600 pr-5 z-20">
+              <img src="https://cdn-icons-png.flaticon.com/512/3119/3119214.png" alt="Apply Online" className="w-6 h-6 object-contain" />
+              <span className="text-white font-roboto text-sm">Apply Online</span>
+            </Link>
+
+            {/* Second Item */}
+            <Link to="/about-us" className="flex items-center space-x-3 border-r border-gray-600 pr-5">
+              <img src="https://www.freeiconspng.com/uploads/about-us-icon-29.png" alt="About Us" className="w-6 h-6 object-contain" />
+              <span className="text-white font-roboto text-sm">About Us</span>
+            </Link>
+
+            {/* Third Item (No border on last item) */}
+            <a href="tel:+917042284508" className="flex items-center space-x-3">
+              <img src="https://cdn0.iconfinder.com/data/icons/phone-call-3/400/Calls-04-512.png" alt="Request A Call" className="w-6 h-6 object-contain" />
+              <span className="text-white font-roboto text-sm">Request A Call</span>
+            </a>
+
+          </div>
+
+          {/* Right side (Green Background - 30%) */}
+          <div className="relative w-[50%] h-full bg-red-600 flex items-center justify-center text-white font-semibold text-lg">
+            <span className="flex pl-64 space-x-6">
+              <a href="https://www.facebook.com/RRECTeamOfficialpage/" target="_blank" rel="noopener noreferrer">
+                <FaFacebook className="w-5 h-5 hover:text-gray-400 cursor-pointer" />
+              </a>
+              <a href="https://www.instagram.com/rrecrussia_officials/" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="w-5 h-5 hover:text-gray-400 cursor-pointer" />
+              </a>
+              <a href="https://ru.linkedin.com/in/rrecrussiaofficials" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="w-5 h-5 hover:text-gray-400 cursor-pointer" />
+              </a>
+              <a href="https://www.youtube.com/channel/UChb_aZlyYRcUqmsZsEs_tIA" target="_blank" rel="noopener noreferrer">
+                <FaYoutube className="w-5 h-5 hover:text-gray-400 cursor-pointer" />
+              </a>
+            </span>
+          </div>
+
+          {/* Fixed Diagonal Cut Effect */}
+          <div className="absolute left-0 w-[70%] h-full bg-black transform -skew-x-[20deg] origin-left"></div>
+        </div>
+      </div>
+
+      <div className="hidden lg:flex justify-between items-center sticky lg:px-28 bg-white border border-1 p-0">
+        {/* Left Side - Logo */}
+        <div className="flex items-center space-x-4">
+          <Link to="/">
+            <img src={logo} alt="Logo" className="h-14 w-auto md:h-24 md:w-full" />
+          </Link>
+        </div>
+
+        {/* Right Side - WhatsApp & Call Buttons */}
+        <div className="flex space-x-4 items-center">
+
+          {/* Right Side - WhatsApp & Call Buttons */}
+          <div className="flex space-x-4 items-center">
+            {/* Live Counseling Button */}
+            <div onClick={() => setIsChatOpen(true)} className="cursor-pointer">
+              <div className="relative flex items-center h-14 space-x-3 bg-white border border-red-600 shadow-lg rounded-md px-4 py-1">
+                {/* Glowing Animated Effect Outside */}
+                <div className="absolute inset-0 rounded-md border-1 border-yellow-400 animate-customPulse"></div>
+                <img
+                  src="https://www.pngarts.com/files/3/Red-Headphone-PNG-Transparent-Image.png"
+                  alt="Live Counseling"
+                  className="h-8 w-8"
+                />
+                <span className="text-red-600 font-roboto font-semibold">Live Counseling</span>
+              </div>
             </div>
 
-            {/* Language dropdown */}
-            <select
-              value={i18n.language} // This will bind the current language to the dropdown
-              onChange={handleLanguageChange} // Calls the language change function on change
-              className="text-black p-1 rounded-md ml-2"
-            >
-              <option value="en">{t('language')}: English</option>
-              <option value="ru">{t('language')}: Russian</option>
-              <option value="es">{t('language')}: Spanish</option>
-              <option value="fr">{t('language')}: French</option>
-              <option value="zh">{t('language')}: Chinese</option>
-              <option value="hi">{t('language')}: Hindi</option>
-            </select>
+            {/* Vertical Divider */}
+            <div className="h-10 border-l-2 border-gray-300"></div>
           </div>
+
+          {/* Popup should be placed outside the flex container */}
+          <div className="relative z-[1000]">
+            {isChatOpen && <LiveChatPopup isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />}
+          </div>
+
+
+
+          {/* Call Button */}
+          <a href="tel:+917042284508">
+            <div className="flex items-center bg-white text-gray-800 px-4 py-2 rounded-md space-x-4 hover:animate-vibrate">
+              {/* Phone Icon */}
+              <img src="https://www.pngarts.com/files/8/Red-Call-Button-Free-PNG-Image.png" alt="Call Icon" className="h-10 w-10 object-contain vibrate-on-hover" />
+
+              {/* Text Content */}
+              <div className="flex flex-col text-left">
+                <span className="text-sm text-gray-600 font-roboto">Call us Now</span>
+                <span className="font-semibold text-lg text-red-600">+91 7042284508</span>
+              </div>
+            </div>
+          </a>
+
+          {/* Vertical Divider */}
+          <div className="h-10 border-l-2 border-gray-300"></div>
+
+          {/* Mail Us Button */}
+          <a href="mailto:contact@rrecrussia.com" target="_blank" rel="noopener noreferrer">
+            <div className="flex items-center bg-white text-gray-800 px-4 py-2 rounded-md space-x-4 hover:animate-vibrate">
+              {/* WhatsApp Icon */}
+              <img
+                src="https://pngimg.com/d/email_PNG11.png"
+                alt="WhatsApp Icon"
+                className="h-14 w-14 object-contain vibrate-on-hover"
+              />
+
+              {/* Text Content */}
+              <div className="flex flex-col text-left">
+                <span className="text-sm text-gray-600 font-roboto">Mail Us</span>
+                <span className="font-semibold text-lg text-red-600">contact@rrecrussia.com</span>
+              </div>
+            </div>
+          </a>
+
+
+          {/* Custom Animation */}
+          <style>
+            {`
+      @keyframes greenPulse {
+        0% { box-shadow: 0 0 5px rgba(34, 197, 94, 0.5); }
+        50% { box-shadow: 0 0 15px rgba(34, 197, 94, 0.8); }
+        100% { box-shadow: 0 0 5px rgba(34, 197, 94, 0.5); }
+      }
+      .animate-custom-pulse {
+        animation: greenPulse 1.5s infinite;
+      }
+
+      @keyframes vibrate {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-2px); }
+        50% { transform: translateX(2px); }
+        75% { transform: translateX(-2px); }
+        100% { transform: translateX(2px); }
+      }
+      .vibrate-on-hover {
+        transition: transform 0.2s ease-in-out;
+      }
+      .hover\\:animate-vibrate:hover .vibrate-on-hover {
+        animation: vibrate 0.2s ease-in-out infinite;
+      }
+    `}
+          </style>
+
+          {/* Pay Registration Fee Button */}
+          <div className="flex justify-center pl-6 relative">
+            <Link to="/fee-payment">
+              <button className="relative px-4 py-3 font-roboto text-red-600 font-bold text-lg rounded-full bg-yellow-400 animate-blink border-none shadow-lg transition-transform duration-200 hover:scale-105">
+                Pay Registration Fee
+                <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 240 60">
+                  <rect
+                    x="2" y="2" width="236" height="56" rx="30" ry="30"
+                    fill="none" stroke="#DC2626" stroke-width="3"
+                    stroke-dasharray="10 10" stroke-dashoffset="0"
+                    className="animate-border"
+                  />
+                </svg>
+              </button>
+            </Link>
+          </div>
+
+          {/* Custom Animation Styles */}
+          <style>
+            {`
+  
+    
+    .animate-blink {
+      animation: blink 2.5s infinite alternate;
+      animation-fill-mode: both;
+    }
+
+    @keyframes borderAnimation {
+      0% { stroke-dashoffset: 100; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    .animate-border {
+      animation: borderAnimation 2s linear infinite;
+    }
+  `}
+          </style>
+
+
+
+
+
 
         </div>
-      </div>
 
-      <div className="flex justify-between font-roboto items-center lg:px-8 bg-gradient-to-r from-[#f2312d] to-red-700 text-white p-2">
-        <div className="hidden md:flex space-x-6 items-center">
-          <div className="flex items-center space-x-2">
-            <FaEnvelope className="h-5 w-5" />
-            <span>contact@rrecrussia.com</span>
-          </div>
-          <div className="border-l border-white h-6"></div>
-          <div className="flex items-center space-x-2">
-            <FaEnvelope className="h-5 w-5" />
-            <span>rrec.educonsultants@gmail.com</span>
-          </div>
-          <div className="border-l border-white h-6"></div>
-          <div className="flex items-center space-x-2">
-            <FaPhone className="h-5 w-5" />
-            <span>+91-7042284508</span>
-          </div>
-          <div className="border-l border-white h-6"></div>
-          <div className="flex items-center space-x-2">
-            <FaPhone className="h-5 w-5" />
-            <span>+91 7042284509</span>
-          </div>
-        </div>
 
-        <div className="flex ml-20 lg:-ml-4 items-center space-x-6 lg:space-x-4 ">
-          <a href="https://www.facebook.com/RRECTeamOfficialpage/" className="hover:text-gray-300">
-            <FaFacebookF className="h-4 w-4 lg:h-5 lg:w-5" />
-          </a>
-          <div className="border-l border-white h-6"></div>
-          <a href="https://www.instagram.com/rrecrussia_officials/" className="hover:text-gray-300">
-            <FaInstagram className="h-4 w-4 lg:h-5 lg:w-5" />
-          </a>
-          <div className="border-l border-white h-6"></div>
-          <a href="https://ru.linkedin.com/in/rrecrussiaofficials" className="hover:text-gray-300">
-            <FaLinkedinIn className="h-4 w-4 lg:h-5 lg:w-5" />
-          </a>
-          <div className="border-l border-white h-6"></div>
-          <a href="https://www.youtube.com/channel/UChb_aZlyYRcUqmsZsEs_tIA" className="hover:text-gray-300">
-            <FaYoutube className="h-4 w-4 lg:h-5 lg:w-5" />
-          </a>
-        </div>
 
-      </div>
+      </div >
 
       {/* Navbar */}
-      <header className="bg-white shadow-lg text-sm text-black p-2 lg:p-0 lg:px-20 font-roboto font-regular sticky top-0 z-50">
+      <header className="bg-white space-x-8 shadow-lg text-sm text-black p-2 py-0 lg:p-0 lg:px-16 font-roboto sticky top-0 z-50" >
         <div className="container mx-auto flex justify-between items-center">
-          {/* Logo */}
-          <Link to="/" className="flex items-center justify-end space-x-4">
-            {/* Logo Image */}
-            <img src={logo} alt="Logo" className="h-14 -mr-2 w-auto md:h-24" />
-
-            {/* Text Content */}
-            <div className="">
-              <h1 className="font-roboto font-bold text-3xl text-red-600">
-                Official Representative
-              </h1>
-              <h2 className="font-roboto text-md font-semibold text-blue-700">
-                (Top Medical, Federal & Technical Universities Of Russia)
-              </h2>
-            </div>
-          </Link>
 
 
           {/* Navigation */}
-          <nav>
-            <ul className="hidden lg:flex space-x-4">
+          <nav className="flex-1">
+            <ul className="hidden lg:flex p-2 space-x-5 justify-center">
               {/* Home */}
-              <li><Link to="/" className="hover:text-[#f2312d] uppercase">{t('home')}</Link></li>
+              <li><Link to="/" className="hover:text-red-600 uppercase">{t('home')}</Link></li>
 
               <li
                 className="relative group"
@@ -181,9 +299,10 @@ const Navbar = () => {
                 onMouseLeave={() => setOpenAbout(false)}
               >
                 <div className="flex items-center space-x-2">
-                  <button className="hover:text-[#f2312d] focus:outline-none uppercase">
-                    {t('aboutUs')}
-                  </button>
+                  {/* "ABOUT US" is now a clickable link */}
+                  <Link to="/russia" className="hover:text-red-600 focus:outline-none uppercase">
+                    ABOUT RUSSIA
+                  </Link>
                   <img
                     src={arrow}
                     alt="Down Arrow"
@@ -191,8 +310,7 @@ const Navbar = () => {
                   />
                 </div>
 
-
-                {/* AnimatePresence for About dropdown */}
+                {/* Dropdown appears on hover */}
                 <AnimatePresence>
                   {openAbout && (
                     <motion.ul
@@ -203,23 +321,12 @@ const Navbar = () => {
                       className="absolute bg-white text-black shadow-lg mt-0 py-2 w-56 origin-top transform z-50"
                     >
                       <li className="flex items-center">
-                        {/* Top-right pointing arrow */}
-                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/about/rrec"
-                          className="block px-4 py-2 hover:text-[#f2312d]"
+                          to="/services-for-students"
+                          className="block px-4 py-2 hover:text-red-600"
                         >
-                          {t('aboutRussia')} {/* Translate "About Russia" */}
-                        </Link>
-                      </li>
-                      <li className="flex items-center">
-                        {/* Top-right pointing arrow */}
-                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
-                        <Link
-                          to="/about/services"
-                          className="block px-4 py-2 hover:text-[#f2312d]"
-                        >
-                          {t('servicesForStudents')} {/* Translate "Services for Students" */}
+                          Services For Students
                         </Link>
                       </li>
                     </motion.ul>
@@ -227,13 +334,14 @@ const Navbar = () => {
                 </AnimatePresence>
               </li>
 
+
               <li
                 className="relative group"
                 onMouseEnter={() => setOpenUniversities(true)}
                 onMouseLeave={() => setOpenUniversities(false)}
               >
                 <div className="flex items-center space-x-2">
-                  <button className="hover:text-[#f2312d] focus:outline-none uppercase">
+                  <button className="hover:text-red-600 focus:outline-none uppercase">
                     {t('universities')} {/* Translation for 'Universities' */}
                   </button>
                   <img
@@ -254,30 +362,30 @@ const Navbar = () => {
                       className="absolute bg-white text-black shadow-lg mt-0 py-2 w-56 origin-top transform z-50"
                     >
                       <li className="flex items-center">
-                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/universities/medical"
-                          className="block px-4 py-2 hover:text-[#f2312d]"
+                          to="/medical-universities-in-russia"
+                          className="block px-4 py-2 hover:text-red-600"
                         >
-                          {t('medicalUniversities')} {/* Translation for 'Medical Universities' */}
+                          Medical Universities{/* Translation for 'Medical Universities' */}
                         </Link>
                       </li>
                       <li className="flex items-center">
-                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/universities/technical"
-                          className="block px-4 py-2 hover:text-[#f2312d]"
+                          to="/technical-universities-in-russia"
+                          className="block px-4 py-2 hover:text-red-600"
                         >
-                          {t('technicalUniversities')} {/* Translation for 'Technical Universities' */}
+                          Technical Universities {/* Translation for 'Technical Universities' */}
                         </Link>
                       </li>
                       <li className="flex items-center">
-                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/universities/courses"
-                          className="block px-4 py-2 hover:text-[#f2312d]"
+                          to="/courses-in-russia"
+                          className="block px-4 py-2 hover:text-red-600"
                         >
-                          {t('coursesInRussia')} {/* Translation for 'Courses In Russia' */}
+                          Courses In Russia{/* Translation for 'Courses In Russia' */}
                         </Link>
                       </li>
                     </motion.ul>
@@ -291,8 +399,8 @@ const Navbar = () => {
                 onMouseLeave={() => setOpenFeeStructure(false)}
               >
                 <div className="flex items-center space-x-2">
-                  <button className="hover:text-[#f2312d] focus:outline-none uppercase">
-                    {t('feeStructure')} {/* Dynamic translation for "Fee Structure 2025" */}
+                  <button className="hover:text-red-600 focus:outline-none uppercase">
+                    Fee Structure 2025 {/* Translation for 'Universities' */}
                   </button>
                   <img
                     src={arrow}
@@ -301,7 +409,7 @@ const Navbar = () => {
                   />
                 </div>
 
-                {/* AnimatePresence for Fee Structure dropdown */}
+                {/* AnimatePresence for Universities dropdown */}
                 <AnimatePresence>
                   {openFeeStructure && (
                     <motion.ul
@@ -314,7 +422,7 @@ const Navbar = () => {
                       <li className="flex items-center">
                         <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/fee-structure/page1"
+                          to="/fee-structure"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
                           {t('mbbsBdsPharmacyFee')} {/* Dynamic translation for MBBS, BDS, Pharmacy Fee */}
@@ -323,7 +431,7 @@ const Navbar = () => {
                       <li className="flex items-center">
                         <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/fee-structure/page2"
+                          to="/fee-for-technical-universities"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
                           {t('technicalUniversitiesFee')} {/* Dynamic translation for Technical Universities Fee */}
@@ -332,7 +440,7 @@ const Navbar = () => {
                       <li className="flex items-center">
                         <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/fee-structure/page3"
+                          to="/fees-for-russian-language-courses"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
                           {t('languageCoursesFee')} {/* Dynamic translation for Language Courses Fee */}
@@ -341,7 +449,7 @@ const Navbar = () => {
                       <li className="flex items-center">
                         <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/fee-structure/page4"
+                          to="/study-mba-in-southern-federal-university-russia-in-english-medium"
                           className="block px-4 py-2 hover:text-[#f2312d]"
                         >
                           {t('mbaInEnglishFee')} {/* Dynamic translation for MBA Fee */}
@@ -358,8 +466,8 @@ const Navbar = () => {
                 onMouseLeave={() => setOpenUsefulInfo(false)}
               >
                 <div className="flex items-center space-x-2">
-                  <button className="hover:text-[#f2312d] focus:outline-none uppercase">
-                    {t('usefulInfo')} {/* Dynamic translation for "Useful Info" */}
+                  <button className="hover:text-red-600 focus:outline-none uppercase">
+                    USEFUL LINKS {/* Dynamic translation for "Useful Info" */}
                   </button>
                   <img
                     src={arrow}
@@ -379,30 +487,48 @@ const Navbar = () => {
                       className="absolute bg-white text-black shadow-lg mt-0 py-2 w-56 origin-top transform z-50"
                     >
                       <li className="flex items-center">
-                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/useful-info/page1"
-                          className="block px-4 py-2 hover:text-[#f2312d]"
+                          to="/admission-procedure-for-mbbs-study-in-russia"
+                          className="block px-4 py-2 hover:text-red-600"
                         >
-                          {t('mbbsInRussia')} {/* Dynamic translation for "MBBS In Russia" */}
+                          Admission Procedure {/* Dynamic translation for "MBBS In Russia" */}
                         </Link>
                       </li>
                       <li className="flex items-center">
-                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/useful-info/page2"
-                          className="block px-4 py-2 hover:text-[#f2312d]"
+                          to="/mbbs-fees-russia"
+                          className="block px-4 py-2 hover:text-red-600"
                         >
-                          {t('admissionProcedure')} {/* Dynamic translation for "Admission Procedure" */}
+                          Fee Structure {/* Dynamic translation for "Admission Procedure" */}
                         </Link>
                       </li>
                       <li className="flex items-center">
-                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/useful-info/page3"
-                          className="block px-4 py-2 hover:text-[#f2312d]"
+                          to="/tourist-visa-for-russia"
+                          className="block px-4 py-2 hover:text-red-600"
                         >
-                          {t('preparatoryFaculty')} {/* Dynamic translation for "Preparatory Faculty" */}
+                          Tourist Visa For Russia {/* Dynamic translation for "Preparatory Faculty" */}
+                        </Link>
+                      </li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
+                        <Link
+                          to="/russian-language"
+                          className="block px-4 py-2 hover:text-red-600"
+                        >
+                          Russian Language Course {/* Dynamic translation for "Preparatory Faculty" */}
+                        </Link>
+                      </li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
+                        <Link
+                          to="/our-services"
+                          className="block px-4 py-2 hover:text-red-600"
+                        >
+                          Our Services {/* Dynamic translation for "Preparatory Faculty" */}
                         </Link>
                       </li>
                     </motion.ul>
@@ -417,7 +543,7 @@ const Navbar = () => {
                 onMouseLeave={() => setOpenGallery(false)}
               >
                 <div className="flex items-center space-x-2">
-                  <button className="hover:text-[#f2312d] focus:outline-none uppercase">
+                  <button className="hover:text-red-600 focus:outline-none uppercase">
                     {t('gallery')} {/* Dynamic translation for "Gallery" */}
                   </button>
                   {/* Dropdown button */}
@@ -439,21 +565,21 @@ const Navbar = () => {
                       className="absolute bg-white text-black shadow-lg mt-0 py-2 w-56 origin-top transform z-50"
                     >
                       <li className="flex items-center">
-                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/photo/gallery"
-                          className="block px-4 py-2 hover:text-[#f2312d]"
+                          className="block px-4 py-2 hover:text-red-600"
                         >
-                          {t('photoGallery')} {/* Dynamic translation for "Photo Gallery" */}
+                          Photo Gallery {/* Dynamic translation for "Photo Gallery" */}
                         </Link>
                       </li>
                       <li className="flex items-center">
-                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/video/gallery"
-                          className="block px-4 py-2 hover:text-[#f2312d]"
+                          className="block px-4 py-2 hover:text-red-600"
                         >
-                          {t('videoGallery')} {/* Dynamic translation for "Video Gallery" */}
+                          Video Gallery {/* Dynamic translation for "Video Gallery" */}
                         </Link>
                       </li>
                     </motion.ul>
@@ -467,7 +593,7 @@ const Navbar = () => {
                 onMouseLeave={() => setOpenResources(false)}
               >
                 <div className="flex items-center space-x-2">
-                  <button className="hover:text-[#f2312d] focus:outline-none uppercase">
+                  <button className="hover:text-red-600 focus:outline-none uppercase">
                     {t('resources')} {/* Dynamic translation for "Resources" */}
                   </button>
                   {/* Dropdown button */}
@@ -489,39 +615,57 @@ const Navbar = () => {
                       className="absolute bg-white text-black shadow-lg mt-0 py-2 w-56 origin-top transform z-50"
                     >
                       <li className="flex items-center">
-                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/blog"
-                          className="block px-4 py-2 hover:text-[#f2312d]"
+                          className="block px-4 py-2 hover:text-red-600"
                         >
-                          {t('blog')} {/* Dynamic translation for "Blog" */}
+                          Blog {/* Dynamic translation for "Blog" */}
                         </Link>
                       </li>
                       <li className="flex items-center">
-                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/neet"
-                          className="block px-4 py-2 hover:text-[#f2312d]"
+                          className="block px-4 py-2 hover:text-red-600"
                         >
-                          {t('neet')} {/* Dynamic translation for "NEET" */}
+                          Neet Updates {/* Dynamic translation for "NEET" */}
                         </Link>
                       </li>
                       <li className="flex items-center">
-                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
-                        <Link
-                          to="/faqs"
-                          className="block px-4 py-2 hover:text-[#f2312d]"
-                        >
-                          {t('faqs')} {/* Dynamic translation for "FAQ's" */}
-                        </Link>
-                      </li>
-                      <li className="flex items-center">
-                        <FaArrowRight className="text-[#f2312d] -mr-1 ml-4 -rotate-45" />
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
                           to="/upcoming-events"
-                          className="block px-4 py-2 hover:text-[#f2312d]"
+                          className="block px-4 py-2 hover:text-red-600"
                         >
-                          {t('upcomingEvents')} {/* Dynamic translation for "Upcoming Events" */}
+                          Upcoming Events {/* Dynamic translation for "Upcoming Events" */}
+                        </Link>
+                      </li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
+                        <Link
+                          to="/nmc-regulations"
+                          className="block px-4 py-2 hover:text-red-600"
+                        >
+                          NMC Regulations {/* Dynamic translation for "Upcoming Events" */}
+                        </Link>
+                      </li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
+                        <Link
+                          to="/refer-earn"
+                          className="block px-4 py-2 hover:text-red-600"
+                        >
+                          Refer & Earn {/* Dynamic translation for "NEET" */}
+                        </Link>
+                      </li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
+                        <Link
+                          to="/refund-policy"
+                          className="block px-4 py-2 hover:text-red-600"
+                        >
+                          Refund Policy {/* Dynamic translation for "NEET" */}
                         </Link>
                       </li>
                     </motion.ul>
@@ -530,21 +674,33 @@ const Navbar = () => {
               </li>
               {/* FAQ */}
               <li>
-                <Link to="/faq" className="hover:text-[#f2312d] uppercase">
+                <Link to="/faq" className="hover:text-red-600 uppercase">
                   {t('faq')} {/* Dynamic translation for FAQ */}
+                </Link>
+              </li>
+
+              {/* Career */}
+              <li>
+                <Link to="/career" className="hover:text-red-600 uppercase">
+                  Career {/* Dynamic translation for FAQ */}
                 </Link>
               </li>
 
               {/* Contact Us */}
               <li>
-                <Link to="/contact-us" className="hover:text-[#f2312d] uppercase">
-                  {t('contactUs')} {/* Dynamic translation for Contact Us */}
+                <Link to="/contact-us" className="hover:text-red-600 uppercase">
+                  CONTACT US {/* Dynamic translation for Contact Us */}
                 </Link>
               </li>
             </ul>
 
             {/* Mobile Header */}
-            <div className="flex justify-between items-center lg:px-4 ml-auto text-black p-2 md:hidden">
+            <div className="flex justify-between items-center lg:px-4 ml-auto text-black p-1 md:hidden">
+              <div className="flex items-left space-x-4">
+                <Link to="/">
+                  <img src={logo} alt="Logo" className="lg:hidden h-14 w-auto md:h-16 md:w-full" />
+                </Link>
+              </div>
               <button onClick={toggleMobileMenu} className="text-2xl">
                 <FaBars />
               </button>
@@ -560,11 +716,12 @@ const Navbar = () => {
             transition={{ duration: 0.4 }}
           >
             <motion.div
-              className="absolute top-0 right-0 w-4/5 sm:w-2/3 bg-white p-8 rounded-l-lg shadow-lg"
+              className="absolute top-0 h-full right-0 w-4/5 sm:w-2/3 bg-black bg-opacity-80 p-8 rounded-l-lg shadow-lg"
               initial={{ x: '100%' }}
               animate={{ x: isMobileMenuOpen ? '0%' : '100%' }}
               transition={{ duration: 0.4 }}
             >
+
               <button onClick={toggleMobileMenu} className="absolute top-4 right-4 text-3xl text-[#f2312d]">
                 <FaTimes />
               </button>
@@ -573,14 +730,14 @@ const Navbar = () => {
                 <ul>
                   {/* Home */}
                   <li>
-                    <Link to="/" onClick={toggleMobileMenu} className="block text-xl py-3 px-4 hover:bg-[#f2312d] hover:text-white transition-all duration-300 uppercase">Home</Link>
+                    <Link to="/" onClick={toggleMobileMenu} className="block text-white text-xl py-3 px-4 hover:bg-[#f2312d] hover:text-white transition-all duration-300 uppercase">Home</Link>
                   </li>
 
                   {/* About Us */}
                   <li>
                     <div className="relative">
                       <button
-                        className="w-full text-left text-xl py-3 px-4 hover:bg-[#f2312d] hover:text-white focus:outline-none uppercase flex items-center justify-between"
+                        className="w-full text-left text-xl py-3 px-4 text-white hover:bg-[#f2312d] hover:text-white focus:outline-none uppercase flex items-center justify-between"
                         onClick={() => setOpenAbout(!openAbout)}
                       >
                         About Us
@@ -591,8 +748,8 @@ const Navbar = () => {
                       </button>
                       {openAbout && (
                         <ul className="bg-white text-black shadow-lg mt-2 py-2 w-full">
-                          <li><Link to="/about/rrec" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">About Russia</Link></li>
-                          <li><Link to="/about/services" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Services for Students</Link></li>
+                          <li><Link to="/russia" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">About Russia</Link></li>
+                          <li><Link to="/services-for-students" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Services for Students</Link></li>
                         </ul>
                       )}
                     </div>
@@ -602,7 +759,7 @@ const Navbar = () => {
                   <li>
                     <div className="relative">
                       <button
-                        className="w-full text-left text-xl py-3 px-4 hover:bg-[#f2312d] hover:text-white focus:outline-none uppercase flex items-center justify-between"
+                        className="w-full text-left text-xl text-white py-3 px-4 hover:bg-[#f2312d] hover:text-white focus:outline-none uppercase flex items-center justify-between"
                         onClick={() => setOpenUniversities(!openUniversities)}
                       >
                         Universities
@@ -613,9 +770,9 @@ const Navbar = () => {
                       </button>
                       {openUniversities && (
                         <ul className="bg-white text-black shadow-lg mt-2 py-2 w-full">
-                          <li><Link to="/universities/medical" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Medical Universities</Link></li>
-                          <li><Link to="/universities/technical" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Technical Universities</Link></li>
-                          <li><Link to="/universities/courses" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Courses In Russia</Link></li>
+                          <li><Link to="/medical-universities-in-russia" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Medical Universities</Link></li>
+                          <li><Link to="/technical-universities-in-russia" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Technical Universities</Link></li>
+                          <li><Link to="/courses-in-russia" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Courses In Russia</Link></li>
                         </ul>
                       )}
                     </div>
@@ -625,7 +782,7 @@ const Navbar = () => {
                   <li>
                     <div className="relative">
                       <button
-                        className="w-full text-left text-xl py-3 px-4 hover:bg-[#f2312d] hover:text-white focus:outline-none uppercase flex items-center justify-between"
+                        className="w-full text-left text-xl py-3 text-white px-4 hover:bg-[#f2312d] hover:text-white focus:outline-none uppercase flex items-center justify-between"
                         onClick={() => setOpenFeeStructure(!openFeeStructure)}
                       >
                         Fee Structure 2025
@@ -636,10 +793,10 @@ const Navbar = () => {
                       </button>
                       {openFeeStructure && (
                         <ul className="bg-white text-black shadow-lg mt-2 py-2 w-full">
-                          <li><Link to="/fee-structure/page1" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Fee Structure For MBBS, BDS, Pharmacy</Link></li>
-                          <li><Link to="/fee-structure/page2" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Fee Structure For Technical Universities</Link></li>
-                          <li><Link to="/fee-structure/page3" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Fee Structure For Russian Language Courses</Link></li>
-                          <li><Link to="/fee-structure/page4" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">MBA In English Medium</Link></li>
+                          <li><Link to="/fee-structure" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Fee Structure For MBBS, BDS, Pharmacy</Link></li>
+                          <li><Link to="/fee-for-technical-universities" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Fee Structure For Technical Universities</Link></li>
+                          <li><Link to="/fees-for-russian-language-courses" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Fee Structure For Russian Language Courses</Link></li>
+                          <li><Link to="/study-mba-in-southern-federal-university-russia-in-english-medium" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">MBA In English Medium</Link></li>
                         </ul>
                       )}
                     </div>
@@ -649,7 +806,7 @@ const Navbar = () => {
                   <li>
                     <div className="relative">
                       <button
-                        className="w-full text-left text-xl py-3 px-4 hover:bg-[#f2312d] hover:text-white focus:outline-none uppercase flex items-center justify-between"
+                        className="w-full text-left text-xl py-3 px-4 text-white hover:bg-[#f2312d] hover:text-white focus:outline-none uppercase flex items-center justify-between"
                         onClick={() => setOpenUsefulInfo(!openUsefulInfo)}
                       >
                         Useful Info
@@ -672,7 +829,7 @@ const Navbar = () => {
                   <li>
                     <div className="relative">
                       <button
-                        className="w-full text-left text-xl py-3 px-4 hover:bg-[#f2312d] hover:text-white focus:outline-none uppercase flex items-center justify-between"
+                        className="w-full text-left text-xl py-3 px-4 text-white hover:bg-[#f2312d] hover:text-white focus:outline-none uppercase flex items-center justify-between"
                         onClick={() => setOpenGallery(!openGallery)}
                       >
                         Gallery
@@ -694,7 +851,7 @@ const Navbar = () => {
                   <li>
                     <div className="relative">
                       <button
-                        className="w-full text-left text-xl py-3 px-4 hover:bg-[#f2312d] hover:text-white focus:outline-none uppercase flex items-center justify-between"
+                        className="w-full text-left text-xl py-3 px-4 text-white hover:bg-[#f2312d] hover:text-white focus:outline-none uppercase flex items-center justify-between"
                         onClick={() => setOpenResources(!openResources)}
                       >
                         Resources
@@ -716,20 +873,143 @@ const Navbar = () => {
 
                   {/* FAQ */}
                   <li>
-                    <Link to="/faq" onClick={toggleMobileMenu} className="block text-xl py-3 px-4 hover:bg-[#f2312d] hover:text-white transition-all duration-300 uppercase">FAQ</Link>
+                    <Link to="/faq" onClick={toggleMobileMenu} className="block text-xl py-3 px-4 hover:bg-[#f2312d] text-white hover:text-white transition-all duration-300 uppercase">FAQ</Link>
                   </li>
 
                   {/* Contact Us */}
                   <li>
-                    <Link to="/contact-us" onClick={toggleMobileMenu} className="block text-xl py-3 px-4 hover:bg-[#f2312d] hover:text-white transition-all duration-300 uppercase">Contact Us</Link>
+                    <Link to="/contact-us" onClick={toggleMobileMenu} className="block text-xl text-white  py-3 px-4 hover:bg-[#f2312d] hover:text-white transition-all duration-300 uppercase">Contact Us</Link>
                   </li>
+
+
+
+
+                  {/* Mobile-Friendly Floating Buttons (Visible on Mobile) */}
+                  <div className="fixed bottom-4 right-4 md:static flex flex-col space-y-3 items-center md:items-start z-50">
+
+                    {/* Live Counseling Button */}
+                    <div onClick={() => setIsChatOpen(true)} className="w-auto">
+                      <div className="relative flex items-center justify-center h-12 md:h-14 space-x-3 bg-white border border-green-500 shadow-lg rounded-md px-3 md:px-4 py-1 hover:animate-vibrate">
+                        {/* Glowing Animated Effect Outside */}
+                        <div className="absolute inset-0 rounded-md border-2 border-green-500 animate-custom-pulse"></div>
+
+                        {/* Icon */}
+                        <img src="https://png.pngtree.com/png-vector/20240104/ourmid/pngtree-green-headphone-graphic-vector-png-image_11387270.png"
+                          alt="Live Counseling"
+                          className="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8 vibrate-on-hover" />
+
+                        {/* Text */}
+                        <span className="text-red-600 font-semibold text-xs sm:text-sm md:text-base relative">Live Counseling</span>
+                      </div>
+                    </div>
+
+                    <div className="flex justify-center pl-6 relative">
+                      <Link to="/fee-payment">
+                        <button onClick={toggleMobileMenu} className="relative px-4 py-3 text-white font-bold text-lg rounded-full bg-red-600 animate-blink border-none shadow-lg transition-transform duration-200 hover:scale-105">
+                          Pay Registration Fee
+                          <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 240 60">
+                            <rect
+                              x="2" y="2" width="236" height="56" rx="30" ry="30"
+                              fill="none" stroke="#facc15" stroke-width="3"
+                              stroke-dasharray="10 10" stroke-dashoffset="0"
+                              className="animate-border"
+                            />
+                          </svg>
+                        </button>
+                      </Link>
+                    </div>
+
+                    {/* Custom Animation Styles */}
+                    <style>
+                      {`
+
+    
+    .animate-blink {
+      animation: blink 2.5s infinite alternate;
+      animation-fill-mode: both;
+    }
+
+    @keyframes borderAnimation {
+      0% { stroke-dashoffset: 100; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    .animate-border {
+      animation: borderAnimation 2s linear infinite;
+    }
+  `}
+                    </style>
+
+                    {/* Call Button */}
+                    <a href="tel:+917042284508" className="w-full md:w-auto">
+                      <div className="flex items-center bg-white text-gray-800 px-3 md:px-4 py-2 rounded-md space-x-3 md:space-x-4 border border-green-500 shadow-lg rounded-md hover:animate-vibrate">
+                        {/* Icon */}
+                        <img src="https://cdn-icons-png.flaticon.com/256/7222/7222563.png"
+                          alt="Call Icon"
+                          className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 vibrate-on-hover" />
+
+                        {/* Text */}
+                        <div className="flex flex-col text-left">
+                          <span className="text-xs sm:text-sm md:text-base text-gray-600">Call us Now</span>
+                          <span className="font-semibold text-sm sm:text-lg text-red-600">+91 7669533991</span>
+                        </div>
+                      </div>
+                    </a>
+
+
+                    {/* WhatsApp Button */}
+                    <a href="https://wa.me/917428212236?text=Hi" target="_blank" rel="noopener noreferrer" className="w-full border border-green-500 shadow-lg rounded-md md:w-auto">
+                      <div className="flex items-center bg-white text-gray-800 px-3 md:px-4 py-2 rounded-md space-x-3 md:space-x-4 hover:animate-vibrate">
+                        {/* Icon */}
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/024/398/617/small/whatsapp-logo-icon-isolated-on-transparent-background-free-png.png"
+                          alt="WhatsApp Icon"
+                          className="h-10 w-10 sm:h-12 sm:w-12 md:h-16 md:w-16 vibrate-on-hover" />
+
+                        {/* Text */}
+                        <div className="flex flex-col text-left">
+                          <span className="text-xs sm:text-sm md:text-base text-gray-600">WhatsApp Us</span>
+                          <span className="font-semibold text-sm sm:text-lg text-red-600">7428212236</span>
+                        </div>
+                      </div>
+                    </a>
+
+                    {/* Custom Animation */}
+                    <style>
+                      {`
+    @keyframes greenPulse {
+      0% { box-shadow: 0 0 5px rgba(34, 197, 94, 0.5); }
+      50% { box-shadow: 0 0 15px rgba(34, 197, 94, 0.8); }
+      100% { box-shadow: 0 0 5px rgba(34, 197, 94, 0.5); }
+    }
+    .animate-custom-pulse {
+      animation: greenPulse 1.5s infinite;
+    }
+
+    @keyframes vibrate {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-2px); }
+      50% { transform: translateX(2px); }
+      75% { transform: translateX(-2px); }
+      100% { transform: translateX(2px); }
+    }
+    .vibrate-on-hover {
+      transition: transform 0.2s ease-in-out;
+    }
+    .hover\\:animate-vibrate:hover .vibrate-on-hover {
+      animation: vibrate 0.2s ease-in-out infinite;
+    }
+  `}
+                    </style>
+
+                  </div>
+
                 </ul>
               </nav>
             </motion.div>
           </motion.div>
         </div>
 
-      </header>
+      </header >
     </>
   );
 };

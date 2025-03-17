@@ -12,16 +12,21 @@ module.exports = {
         roboto: ["'Roboto'", "sans-serif"],
       },
       animation: {
-        ticker: 'ticker 25s linear infinite', // Scrolling text animation
+        ticker: 'ticker 25s linear infinite',
         zoomEffect: 'zoomEffect 20s infinite alternate',
-        colorCycle: 'colorCycle 3s infinite', // Color cycling animation for Breaking News
-        fadeSlideUp: 'fadeSlideUp 1s ease-out', // New fade and slide-up animation
-        shrinkOut: 'shrinkOut 1.5s ease-out forwards', // Add the shrinkOut animation
+        colorCycle: 'colorCycle 3s infinite',
+        fadeSlideUp: 'fadeSlideUp 1s ease-out',
+        shrinkOut: 'shrinkOut 1.5s ease-out forwards',
+        customPulse: 'pulseYellow 1.5s infinite', // Fixing the animation reference
       },
       keyframes: {
         ticker: {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(-100%)' },
+        },
+        pulseYellow: { // Corrected keyframes name
+          '0%, 100%': { boxShadow: '0 0 5px rgba(255, 223, 0, 0.5)' },
+          '50%': { boxShadow: '0 0 15px rgba(255, 223, 0, 1)' },
         },
         zoomEffect: {
           '0%': { transform: 'scale(1)' },
@@ -33,7 +38,7 @@ module.exports = {
           '25%': { color: '#f2312d' },
           '50%': { color: '#28a745' },
           '75%': { color: '#0d6efd' },
-          '100%': { color: '#ffb539' }, // Adding purple to the color cycle
+          '100%': { color: '#ffb539' },
         },
         fadeSlideUp: {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
