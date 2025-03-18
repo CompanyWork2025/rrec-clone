@@ -15,22 +15,68 @@ const ContactPage = () => {
   return (
     <>
       <motion.div
-        className="container mx-auto font-roboto p-6 lg:py-10 flex flex-col items-center"
+        className="container mx-auto font-roboto p-6 lg:py-8 flex flex-col items-center"
         initial={{ opacity: 0, y: 20 }}  // Start position
         animate={{ opacity: 1, y: 0 }}  // End position
         transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
       >
-
         {/* Heading Section */}
-        <h2
-          className="text-2xl lg:text-4xl font-bold text-center text-gray-800"
-        >
+        <h2 className="text-2xl lg:text-4xl font-bold text-center text-gray-800">
           Contact The<span className="text-red-600"> RREC </span>Team
         </h2>
-        <p className="text-center text-gray-600 mt-4 max-w-xl">
-          Reach out to us for any queries regarding admissions, universities, or support.
+        <p className="text-center text-gray-600 mt-2 max-w-xl">
+          Get in Touch with Us!
+        </p>
+        <p className="text-justify text-md lg:text-lg text-gray-600 mt-6 w-full px-4 lg:px-20">
+          As a pioneer of the industry, we are committed to assisting you at every step of your MBBS journey in Russia. Hence, feel at ease to send your queries regarding universities, admission procedures, visa processing, or anything else, our expert team is ready to provide you with the right guidance.
+        </p>
+        <p className="text-justify text-md lg:text-lg text-gray-600 mt-4 w-full px-4 lg:px-20">
+          Reach out to us for personalized counseling, detailed information, and seamless support. We are committed to making your dream of studying MBBS abroad a hassle-free experience.
+        </p>
+        <p className="text-justify text-md lg:text-lg text-gray-600 mt-4 w-full px-4 lg:px-20">
+          Contact us today and take the first step toward your medical career!
         </p>
       </motion.div>
+
+      {/* Services Section */}
+      <motion.div className="w-full px-10 lg:px-32 -mt-8 mb-8">
+        <motion.h1
+          className="text-lg lg:text-xl mt-6 font-semibold font-roboto text-left text-red-600"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+        >
+          Our Services Include:
+        </motion.h1>
+
+        <motion.ul
+          className="list-none text-lg mt-4 font-roboto text-gray-700 text-left w-full"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.7, duration: 0.8 }}
+        >
+          {[
+              "Free one-on-one counseling sessions.",
+              "University selection and admission assistance.",
+              "Visa and travel support.",
+              "Education loan assistance",
+              "Scholarship assistance",
+              "Accommodation and student welfare guidance.",
+
+          ].map((service, index) => (
+            <motion.li
+              key={index}
+              initial={{ opacity: 0, x: -10 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.8 + index * 0.2, duration: 0.6 }}
+              className="mt-2"
+            >
+              {service}
+            </motion.li>
+          ))}
+        </motion.ul>
+      </motion.div>
+
 
       <motion.div
         className="container mx-auto font-roboto p-6 lg:px-24 lg:py-10 lg:-mt-10 flex flex-col md:flex-row items-center justify-between"
@@ -203,15 +249,15 @@ const ContactPage = () => {
 
               {/* Student Helpline Row */}
               <tr className="border border-gray-300">
-                <td className="p-3 font-semibold w-1/3 bg-gray-100 border-r border-gray-300">	
-                Phone</td>
+                <td className="p-3 font-semibold w-1/3 bg-gray-100 border-r border-gray-300">
+                  Phone</td>
                 <td className="p-3">+91-7669533991</td>
               </tr>
 
               {/* Office Numbers Row */}
               <tr className="border border-gray-300">
-                <td className="p-3 font-semibold w-1/3 bg-gray-100 border-r border-gray-300">	
-                E-mail</td>
+                <td className="p-3 font-semibold w-1/3 bg-gray-100 border-r border-gray-300">
+                  E-mail</td>
                 <td className="p-3">contact@rrec.com.ru</td>
               </tr>
 
