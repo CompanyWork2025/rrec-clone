@@ -3,7 +3,7 @@ import { createPortal } from "react-dom";
 import { motion } from "framer-motion";
 import { IoClose, IoSend } from "react-icons/io5";
 
-const LiveChatPopup = ({ isOpen, onClose, whatsappNumber = "917428212236" }) => {
+const LiveChatPopup = ({ isOpen, onClose, whatsappNumber = "917042284508" }) => {
     const [message, setMessage] = useState("");
     const [chatHistory, setChatHistory] = useState([]);
 
@@ -35,15 +35,15 @@ const LiveChatPopup = ({ isOpen, onClose, whatsappNumber = "917428212236" }) => 
             <div className="fixed inset-0 z-[9998] flex items-center justify-center">
                 <div className="fixed inset-0 bg-black bg-opacity-50" onClick={onClose}></div>
                 <motion.div
-                    className="fixed lg:bottom-40 lg:right-[580px] w-80 bg-white shadow-lg rounded-lg p-4 border border-green-500 z-[9999]"
+                    className="fixed lg:bottom-40 lg:right-[580px] w-80 bg-white shadow-lg rounded-lg p-4 border border-red-500 z-[9999]"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
                 >
                     {/* Chat Header */}
                     <div className="flex items-center border-b pb-2">
-                        <img src="https://png.pngtree.com/png-vector/20240104/ourmid/pngtree-green-headphone-graphic-vector-png-image_11387270.png" alt="Chat Icon" className="w-6 h-6 mr-2" />
-                        <h2 className="text-lg font-semibold font-roboto text-green-600">Live Counseling</h2>
+                        <img src="https://www.pngarts.com/files/3/Red-Headphone-PNG-Transparent-Image.png" alt="Chat Icon" className="w-6 h-6 mr-2" />
+                        <h2 className="text-lg font-semibold font-roboto text-red-600">Live Counseling</h2>
                         <IoClose
                             className="text-xl cursor-pointer text-gray-700 hover:text-red-500 ml-auto"
                             onClick={onClose}
@@ -78,7 +78,7 @@ const LiveChatPopup = ({ isOpen, onClose, whatsappNumber = "917428212236" }) => 
                         />
                         <button
                             onClick={sendMessage}
-                            className="bg-green-600 text-white p-2 rounded-md hover:bg-green-700 transition"
+                            className="bg-red-600 text-white p-2 rounded-md hover:bg-green-700 transition"
                         >
                             <IoSend className="w-5 h-5" />
                         </button>

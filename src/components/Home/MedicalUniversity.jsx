@@ -49,11 +49,8 @@ const MedicalUniversity = () => {
 
             {/* Top Heading */}
             <div className="mx-auto items-center w-full -mt-6">
-                <motion.div
+                <div
                     className="flex items-center justify-center"
-                    initial={{ opacity: 0, y: -20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
                 >
                     <div className="flex items-center lg:ml-4">
                         <div className="w-2 lg:w-8 h-[2px] bg-[#f2312d]" />
@@ -73,18 +70,15 @@ const MedicalUniversity = () => {
                         <div className="w-2 h-[2px] bg-transparent" />
                         <div className="w-2 h-[2px] bg-[#f2312d]" />
                     </div>
-                </motion.div>
+                </div>
 
-                <motion.div
+                <div
                     className="flex justify-center items-center mt-4"
-                    initial={{ opacity: 0, y: -20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
                 >
                     <h2 className="text-2xl lg:text-3xl text-center lg:ml-8 font-roboto font-bold text-gray-800 mt-2">
                         {t('medicalUniversities')}
                     </h2>
-                </motion.div>
+                </div>
             </div>
 
 

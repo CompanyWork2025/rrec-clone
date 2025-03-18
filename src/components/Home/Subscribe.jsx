@@ -1,17 +1,32 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, useInView } from "framer-motion";
 
 const SubscriptionForm = () => {
   const { t } = useTranslation();
   const ref = useRef(null);
-  const isInView = useInView(ref, { triggerOnce: true, threshold: 0.2 });
+  const isInView = useInView(ref, { threshold: 0.2 });
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  useEffect(() => {
+    // Reset animation state on page refresh
+    const sessionKey = sessionStorage.getItem("subscriptionAnimationKey");
+    const newKey = Date.now().toString();
+
+    if (!sessionKey) {
+      sessionStorage.setItem("subscriptionAnimationKey", newKey);
+    }
+
+    if (!hasAnimated && isInView) {
+      setHasAnimated(true);
+    }
+  }, [isInView, hasAnimated]);
 
   return (
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      animate={hasAnimated ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="relative bg-[#f2312d] w-96 lg:w-[1200px] lg:-mb-28 -mb-28 mx-auto rounded-2xl px-8 py-8 h-48 lg:h-64 mt-8 bg-cover bg-center z-10"
       style={{

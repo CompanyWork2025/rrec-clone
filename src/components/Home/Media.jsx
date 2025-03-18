@@ -1,16 +1,22 @@
 import { useState, useRef } from "react";
 import { Play, Volume2, VolumeX } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import vid from "../../assets/consultant.mp4";
 import vid2 from "../../assets/consultant2.mp4";
 
 export default function Media() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
-
-  // Refs for both videos
   const videoRef1 = useRef(null);
   const videoRef2 = useRef(null);
+
+  const controls = useAnimation();
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+
+  if (inView) {
+    controls.start({ opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } });
+  }
 
   const togglePlay = (videoNumber) => {
     if (videoNumber === 1 && videoRef1.current) {
@@ -18,7 +24,7 @@ export default function Media() {
         videoRef1.current.pause();
       } else {
         videoRef1.current.play();
-        if (videoRef2.current) videoRef2.current.pause();  // Pause second video
+        if (videoRef2.current) videoRef2.current.pause();
       }
       setIsPlaying(!isPlaying);
     } else if (videoNumber === 2 && videoRef2.current) {
@@ -26,42 +32,30 @@ export default function Media() {
         videoRef2.current.pause();
       } else {
         videoRef2.current.play();
-        if (videoRef1.current) videoRef1.current.pause();  // Pause first video
+        if (videoRef1.current) videoRef1.current.pause();
       }
       setIsPlaying(!isPlaying);
     }
   };
 
   const toggleMute = () => {
-    if (videoRef1.current) {
-      videoRef1.current.muted = !isMuted;
-    }
-    if (videoRef2.current) {
-      videoRef2.current.muted = !isMuted;
-    }
+    if (videoRef1.current) videoRef1.current.muted = !isMuted;
+    if (videoRef2.current) videoRef2.current.muted = !isMuted;
     setIsMuted(!isMuted);
   };
 
   return (
     <>
       <motion.div
+        ref={ref}
         className="w-full py-6 lg:py-12 px-0 lg:px-8"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={{
-          hidden: { opacity: 0, y: 50 },
-          visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
-        }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={controls}
       >
-
         {/* Top Heading */}
         <div className="mx-auto items-center w-full -mt-4 mb-6">
-          <motion.div
+          <div
             className="flex items-center justify-center"
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
           >
             <div className="flex items-center lg:ml-4">
               <div className="w-2 lg:w-8 h-[2px] bg-[#f2312d]" />
@@ -81,7 +75,7 @@ export default function Media() {
               <div className="w-2 h-[2px] bg-transparent" />
               <div className="w-2 h-[2px] bg-[#f2312d]" />
             </div>
-          </motion.div>
+          </div>
         </div>
 
         {/* First Video Section */}
