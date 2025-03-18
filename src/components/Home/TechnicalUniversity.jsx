@@ -73,8 +73,9 @@ const TechnicalUniversity = () => {
             />
 
             <svg
-              className="hidden lg:absolute inset-0 w-full h-full pointer-events-none sm:block"
+              className="absolute inset-0 w-full h-full pointer-events-none"
               viewBox="0 0 240 324"
+              preserveAspectRatio="none"
             >
               <rect
                 x="2"
@@ -91,6 +92,7 @@ const TechnicalUniversity = () => {
                 className="animate-border"
               />
             </svg>
+
 
             <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               <FiMapPin className="text-2xl text-white mb-2" />

@@ -83,7 +83,7 @@ export default function Media() {
           {/* Right Side - Video Section */}
           <div className="w-full md:w-1/2 flex items-center justify-center relative">
             <div className="relative transform perspective-1000">
-              <div className="relative w-[280px] h-[500px] lg:w-[350px] lg:h-[500px] bg-black shadow-2xl rounded-lg overflow-hidden border-4 border-red-600">
+              <div className="relative w-[330px] h-[500px] lg:w-[350px] lg:h-[500px] bg-black shadow-2xl rounded-lg overflow-hidden border-4 border-red-600">
                 <video
                   ref={videoRef1}
                   src={vid}
@@ -169,7 +169,7 @@ export default function Media() {
           {/* Right Side - Video Section */}
           <div className="w-full md:w-1/4 flex lg:ml-64 items-center justify-center relative">
             <div className="relative transform perspective-1000">
-              <div className="relative w-[280px] h-[500px] lg:w-[350px] lg:h-[500px] bg-black shadow-2xl rounded-lg overflow-hidden border-4 border-red-600">
+              <div className="relative  w-[330px] h-[500px] lg:w-[350px] lg:h-[500px] bg-black shadow-2xl rounded-lg overflow-hidden border-4 border-red-600">
                 <video
                   ref={videoRef2}
                   src={vid2}

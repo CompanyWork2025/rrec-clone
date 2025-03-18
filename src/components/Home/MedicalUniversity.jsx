@@ -120,8 +120,9 @@ const MedicalUniversity = () => {
 
                         {/* Desktop SVG */}
                         <svg
-                            className="hidden lg:absolute inset-0 w-full h-full pointer-events-none hidden sm:block"
+                            className="absolute inset-0 w-full h-full pointer-events-none"
                             viewBox="0 0 240 324"
+                            preserveAspectRatio="none"
                         >
                             <rect
                                 x="2"
@@ -138,6 +139,7 @@ const MedicalUniversity = () => {
                                 className="animate-border"
                             />
                         </svg>
+
 
 
                         {/* Hover Effect */}
