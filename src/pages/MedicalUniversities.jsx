@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const universityData = [
-  { id: 1, name: 'Rostov State Medical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802179036441322.webp.webp' },
+  { id: 1, name: 'Rostov State Medical University', logo: 'https://www.rostgmu.in/logo.png?v=2', img: 'https://rrecrussia.com/public/upload/subcategory/1802179036441322.webp.webp' },
   { id: 2, name: 'Ural State Medical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802179115499734.jpg.webp' },
   { id: 3, name: 'Crimea Federal University', img: 'https://rrecrussia.com/public/upload/subcategory/1802179222672712.jpg.webp' },
   { id: 4, name: 'Volgograd State Medical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802179263270516.webp.webp' },
@@ -55,45 +55,72 @@ function MedicalUniversities() {
         </div>
       </div>
 
-      {/* Universities Grid */}
-      <div className="p-8 lg:px-24">
+      {/* University Grid Cards */}
+      <div className="p-8 px-3 lg:px-24">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {currentUniversities.map((university) => (
             <div
               key={university.id}
-              
-              className="relative group bg-gray-200 rounded-xl overflow-hidden shadow-lg"
+              className="relative group bg-gray-200 rounded-xl overflow-hidden border-2 border-red-600 shadow-lg h-64"
             >
-              <img
-                src={university.img}
-                alt={university.name}
-                className="w-full h-64 lg:h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center">
-                <h3 className="text-white text-lg font-semibold">{university.name}</h3>
-               {/* Button */}
-              <motion.div
-                className="mt-6"
-                initial={{ y: 50, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: 50, opacity: 0 }}
-                transition={{ type: "spring", stiffness: 200, damping: 25, duration: 0.8 }}
-              >
-                <motion.button
-                  className="relative inline-flex items-center justify-start overflow-hidden px-3 py-2 text-lg font-semibold text-white border-2 border-white rounded-md bg-transparent transition-all duration-300 ease-in-out group"
-                  whileHover={{ scale: 1.1 }} 
-                  whileTap={{ scale: 0.95 }} 
+              {/* University Image */}
+              <div
+                className="w-full h-full bg-cover bg-center transition-all duration-500"
+                style={{ backgroundImage: `url(${university.img})` }}
+              ></div>
+
+              {/* Hover Background Animation with darker opacity */}
+              <div
+                className="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-110 group-hover:opacity-100 opacity-0 group-hover:bg-right-bottom"
+                style={{
+                  backgroundImage: `url("https://i.pinimg.com/originals/c3/3b/ff/c33bffc762e2193b8699e8162f5054e7.gif")`,
+                  transformOrigin: 'right bottom',
+                }}
+              ></div>
+
+              {/* Darker Overlay for Hover Effect */}
+              <div
+                className="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-50 transition-opacity duration-300"
+              ></div>
+
+              <div className="absolute inset-0 bg-black bg-opacity-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4">
+
+                {/* University Logo and Name */}
+                <div className="flex flex-col items-center justify-center mb-2">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/535/535137.png" // Replace with actual path to your location PNG icon
+                    alt="Location"
+                    className="w-10 h-10"
+                  />
+                  <h3 className="text-white text-center text-lg font-semibold">{university.name}</h3>
+                </div>
+
+                {/* Read More Button */}
+                <motion.div
+                  className="mt-2"
+                  initial={{ y: 50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: 50, opacity: 0 }}
+                  transition={{ type: "spring", stiffness: 200, damping: 25, duration: 0.8 }}
                 >
-                  <span className="w-0 h-0 rounded bg-[#f2312d] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
-                  <span className="w-full text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
-                    Read More
-                  </span>
-                </motion.button>
-              </motion.div>
+                  <motion.button
+                    className="relative inline-flex items-center justify-start overflow-hidden px-3 py-2 text-lg font-semibold text-white border-2 border-white rounded-md bg-transparent transition-all duration-300 ease-in-out group"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <span className="w-0 h-0 rounded bg-[#f2312d] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                    <span className="w-full text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                      Read More
+                    </span>
+                  </motion.button>
+                </motion.div>
               </div>
             </div>
           ))}
         </div>
+
+
+
 
         {/* Pagination Buttons */}
         <div className="flex justify-center items-center gap-4 mt-8">
