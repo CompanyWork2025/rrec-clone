@@ -43,13 +43,14 @@ const Banner = () => {
       >
         {/* Left Content */}
         <div className="md:w-1/2 mt-8 lg:mt-0">
-          <h1 className="text-3xl md:text-5xl text-center lg:text-left font-bold">
-            Get Ready To Begin <br />
-            <span className="text-white">Your Journey</span>
+          <h1 className="text-3xl md:text-4xl text-center lg:text-left font-bold">
+            Embark on Your Medical Career with <br /> 
+            <span className="text-white">RREC Russia</span>
           </h1>
-          <p className="mt-4 text-center lg:text-left text-lg text-gray-200">
-            Explore more, stay informed, and start your journey to academic excellence.
+          <p className="mt-4 text-center lg:text-left text-md text-gray-200">
+            Secure your spot for 2025 admissions with RREC, the official admission partner of top Russian medical universities. Start your journey towards academic excellence today.
           </p>
+
           <div className="mt-6 flex space-x-6">
             {[
               { count: clients, label: "Happy Clients", icon: "https://cdn3d.iconscout.com/3d/premium/thumb/happy-face-emoji-3d-icon-download-in-png-blend-fbx-gltf-file-formats--smiley-funny-expression-collection-pack-sign-symbols-icons-7148889.png?f=webp" },
