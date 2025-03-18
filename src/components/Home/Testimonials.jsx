@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { motion, useInView } from 'framer-motion';
+import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { Autoplay } from 'swiper/modules';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaQuoteLeft, FaQuoteRight, FaStar, FaTimes } from "react-icons/fa";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -35,30 +35,81 @@ const testimonialsData = [
   }
 ];
 
-const TestimonialCard = ({ name, university, rating, text }) => {
+const TestimonialCard = ({ name, university, rating, text, onClick }) => {
   const truncatedText = text.length > 150 ? text.slice(0, 150) + '...' : text;
 
   return (
-    <div className="relative bg-gradient-to-r from-[#f5f7fa] to-[#c3cfe2] rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:scale-105 h-[450px]">
-      <svg className="absolute inset-0 z-0 w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <path fill="#e0e7ff" d="M0,50 C30,10 70,10 100,50 L100,100 L0,100 Z" />
-      </svg>
-      <div className="relative z-10 mt-16 p-6 h-full">
-        <img
-          className="absolute top-[-35px] left-1/2 transform -translate-x-1/2 w-24 h-24 rounded-full border-4 border-white"
-          src="https://cdn-icons-png.flaticon.com/512/219/219983.png"
-          alt={name}
-        />
-        <p className="text-md font-roboto text-center mt-16">{university}</p>
-        <p className="text-lg font-bold text-center mt-2">{name}</p>
-        <p className="text-center text-yellow-400">{'⭐'.repeat(Math.round(rating))}</p>
-        <p className="mt-4 text-gray-700 text-justify">{truncatedText}</p>
-        <a href="#readmore" className="text-[#f2312d] hover:underline flex items-center justify-center mt-2">
-          <span className="mr-2">Read More</span>
-          <FaArrowRight />
-        </a>
+    <div
+      className="relative bg-white rounded-2xl shadow-xl p-6 mt-10 max-w-md mx-auto text-center min-h-[200px] cursor-pointer hover:shadow-2xl transition-all duration-300"
+      onClick={onClick} // Open modal when clicked
+    >
+      <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-24 h-24 rounded-full border-4 border-white overflow-hidden shadow-lg">
+        <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt={name} className="w-full h-full object-cover" />
+      </div>
+
+      <FaQuoteRight className="text-white p-2 bg-gray-400 text-5xl rounded-full absolute left-4 -top-4 scale-x-[-1]" />
+
+      <div className="mt-12">
+        <p className="text-gray-700 text-md leading-relaxed mt-6">{truncatedText}</p>
+      </div>
+
+      <FaQuoteLeft className="text-white p-2 bg-gray-400 rounded-full text-5xl absolute right-4 bottom-[-24px] scale-x-[-1]" />
+
+      <div className="flex justify-between items-center mt-4">
+        <div className="text-left">
+          <h3 className="font-bold text-lg">{name}</h3>
+          <p className="text-gray-500 text-sm">{university}</p>
+        </div>
+        <div className="flex space-x-1">
+          {[...Array(5)].map((_, index) => (
+            <FaStar key={index} className={index < Math.round(rating) ? "text-yellow-400" : "text-gray-300"} />
+          ))}
+        </div>
       </div>
     </div>
+  );
+};
+
+// Modal Component with Framer Motion Animation
+const TestimonialModal = ({ testimonial, onClose }) => {
+  return (
+    <AnimatePresence>
+      {testimonial && (
+        <motion.div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <motion.div
+            className="bg-white rounded-lg shadow-lg p-6 max-w-md w-full relative flex flex-col items-center text-center"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.8, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <button className="absolute top-3 right-3 text-red-600 hover:text-black" onClick={onClose}>
+              <FaTimes size={24} />
+            </button>
+
+            <div className="w-24 h-24 rounded-full border-4 border-white overflow-hidden shadow-lg">
+              <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt={testimonial.name} className="w-full h-full object-cover" />
+            </div>
+
+            <h3 className="text-xl font-bold mt-4">{testimonial.name}</h3>
+            <p className="text-gray-500">{testimonial.university}</p>
+
+            <div className="flex justify-center space-x-1 mt-2">
+              {[...Array(5)].map((_, index) => (
+                <FaStar key={index} className={index < Math.round(testimonial.rating) ? "text-yellow-400" : "text-gray-300"} />
+              ))}
+            </div>
+
+            <p className="mt-4 text-gray-700">{testimonial.text}</p>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 
@@ -67,66 +118,68 @@ const Testimonials = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
+  const [selectedTestimonial, setSelectedTestimonial] = useState(null);
+
   return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.8, ease: 'easeOut' }}
-      className="flex flex-col lg:flex-row justify-between bg-[#f2312d] py-8 lg:py-16 lg:px-24 px-4"
-    >
+    <>
       <motion.div
-        initial={{ x: -50, opacity: 0 }}
-        animate={isInView ? { x: 0, opacity: 1 } : {}}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        className="w-full lg:w-2/5 lg:mt-8 text-white"
+        ref={ref}
+        initial={{ opacity: 0, y: 50 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+        className="flex flex-col lg:flex-row justify-between bg-[#f2312d] py-8 lg:py-16 lg:px-24 px-4 overflow-visible"
       >
-        <h1 className="text-xl font-bold font-roboto text-center lg:text-start">{t('whyUs')}</h1>
-        <h2 className="mt-1 text-xl font-roboto text-center lg:text-start">{t('whatOurStudentsSay')}</h2>
-        <p className="mt-6 text-md text-left text-justify font-roboto">
-          {t('testimonialText')}
-        </p>
-        <p className="mt-6 text-md text-left text-justify font-roboto">
-          {t('testimonialText2')}
-        </p>
+
+        <motion.div
+          initial={{ x: -50, opacity: 0 }}
+          animate={isInView ? { x: 0, opacity: 1 } : {}}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="w-full lg:w-2/5 lg:mt-4 text-white"
+        >
+          <h1 className="text-xl lg:text-2xl font-roboto font-bold font-roboto text-center lg:text-start">{t('whyUs')}</h1>
+          <h2 className="mt-1 text-xl font-roboto text-center lg:text-start">{t('whatOurStudentsSay')}</h2>
+          <p className="mt-6 text-sm text-left text-justify font-roboto">{t('testimonialText')}</p>
+          <p className="mt-6 text-sm text-left text-justify font-roboto">{t('testimonialText2')}</p>
+        </motion.div>
+
+        <motion.div
+          initial={{ x: 50, opacity: 0 }}
+          animate={isInView ? { x: 0, opacity: 1 } : {}}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="w-full lg:w-3/5 mt-10 lg:mt-0 lg:ml-8"
+        >
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{ delay: 5000 }}
+            grabCursor={true}
+            className="min-h-[350px]"
+            breakpoints={{
+              1024: { slidesPerView: 2 },
+            }}
+          >
+            {testimonialsData.map((testimonial, index) => (
+              <SwiperSlide key={index} className="!overflow-visible flex justify-center">
+                <motion.div
+                  initial={{ scale: 0.9, opacity: 0 }}
+                  animate={isInView ? { scale: 1, opacity: 1 } : {}}
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                >
+                  <TestimonialCard
+                    {...testimonial}
+                    onClick={() => setSelectedTestimonial(testimonial)} // Open modal on click
+                  />
+                </motion.div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </motion.div>
       </motion.div>
 
-      <motion.div
-        initial={{ x: 50, opacity: 0 }}
-        animate={isInView ? { x: 0, opacity: 1 } : {}}
-        transition={{ duration: 0.8, delay: 0.4 }}
-        className="w-full lg:w-3/5 mt-10 lg:mt-0 lg:ml-8"
-      >
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={30}
-          slidesPerView={1}
-          loop={true}
-          autoplay={{ delay: 5000 }}
-          grabCursor={true}
-          breakpoints={{
-            1024: { slidesPerView: 2 },
-          }}
-        >
-          {testimonialsData.map((testimonial, index) => (
-            <SwiperSlide key={index}>
-              <motion.div
-                initial={{ scale: 0.9, opacity: 0 }}
-                animate={isInView ? { scale: 1, opacity: 1 } : {}}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-              >
-                <TestimonialCard
-                  name={testimonial.name}
-                  university={testimonial.university}
-                  rating={testimonial.rating}
-                  text={testimonial.text}
-                />
-              </motion.div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </motion.div>
-    </motion.div>
+      <TestimonialModal testimonial={selectedTestimonial} onClose={() => setSelectedTestimonial(null)} />
+    </>
   );
 };
 
