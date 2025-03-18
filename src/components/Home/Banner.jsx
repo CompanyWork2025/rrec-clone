@@ -53,8 +53,8 @@ const Banner = () => {
 
           <div className="mt-6 flex space-x-6">
             {[
-              { count: clients, label: "Happy Clients", icon: "https://cdn3d.iconscout.com/3d/premium/thumb/happy-face-emoji-3d-icon-download-in-png-blend-fbx-gltf-file-formats--smiley-funny-expression-collection-pack-sign-symbols-icons-7148889.png?f=webp" },
-              { count: universities, label: "Medical Universities", icon: "https://cdn3d.iconscout.com/3d/premium/thumb/university-3d-icon-download-in-png-blend-fbx-gltf-file-formats--higher-education-campus-lectures-students-building-pack-buildings-icons-10321058.png?f=webp" },
+              { count: `${clients}+`, label: "Happy Clients", icon: "https://cdn3d.iconscout.com/3d/premium/thumb/happy-face-emoji-3d-icon-download-in-png-blend-fbx-gltf-file-formats--smiley-funny-expression-collection-pack-sign-symbols-icons-7148889.png?f=webp" },
+              { count: `${universities}+`, label: "Medical Universities", icon: "https://cdn3d.iconscout.com/3d/premium/thumb/university-3d-icon-download-in-png-blend-fbx-gltf-file-formats--higher-education-campus-lectures-students-building-pack-buildings-icons-10321058.png?f=webp" },
               { count: `${visa}%`, label: "Visa Guarantee", icon: "https://images.vexels.com/media/users/3/145795/isolated/preview/05cd33059a006bf49006097af4ccba98-plane-in-flight.png?w=360" },
             ].map((item, index) => (
               <motion.div
