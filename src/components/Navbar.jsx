@@ -300,8 +300,8 @@ const Navbar = () => {
               >
                 <div className="flex items-center space-x-2">
                   {/* "ABOUT US" is now a clickable link */}
-                  <Link to="/russia" className="hover:text-red-600 focus:outline-none uppercase">
-                    ABOUT RUSSIA
+                  <Link to="/about-us" className="hover:text-red-600 focus:outline-none uppercase">
+                    ABOUT US
                   </Link>
                   <img
                     src={arrow}
@@ -320,6 +320,15 @@ const Navbar = () => {
                       transition={{ duration: 0.3, ease: "easeOut" }}
                       className="absolute bg-white text-black shadow-lg mt-0 py-2 w-56 origin-top transform z-50"
                     >
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
+                        <Link
+                          to="/russia"
+                          className="block px-4 py-2 hover:text-red-600"
+                        >
+                          About Russia
+                        </Link>
+                      </li>
                       <li className="flex items-center">
                         <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
@@ -536,57 +545,6 @@ const Navbar = () => {
                 </AnimatePresence>
               </li>
 
-
-              <li
-                className="relative group"
-                onMouseEnter={() => setOpenGallery(true)}
-                onMouseLeave={() => setOpenGallery(false)}
-              >
-                <div className="flex items-center space-x-2">
-                  <button className="hover:text-red-600 focus:outline-none uppercase">
-                    {t('gallery')} {/* Dynamic translation for "Gallery" */}
-                  </button>
-                  {/* Dropdown button */}
-                  <img
-                    src={arrow}
-                    alt="Down Arrow"
-                    className="w-2 h-2 transition-transform duration-300 group-hover:rotate-180"
-                  />
-                </div>
-
-                {/* AnimatePresence for Gallery dropdown */}
-                <AnimatePresence>
-                  {openGallery && (
-                    <motion.ul
-                      initial={{ opacity: 0, y: -15 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 15 }}
-                      transition={{ duration: 0.3, ease: "easeOut" }}
-                      className="absolute bg-white text-black shadow-lg mt-0 py-2 w-56 origin-top transform z-50"
-                    >
-                      <li className="flex items-center">
-                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
-                        <Link
-                          to="/photo/gallery"
-                          className="block px-4 py-2 hover:text-red-600"
-                        >
-                          Photo Gallery {/* Dynamic translation for "Photo Gallery" */}
-                        </Link>
-                      </li>
-                      <li className="flex items-center">
-                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
-                        <Link
-                          to="/video/gallery"
-                          className="block px-4 py-2 hover:text-red-600"
-                        >
-                          Video Gallery {/* Dynamic translation for "Video Gallery" */}
-                        </Link>
-                      </li>
-                    </motion.ul>
-                  )}
-                </AnimatePresence>
-              </li>
-
               <li
                 className="relative group"
                 onMouseEnter={() => setOpenResources(true)}
@@ -672,6 +630,57 @@ const Navbar = () => {
                   )}
                 </AnimatePresence>
               </li>
+
+              <li
+                className="relative group"
+                onMouseEnter={() => setOpenGallery(true)}
+                onMouseLeave={() => setOpenGallery(false)}
+              >
+                <div className="flex items-center space-x-2">
+                  <button className="hover:text-red-600 focus:outline-none uppercase">
+                    {t('gallery')} {/* Dynamic translation for "Gallery" */}
+                  </button>
+                  {/* Dropdown button */}
+                  <img
+                    src={arrow}
+                    alt="Down Arrow"
+                    className="w-2 h-2 transition-transform duration-300 group-hover:rotate-180"
+                  />
+                </div>
+
+                {/* AnimatePresence for Gallery dropdown */}
+                <AnimatePresence>
+                  {openGallery && (
+                    <motion.ul
+                      initial={{ opacity: 0, y: -15 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 15 }}
+                      transition={{ duration: 0.3, ease: "easeOut" }}
+                      className="absolute bg-white text-black shadow-lg mt-0 py-2 w-56 origin-top transform z-50"
+                    >
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
+                        <Link
+                          to="/photo/gallery"
+                          className="block px-4 py-2 hover:text-red-600"
+                        >
+                          Photo Gallery {/* Dynamic translation for "Photo Gallery" */}
+                        </Link>
+                      </li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
+                        <Link
+                          to="/video/gallery"
+                          className="block px-4 py-2 hover:text-red-600"
+                        >
+                          Video Gallery {/* Dynamic translation for "Video Gallery" */}
+                        </Link>
+                      </li>
+                    </motion.ul>
+                  )}
+                </AnimatePresence>
+              </li>
+
               {/* FAQ */}
               <li>
                 <Link to="/faq" className="hover:text-red-600 uppercase">
@@ -740,7 +749,9 @@ const Navbar = () => {
                         className="w-full text-left text-xl py-3 px-4 text-white hover:bg-[#f2312d] hover:text-white focus:outline-none uppercase flex items-center justify-between"
                         onClick={() => setOpenAbout(!openAbout)}
                       >
-                        About Us
+                        <Link to="/about-us" className="flex items-center w-full"  onClick={toggleMobileMenu} >
+                          About Us
+                        </Link>
                         {/* Add the arrow icon */}
                         <span className={`transform transition-transform ${openAbout ? 'rotate-180' : ''}`}>
                           &#9660; {/* Down arrow for closed state */}
@@ -754,6 +765,7 @@ const Navbar = () => {
                       )}
                     </div>
                   </li>
+
 
                   {/* Universities */}
                   <li>
