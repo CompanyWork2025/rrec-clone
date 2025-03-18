@@ -36,9 +36,9 @@ const Banner = () => {
     <div className="bg-white lg:px-14 lg:py-20 px-4">
       <motion.div
         ref={ref}
-        initial={{ opacity: 0, y: 100 }} // Starts from below with opacity 0
-        animate={isInView ? { opacity: 1, y: 0 } : {}} // Moves up and fades in
-        transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
+        initial={{ opacity: 0, y: 100 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         className="relative bg-gradient-to-r from-[#f2312d] to-red-700 font-roboto lg:mt-10 text-white py-0 px-6 md:px-16 rounded-2xl flex flex-col md:flex-row items-center"
       >
         {/* Left Content */}
@@ -55,7 +55,7 @@ const Banner = () => {
             {[
               { count: clients, label: "Happy Clients", icon: "https://cdn3d.iconscout.com/3d/premium/thumb/happy-face-emoji-3d-icon-download-in-png-blend-fbx-gltf-file-formats--smiley-funny-expression-collection-pack-sign-symbols-icons-7148889.png?f=webp" },
               { count: universities, label: "Medical Universities", icon: "https://cdn3d.iconscout.com/3d/premium/thumb/university-3d-icon-download-in-png-blend-fbx-gltf-file-formats--higher-education-campus-lectures-students-building-pack-buildings-icons-10321058.png?f=webp" },
-              { count: visa, label: "Visa Guarantee", icon: "https://images.vexels.com/media/users/3/145795/isolated/preview/05cd33059a006bf49006097af4ccba98-plane-in-flight.png?w=360" },
+              { count: `${visa}%`, label: "Visa Guarantee", icon: "https://images.vexels.com/media/users/3/145795/isolated/preview/05cd33059a006bf49006097af4ccba98-plane-in-flight.png?w=360" },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -65,7 +65,7 @@ const Banner = () => {
                 className="text-center"
               >
                 <img src={item.icon} alt={item.label} className="w-12 h-12 lg:w-14 lg:h-14 inline-block mr-2" />
-                <h2 className="text-3xl font-bold">{item.count}+</h2>
+                <h2 className="text-3xl font-bold">{item.count}</h2>
                 <p className="text-sm text-gray-300">{item.label}</p>
               </motion.div>
             ))}
