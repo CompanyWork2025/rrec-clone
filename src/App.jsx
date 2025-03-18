@@ -18,6 +18,7 @@ import FeePage4 from './pages/FeePage4';
 import UsefulInfoPage1 from './pages/UsefulInfoPage1';
 import UsefulInfoPage2 from './pages/UsefulInfoPage2';
 import UsefulInfoPage3 from './pages/UsefulInfoPage3';
+import PhotoGallery from './pages/PhotoGallery';
 import FAQ from './pages/FAQSection';
 import ContactUs from './pages/ContactUs';
 
@@ -41,6 +42,7 @@ function App() {
           <Route path="/useful-info/page1" element={<UsefulInfoPage1 />} />
           <Route path="/useful-info/page2" element={<UsefulInfoPage2 />} />
           <Route path="/useful-info/page3" element={<UsefulInfoPage3 />} />
+          <Route path="/photo/gallery" element={<PhotoGallery />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
