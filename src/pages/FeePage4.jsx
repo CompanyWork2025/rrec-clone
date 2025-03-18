@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import img1 from '../assets/d1.webp';
 import img2 from '../assets/d2.webp';
 
@@ -21,7 +22,12 @@ function FeePage4() {
       </div>
 
       {/* Content Section */}
-      <div className="max-w-8xl lg:px-24 font-roboto mx-auto p-6">
+      <motion.div
+        className="max-w-8xl lg:px-24 font-roboto mx-auto p-6"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <h1 className="text-2xl lg:text-4xl font-semibold text-center text-gray-800 mb-4">Study MBA In Southern Federal University, Russia</h1>
         <p className="text-blue-600 text-xl font-semibold text-center mt-2">The program is aimed at young executives wishing to enhance their professional skills with a sound management qualification.</p>
         <div className='font-roboto mt-4 text-justify space-y-4 text-md'>
@@ -89,7 +95,7 @@ function FeePage4() {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Bottom Colorful Banner */}
       <div className="bg-[#f2312d] px-4 py-12">

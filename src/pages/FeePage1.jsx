@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 function FeePage1() {
 
@@ -152,15 +153,25 @@ function FeePage1() {
         </div>
       </div>
 
-      <div className="container font-roboto mx-auto p-4 mt-6 lg:px-24">
+      <motion.div 
+        className="container font-roboto mx-auto p-4 mt-6 lg:px-24"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <h1 className="text-4xl text-center text-gray-800 font-bold">Fee Structure</h1>
         <p className="mt-4 text-center text-blue-400 font-semibold text-lg">
           Study MBBS in Russia, (MBBS, BDS, Pharmacy in Russia)
         </p>
-      </div>
+      </motion.div>
 
       {/* Main Content */}
-      <div className="py-6 lg:px-24 font-roboto px-6">
+      <motion.div 
+        className="py-6 lg:px-24 font-roboto px-6"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="text-left text-justify mb-8">
           <h2 className="text-2xl lg:text-3xl font-semibold text-[#f2312d]">Fees for 2025-26 Academic Year (For International Students)</h2>
           <p className="text-md text-gray-600 mt-4">
@@ -174,7 +185,7 @@ function FeePage1() {
           Russian Medical Universities are well known for their high quality of Medical Education and highly professional teaching staff. Russia is quite an affordable study abroad destination for international students. It is quite budget-friendly for Indian students as well as for foreign students. For an Indian student, you will be delighted to know that you will be charged four times lesser as compared to any Indian private medical college or university. That is the reason why study MBBS in Russia attracts students from all over the world. It will be a delightful opportunity for deserving candidates who want to pursue MBBS abroad.
         </p>
         <h2 className="text-xl lg:text-2xl text-center font-semibold mt-10 text-blue-800">Fees Structure of Top Rank Medical Universities of Russia | 2025-26 Academic Year | Study MBBS in Russia</h2>
-      </div>
+      </motion.div>
       {universityData.map((university, index) => (
         <div key={index} className="bg-white shadow-lg lg:px-24 -mt-8 font-roboto rounded-lg p-5 mb-8">
           {/* Table Structure */}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 function FeePage3() {
   return (
@@ -19,13 +20,23 @@ function FeePage3() {
       </div>
 
       {/* Content Section */}
-      <div className="max-w-8xl lg:px-24 font-roboto mx-auto p-6">
+      <motion.div
+        className="max-w-8xl lg:px-24 font-roboto mx-auto p-6"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <h1 className="text-2xl lg:text-4xl font-semibold text-center text-gray-800 mb-4">Fees For Russian Language Courses</h1>
         <p className="text-gray-600 font-semibold text-center mt-2">Learn Russian From Top Medical, Technical and Federal Universities of Russia. After completion of the preparatory course, a student will receive a diploma of the Russian Language Course. With this diploma, students can join any U.G & P.G Courses in Russian Medium in Russia.</p>
-      </div>
+      </motion.div >
 
       {/* Fees Structure Table */}
-      <div className="mt-6 lg:px-24 px-4 font-roboto mb-4 overflow-x-auto">
+      <motion.div
+        className="mt-6 lg:px-24 px-4 font-roboto mb-4 overflow-x-auto"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <h3 className="text-lg lg:text-3xl text-center font-semibold text-gray-800 mb-4">
           Fees Structure for (Preparatory Faculty / Course Duration: 8-10 Months)
         </h3>
@@ -82,7 +93,7 @@ function FeePage3() {
             📧 <span className="text-blue-600">contact@rrecrussia.com</span>
           </p>
         </div>
-      </div>
+      </motion.div>
 
 
       {/* Bottom Colorful Banner */}

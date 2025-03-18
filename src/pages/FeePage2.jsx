@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 const FeePage2 = () => {
   return (
@@ -19,7 +20,12 @@ const FeePage2 = () => {
       </div>
 
       {/* Content Section */}
-      <div className="max-w-8xl lg:px-24 font-roboto mx-auto p-6">
+      <motion.div
+        className="max-w-8xl lg:px-24 font-roboto mx-auto p-6"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <h1 className="text-2xl lg:text-4xl font-semibold text-center text-gray-800 mb-4">Fee For Technical Universities</h1>
         <h2 className="text-2xl font-semibold text-blue-800">Top Federal, Technical & State Universities of Russia: (Fee structure)        </h2>
         <p className="text-gray-600 font-semibold text-green-600 mt-2">Here is the list of top Federal, Technical & State Universities in Russia:</p>
@@ -330,10 +336,10 @@ const FeePage2 = () => {
             <li><strong>For Direct Admissions:</strong> Contact us at <a href="tel:+79515371133" className="text-blue-600 font-semibold">+7-9515371133</a> or email at <a href="mailto:contact@rrecrussia.com" className="text-blue-600 font-semibold">contact@rrecrussia.com</a>.</li>
           </ul>
         </div>
-      </div>
+      </motion.div>
 
-        {/* Bottom Colorful Banner */}
-        <div className="bg-[#f2312d] py-12">
+      {/* Bottom Colorful Banner */}
+      <div className="bg-[#f2312d] py-12">
         <div className="max-w-4xl mx-auto text-center font-roboto text-white">
           <h2 className="text-2xl lg:text-4xl mb-4 font-semibold">Get Direct Admission</h2>
           <p className="mt-4 text-sm lg:text-md">
