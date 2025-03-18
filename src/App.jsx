@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop'; // Import ScrollToTop
 import Home from './pages/Home';
+import About from './pages/About';
 import AboutRussia from './pages/AboutRussia';
 import ServicesForStudents from './pages/ServicesForStudents';
 import MedicalUniversities from './pages/MedicalUniversities';
@@ -30,6 +31,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<About />} />
           <Route path="/russia" element={<AboutRussia />} />
           <Route path="/services-for-students" element={<ServicesForStudents />} />
           <Route path="/medical-universities-in-russia" element={<MedicalUniversities />} />

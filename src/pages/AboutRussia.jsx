@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 function AboutRussia() {
   const paragraphs = [
@@ -24,7 +25,12 @@ function AboutRussia() {
       </div>
 
       {/* Main Content */}
-      <div className="py-12 lg:px-24 font-roboto px-6">
+      <motion.div 
+        className="py-12 lg:px-24 font-roboto px-6"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="text-left text-justify mb-8">
           <h2 className="text-2xl lg:text-3xl font-semibold text-gray-800">Brief About Russia – Best Country for study abroad
             Education in Russia <span className='text-blue-400'>(Study in Russia – MBBS in Russia)</span></h2>
@@ -71,16 +77,16 @@ function AboutRussia() {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
 
 
       {/* Bottom Colorful Banner */}
       <div className="bg-[#f2312d] py-12">
         <div className="max-w-4xl mx-auto text-center font-roboto text-white">
-        <h2 className="text-2xl lg:text-4xl mb-4 font-semibold">A gateway to study in Russia</h2>
+          <h2 className="text-2xl lg:text-4xl mb-4 font-semibold">A gateway to study in Russia</h2>
           <h3 className="text-2xl font-semibold">( Reliable Russian Educational Consultants )</h3>
           <p className="mt-4 text-lg lg:text-2xl">
-              Email: contact@rrecrussia.com, rrec.educonsultants@gmail.com
+            Email: contact@rrecrussia.com, rrec.educonsultants@gmail.com
           </p>
         </div>
       </div>

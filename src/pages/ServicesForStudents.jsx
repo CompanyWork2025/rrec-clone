@@ -1,7 +1,7 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 function ServicesForStudents() {
-
   return (
     <div>
       {/* Top Image Banner */}
@@ -20,7 +20,12 @@ function ServicesForStudents() {
       </div>
 
       {/* Main Content */}
-      <div className="py-12 lg:px-24 font-roboto px-6">
+      <motion.div
+        className="py-12 lg:px-24 font-roboto px-6"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="text-left text-justify mb-8">
           <h2 className="text-2xl lg:text-3xl font-semibold text-gray-800">Join Reliable Russian Educational Consultants – For Best Services</h2>
           <br /><span className='text-red-500 text-xl lg:text-3xl font-bold'>TOP MEDICAL, FEDERAL & TECHNICAL UNIVERSITIES</span>
@@ -33,7 +38,7 @@ function ServicesForStudents() {
         <div className="mt-12">
           <h3 className="text-2xl lg:text-3xl text-justify font-semibold text-gray-800">Reliable Russian Educational Consultants</h3>
 
-          <br/>
+          <br />
           <span className='text-green-500 text-xl font-bold'>PRE ADMISSION SERVICES : </span>
           <div className="space-y-6 mt-4">
             <ul className="list-disc text-lg text-gray-700 text-justify">
@@ -52,7 +57,7 @@ function ServicesForStudents() {
         <div className="mt-12">
           <h3 className="text-2xl lg:text-3xl text-justify font-semibold  text-blue-500">POST ADMISSION SERVICES :</h3>
           <div className="space-y-6 mt-4">
-          <ul className="list-disc text-lg text-gray-700 text-justify">
+            <ul className="list-disc text-lg text-gray-700 text-justify">
               <li>Meeting the student at Moscow Airport, accompanying him/her to the university, and arranging admission to the university, the hostel, etc.</li>
               <li>Arranging to get registration with the local Immigration authorities in Russia.</li>
               <li>Help students in settling down in the new environment at no additional cost.</li>
@@ -70,7 +75,7 @@ function ServicesForStudents() {
             </ul>
           </div>
         </div>
-      </div>
+      </motion.div>
 
 
       {/* Bottom Colorful Banner */}
