@@ -5,6 +5,7 @@ import video from "../../assets/Video.mp4";
 
 const HeroSection = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [hover, setHover] = useState(false);
     const [isMuted, setIsMuted] = useState(true);
     const [isPlaying, setIsPlaying] = useState(true);
     const videoRef = useRef(null);
@@ -103,20 +104,54 @@ const HeroSection = () => {
 
 
                     {/* Button */}
-                    <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="-mt-4 md:mt-0 px-4 py-2 md:px-5 md:py-3 bg-gradient-to-r from-black to-gray-800 text-white rounded-full flex items-center gap-2 md:gap-3 shadow-xl hover:bg-gray-700 transition-all mx-auto md:mx-0"
-                    >
-                        {slides[currentSlide].buttonText}
-                        <div className="ml-auto w-8 h-8 md:w-10 md:h-10 bg-white text-black rounded-full flex justify-center items-center shadow-lg">
-                            <img
-                                src="https://cdn-icons-png.flaticon.com/512/664/664866.png"
-                                alt="Arrow"
-                                className="w-4 h-4 md:w-5 md:h-5"
+                    <div className="relative inline-block">
+                        {/* Main Button */}
+                        <motion.button
+                            className="relative overflow-hidden -mt-4 md:mt-0 px-4 py-2 md:px-5 md:py-3 
+        bg-gradient-to-r from-black to-gray-800 text-white rounded-full 
+        flex items-center gap-2 md:gap-3 shadow-xl transition-all 
+        mx-auto md:mx-0 w-fit min-w-[150px] pr-12" // Extra right padding to prevent text cutoff
+                            onMouseEnter={() => setHover(true)}
+                            onMouseLeave={() => setHover(false)}
+                        >
+                            {/* Expanding Background Effect */}
+                            <motion.div
+                                className="absolute inset-0 bg-cover bg-center opacity-30"
+                                style={{
+                                    backgroundImage: `url('https://giffiles.alphacoders.com/194/19497.gif')`, // Change BG as needed
+                                }}
+                                initial={{ scaleX: 0 }}
+                                animate={hover ? { scaleX: 1 } : { scaleX: 0 }}
+                                transition={{ duration: 0.4, ease: "easeOut" }}
                             />
-                        </div>
-                    </motion.button>
+
+                            {/* Text with Smooth Hide Effect */}
+                            <motion.span
+                                animate={hover ? { opacity: 0, x: -10 } : { opacity: 1, x: 0 }}
+                                transition={{ duration: 0.3, ease: "easeOut" }}
+                                className="relative z-10 pr-10 whitespace-nowrap" // Ensures text doesn't wrap or break
+                            >
+                                {slides[currentSlide].buttonText}
+                            </motion.span>
+
+                            {/* Sliding Rounded Button (Moves to left end dynamically) */}
+                            <motion.div
+                                initial={{ left: "auto", right: "10px" }} // Starts on the right
+                                animate={hover ? { left: "4px", right: "auto" } : { left: "auto", right: "10px" }} // Moves to left edge
+                                transition={{ duration: 0.4, ease: "easeOut" }}
+                                className="absolute w-8 h-8 md:w-10 md:h-10 
+          bg-gray-300 text-black rounded-full flex justify-center items-center 
+          shadow-lg z-20"
+                            >
+                                <img
+                                    src="https://cdn-icons-png.flaticon.com/512/664/664866.png"
+                                    alt="Arrow"
+                                    className="w-4 h-4 md:w-5 md:h-5"
+                                />
+                            </motion.div>
+                        </motion.button>
+                    </div>
+
                 </div>
             </div>
 
