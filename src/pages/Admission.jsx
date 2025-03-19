@@ -81,21 +81,7 @@ const Admission = () => {
 
     return (
         <>
-            <div className="relative">
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Russia_Wikivoyage_front_page_banner.jpg/1200px-Russia_Wikivoyage_front_page_banner.jpg" // replace with your image path
-                    alt="About Us"
-                    className="w-full h-48 lg:h-64 object-cover"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center">
-                    <h1 className="text-white text-3xl lg:text-5xl font-roboto font-semibold">Admission Procedure</h1>
-                    <p className="text-white font-roboto text-xl mt-2">
-                        Home <span className="mx-1 text-xl">&rarr;</span> Admission Procedure
-                    </p>
-                </div>
-            </div>
-
-
+        
             <div className="px-4 lg:px-20 py-8 font-roboto">
                 {/* Header */}
                 <motion.div
