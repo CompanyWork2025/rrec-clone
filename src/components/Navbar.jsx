@@ -498,7 +498,7 @@ const Navbar = () => {
                       <li className="flex items-center">
                         <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/admission-procedure-for-mbbs-study-in-russia"
+                          to="/admission-procedure"
                           className="block px-4 py-2 hover:text-red-600"
                         >
                           Admission Procedure {/* Dynamic translation for "MBBS In Russia" */}
@@ -829,8 +829,8 @@ const Navbar = () => {
                       </button>
                       {openUsefulInfo && (
                         <ul className="bg-white text-black shadow-lg mt-2 py-2 w-full">
-                          <li><Link to="/useful-info/page1" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">MBBS In Russia</Link></li>
-                          <li><Link to="/useful-info/page2" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Admission Procedure</Link></li>
+                          <li><Link to="/" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">MBBS In Russia</Link></li>
+                          <li><Link to="/admission-procedure" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Admission Procedure</Link></li>
                           <li><Link to="/useful-info/page3" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Preparatory Faculty</Link></li>
                         </ul>
                       )}

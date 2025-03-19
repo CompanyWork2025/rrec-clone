@@ -22,6 +22,7 @@ import UsefulInfoPage3 from './pages/UsefulInfoPage3';
 import PhotoGallery from './pages/PhotoGallery';
 import FAQ from './pages/FAQSection';
 import ContactUs from './pages/ContactUs';
+import Admission from './pages/Admission';
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
           <Route path="/fee-for-technical-universities" element={<FeePage2 />} />
           <Route path="/fees-for-russian-language-courses" element={<FeePage3 />} />
           <Route path="/study-mba-in-southern-federal-university-russia-in-english-medium" element={<FeePage4 />} />
-          <Route path="/useful-info/page1" element={<UsefulInfoPage1 />} />
+          <Route path="/admission-procedure" element={<Admission />} />
           <Route path="/useful-info/page2" element={<UsefulInfoPage2 />} />
           <Route path="/useful-info/page3" element={<UsefulInfoPage3 />} />
           <Route path="/photo/gallery" element={<PhotoGallery />} />
