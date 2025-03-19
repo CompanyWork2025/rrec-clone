@@ -26,6 +26,7 @@ import FAQ from './pages/FAQSection';
 import Career from './pages/Career';
 import ContactUs from './pages/ContactUs';
 import Admission from './pages/Admission';
+import ReferEarn from './pages/ReferEarn';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
           <Route path="/tourist-visa-for-russia" element={<Visa />} />
           <Route path="/russian-language" element={<Language />} />
           <Route path="/our-services" element={<Services />} />
+          <Route path="/refer-earn" element={<ReferEarn/>} />
           <Route path="/refund-policy" element={<Policy/>} />
           <Route path="/photo/gallery" element={<PhotoGallery />} />
           <Route path="/video/gallery" element={<VideoGallery />} />
