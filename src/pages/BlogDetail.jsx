@@ -6,71 +6,72 @@ import { Helmet } from "react-helmet";
 const blogs = [
     {
         id: 1,
-        title: "Exploring Russia's Top Universities",
-        description: "A deep dive into the best Russian universities for international students.",
-        date: "March 5, 2025",
+        title: "Why Study MBBS in Russia? Top Benefits Explained",
+        description: "Discover why Russia is a top choice for medical aspirants worldwide.",
+        date: "April 2, 2025",
         category: "Education",
-        author: "Deepak Kumar",
-        userImg: "https://i.pinimg.com/564x/28/61/7c/28617cbb4489a79728f63cb45606dabd.jpg",
-        bgImage: "https://ik.imagekit.io/syustaging/SYU_PREPROD/Russia_2CH_uL1Ea.webp?tr=w-3840",
-        content: `Russia has been a hub for education, attracting students from all over the world. It boasts a rich academic heritage, with universities consistently ranking among the best globally. Institutions like Lomonosov Moscow State University, Saint Petersburg State University, and Kazan Federal University provide top-tier education in various disciplines. These universities offer modern research facilities, experienced faculty, and diverse student communities. Studying in Russia also gives international students a chance to experience a unique blend of culture, history, and technological advancements, making it a sought-after destination for higher education.`
+        author: "Amit Sharma",
+        userImg: "https://i.ytimg.com/vi/jOUnybwAruc/maxresdefault.jpg",
+        bgImage: "https://www.neweraeducation.in/public/assets/images007/blog/5-best-reasons-to-study-mbbs-in-russia.webp",
+        content: "Russia has emerged as one of the top destinations for medical education due to its world-class universities, affordable tuition fees, and globally recognized degrees. Medical students in Russia benefit from cutting-edge research facilities, experienced faculty, and a multicultural learning environment. The education system emphasizes practical exposure, ensuring that students gain hands-on experience. Additionally, Russia offers a safe and vibrant atmosphere for international students, with numerous opportunities for career growth post-graduation."
     },
     {
         id: 2,
-        title: "How to Apply for MBBS in Russia",
-        description: "Step-by-step guide for international students applying to Russian medical universities.",
-        date: "March 10, 2025",
-        category: "Education",
-        author: "Alka",
-        userImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwObBd_gax4PJ4LgDaQvLn3AjnKKbFSgG68A&s",
-        bgImage: "https://mbbsexpert.in/wp-content/uploads/2021/05/Russia.jpg",
-        content: `Applying for MBBS in Russia is a straightforward process that offers affordability and high-quality education. The first step involves choosing a recognized university, such as Rostov State Medical University or Kazan State Medical University. Students must prepare essential documents like academic transcripts, a passport, and a medical certificate. The admission process usually includes filling out an application, submitting the required documents, and obtaining an official invitation from the university. Since Russian medical universities offer English-medium courses, students do not need to learn Russian immediately, but it is beneficial for practical training.`
+        title: "Life as a Medical Student in Russia",
+        description: "A glimpse into the daily routine and challenges faced by international students.",
+        date: "April 5, 2025",
+        category: "Student Life",
+        author: "Sneha Kapoor",
+        userImg: "https://i.pinimg.com/736x/7a/a4/b5/7aa4b573781d26846881296d2a3e0f07.jpg",
+        bgImage: "https://www.ruseducation.in/wp-content/uploads/2022/01/student-life-with-mbbs-in-russia1200x628-1.jpg",
+        content: "Studying in Russia as a medical student is a unique experience filled with challenges and rewards. A typical day includes attending lectures, practical sessions, and hospital visits. Students also engage in extracurricular activities, cultural programs, and community events. While adapting to the climate and language may take time, universities offer language courses to ease communication barriers. The diverse student community creates an inclusive atmosphere, making life enjoyable both inside and outside the classroom."
     },
     {
         id: 3,
-        title: "Student Life in Moscow",
-        description: "Discover what it's like to study and live in Moscow as a foreign student.",
-        date: "March 2, 2025",
-        category: "Lifestyle",
-        author: "Arun",
-        userImg: "https://i.pinimg.com/736x/17/4c/3f/174c3fc52fb1306bb5f1a6feaa8263b1.jpg",
-        bgImage: "https://www.hse.ru/data/2019/04/30/1181019089/moscow-1556564_960_720.jpg",
-        content: `Moscow, the capital of Russia, offers an exciting student life with its vibrant culture, historical landmarks, and world-class universities. International students enjoy affordable public transportation, diverse food options, and various cultural events throughout the year. Universities in Moscow, like HSE and Moscow State University, provide state-of-the-art facilities and numerous student organizations that help students socialize and engage in extracurricular activities. The city’s nightlife, museums, and parks make it an exciting place to explore outside of academics. Despite the cold winters, students find Moscow to be an enriching and rewarding place to study.`
+        title: "How to Apply for a Russian Student Visa",
+        description: "A step-by-step guide to securing your Russian student visa hassle-free.",
+        date: "April 10, 2025",
+        category: "Guides",
+        author: "Ravi Verma",
+        userImg: "https://i.pinimg.com/736x/70/16/9b/70169bddff695daa70d161e9ddcc41f7.jpg",
+        bgImage: "https://static.themoscowtimes.com/image/article_1360/8f/9F738010-54D2-4CD9-8146-8D98EAD8A28A.jpeg",
+        content: "Applying for a Russian student visa requires careful planning and documentation. First, secure an admission letter from a recognized university. Then, gather necessary documents, including a valid passport, medical certificate, and proof of financial support. Submit your application at the Russian embassy or consulate in your country. Once approved, you'll receive a visa allowing entry into Russia. It's essential to follow all legal formalities and renew your visa as required to avoid any complications."
     },
     {
         id: 4,
-        title: "Budgeting Tips for Students in Russia",
-        description: "How to manage finances effectively while studying abroad in Russia.",
-        date: "March 7, 2025",
-        category: "Lifestyle",
-        author: "Khusi",
-        userImg: "https://i.pinimg.com/736x/1c/f7/b3/1cf7b3139a20ec94c68a47222a2c7546.jpg",
-        bgImage: "https://itcslimited.com/wp-content/uploads/2021/08/MBBS-in-Russia-1-1.jpg",
-        content: `Managing finances as an international student in Russia requires careful planning. The cost of living varies from city to city, with Moscow and Saint Petersburg being more expensive than smaller cities like Kazan or Rostov. Students can save money by opting for university dormitories, using student discounts for public transportation, and cooking meals instead of eating out. Budgeting apps and opening a local bank account can also help manage expenses. Additionally, part-time work opportunities are available for students who want to earn extra income while studying.`
+        title: "Best Medical Universities in Russia for 2025",
+        description: "Explore the top-ranked medical universities in Russia for international students.",
+        date: "April 15, 2025",
+        category: "Education",
+        author: "Neha Singh",
+        userImg: "https://i.pinimg.com/736x/3f/85/c5/3f85c50d50d9cad724655322b0082290.jpg",
+        bgImage: "https://www.mbbsadmissionabroad.in/uploads/topics/mbbs-in-russia-2024-25-the-ultimate-guidance-top-universities-fees-etc-12.jpg",
+        content: "Russia is home to several prestigious medical universities known for their excellence in education and research. Some of the top choices for 2025 include Moscow State Medical University, Saint Petersburg State Medical University, Kazan Federal University, and Rostov State Medical University. These institutions offer MBBS programs with internationally recognized curricula, ensuring that graduates can practice medicine worldwide. Choosing the right university depends on factors like tuition fees, location, faculty, and career opportunities."
     },
     {
         id: 5,
-        title: "Must-Visit Places in Russia for Students",
-        description: "Explore the top travel destinations in Russia for international students.",
-        date: "March 3, 2025",
-        category: "Travel",
-        author: "David",
-        userImg: "https://logowik.com/content/uploads/images/script-signature-for-the-name-david6245.logowik.com.webp",
-        bgImage: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/a3/01/9e/img-20170611-220124-085.jpg?w=1200&h=-1&s=1",
-        content: `Russia is home to many breathtaking travel destinations for students. Moscow and Saint Petersburg offer historical landmarks such as the Kremlin, Red Square, and the Winter Palace. Nature lovers can explore Lake Baikal, the deepest freshwater lake in the world, or the scenic Altai Mountains. The Golden Ring cities, known for their ancient churches and architecture, provide a glimpse into Russia’s rich history. Students often take weekend trips to these destinations, making their study experience in Russia more adventurous and fulfilling.`
+        title: "Cost of Living for Students in Russia",
+        description: "Detailed insights into accommodation, food, transport, and other expenses.",
+        date: "April 18, 2025",
+        category: "Finance",
+        author: "Arjun Mehta",
+        userImg: "https://thumbs.dreamstime.com/b/d-fire-text-effect-hindi-name-chitra-dark-background-engulfed-dramatic-each-letter-appears-as-though-s-forged-339388616.jpg",
+        bgImage: "https://wise.com/imaginary-v2/money-banks-russia-rubles-notes.jpg",
+        content: "Living costs in Russia vary based on the city and lifestyle of the student. On average, students spend between $300 to $700 per month, covering accommodation, food, transportation, and leisure activities. University dormitories provide affordable housing options, while private rentals are more expensive. Public transport is cost-effective, and students often receive discounts on metro and bus services. Proper financial planning ensures a comfortable and stress-free stay in Russia."
     },
     {
         id: 6,
-        title: "A Weekend Getaway from Moscow",
-        description: "Best short trips and weekend destinations near Moscow for students.",
-        date: "March 9, 2025",
+        title: "Exploring Russia: Best Cities for International Students",
+        description: "A guide to the best student-friendly cities in Russia beyond Moscow and St. Petersburg.",
+        date: "April 22, 2025",
         category: "Travel",
-        author: "Vinita",
-        userImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtDgypu17bngY7dA_wje-Qdel39PJYBYnPig&s",
-        bgImage: "https://www.trawell.in/blog/wp-content/uploads/2022/08/Main_Image-5.jpg",
-        content: `Students studying in Moscow can take advantage of weekend getaways to escape the city’s hustle and bustle. Popular destinations include Sergiev Posad, known for its beautiful monasteries, and Suzdal, a picturesque town filled with historic sites. Nature lovers can visit the forests and lakes in the Moscow region, offering a perfect retreat for relaxation. Veliky Novgorod, one of Russia’s oldest cities, is also a great choice for students interested in history. These short trips allow students to explore Russian culture and unwind from academic stress.`
+        author: "Priya Malhotra",
+        userImg: "https://thumbs.dreamstime.com/b/neon-light-editable-text-effect-352276456.jpg",
+        bgImage: "https://russian-e-visa.com/images/top-20-must-visit-destinations-in-russia/vladivostok-russia.jpg",
+        content: "Russia offers several student-friendly cities beyond Moscow and St. Petersburg. Kazan, known as the student capital, is famous for its welcoming atmosphere and rich culture. Rostov-on-Don provides an affordable cost of living and excellent universities. Novosibirsk, the scientific hub of Russia, attracts students interested in research and innovation. Each city has its own charm, offering diverse experiences and opportunities for international students."
     }
 ];
+
 
 const BlogDetail = () => {
     const { id } = useParams();

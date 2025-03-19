@@ -30,6 +30,8 @@ import ReferEarn from './pages/ReferEarn';
 import Nmc from './pages/Nmc';
 import UpcomingEvents from "./pages/Upcoming";
 import Neet from './pages/Neet';
+import Blog from './pages/Blog';
+import BlogDetail from './pages/BlogDetail';
 
 function App() {
   return (
@@ -53,6 +55,8 @@ function App() {
           <Route path="/tourist-visa-for-russia" element={<Visa />} />
           <Route path="/russian-language" element={<Language />} />
           <Route path="/our-services" element={<Services />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/neet" element={<Neet />} />
           <Route path="/upcoming-events" element={<UpcomingEvents/>} />
           <Route path="/nmc-regulations" element={<Nmc/>} />

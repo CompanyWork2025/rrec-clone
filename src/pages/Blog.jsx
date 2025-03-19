@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet";
+
 
 const Blog = () => {
     const [search, setSearch] = useState("");
@@ -12,65 +12,68 @@ const Blog = () => {
     const blogs = [
         {
             id: 1,
-            title: "Exploring Russia's Top Universities",
-            description: "A deep dive into the best Russian universities for international students.",
-            date: "March 5, 2025",
+            title: "Why Study MBBS in Russia? Top Benefits Explained",
+            description: "Discover why Russia is a top choice for medical aspirants worldwide.",
+            date: "April 2, 2025",
             category: "Education",
-            author: "Deepak Kumar",
-            userImg: "https://i.pinimg.com/564x/28/61/7c/28617cbb4489a79728f63cb45606dabd.jpg",
-            bgImage: "https://www.timeshighereducation.com/sites/default/files/lomonosov_moscow_state_university.jpg",
+            author: "Amit Sharma",
+            userImg: "https://i.ytimg.com/vi/jOUnybwAruc/maxresdefault.jpg",
+            bgImage: "https://www.neweraeducation.in/public/assets/images007/blog/5-best-reasons-to-study-mbbs-in-russia.webp",
         },
         {
             id: 2,
-            title: "How to Apply for MBBS in Russia",
-            description: "Step-by-step guide for international students applying to Russian medical universities.",
-            date: "March 10, 2025",
-            category: "Education",
-            author: "Alka",
-            userImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwObBd_gax4PJ4LgDaQvLn3AjnKKbFSgG68A&s",
-            bgImage: "https://innovativeconsultants.co.in/wp-content/uploads/2016/11/mbbs-russia-853x458.png.webp",
+            title: "Life as a Medical Student in Russia",
+            description: "A glimpse into the daily routine and challenges faced by international students.",
+            date: "April 5, 2025",
+            category: "Student Life",
+            author: "Sneha Kapoor",
+            userImg: "https://i.pinimg.com/736x/7a/a4/b5/7aa4b573781d26846881296d2a3e0f07.jpg",
+            bgImage: "https://www.imaginecareer.in/blog/wp-content/uploads/2023/02/mbbsrussia-min.jpg",
         },
         {
             id: 3,
-            title: "Student Life in Moscow",
-            description: "Discover what it's like to study and live in Moscow as a foreign student.",
-            date: "March 2, 2025",
-            category: "Lifestyle",
-            author: "Arun",
-            userImg: "https://i.pinimg.com/736x/17/4c/3f/174c3fc52fb1306bb5f1a6feaa8263b1.jpg",
-            bgImage: "https://admissions.hse.ru/data/2019/05/17/1507420681/20181228_6556.jpg",
+            title: "How to Apply for a Russian Student Visa",
+            description: "A step-by-step guide to securing your Russian student visa hassle-free.",
+            date: "April 10, 2025",
+            category: "Guides",
+            author: "Ravi Verma",
+            userImg: "https://i.pinimg.com/736x/70/16/9b/70169bddff695daa70d161e9ddcc41f7.jpg",
+            bgImage: "https://static.themoscowtimes.com/image/article_1360/8f/9F738010-54D2-4CD9-8146-8D98EAD8A28A.jpeg",
         },
         {
             id: 4,
-            title: "Budgeting Tips for Students in Russia",
-            description: "How to manage finances effectively while studying abroad in Russia.",
-            date: "March 7, 2025",
-            category: "Lifestyle",
-            author: "Khusi",
-            userImg: "https://i.pinimg.com/736x/1c/f7/b3/1cf7b3139a20ec94c68a47222a2c7546.jpg",
-            bgImage: "https://leapscholar.com/blog/wp-content/uploads/2024/07/RUSSIA.jpg",
+            title: "Best Medical Universities in Russia for 2025",
+            description: "Explore the top-ranked medical universities in Russia for international students.",
+            date: "April 15, 2025",
+            category: "Education",
+            author: "Neha Singh",
+            userImg: "https://i.pinimg.com/736x/3f/85/c5/3f85c50d50d9cad724655322b0082290.jpg",
+            bgImage: "https://www.mbbsadmissionabroad.in/uploads/topics/mbbs-in-russia-2024-25-the-ultimate-guidance-top-universities-fees-etc-12.jpg",
         },
         {
             id: 5,
-            title: "Must-Visit Places in Russia for Students",
-            description: "Explore the top travel destinations in Russia for international students.",
-            date: "March 3, 2025",
-            category: "Travel",
-            author: "David",
-            userImg: "https://logowik.com/content/uploads/images/script-signature-for-the-name-david6245.logowik.com.webp",
-            bgImage: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/a3/01/9e/img-20170611-220124-085.jpg?w=1200&h=-1&s=1",
+            title: "Cost of Living for Students in Russia",
+            description: "Detailed insights into accommodation, food, transport, and other expenses.",
+            date: "April 18, 2025",
+            category: "Finance",
+            author: "Arjun Mehta",
+            userImg: "https://thumbs.dreamstime.com/b/d-fire-text-effect-hindi-name-chitra-dark-background-engulfed-dramatic-each-letter-appears-as-though-s-forged-339388616.jpg",
+            bgImage: "https://wise.com/imaginary-v2/money-banks-russia-rubles-notes.jpg",
         },
         {
             id: 6,
-            title: "A Weekend Getaway from Moscow",
-            description: "Best short trips and weekend destinations near Moscow for students.",
-            date: "March 9, 2025",
+            title: "Exploring Russia: Best Cities for International Students",
+            description: "A guide to the best student-friendly cities in Russia beyond Moscow and St. Petersburg.",
+            date: "April 22, 2025",
             category: "Travel",
-            author: "Vinita",
-            userImg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtDgypu17bngY7dA_wje-Qdel39PJYBYnPig&s",
-            bgImage: "https://i0.wp.com/lilioftheworld.com/wp-content/uploads/2019/10/20190907_113844.jpg?resize=768%2C1024&ssl=1",
+            author: "Priya Malhotra",
+            userImg: "https://thumbs.dreamstime.com/b/neon-light-editable-text-effect-352276456.jpg",
+            bgImage: "https://www.visitrussia.com/images/places-to-go/photo-2.jpg",
         },
     ];
+    
+
+    
 
     const categories = ["All", ...new Set(blogs.map((blog) => blog.category))];
 
@@ -94,15 +97,9 @@ const Blog = () => {
             animate={{ opacity: 1, y: 0 }}  // End position
             transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
         >
-            <Helmet>
-                <title>Doctors-IEA Blog - MBBS in Russia Updates & Insights</title>
-                <meta
-                    name="description"
-                    content="Stay updated with the latest news, insights, and guidance on studying MBBS in Russia. Explore expert articles, admission tips, and university updates on the Doctors-IEA blog."
-                />
-            </Helmet>
-            <h1 className="text-2xl lg:text-5xl font-bold text-center text-gray-800">
-                Our Latest <span className="text-green-600">Blogs</span>
+
+            <h1 className="text-2xl lg:text-4xl font-bold text-center text-gray-800">
+                Our Latest <span className="text-red-600">Blogs</span>
             </h1>
             <p className="text-center text-md text-gray-600 mt-4">
                 Stay informed with the latest updates on medical education, university admissions, and student life abroad. Our blog provides valuable insights, expert guidance, and real experiences to help aspiring doctors navigate their journey. Explore trending topics, admission tips, and success stories – all in one place
@@ -115,7 +112,7 @@ const Blog = () => {
                         key={cat}
                         onClick={() => { setCategory(cat); setCurrentPage(1); }}
                         className={`px-4 py-2 rounded-full text-sm font-medium ${category === cat
-                            ? "bg-green-600 text-white"
+                            ? "bg-red-600 text-white"
                             : "bg-gray-200 text-gray-800"
                             }`}
                     >
@@ -160,7 +157,7 @@ const Blog = () => {
                             {/* Date and User Section */}
                             <div className="flex justify-between items-center text-sm">
                                 <div className="flex items-center space-x-2">
-                                    <img src={blog.userImg} alt="User" className="w-8 h-8 rounded-full border border-green-600" />
+                                    <img src={blog.userImg} alt="User" className="w-8 h-8 rounded-full border border-red-600" />
                                     <span className="text-gray-300">{blog.author || "Unknown"}</span>
                                 </div>
                                 <span>{blog.date}</span>
@@ -168,7 +165,7 @@ const Blog = () => {
 
                             {/* See More Button */}
                             <Link to={`/blog/${blog.id}`}>
-                                <button className="w-full text-sm bg-white text-black py-1 px-3 rounded font-medium transition-colors duration-300 hover:bg-green-600 hover:text-white">
+                                <button className="w-full text-sm bg-white text-black py-1 px-3 rounded font-medium transition-colors duration-300 hover:bg-r-600 hover:text-white">
                                     See More
                                 </button>
                             </Link>
@@ -181,7 +178,7 @@ const Blog = () => {
             {/* Pagination */}
             <div className="flex justify-center space-x-4 pt-10">
                 <button onClick={() => setCurrentPage(prev => prev - 1)} disabled={currentPage === 1} className="px-4 py-2 rounded bg-gray-300 disabled:opacity-50">Previous</button>
-                <button onClick={() => setCurrentPage(prev => prev + 1)} disabled={currentPage === totalPages} className="px-4 py-2 rounded bg-green-600 text-white disabled:opacity-50">Next</button>
+                <button onClick={() => setCurrentPage(prev => prev + 1)} disabled={currentPage === totalPages} className="px-4 py-2 rounded bg-red-600 text-white disabled:opacity-50">Next</button>
             </div>
 
         </motion.div>
