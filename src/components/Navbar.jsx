@@ -507,6 +507,15 @@ const Navbar = () => {
                       <li className="flex items-center">
                         <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
+                          to="/study-mbbs-in-russia"
+                          className="block px-4 py-2 hover:text-red-600"
+                        >
+                          MBBS In Russia {/* Dynamic translation for "MBBS In Russia" */}
+                        </Link>
+                      </li>
+                      <li className="flex items-center">
+                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
+                        <Link
                           to="/tourist-visa-for-russia"
                           className="block px-4 py-2 hover:text-red-600"
                         >
@@ -812,7 +821,7 @@ const Navbar = () => {
                         className="w-full text-left text-xl py-3 px-4 text-white hover:bg-[#f2312d] hover:text-white focus:outline-none uppercase flex items-center justify-between"
                         onClick={() => setOpenUsefulInfo(!openUsefulInfo)}
                       >
-                        Useful Info
+                        Useful Links
                         {/* Add the arrow icon */}
                         <span className={`transform transition-transform ${openUsefulInfo ? 'rotate-180' : ''}`}>
                           &#9660; {/* Down arrow for closed state */}
@@ -820,9 +829,11 @@ const Navbar = () => {
                       </button>
                       {openUsefulInfo && (
                         <ul className="bg-white text-black shadow-lg mt-2 py-2 w-full">
-                          <li><Link to="/" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">MBBS In Russia</Link></li>
+                          <li><Link to="/study-mbbs-in-russia" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">MBBS In Russia</Link></li>
                           <li><Link to="/admission-procedure" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Admission Procedure</Link></li>
-                          <li><Link to="/useful-info/page3" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Preparatory Faculty</Link></li>
+                          <li><Link to="/tourist-visa-for-russia" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Tourist Visa For Russia</Link></li>
+                          <li><Link to="/russian-language" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Russian Language Course</Link></li>
+                          <li><Link to="/our-services" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Our Services</Link></li>
                         </ul>
                       )}
                     </div>
@@ -865,10 +876,12 @@ const Navbar = () => {
                       </button>
                       {openResources && (
                         <ul className="bg-white text-black shadow-lg mt-2 py-2 w-full">
-                          <li><Link to="/resources/blog" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Blog</Link></li>
-                          <li><Link to="/resources/neet" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">NEET</Link></li>
-                          <li><Link to="/resources/faqs" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">FAQ's</Link></li>
-                          <li><Link to="/resources/upcoming-events" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Upcoming Events</Link></li>
+                          <li><Link to="/blog" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Blog</Link></li>
+                          <li><Link to="/neet" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">NEET</Link></li>
+                          <li><Link to="/nmc-regulations" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">NMC Regulations</Link></li>
+                          <li><Link to="/upcoming-events" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Upcoming Events</Link></li>
+                          <li><Link to="/refer-earn" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Refer & Earn</Link></li>
+                          <li><Link to="/refund-policy" onClick={toggleMobileMenu} className="block px-4 py-2 hover:text-[#f2312d]">Refund Policy</Link></li>
                         </ul>
                       )}
                     </div>
@@ -877,6 +890,11 @@ const Navbar = () => {
                   {/* FAQ */}
                   <li>
                     <Link to="/faq" onClick={toggleMobileMenu} className="block text-xl py-3 px-4 hover:bg-[#f2312d] text-white hover:text-white transition-all duration-300 uppercase">FAQ</Link>
+                  </li>
+
+                   {/* Career*/}
+                   <li>
+                    <Link to="/career" onClick={toggleMobileMenu} className="block text-xl py-3 px-4 hover:bg-[#f2312d] text-white hover:text-white transition-all duration-300 uppercase">Career</Link>
                   </li>
 
                   {/* Contact Us */}

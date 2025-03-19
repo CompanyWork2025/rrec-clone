@@ -26,6 +26,7 @@ import VideoGallery from './pages/VideoGallery';
 import FAQ from './pages/FAQSection';
 import Career from './pages/Career';
 import ContactUs from './pages/ContactUs';
+import Mbbs from "./pages/MBBS";
 import Admission from './pages/Admission';
 import ReferEarn from './pages/ReferEarn';
 import Nmc from './pages/Nmc';
@@ -52,6 +53,7 @@ function App() {
           <Route path="/fee-for-technical-universities" element={<FeePage2 />} />
           <Route path="/fees-for-russian-language-courses" element={<FeePage3 />} />
           <Route path="/study-mba-in-southern-federal-university-russia-in-english-medium" element={<FeePage4 />} />
+          <Route path="/study-mbbs-in-russia" element={<Mbbs />} />
           <Route path="/admission-procedure" element={<Admission />} />
           <Route path="/tourist-visa-for-russia" element={<Visa />} />
           <Route path="/russian-language" element={<Language />} />
