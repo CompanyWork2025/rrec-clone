@@ -77,7 +77,7 @@ const WhatsAppSticky = () => {
   return (
     <div className="fixed bottom-0 left-0 z-50 flex items-center">
       <a
-        href="https://wa.me/+91-7042284508"
+        href="https://wa.me/+917042284508?text=Hi,%20I%20have%20a%20query"
         target="_blank"
         rel="noopener noreferrer"
         className="relative"
@@ -151,7 +151,7 @@ function App() {
           <Route path="/career" element={<Career />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/partner-with-us" element={<Partner />} />
-          <Route path="/apply-now" element={<Apply/>} />
+          <Route path="/apply-now" element={<Apply />} />
         </Routes>
         <Footer />
 
