@@ -126,7 +126,7 @@ const ContactPage = () => {
             ></textarea>
             <button
               type="submit"
-              className="w-full flex items-center justify-center gap-2 bg-blue-600 text-white p-3 rounded-lg hover:bg-red-700 transition"
+              className="w-full flex items-center justify-center gap-2 bg-red-600 text-white p-3 rounded-lg hover:bg-blue-300 transition"
             >
               Send Message
               <Send size={18} />
