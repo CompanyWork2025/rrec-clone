@@ -17,6 +17,7 @@ import FeePage2 from './pages/FeePage2';
 import FeePage3 from './pages/FeePage3';
 import FeePage4 from './pages/FeePage4';
 import Services from './pages/OurServices';
+import Fee from './pages/Payment';
 import Visa from './pages/Visa';
 import Language from './pages/Language';
 import Policy from './pages/Policy';
@@ -57,6 +58,7 @@ function App() {
           <Route path="/our-services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="/fee-payment" element={<Fee />} />
           <Route path="/neet" element={<Neet />} />
           <Route path="/upcoming-events" element={<UpcomingEvents/>} />
           <Route path="/nmc-regulations" element={<Nmc/>} />
