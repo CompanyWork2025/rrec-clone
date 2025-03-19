@@ -507,15 +507,6 @@ const Navbar = () => {
                       <li className="flex items-center">
                         <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
                         <Link
-                          to="/mbbs-fees-russia"
-                          className="block px-4 py-2 hover:text-red-600"
-                        >
-                          Fee Structure {/* Dynamic translation for "Admission Procedure" */}
-                        </Link>
-                      </li>
-                      <li className="flex items-center">
-                        <FaArrowRight className="text-red-600 -mr-1 ml-4 -rotate-45" />
-                        <Link
                           to="/tourist-visa-for-russia"
                           className="block px-4 py-2 hover:text-red-600"
                         >
