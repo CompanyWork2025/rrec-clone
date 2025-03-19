@@ -21,6 +21,7 @@ import UsefulInfoPage2 from './pages/UsefulInfoPage2';
 import UsefulInfoPage3 from './pages/UsefulInfoPage3';
 import PhotoGallery from './pages/PhotoGallery';
 import FAQ from './pages/FAQSection';
+import Career from './pages/Career';
 import ContactUs from './pages/ContactUs';
 import Admission from './pages/Admission';
 
@@ -47,6 +48,7 @@ function App() {
           <Route path="/useful-info/page3" element={<UsefulInfoPage3 />} />
           <Route path="/photo/gallery" element={<PhotoGallery />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/career" element={<Career />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />
