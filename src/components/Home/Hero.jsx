@@ -136,8 +136,8 @@ const HeroSection = () => {
 
                             {/* Sliding Rounded Button (Moves to left end dynamically) */}
                             <motion.div
-                                initial={{ left: "auto", right: "10px" }} // Starts on the right
-                                animate={hover ? { left: "4px", right: "auto" } : { left: "auto", right: "10px" }} // Moves to left edge
+                                initial={{ left: "auto", right: "5px" }} // Starts on the right
+                                animate={hover ? { left: "4px", right: "auto" } : { left: "auto", right: "5px" }} // Moves to left edge
                                 transition={{ duration: 0.4, ease: "easeOut" }}
                                 className="absolute w-8 h-8 md:w-10 md:h-10 
           bg-gray-300 text-black rounded-full flex justify-center items-center 
