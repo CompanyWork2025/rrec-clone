@@ -19,6 +19,7 @@ import FeePage4 from './pages/FeePage4';
 import Services from './pages/OurServices';
 import Visa from './pages/Visa';
 import Language from './pages/Language';
+import Policy from './pages/Policy';
 import PhotoGallery from './pages/PhotoGallery';
 import VideoGallery from './pages/VideoGallery';
 import FAQ from './pages/FAQSection';
@@ -48,6 +49,7 @@ function App() {
           <Route path="/tourist-visa-for-russia" element={<Visa />} />
           <Route path="/russian-language" element={<Language />} />
           <Route path="/our-services" element={<Services />} />
+          <Route path="/refund-policy" element={<Policy/>} />
           <Route path="/photo/gallery" element={<PhotoGallery />} />
           <Route path="/video/gallery" element={<VideoGallery />} />
           <Route path="/faq" element={<FAQ />} />
