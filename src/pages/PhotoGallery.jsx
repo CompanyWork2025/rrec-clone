@@ -37,6 +37,11 @@ const PhotoGallery = () => {
         return () => clearTimeout(timer);
     }, [currentPage]);
 
+        // Scroll to top when the page changes
+        useEffect(() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }, [currentPage]);
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}

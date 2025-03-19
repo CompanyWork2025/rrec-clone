@@ -65,59 +65,51 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <>
-      {/* Top Image Banner */}
-      <div className="relative">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Russia_Wikivoyage_front_page_banner.jpg/1200px-Russia_Wikivoyage_front_page_banner.jpg"
-          alt="About Russia"
-          className="w-full h-48 lg:h-64 object-cover"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center font-roboto text-center">
-          <h1 className="text-white text-2xl lg:text-5xl font-roboto font-semibold">FAQ for Study in Russia</h1>
-          <p className="text-white font-roboto text-lg lg:text-xl mt-2">
-            Home <span className="mx-1 text-xl">&rarr;</span> FAQ for Study in Russia
-          </p>
-        </div>
-      </div>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.5 }}
+      className="px-4 lg:px-24 font-roboto mx-auto p-6 bg-white shadow-lg rounded-2xl"
+    >
+      <h2 className="text-2xl font-bold mb-2 text-center">
+        Student, who wants to study Medicine, Engineering, Law, Economics,
+      </h2>
+      <h2 className="text-2xl font-bold mb-6 text-center">
+        What questions can arise before traveling to Russia?{" "}
+        <span className="text-red-600">(FAQ for Study in Russia)</span>
+      </h2>
 
-      <div className="px-4 lg:px-24 font-roboto mx-auto p-6 bg-white shadow-lg rounded-2xl">
-        <h2 className="text-2xl font-bold mb-2 text-center">Student, who wants to study Medicine, Engineering, Law, Economics,</h2>
-        <h2 className="text-2xl font-bold mb-6 text-center">
-          What questions can arise before traveling to Russia?{" "}
-          <span className="text-red-600">(FAQ for Study in Russia)</span>
-        </h2>
-
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="border border-gray-300 rounded-xl bg-gray-100 p-4 cursor-pointer transition-all hover:bg-gray-200 shadow-sm"
-              onClick={() => setOpenIndex(openIndex === index ? null : index)}
-            >
-              <div className="flex justify-between items-center">
-                <h3 className="text-lg font-semibold text-gray-800">{faq.question}</h3>
-                {openIndex === index ? (
-                  <Minus className="w-6 h-6 text-blue-600" />
-                ) : (
-                  <Plus className="w-6 h-6 text-gray-500" />
-                )}
-              </div>
-
-              {openIndex === index && (
-                <motion.p
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: "auto" }}
-                  exit={{ opacity: 0, height: 0 }}
-                  className="text-gray-700 mt-3"
-                >
-                  {faq.answer}
-                </motion.p>
+      <div className="space-y-4">
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            className="border border-gray-300 rounded-xl bg-gray-100 p-4 cursor-pointer transition-all hover:bg-gray-200 shadow-sm"
+            onClick={() => setOpenIndex(openIndex === index ? null : index)}
+          >
+            <div className="flex justify-between items-center">
+              <h3 className="text-lg font-semibold text-gray-800">{faq.question}</h3>
+              {openIndex === index ? (
+                <Minus className="w-6 h-6 text-blue-600" />
+              ) : (
+                <Plus className="w-6 h-6 text-gray-500" />
               )}
             </div>
-          ))}
-        </div>
+
+            {openIndex === index && (
+              <motion.p
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.3 }}
+                className="text-gray-700 mt-3"
+              >
+                {faq.answer}
+              </motion.p>
+            )}
+          </div>
+        ))}
       </div>
-    </>
+    </motion.div>
   );
 }

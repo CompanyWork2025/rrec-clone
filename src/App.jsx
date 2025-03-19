@@ -20,6 +20,7 @@ import Services from './pages/OurServices';
 import UsefulInfoPage2 from './pages/UsefulInfoPage2';
 import UsefulInfoPage3 from './pages/UsefulInfoPage3';
 import PhotoGallery from './pages/PhotoGallery';
+import VideoGallery from './pages/VideoGallery';
 import FAQ from './pages/FAQSection';
 import Career from './pages/Career';
 import ContactUs from './pages/ContactUs';
@@ -47,6 +48,7 @@ function App() {
           <Route path="/our-services" element={<Services />} />
           <Route path="/useful-info/page3" element={<UsefulInfoPage3 />} />
           <Route path="/photo/gallery" element={<PhotoGallery />} />
+          <Route path="/video/gallery" element={<VideoGallery />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact-us" element={<ContactUs />} />
