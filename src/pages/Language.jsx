@@ -70,6 +70,12 @@ const Language = () => {
                         "Ukhta state technical university",
                         "Petrozavodsk state university",
                         "People’s friendship university",
+                        "Synergy University Moscow ",
+                        "Volgograd State Medical University ",
+                        "Moscow Pedagogical State University ",
+                        "St. Petersburg polytechnic university ",
+                        "Krasnoyarsk State Medical University",
+                        "Far Eastern Federal University ",
 
                     ].map((item, index) => (
                         <motion.li

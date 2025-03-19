@@ -65,6 +65,12 @@ function FeePage3() {
               ["Ukhta State Technical University", "Ukhta", "3200"],
               ["Udmurt State University", "Izhevsk", "2800"],
               ["St. Petersburg Polytechnic University", "Saint Petersburg", "3600"],
+              ["Synergy University Moscow", "Moscow", "3500"],
+              ["Volgograd State Medical University", "Volgograd", "4500"],
+              ["Moscow Pedagogical State University", "Moscow", "3400"],
+              ["St. Petersburg Polytechnic University", "Saint Petersburg", "3600"],
+              ["Krasnoyarsk State Medical University", "Krasnoyarsk", "3100"],
+              ["Far Eastern Federal University", "Vladivostok", "3700"],
             ].map(([university, city, fees], index) => (
               <tr key={index} className="border border-gray-300">
                 <td className="border border-gray-300 px-4 py-2">{university}</td>
