@@ -16,7 +16,7 @@ import FeePage1 from './pages/FeePage1';
 import FeePage2 from './pages/FeePage2';
 import FeePage3 from './pages/FeePage3';
 import FeePage4 from './pages/FeePage4';
-import UsefulInfoPage1 from './pages/UsefulInfoPage1';
+import Services from './pages/OurServices';
 import UsefulInfoPage2 from './pages/UsefulInfoPage2';
 import UsefulInfoPage3 from './pages/UsefulInfoPage3';
 import PhotoGallery from './pages/PhotoGallery';
@@ -43,7 +43,7 @@ function App() {
           <Route path="/fees-for-russian-language-courses" element={<FeePage3 />} />
           <Route path="/study-mba-in-southern-federal-university-russia-in-english-medium" element={<FeePage4 />} />
           <Route path="/admission-procedure" element={<Admission />} />
-          <Route path="/useful-info/page2" element={<UsefulInfoPage2 />} />
+          <Route path="/our-services" element={<Services />} />
           <Route path="/useful-info/page3" element={<UsefulInfoPage3 />} />
           <Route path="/photo/gallery" element={<PhotoGallery />} />
           <Route path="/faq" element={<FAQ />} />
