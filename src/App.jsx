@@ -35,6 +35,8 @@ import UpcomingEvents from "./pages/Upcoming";
 import Neet from './pages/Neet';
 import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
+import Apply from './pages/Apply';
+import Partner from './pages/Partner';
 
 
 const StickyButton = ({ text, link, position }) => {
@@ -148,6 +150,8 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/partner-with-us" element={<Partner />} />
+          <Route path="/apply-now" element={<Apply/>} />
         </Routes>
         <Footer />
 
