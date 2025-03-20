@@ -57,6 +57,7 @@ import Kemerova from './components/MedicalUniversities/Kemerova';
 import Kabardino from './components/MedicalUniversities/Kabardino';
 import FarEastern from './components/MedicalUniversities/FarEastern';
 import Immanuel from './components/MedicalUniversities/Immanuel';
+import Krasno from './components/MedicalUniversities/Krasno';
 
 
 const StickyButton = ({ text, link, position }) => {
@@ -194,6 +195,7 @@ function App() {
           <Route path="/ural-state-medical-university" element={<UralMed />} />
           <Route path="/fareastern-federal-university" element={<FarEastern />} />
           <Route path="/immanuel-kant-baltic-federal-university" element={<Immanuel />} />
+          <Route path="/krasnoyarsk-state-medical-university" element={<Krasno />} />
 
 
         </Routes>
