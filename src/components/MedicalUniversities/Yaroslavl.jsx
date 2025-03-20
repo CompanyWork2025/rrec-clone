@@ -205,14 +205,13 @@ const Yaroslavl = () => {
 
             <div className="bg-red-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
                 <h2 className="text-xl lg:text-2xl mb-4 font-semibold">
-                    Call for more details about university, admission, processing Yaroslavl State Medical University, Russia
+                    Call for more details about the university admission, processing, fees at MBBS in YSMU, Russia
                 </h2>
-                <h3 className="text-lg lg:text-2xl font-semibold">
-                    RREC Team: +91-7428212236, 7428203118 | Toll-free 1800-419-5827 (For Indian Students)
+                <h3 className="text-lg lg:text-2xl font-semibold mb-4">
+                    Contact Us: +91-7042284508, 7042284509
                 </h3>
-                <h3 className="text-lg lg:text-2xl mt-4 font-semibold">
-                    Students or parents can write to us at WhatsApp also: +7-9515190376
-                </h3>
+                <h6 className="mb-4">Toll-free 1800-57-5827 (For Indian Students), +7-9515371133 (International Students)</h6>
+                <h6>Students or parents can write to us at WhatsApp also: +91-7042284508</h6>
             </div>
         </>
     )

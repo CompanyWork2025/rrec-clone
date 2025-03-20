@@ -262,21 +262,24 @@ const Kabardino = () => {
 
                 {/* Phone Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="tel:+917428212236" className="text-gray-700 hover:text-green-600 block">
-                        📞 +91-7428212236, 7428203118
+                    <a href="tel:+917428212236" className="text-gray-700 hover:text-red-600 block">
+                        📞 +91-7042284508, 7042284509
                     </a>
-                    <a href="tel:18004195827" className="text-gray-700 hover:text-green-600 block">
-                        📞 Toll-free 1800-419-5827 (For Indian Students)
+                    <a href="tel:18004195827" className="text-gray-700 hover:text-red-600 block">
+                        📞 Toll-free 1800-57-5827 (For Indian Students)
                     </a>
-                    <a href="tel:+79515190376" className="text-gray-700 hover:text-green-600 block">
-                        📞 +7-9515190376 (International Students)
+                    <a href="tel:+79515190376" className="text-gray-700 hover:text-red-600 block">
+                        📞 +7-9515371133 (International Students)
                     </a>
                 </div>
 
                 {/* WhatsApp Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="https://wa.me/79515190376" className="text-gray-700 hover:text-green-600 block">
-                        💬 WhatsApp: +7-9515190376
+                    <a href="https://wa.me/917428212236" className="text-gray-700 hover:text-red-600 block">
+                        💬 WhatsApp: +91-7042284508
+                    </a>
+                    <a href="https://wa.me/79515190376" className="text-gray-700 hover:text-red-600 block">
+                        💬 WhatsApp: +7-9515371133
                     </a>
                 </div>
             </div>

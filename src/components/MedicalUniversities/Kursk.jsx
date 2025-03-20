@@ -149,7 +149,7 @@ const Kursk = () => {
                                     <th className="px-4 py-2 border-r border-gray-300">Fees Pattern</th>
                                     <th className="px-4 py-2 border-r border-gray-300">1st Year</th>
                                     <th className="px-4 py-2 border-r border-gray-300">2nd Year to 6th Year</th>
-                                   
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -158,13 +158,13 @@ const Kursk = () => {
                                     { label: "Hostel Fee", firstYear: "Excluded", secondYear: "Excluded", total: "–" },
                                     { label: "Visa Extension & Registration Fee", firstYear: "Excluded", secondYear: "Excluded", total: "–" },
                                     { label: "Medical Insurance", firstYear: "Excluded", secondYear: "Excluded", total: "–" },
-                                
+
                                 ].map((item, index) => (
                                     <tr key={index} className="border-b border-gray-300 text-gray-700">
                                         <td className="px-4 py-2 border-r border-gray-300 font-semibold bg-gray-100">{item.label}</td>
                                         <td className="px-4 py-2 border-r border-gray-300">{item.firstYear}</td>
                                         <td className="px-4 py-2 border-r border-gray-300">{item.secondYear}</td>
-                                      
+
                                     </tr>
                                 ))}
                             </tbody>
@@ -174,16 +174,16 @@ const Kursk = () => {
                         </p>
                         <ul className="list-disc pl-5 mt-2 text-left text-gray-700 space-y-2">
                             <li>
-                               Medical and biometrics charges are additional; students must pay for themselves from the first to the sixth year. Every city's cost for this procedure is different, but it is on average <strong>7500-11000 </strong>Rubles.
+                                Medical and biometrics charges are additional; students must pay for themselves from the first to the sixth year. Every city's cost for this procedure is different, but it is on average <strong>7500-11000 </strong>Rubles.
                             </li>
                             <li>
-                               Tuition Fees can increase by <strong>8-12% per year</strong> according to the annual rate of inflation.
+                                Tuition Fees can increase by <strong>8-12% per year</strong> according to the annual rate of inflation.
                             </li>
                             <li>
-                               Hostel fee typically can increase by <strong>5-7% per year</strong> according to the current prices for electricity, gas, water, heating, etc.
+                                Hostel fee typically can increase by <strong>5-7% per year</strong> according to the current prices for electricity, gas, water, heating, etc.
                             </li>
                             <li>
-                               Medical Insurance fee can increase by <strong>3-5% per year</strong> according to the annual rate of inflation.
+                                Medical Insurance fee can increase by <strong>3-5% per year</strong> according to the annual rate of inflation.
                             </li>
                         </ul>
                         <p className="text-red-600 font-semibold text-justify font-roboto mt-4 bg-yellow-300 p-2">RREC team would like to inform you that the exchange rate is extremely volatile and is subjected to change. Candidates are requested to check the current exchange rate and your budget before initiating the admission process.</p>
@@ -233,33 +233,36 @@ const Kursk = () => {
                 {/* Phone Numbers */}
                 <div className="mt-4 space-y-2 text-center">
                     <a href="tel:+917428212236" className="text-gray-700 hover:text-red-600 block">
-                        📞 +91-7428212236, 7428203118
+                        📞 +91-7042284508, 7042284509
                     </a>
                     <a href="tel:18004195827" className="text-gray-700 hover:text-red-600 block">
-                        📞 Toll-free 1800-419-5827 (For Indian Students)
+                        📞 Toll-free 1800-57-5827 (For Indian Students)
                     </a>
                     <a href="tel:+79515190376" className="text-gray-700 hover:text-red-600 block">
-                        📞 +7-9515190376 (International Students)
+                        📞 +7-9515371133 (International Students)
                     </a>
                 </div>
 
                 {/* WhatsApp Numbers */}
                 <div className="mt-4 space-y-2 text-center">
+                    <a href="https://wa.me/917428212236" className="text-gray-700 hover:text-red-600 block">
+                        💬 WhatsApp: +91-7042284508
+                    </a>
                     <a href="https://wa.me/79515190376" className="text-gray-700 hover:text-red-600 block">
-                        💬 WhatsApp: +7-9515190376
+                        💬 WhatsApp: +7-9515371133
                     </a>
                 </div>
             </div>
 
             <div className="bg-red-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
                 <h2 className="text-xl lg:text-2xl mb-4 font-semibold">
-                    Get Direct Admission to KurskMU, Join Us
+                    Call for more details about the university admission, processing, fees at MBBS in KurskMU, Russia
                 </h2>
                 <h3 className="text-lg lg:text-2xl font-semibold mb-4">
-                    Admission open for this academic year, interesting students may contact us
+                    Contact Us: +91-7042284508, 7042284509
                 </h3>
-                <h6 className="mb-4">Contact numbers: +917042284508, 509 (Indian office)</h6>
-                <h6>Students or parents can write to us on at WhatsApp also +7-9515190376 (Ind)</h6>
+                <h6 className="mb-4">Toll-free 1800-57-5827 (For Indian Students), +7-9515371133 (International Students)</h6>
+                <h6>Students or parents can write to us at WhatsApp also: +91-7042284508</h6>
             </div>
         </>
     )
