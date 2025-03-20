@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaVolumeMute, FaVolumeUp, FaPause, FaPlay } from "react-icons/fa";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import video from "../../assets/Video.mp4";
 
 const HeroSection = () => {
@@ -9,19 +10,23 @@ const HeroSection = () => {
     const [isMuted, setIsMuted] = useState(true);
     const [isPlaying, setIsPlaying] = useState(true);
     const videoRef = useRef(null);
+    const navigate = useNavigate(); 
 
     const slides = [
         {
             text: "Become A Doctor - Study In Abroad",
             buttonText: "Discover more about MBBS",
+            link: "/study-mbbs-in-russia",  // Add your page link here
         },
         {
             text: "Medical Studies In Russia",
             buttonText: "Explore top universities",
+            link: "/medical-universities-in-russia",  // Add your page link here
         },
         {
             text: "Admission Open for 2025",
             buttonText: "Apply Now",
+            link: "/apply-now",  // Add your page link here
         },
     ];
 
@@ -113,6 +118,7 @@ const HeroSection = () => {
         mx-auto md:mx-0 w-fit min-w-[150px] pr-12" // Extra right padding to prevent text cutoff
                             onMouseEnter={() => setHover(true)}
                             onMouseLeave={() => setHover(false)}
+                            onClick={() => navigate(slides[currentSlide].link)}
                         >
                             {/* Expanding Background Effect */}
                             <motion.div
