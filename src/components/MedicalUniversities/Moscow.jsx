@@ -148,7 +148,7 @@ const Moscow = () => {
 
                 {/* Heading */}
                 <h2 className="text-2xl font-semibold text-red-600 text-center mt-8">
-                    Call for more details about the university, admission, processing, and fees at MBBS in  MPSU, Russia:
+                    Call for more details about the university, admission, processing, and fees in  MPSU, Russia:
                 </h2>
 
                   {/* Phone Numbers */}
@@ -177,7 +177,7 @@ const Moscow = () => {
 
             <div className="bg-red-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
                 <h2 className="text-xl lg:text-2xl mb-4 font-semibold">
-                    Call for more details about the university admission, processing, fees at MBBS in MPSU, Russia
+                    Call for more details about the university admission, processing, fees in MPSU, Russia
                 </h2>
                 <h3 className="text-lg lg:text-2xl font-semibold mb-4">
                     Contact Us: +91-7042284508, 7042284509

@@ -20,7 +20,6 @@ const universityData = [
   { id: 13, name: 'Synergy University Moscow University', img: 'https://hoorainassociates.com/wp-content/uploads/2023/11/Synergy-University.png', path: '/synergy-university-moscow' },
   { id: 14, name: "People's Friendship University Moscow", img: 'https://rrecrussia.com/public/upload/subcategory/1802184823964992.jpeg.webp', path: '/peoples-friendship-university-russia' },
   { id: 15, name: 'Yaroslavl State Medical University', img: 'https://ik.imagekit.io/syustaging/SYU_PREPROD/image_1737378767468_zoVeTkrNI.webp?tr=w-3840', path: '/mbbs-in-yaroslavl-state-medical-university-russia' },
-  { id: 16, name: 'Moscow Pedagogical State University', img: 'https://upload.wikimedia.org/wikipedia/commons/8/85/Wiki_pirogovka_clinics_1.jpg', path: '/moscow-pedagogical-state-university' },
   { id: 17, name: 'Volgograd State Medical University, Russia', img: 'https://medicinecolleges.in/assets/colleges/3014/bannerimage.jpg', path: '/volgograd-state-medical-university-russia' },
   { id: 18, name: 'Samara State Medical University', img: 'https://blog.rmgoe.org/wp-content/uploads/2023/05/Samara-State-Medical-University-Russia.webp', path: '/mbbs-from-samara-state-medical-university' },
   { id: 17, name: 'Samarkand State Medical University (Uzbekistan)', img: 'https://argroupofeducation.com/wp-content/uploads/elementor/thumbs/imgpsh_fullsize_anim-4-qgqswlfejubtago25aeujue5rem1wxph3rc3ekddto.png', path: '/mbbs-in-uzbekistan' },
