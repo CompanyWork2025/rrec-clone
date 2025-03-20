@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const universityData = [
-  { id: 1, name: 'Russian Language Course', img: 'https://rrecrussia.com/public/upload/subcategory/1802189217251558.jpg.webp' },
-  { id: 2, name: 'Fee structure for MBBS, BDS, Pharmacy', img: 'https://rrecrussia.com/public/upload/subcategory/1802189266190815.webp.webp' },
-  { id: 3, name: 'Veterinary Medicine', img: 'https://rrecrussia.com/public/upload/subcategory/1802189319068661.jpg.webp' },
-  { id: 4, name: 'Engineering & Technical Courses', img: 'https://rrecrussia.com/public/upload/subcategory/1802189702306324.webp.webp' },
+  { id: 1, name: 'Russian Language Course', img: 'https://rrecrussia.com/public/upload/subcategory/1802189217251558.jpg.webp', path: "/learn-russian-language-from-top-universities-of-russia"},
+  { id: 2, name: 'Fee structure for MBBS, BDS, Pharmacy', img: 'https://rrecrussia.com/public/upload/subcategory/1802189266190815.webp.webp', path: "/fee-structure" },
+  { id: 3, name: 'Veterinary Medicine', img: 'https://rrecrussia.com/public/upload/subcategory/1802189319068661.jpg.webp', path: "/veterinary-medicine-don-state-technical-university" },
+  { id: 4, name: 'Engineering & Technical Courses', img: 'https://rrecrussia.com/public/upload/subcategory/1802189702306324.webp.webp', path: "/engineering-technical-specialties" },
   { id: 5, name: 'Humanities & Classic Specialties', img: 'https://rrecrussia.com/public/upload/subcategory/1802189766610417.jpg.webp' },
   { id: 6, name: 'Economical Specialties', img: 'https://rrecrussia.com/public/upload/subcategory/1802189820749015.jpg.webp' },
   { id: 7, name: 'Post Graduation Courses', img: 'https://rrecrussia.com/public/upload/subcategory/1802189856129557.png.webp' },
@@ -17,6 +18,7 @@ const universityData = [
 ];
 
 function CoursesRussia() {
+  const navigate = useNavigate();
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
 
@@ -105,6 +107,7 @@ function CoursesRussia() {
                     className="relative inline-flex items-center justify-start overflow-hidden px-3 py-2 text-lg font-semibold text-white border-2 border-white rounded-md bg-transparent transition-all duration-300 ease-in-out group"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
+                    onClick={() => navigate(university.path)}
                   >
                     <span className="w-0 h-0 rounded bg-[#f2312d] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
                     <span className="w-full text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">

@@ -70,16 +70,14 @@ import StPetersburg from './components/TechnicalUniversities/StPetersburg';
 import Veterinary from './components/TechnicalUniversities/Veterinary';
 import Ukhta from './components/TechnicalUniversities/Ukhta';
 import Udmurt from "./components/TechnicalUniversities/Udmurt";
-
-
-{/* MBBS Russia */ }
-import MBBSRussia from './components/MBBS/MBBSRussia';
-import Kyrgyz from './components/MBBS/Kyrgyzstan';
-import Armenia from './components/MBBS/Armenia';
-import Belarus from './components/MBBS/Belarus';
-import Kazakhstan from './components/MBBS/Kazakhstan';
 import MBA from './components/TechnicalUniversities/MBA';
 import RostovEco from './components/TechnicalUniversities/RostovEco';
+
+
+{/* Courses */ }
+import Preparatory from "./components/Courses/Preparatory";
+import Engineer from "./components/Courses/Engineer";
+
 
 
 
@@ -236,12 +234,9 @@ function App() {
           <Route path="/udmurt-state-university-russia" element={<Udmurt />} />
 
 
-          {/* MBBS Russia */}
-          <Route path="/study-mbbs-russia" element={<MBBSRussia />} />
-          <Route path="/study-mbbs-kyrgyzstan" element={<Kyrgyz />} />
-          <Route path="/study-mbbs-armenia" element={<Armenia />} />
-          <Route path="/study-mbbs-belarus" element={<Belarus />} />
-          <Route path="/study-mbbs-kazakhstan" element={<Kazakhstan />} />
+          {/* Courses */}
+          <Route path="/learn-russian-language-from-top-universities-of-russia" element={<Preparatory />} />
+          <Route path="/engineering-technical-specialties" element={<Engineer />} />
 
         </Routes>
         <Footer />
