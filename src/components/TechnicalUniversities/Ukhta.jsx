@@ -23,17 +23,15 @@ const Ukhta = () => {
                     <h1 className="text-xl lg:text-3xl font-semibold mt-4">
                         Ukhta Technical University
                     </h1>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-4 uppercase">
-                        UKHTA STATE TECHNICAL UNIVERSITY
-                    </h2>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-4">
-                        Ukhta State Technical University is a representative of oil and gas Universities in Russia.
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-4">
+                        USTU is the representative of oil and gas Universities in Russia.
                     </h2>
 
+
                     <div className="mt-4 space-y-6">
-                        <p className="text-left text-justify text-md lg:text-lg font-roboto">It is the largest technical University in the European North of the Russian Federation. The University was founded on the basis of the Ukhta Industrial Institute (the Institute was founded in 1967). By this time, more than 25000 engineers and economists had graduated in oil, geology, building, and timber industry majors. After the successful attestation on April 14, 1999, the Institute was granted a status of a State Technical University. Our engineers became mayors and ministers, heads of educational establishments, enterprises, and banks. 423 instructors and scientific workers teach at The University. Among them are 53 Professors with Doctors of Science and 213 Associate professors with Masters of Science. </p>
+                        <p className="text-left text-justify text-md lg:text-lg font-roboto">It is the largest technical University in the European North of the Russian Federation. The University was founded on the basis of the Ukhta Industrial Institute (the Institute was founded in 1967). By this time, more than 25000 engineers and economists had graduated in oil, geology, building, and timber industry majors. After the successful attestation on April 14, 1999, the Institute was granted a status of a State Technical University. Our engineers became mayors and ministers, heads of educational establishments, enterprises, and banks. 423 instructors and scientific workers teach at The University. Among them are 53 Professors with Doctors of Science and 213 Associate professors with Masters of Science. There are academicians and 4 corresponding members of the Russian Academy of Science, and Honored Scientists of the Republic of Komi.</p>
                     </div>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-4">
+                    <h2 className="text-md text-red-600 text-left font-semibold lg:text-xl mt-8">
                         Institute of Geology, Oil and Gas Production and Pipeline Transportation (Departments have given below)
                     </h2>
                     <ul className="mt-4 text-sm lg:text-lg text-gray-700 space-y-4">
@@ -58,7 +56,7 @@ const Ukhta = () => {
                         ))}
                     </ul>
                 </div>
-                <h2 className="text-md text-center mt-10 text-red-600 lg:text-xl ">
+                <h2 className="text-md mt-10  text-left font-semibold text-red-600 lg:text-xl ">
                     Institute of Civil Building and Engineering (Departments have given below)
                 </h2>
 
@@ -85,7 +83,7 @@ const Ukhta = () => {
                     ))}
                 </ul>
 
-                <h2 className="text-md text-center  text-red-600 lg:text-xl mt-10">
+                <h2 className="text-md text-left font-semibold text-red-600 lg:text-xl mt-10">
                     Institute of Economics, Management and Information Technology (Departments have given below)
                 </h2>
 
@@ -112,7 +110,7 @@ const Ukhta = () => {
                     ))}
                 </ul>
 
-                <h2 className="text-md text-center  text-red-600 lg:text-xl mt-10">
+                <h2 className="text-md text-left font-semibold text-red-600 lg:text-xl mt-10">
                     Institute of Advanced Training (Departments have given below)
                 </h2>
 
@@ -140,7 +138,7 @@ const Ukhta = () => {
                     ))}
                 </ul>
 
-                <h2 className="text-md text-center  text-red-600 lg:text-xl mt-10">
+                <h2 className="text-md text-left font-semibold text-red-600 lg:text-xl mt-10">
                     Institute of Industry (Departments have given below)
                 </h2>
 
@@ -166,17 +164,19 @@ const Ukhta = () => {
 
             <div className="bg-red-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
                 <h2 className="text-xl lg:text-2xl mb-4 font-semibold">
-                    Admission open, interesting students may contact us
+                    Admission intake is open, interested students may apply now!
                 </h2>
                 <h3 className="text-lg lg:text-2xl font-semibold mb-4">
-                    Contact numbers: +7-9515190376 (Rus) | +917428212236 (Ind)
+                    A gateway to USTU, Russia – (Reliable Russian Educational Consultants)
                 </h3>
-                <h6 className="mb-4">Email: thedoctors.iea@gmail.com</h6>
-                <h6>Students or parents can write to us on at WhatsApp also +7-9515190376 (24*7)</h6>
+                <h6 className="mb-4">
+                    Email: contact@rrecrussia.com, rrec.educonsultants@gmail.com
+                </h6>
                 <h3 className="text-lg lg:text-2xl font-semibold mb-4 mt-4">
                     DON’T MISS YOUR OPPORTUNITY TO STUDY AT UKHTA STATE TECHNICAL UNIVERSITY
                 </h3>
             </div>
+
 
 
         </>

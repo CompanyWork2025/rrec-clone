@@ -104,7 +104,7 @@ const DonState = () => {
                     (Authorized Official Representative of Indian & Foreign Students)
                 </h3>
                 <p className="text-base lg:text-lg mb-4">
-                    Admission open for the 2024 academic year. Interested students may contact us.
+                    Admission open for the 2025 academic year. Interested students may contact us.
                 </p>
                 <h3 className="text-lg lg:text-2xl font-semibold mb-4">
                     Contact Numbers: +7-9515371133 (Russia) | +91-7042284508, +91-7042284509 (India)

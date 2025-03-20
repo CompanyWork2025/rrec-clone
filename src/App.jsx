@@ -67,6 +67,7 @@ import Moscow from './components/MedicalUniversities/Moscow';
 import DonState from "./components/TechnicalUniversities/DonState";
 import Southern from "./components/TechnicalUniversities/SouthernFederal";
 import StPetersburg from './components/TechnicalUniversities/StPetersburg';
+import Veterinary from './components/TechnicalUniversities/Veterinary';
 import Ukhta from './components/TechnicalUniversities/Ukhta';
 
 
@@ -228,6 +229,7 @@ function App() {
           <Route path="/southern-federal-university-russia" element={<Southern />} />
           <Route path="/study-mba-in-southern-federal-university-russia-in-english-medium" element={<MBA />} />
           <Route path="/rostov-state-university-economics-russia" element={<RostovEco />} />
+          <Route path="/veterinary-medicine-don-state-technical-university" element={<Veterinary />} />
           <Route path="/saint-petersburg-polytechnic-university" element={<StPetersburg />} />
           <Route path="/ukhta-state-technical-university-russia" element={<Ukhta />} />
 

@@ -143,7 +143,7 @@ const SouthernFederal = () => {
                     (Authorized official representative of Indians & foreign students)
                 </h3>
                 <h3 className="text-lg lg:text-2xl font-semibold mb-4">
-                    Admission open for the 2024 academic year, interesting students may contact us
+                    Admission open for the 2025 academic year, interesting students may contact us
                 </h3>
                 <h3 className="text-lg lg:text-2xl font-semibold mb-4">
                     Contact numbers: +7-9515371133 (Rus) | +917042284508, 509 (Ind)

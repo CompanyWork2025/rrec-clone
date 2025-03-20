@@ -76,7 +76,7 @@ const RostovEco = () => {
                     A Gateway to RSUE – (Reliable Russian Educational Consultants)
                 </h2>
                 <p className="text-base lg:text-lg mb-4">
-                    Admission open for the 2024 academic year. Interested students may contact us for admission and fees.
+                    Admission open for the 2025 academic year. Interested students may contact us for admission and fees.
                 </p>
                 <h6>
                     Email: contact@rrecrussia.com, rrec.educonsultants@gmail.com
