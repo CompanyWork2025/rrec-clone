@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import { Play, Volume2, VolumeX } from "lucide-react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import img from "../../assets/thumbnail.png";
 import vid from "../../assets/consultant.mp4";
 import vid2 from "../../assets/consultant2.mp4";
 
@@ -154,11 +155,11 @@ export default function Media() {
                 />
                 {/* Content Overlay (Inside PNG) */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-20 py-6">
-                  <h2 className="text-lg lg:text-xl text-red-600 font-bold">
-                    Ural State Medical University
+                  <h2 className="text-lg lg:text-xl text-red-600 pb-2 font-bold">
+                    Why Study in Russia? | Top Reasons, Benefits & Opportunities
                   </h2>
-                  <p className="text-sm text-gray-800 px-4">
-                    Study in Yekaterinburg | 🎓 Top-Quality Medical Education | 🌍 Globally Recognized Degree
+                  <p className="text-sm text-gray-800 px-4 pb-8">
+                    Top reasons to study in Russia 🎓
                   </p>
                 </div>
               </div>
@@ -174,7 +175,7 @@ export default function Media() {
                   ref={videoRef2}
                   src={vid2}
                   className="w-full h-full object-cover rounded-lg"
-                  poster="https://img.youtube.com/vi/hf_FVB9JF8k/maxresdefault.jpg"
+                  poster={img}
                   onClick={() => togglePlay(2)}
                   muted={isMuted}
                 ></video>
