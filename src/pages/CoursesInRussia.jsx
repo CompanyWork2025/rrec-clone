@@ -7,7 +7,7 @@ const universityData = [
   { id: 2, name: 'Fee structure for MBBS, BDS, Pharmacy', img: 'https://rrecrussia.com/public/upload/subcategory/1802189266190815.webp.webp', path: "/fee-structure" },
   { id: 3, name: 'Veterinary Medicine', img: 'https://rrecrussia.com/public/upload/subcategory/1802189319068661.jpg.webp', path: "/veterinary-medicine-don-state-technical-university" },
   { id: 4, name: 'Engineering & Technical Courses', img: 'https://rrecrussia.com/public/upload/subcategory/1802189702306324.webp.webp', path: "/engineering-technical-specialties" },
-  { id: 5, name: 'Humanities & Classic Specialties', img: 'https://rrecrussia.com/public/upload/subcategory/1802189766610417.jpg.webp' },
+  { id: 5, name: 'Humanities & Classic Specialties', img: 'https://rrecrussia.com/public/upload/subcategory/1802189766610417.jpg.webp', path: "/humanities-classic-specialties-economical-specialties" },
   { id: 6, name: 'Economical Specialties', img: 'https://rrecrussia.com/public/upload/subcategory/1802189820749015.jpg.webp' },
   { id: 7, name: 'Post Graduation Courses', img: 'https://rrecrussia.com/public/upload/subcategory/1802189856129557.png.webp' },
   { id: 8, name: 'A Grade Engineering University', img: 'https://rrecrussia.com/public/upload/subcategory/1802189912848457.jpg.webp' },

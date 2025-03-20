@@ -77,6 +77,7 @@ import RostovEco from './components/TechnicalUniversities/RostovEco';
 {/* Courses */ }
 import Preparatory from "./components/Courses/Preparatory";
 import Engineer from "./components/Courses/Engineer";
+import Humanities from "./components/Courses/Humanities";
 
 
 
@@ -237,6 +238,7 @@ function App() {
           {/* Courses */}
           <Route path="/learn-russian-language-from-top-universities-of-russia" element={<Preparatory />} />
           <Route path="/engineering-technical-specialties" element={<Engineer />} />
+          <Route path="/humanities-classic-specialties-economical-specialties" element={<Humanities />} />
 
         </Routes>
         <Footer />
