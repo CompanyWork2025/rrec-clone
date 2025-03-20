@@ -33,7 +33,7 @@ const pages = universities.length % 2 === 0 ? universities : [...universities, {
 
 export default function UniversityBook() {
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gray-300">
+        <div className="flex justify-center items-center h-[620px] bg-gray-300">
             <HTMLFlipBook
                 width={450}
                 height={600}
@@ -47,18 +47,18 @@ export default function UniversityBook() {
             >
                 {/* First Page - About Us */}
                 <div className="w-full h-full font-roboto flex flex-col justify-center items-center p-8 bg-white shadow-md border border-gray-300 rounded-lg">
-                    <div className="flex flex-col md:flex-row items-center w-full ml-14 mt-6">
+                    <div className="flex md:flex-row items-center w-full ml-4 lg:ml-14 mt-6">
                         {/* Broken border line */}
-                        <div className="flex items-center lg:mr-4">
+                        <div className="flex items-center mr-4 -mt-10 lg:mt-0 lg:mr-4">
                             <div className="w-2 h-[2px] bg-[#f2312d]" />
                             <div className="w-2 h-[2px] bg-transparent" /> {/* Gap between lines */}
                             <div className="w-2 h-[2px] bg-[#f2312d]" />
                             <div className="w-2 h-[2px] bg-transparent" />
                             <div className="w-10 h-[2px] bg-[#f2312d]" />
                         </div>
-                        <h1 className="text-lg font-bold mt-4 md:mt-0 text-[#f2312d]">About Us</h1>
+                        <h1 className="text-lg font-bold -mt-10 lg:mt-4 md:mt-0 text-[#f2312d]">About Us</h1>
                         {/* Broken border line */}
-                        <div className="flex items-center lg:ml-4">
+                        <div className="flex items-center ml-4  -mt-10 lg:mt-0 lg:ml-4">
                             <div className="w-10 h-[2px] bg-[#f2312d]" />
                             <div className="w-2 h-[2px] bg-transparent" /> {/* Gap between lines */}
                             <div className="w-2 h-[2px] bg-[#f2312d]" />
