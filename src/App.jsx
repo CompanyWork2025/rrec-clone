@@ -77,6 +77,7 @@ import Armenia from './components/MBBS/Armenia';
 import Belarus from './components/MBBS/Belarus';
 import Kazakhstan from './components/MBBS/Kazakhstan';
 import MBA from './components/TechnicalUniversities/MBA';
+import RostovEco from './components/TechnicalUniversities/RostovEco';
 
 
 
@@ -226,6 +227,7 @@ function App() {
           <Route path="/don-state-technical-university-russia" element={<DonState />} />
           <Route path="/southern-federal-university-russia" element={<Southern />} />
           <Route path="/study-mba-in-southern-federal-university-russia-in-english-medium" element={<MBA />} />
+          <Route path="/rostov-state-university-economics-russia" element={<RostovEco />} />
           <Route path="/saint-petersburg-polytechnic-university" element={<StPetersburg />} />
           <Route path="/ukhta-state-technical-university-russia" element={<Ukhta />} />
 
