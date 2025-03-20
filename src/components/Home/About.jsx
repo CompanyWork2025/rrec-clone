@@ -1,93 +1,115 @@
-import React from "react";
-import { useTranslation } from 'react-i18next';
-import { motion } from "framer-motion";
+import { useState } from "react";
+import HTMLFlipBook from "react-pageflip";
 
-const AboutSection = () => {
-    const { t } = useTranslation();
+const universities = [
+    {
+        name: "Rostov State Medical University",
+        description: "A leading medical university in Russia with a strong emphasis on research and clinical practice.",
+        para: "Rostov is among one of the oldest and first medical universities in Russia. Rostov University came into existence in 1930. It is also known as RostSMU or RostGMU. This is a non-profit medical education institute that is located in Rostov-on-Don City, Russia and it is the largest Government Medical University in South Russian Federation. For more details, you can visit Rostov State Medical University’s official website.",
+        logo: "https://www.rostgmu.in/logo.png",
+    },
+    {
+        name: "Kazan State Medical University",
+        description: "One of the oldest medical universities in Russia, offering world-class education.",
+        para: "Kazan State Medical University (KSMU) is a multi-functional and multi-level state institution of higher learning in medicine. It ranks among the top medical universities in Russia. KSMU has trained thousands of international students and is known for its excellent research programs and modern facilities.",
+        logo: "https://upload.wikimedia.org/wikipedia/en/1/14/KSMU_logo.png",
+    },
+    {
+        name: "Crimea Federal University",
+        description: "A prestigious institution known for its advanced medical programs.",
+        para: "Crimea Federal University is one of the largest medical institutions in Russia, located in Simferopol, Crimea. The university is known for its extensive research in the medical field and its high standards of medical education. It offers various undergraduate and postgraduate programs with advanced laboratories and clinical training.",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzeuqGYZITuwkzWXgV7WMeSSE4wtKKf_COxw&s",
+    },
+    {
+        name: "Volgograd State Medical University",
+        description: "An internationally recognized university providing top-notch medical education.",
+        para: "Volgograd State Medical University (VolgSMU) is one of the most prestigious medical universities in Russia. Established in 1935, it has gained recognition globally for its strong medical faculty and advanced research facilities. The university offers excellent opportunities for practical training and has affiliations with top hospitals in Russia.",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV35SdAS0GfivWa-QphguoSOhOpRZZy8h6aQ&s",
+    }
+];
 
+// Ensure an even number of pages (React-PageFlip works best with even pages)
+const pages = universities.length % 2 === 0 ? universities : [...universities, { blank: true }];
+
+export default function UniversityBook() {
     return (
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 p-8 bg-gray-50">
-            {/* Left side: Images */}
-            <motion.div 
-                className="relative w-full lg:w-1/2"
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
+        <div className="flex justify-center items-center min-h-screen bg-gray-300">
+            <HTMLFlipBook
+                width={450}
+                height={600}
+                size="stretch"
+                minWidth={300}
+                maxWidth={450}
+                minHeight={400}
+                maxHeight={600}
+                maxShadowOpacity={0.5}
+                className="shadow-xl rounded-lg overflow-hidden bg-gray-100"
             >
-                <img
-                    src="https://www.canadaqbank.com/blog/storage/2019/08/medical-students-studying.jpg"
-                    alt="Main"
-                    className="rounded-2xl shadow-lg w-full"
-                />
-                <motion.img
-                    src="https://img.freepik.com/premium-photo/medical-concept-indian-beautiful-female-doctor-white-coat-with-stethoscope-waist-up-medical-student_255667-21448.jpg"
-                    alt="Small"
-                    className="hidden lg:block absolute lg:-bottom-20 lg:-right-14 lg:w-96 rounded-xl shadow-md border-8 border-white"
-                    initial={{ opacity: 0, x: 50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    viewport={{ once: true }}
-                />
-            </motion.div>
-
-            {/* Right side: Text */}
-            <motion.div 
-                className="w-full lg:w-1/2 lg:px-8"
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-            >
-                <div className="flex flex-col md:flex-row items-center w-full -mt-6">
-                    <h1 className="text-lg font-bold mt-4 md:mt-0 text-[#f2312d]">{t('aboutUs')}</h1>
-                    {/* Broken border line */}
-                    <div className="flex items-center lg:ml-4">
-                        <div className="w-10 h-[2px] bg-[#f2312d]" />
-                        <div className="w-2 h-[2px] bg-transparent" /> {/* Gap between lines */}
-                        <div className="w-2 h-[2px] bg-[#f2312d]" />
-                        <div className="w-2 h-[2px] bg-transparent" />
-                        <div className="w-2 h-[2px] bg-[#f2312d]" />
+                {/* First Page - About Us */}
+                <div className="w-full h-full font-roboto flex flex-col justify-center items-center p-8 bg-white shadow-md border border-gray-300 rounded-lg">
+                    <div className="flex flex-col md:flex-row items-center w-full ml-14 mt-6">
+                        {/* Broken border line */}
+                        <div className="flex items-center lg:mr-4">
+                            <div className="w-2 h-[2px] bg-[#f2312d]" />
+                            <div className="w-2 h-[2px] bg-transparent" /> {/* Gap between lines */}
+                            <div className="w-2 h-[2px] bg-[#f2312d]" />
+                            <div className="w-2 h-[2px] bg-transparent" />
+                            <div className="w-10 h-[2px] bg-[#f2312d]" />
+                        </div>
+                        <h1 className="text-lg font-bold mt-4 md:mt-0 text-[#f2312d]">About Us</h1>
+                        {/* Broken border line */}
+                        <div className="flex items-center lg:ml-4">
+                            <div className="w-10 h-[2px] bg-[#f2312d]" />
+                            <div className="w-2 h-[2px] bg-transparent" /> {/* Gap between lines */}
+                            <div className="w-2 h-[2px] bg-[#f2312d]" />
+                            <div className="w-2 h-[2px] bg-transparent" />
+                            <div className="w-2 h-[2px] bg-[#f2312d]" />
+                        </div>
                     </div>
+                    <h1 className="text-lg lg:text-2xl font-semibold text-center mt-4">Welcome to RREC</h1>
+                    <p className="text-gray-700 mt-4 text-sm leading-relaxed text-center">
+                    Moscow is the capital of Russia. Within the Republic there are around 1,000 towns, of these, including Moscow, nine cities have a population of over a million (St.Petersburg, Volgograd, Rostov on Don, Nizhny Novgorod, Kazan, Ufa, Novosibirsk, Sverdlovsk, Chelyabinsk, and Omsk).
+                    </p>
+                    <p className="text-gray-700 mt-4 text-sm leading-relaxed text-center">Rus­sia, also offi­cially known as the Russ­ian Fed­er­a­tion, is a coun­try in north­ern Eura­sia. It is a fed­eral semi-presidential repub­lic, com­pris­ing 83 fed­eral sub­jects. From north­west to south­east, Rus­sia shares land bor­ders with Nor­way, Fin­land, Esto­nia, Latvia, Lithua­nia and Poland (both with Kalin­ingrad Oblast), Belarus, Ukraine, Geor­gia, Azer­bai­jan, Kaza­khstan, China, Mon­go­lia, and North Korea. It shares mar­itime bor­ders with Japan by the Sea of Okhotsk and the U.S. state of Alaska across the Bering Strait.</p>
                 </div>
-                <h2 className="text-3xl text-center lg:text-left font-roboto font-bold text-gray-800 mt-2">
-                    {t('welcomeToRREC')}
-                </h2>
-                <p className="mt-4 font-roboto text-justify text-gray-600 leading-relaxed">
-                    {t('moscowDescription')}
-                </p>
-                <p className="mt-4 font-roboto text-justify text-gray-600 leading-relaxed">
-                    {t('russiaDescription')}
-                </p>
-                
-                {/* Experience Card */}
-                <motion.div 
-                    className="max-w-sm bg-white mt-4 shadow-lg rounded-lg overflow-hidden flex flex-row"
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    viewport={{ once: true }}
-                >
-                    {/* Left side: Image */}
-                    <div className="w-full sm:w-1/3 h-auto">
-                        <img
-                            className="w-full h-full object-cover rounded-t-lg sm:rounded-l-lg"
-                            src="https://static.theprint.in/wp-content/uploads/2022/09/ANI-20220925131355.jpg"
-                            alt="Placeholder"
-                        />
-                    </div>
 
-                    {/* Right side: Text */}
-                    <div className="flex flex-col justify-center px-4 py-2 w-full sm:w-2/3">
-                        <h3 className="text-xl font-roboto font-semibold text-gray-800">{t('experienceYears')}</h3>
-                        <p className="font-roboto text-gray-600 mt-2">
-                            {t('educationExperience')}
-                        </p>
+                {/* University Pages */}
+                {pages.map((uni, index) => (
+                    <div key={index} className="w-full h-full flex font-roboto bg-white shadow-lg border border-gray-200 rounded-lg">
+                        {/* Left Page - University Name & Description */}
+                        <div className="w-full flex flex-col justify-center p-6 border-r border-gray-300">
+                            {uni.blank ? (
+                                <h2 className="text-2xl font-bold text-gray-700">No Data Available</h2>
+                            ) : (
+                                <>
+                                    <h2 className="text-xl text-center font-extrabold text-gray-800 tracking-wide border-b-4 border-red-500 pb-2">
+                                        {uni.name}
+                                    </h2>
+                                    <p className="text-gray-700 mt-4 text-center leading-relaxed text-lg">{uni.description}</p>
+                                </>
+                            )}
+                        </div>
+
+                        {/* Right Page - University Logo & Read More Button */}
+                        <div className="w-full flex flex-col items-center justify-center p-6">
+                            {uni.blank ? (
+                                <h2 className="text-lg font-semibold text-gray-700">Empty Page</h2>
+                            ) : (
+                                <>
+                                    <div className="w-24 h-24 flex items-center justify-center bg-white shadow-lg rounded-full border border-gray-400 overflow-hidden">
+                                        <img src={uni.logo} alt={uni.name} className="w-32 h-32 object-contain" />
+                                    </div>
+                                    <h2 className="text-lg font-semibold text-gray-700 mt-4">{uni.name}</h2>
+                                    <p className="text-gray-700 mt-4 text-center leading-relaxed text-xs">{uni.para}</p>
+                                    <button className="mt-5 px-5 py-2 bg-gradient-to-r from-blue-500 to-red-500 text-white rounded-lg shadow-md hover:scale-105 transform transition-all">
+                                        Read More
+                                    </button>
+                                </>
+                            )}
+                        </div>
                     </div>
-                </motion.div>
-            </motion.div>
+                ))}
+            </HTMLFlipBook>
         </div>
     );
-};
-
-export default AboutSection;
+}
