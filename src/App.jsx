@@ -69,6 +69,7 @@ import Southern from "./components/TechnicalUniversities/SouthernFederal";
 import StPetersburg from './components/TechnicalUniversities/StPetersburg';
 import Veterinary from './components/TechnicalUniversities/Veterinary';
 import Ukhta from './components/TechnicalUniversities/Ukhta';
+import Udmurt from "./components/TechnicalUniversities/Udmurt";
 
 
 {/* MBBS Russia */ }
@@ -232,6 +233,7 @@ function App() {
           <Route path="/veterinary-medicine-don-state-technical-university" element={<Veterinary />} />
           <Route path="/saint-petersburg-polytechnic-university" element={<StPetersburg />} />
           <Route path="/ukhta-state-technical-university-russia" element={<Ukhta />} />
+          <Route path="/udmurt-state-university-russia" element={<Udmurt />} />
 
 
           {/* MBBS Russia */}

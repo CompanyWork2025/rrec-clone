@@ -10,8 +10,8 @@ const universityData = [
   { id: 4, name: 'Rostov State University of Economics, Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802188006965033.jpg.webp', path: "/rostov-state-university-economics-russia"},
   { id: 5, name: 'Veterinary Medicine - DSTU Rostov', img: 'https://rrecrussia.com/public/upload/subcategory/1802188054847354.jpg.webp', path: "/veterinary-medicine-don-state-technical-university" },
   { id: 6, name: 'Ukhta State Technical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188096887736.jpg.webp',  path: '/ukhta-state-technical-university-russia', },
-  { id: 7, name: 'St. Petersburg Polytechnic University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188141822526.jpg.webp', },
-  { id: 8, name: 'Udmurt State University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188184507520.jpg.webp', },
+  { id: 7, name: 'St. Petersburg Polytechnic University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188141822526.jpg.webp', path: "/saint-petersburg-polytechnic-university" },
+  { id: 8, name: 'Udmurt State University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188184507520.jpg.webp', path: '/udmurt-state-university-russia'},
 ];
 
 function TechnicalUniversities() {
