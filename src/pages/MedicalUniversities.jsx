@@ -1,30 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import img1 from "../assets/kazan.jpeg";
+import img2 from "../assets/rostov.jpeg";
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const universityData = [
-  { id: 1, name: 'Rostov State Medical University', logo: 'https://www.rostgmu.in/logo.png?v=2', img: 'https://rrecrussia.com/public/upload/subcategory/1802179036441322.webp.webp' },
-  { id: 2, name: 'Ural State Medical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802179115499734.jpg.webp' },
-  { id: 3, name: 'Crimea Federal University', img: 'https://rrecrussia.com/public/upload/subcategory/1802179222672712.jpg.webp' },
-  { id: 4, name: 'Volgograd State Medical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802179263270516.webp.webp' },
-  { id: 5, name: 'North-Western State Medical University named after I.I. Mechnikov, Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802180244301860.jpg.webp' },
-  { id: 6, name: 'Kursk State Medical University, Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802180281645416.jpg.webp' },
-  { id: 7, name: 'Kazan Federal University(IFMB), Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802180313255303.webp.webp' },
-  { id: 8, name: 'Lobachevsky State University of Nizhny Nnovgorod, Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802180363676129.jpg.webp' },
-  { id: 9, name: 'Kazan State Medical University, Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802184790543782.jpg.webp' },
-  { id: 10, name: 'Yaroslavl State Medical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802179301397313.jpg.webp' },
-  { id: 11, name: "People's Friendship University, Russia", img: 'https://rrecrussia.com/public/upload/subcategory/1802184823964992.jpeg.webp' },
-  { id: 12, name: 'North Ossetian State Medical Academy, Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802184860539724.webp.webp' },
-  { id: 13, name: 'Izhevsk State Medical Academy, Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802184894753817.webp.webp' },
-  { id: 14, name: 'Samara State Medical University, Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802184943253742.webp.webp' },
+  { id: 1, name: 'Rostov State Medical University', img: img2, path: '/rostov-state-medical-university' },
+  { id: 2, name: 'Ural State Medical University', img: "https://uralstatemedicaluniversity.com/wp-content/uploads/2024/01/ural-state-medical-university-smapse-samll.jpg", path: '/ural-state-medical-university' },
+  { id: 3, name: 'Crimea Federal University (Medical Institute)', img: 'https://upload.wikimedia.org/wikipedia/commons/5/50/%D0%A2%D0%9D%D0%A3_-_panoramio_%284%29.jpg', path: '/crimea-federal-university-russia' },
+  { id: 4, name: 'Far Eastern Federal University', img: 'https://www.yashoverseas.org/wp-content/uploads/2024/01/Far-Eastern-Federal-University-scaled.jpg', path: '/fareastern-federal-university' },
+  { id: 5, name: 'Kemerovo State Medical University', img: 'https://images.shiksha.com/mediadata/images/1595486043phpxMxiPU_g.png', path: '/kemerova-state-medical-university' },
+  { id: 6, name: 'Bashkir State Medical University', img: 'https://studymedico.com/public//storage/uploads/university/blog185-BASHKIR%20STATE%20MEDICAL%20UNIVERSITY%20,%20MBBS%20IN%20RUSSIA_1.png', path: '/bashkir-state-medical-university' },
+  { id: 7, name: 'Kazan State Medical University', img: img1, path: '/kazan-state-medical-university' },
+  { id: 8, name: 'North-Western State Medical University named after I.I Mechnikov', img: 'https://rrecrussia.com/public/upload/subcategory/1802184860539724.webp.webp', path: '/north-ossetian-state-medical-academy-russia' },
+  { id: 9, name: 'Kursk State Medical University', img: 'https://studymbbsinrussia.co.in/wp-content/uploads/2019/03/ksmu-kursk-russia.jpg', path: '/kursk-state-medical-university-russia' },
+  { id: 10, name: 'Krasnoyarsk State Medical University', img: 'https://studypalacehub.com/wp-content/uploads/2023/03/cr5.webp', path: '/krasnoyarsk-state-medical-university' },
+  { id: 11, name: 'Ivanovo State Medical University', img: 'https://eoclindia.com/wp-content/uploads/2024/08/%D0%BC%D0%B5%D0%B4%D0%B8%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%82-1.jpg', path: '/ivanovo-state-medical-university' },
+  { id: 12, name: 'Pitirim Sorokin Syktyvkar State University', img: 'https://en.syktsu.ru/wp-content/uploads/2020/09/IMG_2772.jpg', path: '/pitirim-sorokin-syktyvkar-state-university' },
+  { id: 13, name: 'Synergy University Moscow University', img: 'https://hoorainassociates.com/wp-content/uploads/2023/11/Synergy-University.png', path: '/synergy-university-moscow' },
+  { id: 14, name: "People's Friendship University Moscow", img: 'https://rrecrussia.com/public/upload/subcategory/1802184823964992.jpeg.webp', path: '/peoples-friendship-university-russia' },
+  { id: 15, name: 'Yaroslavl State Medical University', img: 'https://ik.imagekit.io/syustaging/SYU_PREPROD/image_1737378767468_zoVeTkrNI.webp?tr=w-3840', path: '/mbbs-in-yaroslavl-state-medical-university-russia' },
+  { id: 16, name: 'Moscow Pedagogical State University', img: 'https://upload.wikimedia.org/wikipedia/commons/8/85/Wiki_pirogovka_clinics_1.jpg', path: '/moscow-pedagogical-state-university' },
+  { id: 17, name: 'Volgograd State Medical University, Russia', img: 'https://medicinecolleges.in/assets/colleges/3014/bannerimage.jpg', path: '/volgograd-state-medical-university-russia' },
+  { id: 18, name: 'Samara State Medical University', img: 'https://blog.rmgoe.org/wp-content/uploads/2023/05/Samara-State-Medical-University-Russia.webp', path: '/mbbs-from-samara-state-medical-university' },
+  { id: 17, name: 'Samarkand State Medical University (Uzbekistan)', img: 'https://argroupofeducation.com/wp-content/uploads/elementor/thumbs/imgpsh_fullsize_anim-4-qgqswlfejubtago25aeujue5rem1wxph3rc3ekddto.png', path: '/mbbs-in-uzbekistan' },
 ];
+
 
 function MedicalUniversities() {
   const [currentPage, setCurrentPage] = useState(1);
+  const navigate = useNavigate();
   const itemsPerPage = 9;
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentUniversities = universityData.slice(indexOfFirstItem, indexOfLastItem);
+
+  // Scroll to top when page changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [currentPage]);
 
   const handleNext = () => {
     if (indexOfLastItem < universityData.length) {
@@ -107,6 +122,7 @@ function MedicalUniversities() {
                     className="relative inline-flex items-center justify-start overflow-hidden px-3 py-2 text-lg font-semibold text-white border-2 border-white rounded-md bg-transparent transition-all duration-300 ease-in-out group"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
+                    onClick={() => navigate(university.path)}
                   >
                     <span className="w-0 h-0 rounded bg-[#f2312d] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
                     <span className="w-full text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
@@ -125,14 +141,20 @@ function MedicalUniversities() {
         {/* Pagination Buttons */}
         <div className="flex justify-center items-center gap-4 mt-8">
           <button
-            onClick={handlePrevious}
+            onClick={() => {
+              handlePrevious();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
             disabled={currentPage === 1}
             className="px-4 py-2 bg-gradient-to-r from-gray-500 to-gray-700 text-white rounded-lg disabled:opacity-50"
           >
             Previous
           </button>
           <button
-            onClick={handleNext}
+            onClick={() => {
+              handleNext();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
             disabled={indexOfLastItem >= universityData.length}
             className="px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-lg disabled:opacity-50"
           >

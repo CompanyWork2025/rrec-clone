@@ -38,6 +38,26 @@ import BlogDetail from './pages/BlogDetail';
 import Apply from './pages/Apply';
 import Partner from './pages/Partner';
 
+{/* Medical Universities */ }
+import Rostov from './components/MedicalUniversities/Rostov';
+import Kazan from './components/MedicalUniversities/Kazan';
+import Yaroslavl from './components/MedicalUniversities/Yaroslavl';
+import Kursk from './components/MedicalUniversities/Kursk';
+import Samara from './components/MedicalUniversities/Samara';
+import Samarkand from './components/MedicalUniversities/Samarkand';
+import Volgo from './components/MedicalUniversities/Volgograd';
+import Crimea from './components/MedicalUniversities/Crimea';
+import KazanFedreal from './components/MedicalUniversities/Kazan-Fedreal';
+import Ossetian from './components/MedicalUniversities/Ossetian';
+import People from './components/MedicalUniversities/People';
+import Stavropol from './components/MedicalUniversities/Stavropol';
+import UralMed from './components/MedicalUniversities/Ural';
+import Bashkir from './components/MedicalUniversities/Bashkir';
+import Kemerova from './components/MedicalUniversities/Kemerova';
+import Kabardino from './components/MedicalUniversities/Kabardino';
+import FarEastern from './components/MedicalUniversities/FarEastern';
+import Immanuel from './components/MedicalUniversities/Immanuel';
+
 
 const StickyButton = ({ text, link, position }) => {
   return (
@@ -121,6 +141,8 @@ function App() {
         <ScrollToTop /> {/* Add ScrollToTop here */}
         <Navbar />
         <Routes>
+
+          { /* Pages */}
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/russia" element={<AboutRussia />} />
@@ -152,6 +174,28 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/partner-with-us" element={<Partner />} />
           <Route path="/apply-now" element={<Apply />} />
+
+          {/* Medical Universities */}
+          <Route path="/rostov-state-medical-university" element={<Rostov />} />
+          <Route path="/kazan-state-medical-university" element={<Kazan />} />
+          <Route path="/mbbs-in-yaroslavl-state-medical-university-russia" element={<Yaroslavl />} />
+          <Route path="/kursk-state-medical-university-russia" element={<Kursk />} />
+          <Route path="/mbbs-from-samara-state-medical-university" element={<Samara />} />
+          <Route path="/mbbs-in-uzbekistan" element={<Samarkand />} />
+          <Route path="/volgograd-state-medical-university-russia" element={<Volgo />} />
+          <Route path="/crimea-federal-university-russia" element={<Crimea />} />
+          <Route path="/kazan-federal-university" element={<KazanFedreal />} />
+          <Route path="/north-ossetian-state-medical-academy-russia" element={<Ossetian />} />
+          <Route path="/peoples-friendship-university-russia" element={<People />} />
+          <Route path="/stavropol-state-medical-university-russia" element={<Stavropol />} />
+          <Route path="/bashkir-state-medical-university" element={<Bashkir />} />
+          <Route path="/kemerova-state-medical-university" element={<Kemerova />} />
+          <Route path="/kabardino-balkarian-state-university" element={<Kabardino />} />
+          <Route path="/ural-state-medical-university" element={<UralMed />} />
+          <Route path="/fareastern-federal-university" element={<FarEastern />} />
+          <Route path="/immanuel-kant-baltic-federal-university" element={<Immanuel />} />
+
+
         </Routes>
         <Footer />
 
