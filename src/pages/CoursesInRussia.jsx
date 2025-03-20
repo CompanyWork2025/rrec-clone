@@ -1,20 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
 const universityData = [
-  { id: 1, name: 'Russian Language Course', img: 'https://rrecrussia.com/public/upload/subcategory/1802189217251558.jpg.webp', path: "/learn-russian-language-from-top-universities-of-russia"},
+  { id: 1, name: 'Russian Language Course', img: 'https://rrecrussia.com/public/upload/subcategory/1802189217251558.jpg.webp', path: "/learn-russian-language-from-top-universities-of-russia" },
   { id: 2, name: 'Fee structure for MBBS, BDS, Pharmacy', img: 'https://rrecrussia.com/public/upload/subcategory/1802189266190815.webp.webp', path: "/fee-structure" },
   { id: 3, name: 'Veterinary Medicine', img: 'https://rrecrussia.com/public/upload/subcategory/1802189319068661.jpg.webp', path: "/veterinary-medicine-don-state-technical-university" },
   { id: 4, name: 'Engineering & Technical Courses', img: 'https://rrecrussia.com/public/upload/subcategory/1802189702306324.webp.webp', path: "/engineering-technical-specialties" },
   { id: 5, name: 'Humanities & Classic Specialties', img: 'https://rrecrussia.com/public/upload/subcategory/1802189766610417.jpg.webp', path: "/humanities-classic-specialties-economical-specialties" },
-  { id: 6, name: 'Economical Specialties', img: 'https://rrecrussia.com/public/upload/subcategory/1802189820749015.jpg.webp' },
-  { id: 7, name: 'Post Graduation Courses', img: 'https://rrecrussia.com/public/upload/subcategory/1802189856129557.png.webp' },
-  { id: 8, name: 'A Grade Engineering University', img: 'https://rrecrussia.com/public/upload/subcategory/1802189912848457.jpg.webp' },
-  { id: 9, name: 'A Grade Medical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802189931901969.webp.webp' },
-  { id: 10, name: 'Top Medical Universities of Russia ', img: 'https://rrecrussia.com/public/upload/subcategory/1802189944294392.jpg.webp' },
-  { id: 11, name: "MBA in EM - SfedU, Russia", img: 'https://rrecrussia.com/public/upload/subcategory/1802189957786950.jpg.webp' },
-
+  { id: 6, name: 'Economical Specialties', img: 'https://rrecrussia.com/public/upload/subcategory/1802189820749015.jpg.webp', path: "/rostov-state-university-economics-russia" },
+  { id: 7, name: 'Post Graduation Courses', img: 'https://rrecrussia.com/public/upload/subcategory/1802189856129557.png.webp', path: "https://www.rrecrostov.com/" },
+  { id: 8, name: 'A Grade Engineering University', img: 'https://rrecrussia.com/public/upload/subcategory/1802189912848457.jpg.webp', path: "/southern-federal-university-russia" },
+  { id: 9, name: 'A Grade Medical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802189931901969.webp.webp', path: "https://www.rrecrostov.com/" },
+  { id: 10, name: 'Top Medical Universities of Russia ', img: 'https://rrecrussia.com/public/upload/subcategory/1802189944294392.jpg.webp', path: "/top-medical-universities-of-russia" },
+  { id: 11, name: "MBA in EM - SfedU, Russia", img: 'https://rrecrussia.com/public/upload/subcategory/1802189957786950.jpg.webp', path: "/study-mba-in-southern-federal-university-russia-in-english-medium" },
 ];
 
 function CoursesRussia() {
@@ -25,6 +24,11 @@ function CoursesRussia() {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentUniversities = universityData.slice(indexOfFirstItem, indexOfLastItem);
+
+  // Scroll to top when page changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [currentPage]);
 
   const handleNext = () => {
     if (indexOfLastItem < universityData.length) {
@@ -107,7 +111,13 @@ function CoursesRussia() {
                     className="relative inline-flex items-center justify-start overflow-hidden px-3 py-2 text-lg font-semibold text-white border-2 border-white rounded-md bg-transparent transition-all duration-300 ease-in-out group"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    onClick={() => navigate(university.path)}
+                    onClick={() => {
+                      if (university.path.startsWith("http")) {
+                        window.open(university.path, "_blank"); // Open external link in a new tab
+                      } else {
+                        navigate(university.path); // Navigate internally
+                      }
+                    }}
                   >
                     <span className="w-0 h-0 rounded bg-[#f2312d] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
                     <span className="w-full text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
@@ -115,6 +125,7 @@ function CoursesRussia() {
                     </span>
                   </motion.button>
                 </motion.div>
+
               </div>
             </div>
           ))}
@@ -123,14 +134,20 @@ function CoursesRussia() {
         {/* Pagination Buttons */}
         <div className="flex justify-center items-center gap-4 mt-8">
           <button
-            onClick={handlePrevious}
+            onClick={() => {
+              handlePrevious();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
             disabled={currentPage === 1}
             className="px-4 py-2 bg-gradient-to-r from-gray-500 to-gray-700 text-white rounded-lg disabled:opacity-50"
           >
             Previous
           </button>
           <button
-            onClick={handleNext}
+            onClick={() => {
+              handleNext();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
             disabled={indexOfLastItem >= universityData.length}
             className="px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-lg disabled:opacity-50"
           >

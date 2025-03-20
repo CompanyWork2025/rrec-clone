@@ -5,123 +5,79 @@ function FeePage1() {
 
   const universityData = [
     {
-      heading: "Rostov State Medical University | City: Rostov-on-Don, Russia",
-      fees: [
-        { label: "Fees Pattern", value: "Per Year" },
-        { label: "Total Fee 1st Year", value: "6100 USD" },
-        { label: "Fees 2nd-6th Per Year", value: "4550 USD" },
-      ],
-      note: "Indian food is available in Campus.",
+        heading: "Rostov State Medical University | City: Rostov-on-Don, Russia",
+        fees: [
+            { label: "Fees Pattern", value: "Per Year" },
+            { label: "Total Fee 1st Year", value: "6100 USD" },
+            { label: "Fees 2nd-6th Per Year", value: "4550 USD" },
+        ],
+        note: "Indian food is available in Campus.",
     },
     {
-      heading: "Samara State Medical University, Russia",
-      fees: [
-        { label: "Fees Pattern", value: "Per Year" },
-        { label: "Total Fee 1st Year", value: "5500 USD" },
-        { label: "Fees 2nd-6th Per Year", value: "5000 USD" },
-      ],
-      note: "-",
+        heading: "Ural State Medical University | City: Yekaterinburg, Russia",
+        fees: [
+            { label: "Fees Pattern", value: "Per Year" },
+            { label: "Total Fee 1st Year", value: "6000 USD" },
+            { label: "Fees 2nd-6th Per Year", value: "5000 USD" },
+        ],
+        note: "-",
     },
     {
-      heading: "Volgograd State Medical University | City: Volgograd, Russia",
-      fees: [
-        { label: "Fees Pattern", value: "Per Year" },
-        { label: "Total Fee 1st Year", value: "7580 USD" },
-        { label: "Fees 2nd-6th Per Year", value: "6580 USD" },
-      ],
-      note: "-",
+        heading: "Crimea Federal University (Medical Institute) | City: Simferopol, Russia",
+        fees: [
+            { label: "Fees Pattern", value: "Per Year" },
+            { label: "Total Fee 1st Year", value: "6500 USD" },
+            { label: "Fees 2nd-6th Per Year", value: "4500 USD" },
+        ],
+        note: "-",
     },
     {
-      heading: "Yaroslavl State Medical University, Russia",
-      fees: [
-        { label: "Fees Pattern", value: "Per Year" },
-        { label: "Total Fee 1st Year", value: "4600 USD" },
-        { label: "Fees 2nd-6th Per Year", value: "3800 USD" },
-      ],
-      note: "-",
+        heading: "Far Eastern Federal University | City: Vladivostok, Russia",
+        fees: [
+            { label: "Fees Pattern", value: "Per Year" },
+            { label: "Total Fee 1st Year", value: "7000 USD" },
+            { label: "Fees 2nd-6th Per Year", value: "6000 USD" },
+        ],
+        note: "-",
     },
     {
-      heading: "North-Western State Medical University named after I. I Mechnikov | City: St. Petersburg, Russia",
-      fees: [
-        { label: "Fees Pattern", value: "Per Year" },
-        { label: "Total Fee 1st Year", value: "7800 USD" },
-        { label: "Fees 2nd-6th Per Year", value: "6500 USD" },
-      ],
-      note: "-",
+        heading: "Kemerovo State Medical University | City: Kemerovo, Russia",
+        fees: [
+            { label: "Fees Pattern", value: "Per Year" },
+            { label: "Total Fee 1st Year", value: "5800 USD" },
+            { label: "Fees 2nd-6th Per Year", value: "4500 USD" },
+        ],
+        note: "-",
     },
     {
-      heading: "Kursk State Medical University | City: Kursk, Russia",
-      fees: [
-        { label: "Fees Pattern", value: "Per Year" },
-        { label: "Total Fee 1st Year", value: "6280 USD" },
-        { label: "Fees 2nd-6th Per Year", value: "6200 USD" }, ,
-      ],
-      note: "-",
+        heading: "Bashkir State Medical University | City: Ufa, Russia",
+        fees: [
+            { label: "Fees Pattern", value: "Per Year" },
+            { label: "Total Fee 1st Year", value: "5700 USD" },
+            { label: "Fees 2nd-6th Per Year", value: "4700 USD" },
+        ],
+        note: "-",
     },
     {
-      heading: "Kazan Federal University (Institute of Fundamental Medicine and Biology) | City: Kazan, Russia",
-      fees: [
-        { label: "Fees Pattern", value: "Per Year" },
-        { label: "Total Fee 1st Year", value: "8150 USD" },
-        { label: "Fees 2nd-6th Per Year", value: "6750 USD" },
-      ],
-      note: "-",
+        heading: "Kazan State Medical University | City: Kazan, Russia",
+        fees: [
+            { label: "Fees Pattern", value: "Per Year" },
+            { label: "Total Fee 1st Year", value: "6810 USD" },
+            { label: "Fees 2nd-6th Per Year", value: "6110 USD" },
+        ],
+        note: "The fees here are calculated as per government hostel fees, those who will not get a government hostel, need to pay 1000$ additional for a private hostel up to June Month.",
     },
     {
-      heading: "Crimea Federal University (Medical Academy) | City: Simferopol, Russia",
-      fees: [
-        { label: "Fees Pattern", value: "Per Year" },
-        { label: "Total Fee 1st Year", value: "	6500 USD" },
-        { label: "Fees 2nd-6th Per Year", value: "4500 USD" },
-      ],
-      note: "-",
-    },
-    {
-      heading: "Lobachevsky State University Of Nizhny Novgorod, Russia",
-      fees: [
-        { label: "Fees Pattern", value: "Per Year" },
-        { label: "Total Fee 1st Year", value: "5700 USD" },
-        { label: "Fees 2nd-6th Per Year", value: "4500 USD" },
-      ],
-      note: "Regarding Hostel note please; these rates are calculated here for normal hostels as per all students, But who wants to live in a hostel with an extra comfort for that 325$ additional student has to pay.",
-    },
-    {
-      heading: "Kazan State Medical University | City: Kazan, Russia",
-      fees: [
-        { label: "Fees Pattern", value: "Per Year" },
-        { label: "Total Fee 1st Year", value: "6810 USD" },
-        { label: "Fees 2nd-6th Per Year", value: "6110 USD" },
-      ],
-      note: "The fees here are calculated as per government hostel fees, those who will not get a government hostel, need to pay 1000$ additional for a private hostel up to June Month.",
-    },
-    {
-      heading: "People's Friendship University | City: Moscow, Russia",
-      fees: [
-        { label: "Fees Pattern", value: "Per Year" },
-        { label: "Total Fee 1st Year", value: "11500 USD" },
-        { label: "Fees 2nd-6th Per Year", value: "9850 USD" }, ,
-      ],
-      note: "Hostel not included in this package, Hostel starts from 50-170$ per month (we can say yearly 2000$ Approx).",
-    },
-    {
-      heading: "North-Ossetian State Medical Academy | City: Vladikavkaz, Russia",
-      fees: [
-        { label: "Fees Pattern", value: "Per Year" },
-        { label: "Total Fee 1st Year", value: "6000 USD" },
-        { label: "Fees 2nd-6th Per Year", value: "4600 USD" }, ,
-      ],
-      note: "-",
-    },
-    {
-      heading: "Izhevsk State Medical Academy | City: Izhevsk, Russia",
-      fees: [
-        { label: "Fees Pattern", value: "Per Year" },
-        { label: "Total Fee 1st Year", value: "5900 USD" },
-        { label: "Fees 2nd-6th Per Year", value: "3900 USD" }, ,
-      ],
-      note: "-",
-    },
-  ];
+        heading: "North-Western State Medical University named after I.I Mechnikov | City: St. Petersburg, Russia",
+        fees: [
+            { label: "Fees Pattern", value: "Per Year" },
+            { label: "Total Fee 1st Year", value: "7800 USD" },
+            { label: "Fees 2nd-6th Per Year", value: "6500 USD" },
+        ],
+        note: "-",
+    }
+];
+
 
   return (
     <>

@@ -78,6 +78,7 @@ import RostovEco from './components/TechnicalUniversities/RostovEco';
 import Preparatory from "./components/Courses/Preparatory";
 import Engineer from "./components/Courses/Engineer";
 import Humanities from "./components/Courses/Humanities";
+import TopMedical from "./components/Courses/TopMedical";
 
 
 
@@ -239,6 +240,7 @@ function App() {
           <Route path="/learn-russian-language-from-top-universities-of-russia" element={<Preparatory />} />
           <Route path="/engineering-technical-specialties" element={<Engineer />} />
           <Route path="/humanities-classic-specialties-economical-specialties" element={<Humanities />} />
+          <Route path="/top-medical-universities-of-russia" element={<TopMedical />} />
 
         </Routes>
         <Footer />
