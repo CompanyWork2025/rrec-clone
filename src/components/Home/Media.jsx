@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { Play, Volume2, VolumeX } from "lucide-react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import img from "../../assets/thumbnail.png";
+import img from "../../assets/thumbnail.PNG";
 import vid from "../../assets/consultant.mp4";
 import vid2 from "../../assets/consultant2.mp4";
 
