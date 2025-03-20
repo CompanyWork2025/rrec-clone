@@ -5,7 +5,7 @@ const Ukhta = () => {
     return (
         <>
             <Helmet>
-                <title>Ukhta State Technical University, Russia | Doctors-IEA</title>
+                <title>Ukhta State Technical University, Russia | RREC</title>
                 <meta
                     name="description"
                     content="Ukhta State Technical University is a representative of oil and gas Universities in Russia. Ukhta Technical University is the largest university in Russia. For direct admissions call or write us at +7-9515190376."
@@ -23,17 +23,17 @@ const Ukhta = () => {
                     <h1 className="text-xl lg:text-3xl font-semibold mt-4">
                         Ukhta Technical University
                     </h1>
-                    <h2 className="text-md text-green-600 lg:text-xl mt-4 uppercase">
+                    <h2 className="text-md text-red-600 lg:text-xl mt-4 uppercase">
                         UKHTA STATE TECHNICAL UNIVERSITY
                     </h2>
-                    <h2 className="text-md text-green-600 lg:text-xl mt-4">
+                    <h2 className="text-md text-red-600 lg:text-xl mt-4">
                         Ukhta State Technical University is a representative of oil and gas Universities in Russia.
                     </h2>
 
                     <div className="mt-4 space-y-6">
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">It is the largest technical University in the European North of the Russian Federation. The University was founded on the basis of the Ukhta Industrial Institute (the Institute was founded in 1967). By this time, more than 25000 engineers and economists had graduated in oil, geology, building, and timber industry majors. After the successful attestation on April 14, 1999, the Institute was granted a status of a State Technical University. Our engineers became mayors and ministers, heads of educational establishments, enterprises, and banks. 423 instructors and scientific workers teach at The University. Among them are 53 Professors with Doctors of Science and 213 Associate professors with Masters of Science. </p>
                     </div>
-                    <h2 className="text-md text-green-600 lg:text-xl mt-4">
+                    <h2 className="text-md text-red-600 lg:text-xl mt-4">
                         Institute of Geology, Oil and Gas Production and Pipeline Transportation (Departments have given below)
                     </h2>
                     <ul className="mt-4 text-sm lg:text-lg text-gray-700 space-y-4">
@@ -58,7 +58,7 @@ const Ukhta = () => {
                         ))}
                     </ul>
                 </div>
-                <h2 className="text-md text-center mt-10 text-green-600 lg:text-xl ">
+                <h2 className="text-md text-center mt-10 text-red-600 lg:text-xl ">
                     Institute of Civil Building and Engineering (Departments have given below)
                 </h2>
 
@@ -85,7 +85,7 @@ const Ukhta = () => {
                     ))}
                 </ul>
 
-                <h2 className="text-md text-center  text-green-600 lg:text-xl mt-10">
+                <h2 className="text-md text-center  text-red-600 lg:text-xl mt-10">
                     Institute of Economics, Management and Information Technology (Departments have given below)
                 </h2>
 
@@ -112,7 +112,7 @@ const Ukhta = () => {
                     ))}
                 </ul>
 
-                <h2 className="text-md text-center  text-green-600 lg:text-xl mt-10">
+                <h2 className="text-md text-center  text-red-600 lg:text-xl mt-10">
                     Institute of Advanced Training (Departments have given below)
                 </h2>
 
@@ -140,7 +140,7 @@ const Ukhta = () => {
                     ))}
                 </ul>
 
-                <h2 className="text-md text-center  text-green-600 lg:text-xl mt-10">
+                <h2 className="text-md text-center  text-red-600 lg:text-xl mt-10">
                     Institute of Industry (Departments have given below)
                 </h2>
 
@@ -164,7 +164,7 @@ const Ukhta = () => {
                 </ul>
             </div>
 
-            <div className="bg-green-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
+            <div className="bg-red-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
                 <h2 className="text-xl lg:text-2xl mb-4 font-semibold">
                     Admission open, interesting students may contact us
                 </h2>

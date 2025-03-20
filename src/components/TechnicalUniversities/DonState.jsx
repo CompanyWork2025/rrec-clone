@@ -5,7 +5,7 @@ const DonState = () => {
     return (
         <>
             <Helmet>
-                <title>Don State Technical University, Russia | Doctors-IEA</title>
+                <title>Don State Technical University, Russia | RREC</title>
                 <meta
                     name="description"
                     content="Fee structure - hostel - benefits - Admission Procedure - Eligibility Criteria - Documents required - duration of MBBS - faculties - Benefits - Historical Overview - affiliation - advantages - Direct Admission"
@@ -24,21 +24,21 @@ const DonState = () => {
                     <h1 className="text-xl lg:text-3xl font-semibold mt-4">
                         Don State Technical University
                     </h1>
-                    <h2 className="text-md text-green-600 lg:text-xl mt-4 uppercase">
+                    <h2 className="text-md text-red-600 lg:text-xl mt-4 uppercase">
                         STUDY IN ROSTOV | DONSTU ROSTOV-ON-DON
                     </h2>
-                    <h2 className="text-md text-green-600 lg:text-xl mt-4 uppercase">
+                    <h2 className="text-md text-red-600 lg:text-xl mt-4 uppercase">
                         LEARN RUSSIAN LANGUAGE IN DSTU
                     </h2>
                     <div className="mt-4 space-y-6">
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">Don State Technical University dates back to 1930 when it was established as the North-Caucasus Institute of Agricultural Machine-Building. In 1932-1992 under the name of the Rostov Institute of Agricultural Machine Building, it was truly considered to be the leading educational and research technical institution of the USSR with 4 faculties and 25 specialties. 1992 turned the story up to university status and the name of Don State Technical University. Nowadays DSTU is known throughout the Russian Federation and internationally as an innovative educational and research complex providing education for children, youth, and adults according to lifelong learning principles.  It involves kindergartens, colleges, technical lyceum and gymnasium, higher educational institutions, business schools, and affiliations throughout Russia and abroad.   </p>
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">Being situated in Rostov-on-Don, the largest city in the south of the Russian Federation, a well-known scientific, educational, industrial, and cultural center, one of the hosts of the Football World Cup and other worldwide events, DSTU is famous as a unique platform for placing international events, forums and meetings. Seminars, symposia, and conferences are organized in DSTU Congress-hall to bring together people interested in science and technology, education, research, and development.</p>
                     </div>
-                    <h2 className="text-md text-green-600 lg:text-xl mt-4 uppercase">
+                    <h2 className="text-md text-red-600 lg:text-xl mt-4 uppercase">
                         DON STATE TECHNICAL UNIVERSITY
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">DSTU is participating actively in knowledge-based society creation according to the Bologna Declaration and lifelong learning principles implementation. Nowadays more than 50 000 students, including 1600 foreigners, and 200 post-graduates get an education at different institutions and faculties of the University. Students have training in the largest local companies: Rostov helicopter plant, Rostov combine-harvester plant, and others.</p>
-                    <h2 className="text-md text-green-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
                         FACULTIES & INSTITUTES OF DSTU:
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">Preparatory faculty (Russian Language course)</p>
@@ -75,7 +75,7 @@ const DonState = () => {
                 </h1>
             </div>
 
-            <div className="bg-green-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
+            <div className="bg-red-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
                 <h2 className="text-xl lg:text-2xl mb-4 font-semibold">
                     Call for more details about the university admission, processing, fees at DonSTU, Russia
                 </h2>

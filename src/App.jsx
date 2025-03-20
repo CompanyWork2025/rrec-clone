@@ -63,6 +63,21 @@ import Pitirim from './components/MedicalUniversities/Pitirim';
 import Synergy from './components/MedicalUniversities/Synergy';
 import Moscow from './components/MedicalUniversities/Moscow';
 
+{/* Technical Universities */ }
+import DonState from "./components/TechnicalUniversities/DonState";
+import Southern from "./components/TechnicalUniversities/SouthernFederal";
+import StPetersburg from './components/TechnicalUniversities/StPetersburg';
+import Ukhta from './components/TechnicalUniversities/Ukhta';
+
+
+{/* MBBS Russia */ }
+import MBBSRussia from './components/MBBS/MBBSRussia';
+import Kyrgyz from './components/MBBS/Kyrgyzstan';
+import Armenia from './components/MBBS/Armenia';
+import Belarus from './components/MBBS/Belarus';
+import Kazakhstan from './components/MBBS/Kazakhstan';
+
+
 
 const StickyButton = ({ text, link, position }) => {
   return (
@@ -204,6 +219,21 @@ function App() {
           <Route path="/pitirim-sorokin-syktyvkar-state-university" element={<Pitirim />} />
           <Route path="/synergy-university-moscow" element={<Synergy />} />
           <Route path="/moscow-pedagogical-state-university" element={<Moscow />} />
+
+
+          {/* Technical Universities */}
+          <Route path="/don-state-technical-university-russia" element={<DonState />} />
+          <Route path="/southern-federal-university-russia" element={<Southern />} />
+          <Route path="/saint-petersburg-polytechnic-university" element={<StPetersburg />} />
+          <Route path="/ukhta-state-technical-university-russia" element={<Ukhta />} />
+
+
+          {/* MBBS Russia */}
+          <Route path="/study-mbbs-russia" element={<MBBSRussia />} />
+          <Route path="/study-mbbs-kyrgyzstan" element={<Kyrgyz />} />
+          <Route path="/study-mbbs-armenia" element={<Armenia />} />
+          <Route path="/study-mbbs-belarus" element={<Belarus />} />
+          <Route path="/study-mbbs-kazakhstan" element={<Kazakhstan />} />
 
         </Routes>
         <Footer />

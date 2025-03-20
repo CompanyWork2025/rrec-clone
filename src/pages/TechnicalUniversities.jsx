@@ -1,19 +1,22 @@
+
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const universityData = [
-  { id: 1, name: 'Don State Technical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802187844524791.jpg.webp' },
-  { id: 2, name: 'Southern Federal University', img: 'https://rrecrussia.com/public/upload/subcategory/1802187883132990.webp.webp' },
-  { id: 3, name: 'Study MBA in SfedU, Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802187968186772.webp.webp' },
-  { id: 4, name: 'Rostov State University of Economics, Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802188006965033.jpg.webp' },
-  { id: 5, name: 'Veterinary Medicine - DSTU Rostov', img: 'https://rrecrussia.com/public/upload/subcategory/1802188054847354.jpg.webp' },
-  { id: 6, name: 'Ukhta State Technical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188096887736.jpg.webp' },
-  { id: 7, name: 'St. Petersburg Polytechnic University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188141822526.jpg.webp' },
-  { id: 8, name: 'Udmurt State University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188184507520.jpg.webp' },
+  { id: 1, name: 'Don State Technical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802187844524791.jpg.webp', path: '/don-state-technical-university-russia', },
+  { id: 2, name: 'Southern Federal University', img: 'https://rrecrussia.com/public/upload/subcategory/1802187883132990.webp.webp',  path: '/southern-federal-university-russia', },
+  { id: 3, name: 'Study MBA in SfedU, Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802187968186772.webp.webp', },
+  { id: 4, name: 'Rostov State University of Economics, Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802188006965033.jpg.webp', },
+  { id: 5, name: 'Veterinary Medicine - DSTU Rostov', img: 'https://rrecrussia.com/public/upload/subcategory/1802188054847354.jpg.webp', },
+  { id: 6, name: 'Ukhta State Technical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188096887736.jpg.webp',  path: '/ukhta-state-technical-university-russia', },
+  { id: 7, name: 'St. Petersburg Polytechnic University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188141822526.jpg.webp', },
+  { id: 8, name: 'Udmurt State University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188184507520.jpg.webp', },
 ];
 
 function TechnicalUniversities() {
   const [currentPage, setCurrentPage] = useState(1);
+  const navigate = useNavigate(); // Initialize navigate function
   const itemsPerPage = 9;
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -101,6 +104,7 @@ function TechnicalUniversities() {
                     className="relative inline-flex items-center justify-start overflow-hidden px-3 py-2 text-lg font-semibold text-white border-2 border-white rounded-md bg-transparent transition-all duration-300 ease-in-out group"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
+                    onClick={() => navigate(university.path)}
                   >
                     <span className="w-0 h-0 rounded bg-[#f2312d] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
                     <span className="w-full text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
