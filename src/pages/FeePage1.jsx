@@ -5,78 +5,141 @@ function FeePage1() {
 
   const universityData = [
     {
-        heading: "Rostov State Medical University | City: Rostov-on-Don, Russia",
-        fees: [
-            { label: "Fees Pattern", value: "Per Year" },
-            { label: "Total Fee 1st Year", value: "6100 USD" },
-            { label: "Fees 2nd-6th Per Year", value: "4550 USD" },
-        ],
-        note: "Indian food is available in Campus.",
+      heading: "Rostov State Medical University | City: Rostov-on-Don, Russia",
+      fees: [
+        { label: "Fees Pattern", value: "Per Year" },
+        { label: "Total Fee 1st Year", value: "6100 USD" },
+        { label: "Fees 2nd-6th Per Year", value: "4550 USD" },
+      ],
+      note: "Indian food is available in Campus.",
     },
     {
-        heading: "Ural State Medical University | City: Yekaterinburg, Russia",
-        fees: [
-            { label: "Fees Pattern", value: "Per Year" },
-            { label: "Total Fee 1st Year", value: "6000 USD" },
-            { label: "Fees 2nd-6th Per Year", value: "5000 USD" },
-        ],
-        note: "-",
+      heading: "Ural State Medical University | City: Yekaterinburg, Russia",
+      fees: [
+        { label: "Fees Pattern", value: "Per Year" },
+        { label: "Total Fee 1st Year", value: "6000 USD" },
+        { label: "Fees 2nd-6th Per Year", value: "5000 USD" },
+      ],
+      note: "-",
     },
     {
-        heading: "Crimea Federal University (Medical Institute) | City: Simferopol, Russia",
-        fees: [
-            { label: "Fees Pattern", value: "Per Year" },
-            { label: "Total Fee 1st Year", value: "6500 USD" },
-            { label: "Fees 2nd-6th Per Year", value: "4500 USD" },
-        ],
-        note: "-",
+      heading: "Crimea Federal University (Medical Institute) | City: Simferopol, Russia",
+      fees: [
+        { label: "Fees Pattern", value: "Per Year" },
+        { label: "Total Fee 1st Year", value: "6500 USD" },
+        { label: "Fees 2nd-6th Per Year", value: "4500 USD" },
+      ],
+      note: "-",
     },
     {
-        heading: "Far Eastern Federal University | City: Vladivostok, Russia",
-        fees: [
-            { label: "Fees Pattern", value: "Per Year" },
-            { label: "Total Fee 1st Year", value: "7000 USD" },
-            { label: "Fees 2nd-6th Per Year", value: "6000 USD" },
-        ],
-        note: "-",
+      heading: "Far Eastern Federal University | City: Vladivostok, Russia",
+      fees: [
+        { label: "Fees Pattern", value: "Per Year" },
+        { label: "Total Fee 1st Year", value: "7000 USD" },
+        { label: "Fees 2nd-6th Per Year", value: "6000 USD" },
+      ],
+      note: "-",
     },
     {
-        heading: "Kemerovo State Medical University | City: Kemerovo, Russia",
-        fees: [
-            { label: "Fees Pattern", value: "Per Year" },
-            { label: "Total Fee 1st Year", value: "5800 USD" },
-            { label: "Fees 2nd-6th Per Year", value: "4500 USD" },
-        ],
-        note: "-",
+      heading: "Kemerovo State Medical University | City: Kemerovo, Russia",
+      fees: [
+        { label: "Fees Pattern", value: "Per Year" },
+        { label: "Total Fee 1st Year", value: "5800 USD" },
+        { label: "Fees 2nd-6th Per Year", value: "4500 USD" },
+      ],
+      note: "-",
     },
     {
-        heading: "Bashkir State Medical University | City: Ufa, Russia",
-        fees: [
-            { label: "Fees Pattern", value: "Per Year" },
-            { label: "Total Fee 1st Year", value: "5700 USD" },
-            { label: "Fees 2nd-6th Per Year", value: "4700 USD" },
-        ],
-        note: "-",
+      heading: "Bashkir State Medical University | City: Ufa, Russia",
+      fees: [
+        { label: "Fees Pattern", value: "Per Year" },
+        { label: "Total Fee 1st Year", value: "5700 USD" },
+        { label: "Fees 2nd-6th Per Year", value: "4700 USD" },
+      ],
+      note: "-",
     },
     {
-        heading: "Kazan State Medical University | City: Kazan, Russia",
-        fees: [
-            { label: "Fees Pattern", value: "Per Year" },
-            { label: "Total Fee 1st Year", value: "6810 USD" },
-            { label: "Fees 2nd-6th Per Year", value: "6110 USD" },
-        ],
-        note: "The fees here are calculated as per government hostel fees, those who will not get a government hostel, need to pay 1000$ additional for a private hostel up to June Month.",
+      heading: "Kazan State Medical University | City: Kazan, Russia",
+      fees: [
+        { label: "Fees Pattern", value: "Per Year" },
+        { label: "Total Fee 1st Year", value: "6810 USD" },
+        { label: "Fees 2nd-6th Per Year", value: "6110 USD" },
+      ],
+      note: "The fees here are calculated as per government hostel fees, those who will not get a government hostel, need to pay 1000$ additional for a private hostel up to June Month.",
     },
     {
-        heading: "North-Western State Medical University named after I.I Mechnikov | City: St. Petersburg, Russia",
-        fees: [
-            { label: "Fees Pattern", value: "Per Year" },
-            { label: "Total Fee 1st Year", value: "7800 USD" },
-            { label: "Fees 2nd-6th Per Year", value: "6500 USD" },
-        ],
-        note: "-",
+      heading: "North-Western State Medical University named after I.I Mechnikov | City: St. Petersburg, Russia",
+      fees: [
+        { label: "Fees Pattern", value: "Per Year" },
+        { label: "Total Fee 1st Year", value: "7800 USD" },
+        { label: "Fees 2nd-6th Per Year", value: "6500 USD" },
+      ],
+      note: "-",
+    },
+    {
+      heading: "Kursk State Medical University | City: Kursk, Russia",
+      fees: [
+        { label: "Fees Pattern", value: "Per Year" },
+        { label: "Total Fee 1st Year", value: "6280 USD" },
+        { label: "Fees 2nd-6th Per Year", value: "6200 USD" },
+      ],
+      note: "-",
+    },
+    {
+      heading: "Krasnoyarsk State Medical University | City: Krasnoyarsk, Russia",
+      fees: [
+        { label: "Fees Pattern", value: "Per Year" },
+        { label: "Total Fee 1st Year", value: "5900 USD" },
+        { label: "Fees 2nd-6th Per Year", value: "4800 USD" },
+      ],
+      note: "-",
+    },
+    {
+      heading: "Ivanovo State Medical University | City: Ivanovo, Russia",
+      fees: [
+        { label: "Fees Pattern", value: "Per Year" },
+        { label: "Total Fee 1st Year", value: "5600 USD" },
+        { label: "Fees 2nd-6th Per Year", value: "4600 USD" },
+      ],
+      note: "-",
+    },
+    {
+      heading: "Pitirim Sorokin Syktyvkar State University | City: Syktyvkar, Russia",
+      fees: [
+        { label: "Fees Pattern", value: "Per Year" },
+        { label: "Total Fee 1st Year", value: "5400 USD" },
+        { label: "Fees 2nd-6th Per Year", value: "4300 USD" },
+      ],
+      note: "-",
+    },
+    {
+      heading: "Synergy University Moscow | City: Moscow, Russia",
+      fees: [
+        { label: "Fees Pattern", value: "Per Year" },
+        { label: "Total Fee 1st Year", value: "7000 USD" },
+        { label: "Fees 2nd-6th Per Year", value: "6000 USD" },
+      ],
+      note: "-",
+    },
+    {
+      heading: "People’s Friendship University Moscow | City: Moscow, Russia",
+      fees: [
+        { label: "Fees Pattern", value: "Per Year" },
+        { label: "Total Fee 1st Year", value: "11500 USD" },
+        { label: "Fees 2nd-6th Per Year", value: "9850 USD" },
+      ],
+      note: "Hostel not included in this package, Hostel starts from 50-170$ per month (we can say yearly 2000$ Approx).",
+    },
+    {
+      heading: "Yaroslavl State Medical University | City: Yaroslavl, Russia",
+      fees: [
+        { label: "Fees Pattern", value: "Per Year" },
+        { label: "Total Fee 1st Year", value: "4600 USD" },
+        { label: "Fees 2nd-6th Per Year", value: "3800 USD" },
+      ],
+      note: "-",
     }
-];
+  ];
 
 
   return (
@@ -266,224 +329,224 @@ function FeePage1() {
         <p className='text-gray-800 text-justify'>* 1 USD = 80 Russian Rubles applied for this fee structure.</p>
       </div>
 
-      <motion.div 
-            className="bg-gray-100 px-6 py-10 lg:px-24 lg:py-14 rounded-xl shadow-lg w-full mx-auto font-roboto"
+      <motion.div
+        className="bg-gray-100 px-6 py-10 lg:px-24 lg:py-14 rounded-xl shadow-lg w-full mx-auto font-roboto"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        <h2 className="text-xl lg:text-2xl font-bold text-justify text-gray-800 mb-4">
+          Cost of Living for Indian Students Pursuing <span className="text-red-600 ml-2">MBBS in Russia</span>
+        </h2>
+
+        <p className="text-gray-700 text-lg text-justify leading-relaxed">
+          For Indian students pursuing an MBBS in Russia, the cost of living remains highly
+          affordable compared to Western nations. On average, monthly expenses range between
+          <strong> $150 and $300 (₹12,000 to ₹25,000)</strong>, depending on the city and personal lifestyle choices.
+        </p>
+
+        <div className="mt-6 space-y-4">
+          <motion.div
+            className="bg-white p-4 lg:p-6 rounded-lg shadow-md"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-        >
-            <h2 className="text-xl lg:text-2xl font-bold text-justify text-gray-800 mb-4">
-                Cost of Living for Indian Students Pursuing <span className="text-red-600 ml-2">MBBS in Russia</span>
-            </h2>
-
-            <p className="text-gray-700 text-lg text-justify leading-relaxed">
-                For Indian students pursuing an MBBS in Russia, the cost of living remains highly 
-                affordable compared to Western nations. On average, monthly expenses range between 
-                <strong> $150 and $300 (₹12,000 to ₹25,000)</strong>, depending on the city and personal lifestyle choices.
+          >
+            <h3 className="text-lg font-semibold text-gray-800">🏠 Accommodation</h3>
+            <p className="text-gray-700">
+              University hostel accommodations are cost-effective, with annual charges varying from
+              <strong> $500 to $1,000 (₹40,000 to ₹85,000)</strong>, covering essential utilities like heating, electricity, and internet access.
             </p>
+          </motion.div>
 
-            <div className="mt-6 space-y-4">
-                <motion.div 
-                    className="bg-white p-4 lg:p-6 rounded-lg shadow-md"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
-                    viewport={{ once: true }}
-                >
-                    <h3 className="text-lg font-semibold text-gray-800">🏠 Accommodation</h3>
-                    <p className="text-gray-700">
-                        University hostel accommodations are cost-effective, with annual charges varying from 
-                        <strong> $500 to $1,000 (₹40,000 to ₹85,000)</strong>, covering essential utilities like heating, electricity, and internet access.
-                    </p>
-                </motion.div>
-
-                <motion.div 
-                    className="bg-white p-4 lg:p-6 rounded-lg shadow-md"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.4 }}
-                    viewport={{ once: true }}
-                >
-                    <h3 className="text-lg font-semibold text-gray-800">🍽️ Food Expenses</h3>
-                    <p className="text-gray-700">
-                        Food expenses are quite manageable, with Indian students typically spending 
-                        <strong> $100 to $150 (₹8,000 to ₹12,000)</strong> per month. Many universities provide Indian meal options, 
-                        while students also have the flexibility to cook at home using ingredients readily available at local supermarkets.
-                    </p>
-                </motion.div>
-
-                <motion.div 
-                    className="bg-white p-4 lg:p-6 rounded-lg shadow-md"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.6 }}
-                    viewport={{ once: true }}
-                >
-                    <h3 className="text-lg font-semibold text-gray-800">🚇 Transport</h3>
-                    <p className="text-gray-700">
-                        Public transport is an economical choice, costing around 
-                        <strong> $10 to $20 (₹800 to ₹1,600)</strong> per month, with student discounts offered on travel passes.
-                    </p>
-                </motion.div>
-
-                <motion.div 
-                    className="bg-white p-4 lg:p-6 rounded-lg shadow-md"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.8 }}
-                    viewport={{ once: true }}
-                >
-                    <h3 className="text-lg font-semibold text-gray-800">📚 Miscellaneous Expenses</h3>
-                    <p className="text-gray-700">
-                        Additional costs, such as mobile recharges, study materials, and recreational activities, 
-                        generally range between <strong>$50 and $100 (₹4,000 to ₹8,000)</strong> per month.
-                    </p>
-                </motion.div>
-            </div>
-
-            <p className="text-gray-700 text-lg text-justify mt-6">
-                With affordable living expenses, quality education, and a welcoming student environment, 
-                <strong> Russia remains an ideal destination</strong> for Indian medical aspirants looking for an internationally recognized 
-                medical degree without excessive financial strain.
-            </p>
-        </motion.div>
-
-        <motion.div 
-            className="bg-white px-6 py-4 lg:px-16 lg:py-14 rounded-xl shadow-lg w-full mx-auto font-roboto"
+          <motion.div
+            className="bg-white p-4 lg:p-6 rounded-lg shadow-md"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
+          >
+            <h3 className="text-lg font-semibold text-gray-800">🍽️ Food Expenses</h3>
+            <p className="text-gray-700">
+              Food expenses are quite manageable, with Indian students typically spending
+              <strong> $100 to $150 (₹8,000 to ₹12,000)</strong> per month. Many universities provide Indian meal options,
+              while students also have the flexibility to cook at home using ingredients readily available at local supermarkets.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="bg-white p-4 lg:p-6 rounded-lg shadow-md"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-lg font-semibold text-gray-800">🚇 Transport</h3>
+            <p className="text-gray-700">
+              Public transport is an economical choice, costing around
+              <strong> $10 to $20 (₹800 to ₹1,600)</strong> per month, with student discounts offered on travel passes.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="bg-white p-4 lg:p-6 rounded-lg shadow-md"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-lg font-semibold text-gray-800">📚 Miscellaneous Expenses</h3>
+            <p className="text-gray-700">
+              Additional costs, such as mobile recharges, study materials, and recreational activities,
+              generally range between <strong>$50 and $100 (₹4,000 to ₹8,000)</strong> per month.
+            </p>
+          </motion.div>
+        </div>
+
+        <p className="text-gray-700 text-lg text-justify mt-6">
+          With affordable living expenses, quality education, and a welcoming student environment,
+          <strong> Russia remains an ideal destination</strong> for Indian medical aspirants looking for an internationally recognized
+          medical degree without excessive financial strain.
+        </p>
+      </motion.div>
+
+      <motion.div
+        className="bg-white px-6 py-4 lg:px-16 lg:py-14 rounded-xl shadow-lg w-full mx-auto font-roboto"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        <h2 className="text-2xl lg:text-3xl font-bold text-center text-gray-800 mb-6">
+          Comparative Cost And Facility Analysis: <br />
+          <span className="text-red-600">MBBS in Russia vs. India vs. Western Countries</span>
+        </h2>
+
+        {/* Cost-Effectiveness */}
+        <motion.div
+          className="bg-gray-100 p-5 lg:p-7 rounded-lg shadow-md mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
         >
-            <h2 className="text-2xl lg:text-3xl font-bold text-center text-gray-800 mb-6">
-                Comparative Cost And Facility Analysis: <br />
-                <span className="text-red-600">MBBS in Russia vs. India vs. Western Countries</span>
-            </h2>
-
-            {/* Cost-Effectiveness */}
-            <motion.div 
-                className="bg-gray-100 p-5 lg:p-7 rounded-lg shadow-md mb-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-            >
-                <h3 className="text-lg font-semibold text-gray-800">💰 Cost-Effectiveness</h3>
-                <p className="text-gray-700">
-                    Pursuing an MBBS in Russia is far more budget-friendly than in India or Western nations. 
-                    Russian universities charge annual tuition fees starting between 
-                    <strong> $3,000 and $7,000 (₹2.5 to ₹6 lakh)</strong>, whereas private medical institutions in India 
-                    demand anywhere from <strong>₹50 lakh to ₹1.5 crore</strong> for the entire program. 
-                    In contrast, tuition costs in the <strong>USA, UK, Canada, and Australia</strong> range between 
-                    <strong> ₹80 lakh to ₹2 crore</strong>, making them financially challenging for many students.
-                </p>
-            </motion.div>
-
-            {/* No Capitation Fees */}
-            <motion.div 
-                className="bg-gray-100 p-5 lg:p-7 rounded-lg shadow-md mb-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                viewport={{ once: true }}
-            >
-                <h3 className="text-lg font-semibold text-gray-800">🚫 No Capitation Fees or Donations</h3>
-                <p className="text-gray-700">
-                    Private medical colleges in India often require substantial donations or capitation fees, 
-                    significantly increasing the cost of education. In contrast, 
-                    Russian universities follow a <strong>transparent, merit-based admission system</strong> with 
-                    no additional financial burdens. Western universities, while not requiring donations, 
-                    often involve high application and processing fees.
-                </p>
-            </motion.div>
-
-            {/* Living Expenses & Student Comfort */}
-            <motion.div 
-                className="bg-gray-100 p-5 lg:p-7 rounded-lg shadow-md mb-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                viewport={{ once: true }}
-            >
-                <h3 className="text-lg font-semibold text-gray-800">🏠 Living Expenses & Student Comfort</h3>
-                <p className="text-gray-700">
-                    The cost of living in Russia is highly economical, ranging between 
-                    <strong> $150 to $300 (₹12,000 to ₹25,000)</strong> per month, covering food, housing, and transportation. 
-                    Conversely, Western countries have <strong>substantially higher living costs</strong>, ranging from 
-                    <strong> ₹1 to ₹3 lakh</strong> per month. Indian students in Russia also benefit from 
-                    <strong>safe, well-maintained hostels, access to Indian food, and a welcoming student community</strong>.
-                </p>
-            </motion.div>
-
-            {/* Educational Standards */}
-            <motion.div 
-                className="bg-gray-100 p-5 lg:p-7 rounded-lg shadow-md mb-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.8 }}
-                viewport={{ once: true }}
-            >
-                <h3 className="text-lg font-semibold text-gray-800">🏥 Educational Standards & Facilities</h3>
-                <p className="text-gray-700">
-                    Russian medical universities provide <strong>state-of-the-art infrastructure, cutting-edge laboratories, 
-                    and research-driven learning experiences</strong>. Many institutions have <strong>direct hospital affiliations</strong>, 
-                    ensuring students receive extensive practical exposure. In contrast, private Indian institutions 
-                    often lack access to advanced research resources, while Western universities, despite exceptional 
-                    facilities, come at a much higher financial investment.
-                </p>
-            </motion.div>
-
-            {/* Admission Criteria */}
-            <motion.div 
-                className="bg-gray-100 p-5 lg:p-7 rounded-lg shadow-md mb-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1.0 }}
-                viewport={{ once: true }}
-            >
-                <h3 className="text-lg font-semibold text-gray-800">📋 Admission Criteria & Entrance Exams</h3>
-                <p className="text-gray-700">
-                    Securing MBBS admission in Russia is <strong>straightforward</strong>, requiring only 
-                    <strong> NEET qualification</strong> for Indian students. Unlike India and Western nations, 
-                    there is <strong>no need for competitive entrance exams</strong> like AIIMS, JIPMER, MCAT (USA), or UCAT (UK). 
-                    Due to limited government medical seats in India, securing admission is highly competitive, 
-                    whereas Russia offers better availability with fewer hurdles.
-                </p>
-            </motion.div>
-
-            {/* Global Recognition */}
-            <motion.div 
-                className="bg-gray-100 p-5 lg:p-7 rounded-lg shadow-md mb-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1.2 }}
-                viewport={{ once: true }}
-            >
-                <h3 className="text-lg font-semibold text-gray-800">🌍 Global Recognition & Licensing Exams</h3>
-                <p className="text-gray-700">
-                    MBBS degrees from Russia are <strong>recognized by WHO, NMC (India), ECFMG (USA), GMC (UK)</strong>, 
-                    and other global medical organizations, allowing graduates to practice internationally. 
-                    Indian medical degrees are valid within the country but may require additional licensing exams abroad.
-                </p>
-            </motion.div>
-
-            {/* Final Verdict */}
-            <motion.div 
-                className="bg-gradient-to-r from-[#f2312d] to-red-700 text-white p-6 lg:p-8 rounded-lg shadow-md text-center"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1.4 }}
-                viewport={{ once: true }}
-            >
-                <h3 className="text-xl lg:text-2xl font-bold">Final Verdict</h3>
-                <p className="text-lg">
-                    For Indian students seeking <strong>affordable, globally recognized, and high-quality medical education</strong>, 
-                    Russia emerges as the <strong>best option</strong>. It offers <strong>modern infrastructure, hands-on clinical training, 
-                    and cost-effective tuition</strong>, making it the ideal choice over India and Western nations.
-                </p>
-            </motion.div>
+          <h3 className="text-lg font-semibold text-gray-800">💰 Cost-Effectiveness</h3>
+          <p className="text-gray-700">
+            Pursuing an MBBS in Russia is far more budget-friendly than in India or Western nations.
+            Russian universities charge annual tuition fees starting between
+            <strong> $3,000 and $7,000 (₹2.5 to ₹6 lakh)</strong>, whereas private medical institutions in India
+            demand anywhere from <strong>₹50 lakh to ₹1.5 crore</strong> for the entire program.
+            In contrast, tuition costs in the <strong>USA, UK, Canada, and Australia</strong> range between
+            <strong> ₹80 lakh to ₹2 crore</strong>, making them financially challenging for many students.
+          </p>
         </motion.div>
+
+        {/* No Capitation Fees */}
+        <motion.div
+          className="bg-gray-100 p-5 lg:p-7 rounded-lg shadow-md mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-lg font-semibold text-gray-800">🚫 No Capitation Fees or Donations</h3>
+          <p className="text-gray-700">
+            Private medical colleges in India often require substantial donations or capitation fees,
+            significantly increasing the cost of education. In contrast,
+            Russian universities follow a <strong>transparent, merit-based admission system</strong> with
+            no additional financial burdens. Western universities, while not requiring donations,
+            often involve high application and processing fees.
+          </p>
+        </motion.div>
+
+        {/* Living Expenses & Student Comfort */}
+        <motion.div
+          className="bg-gray-100 p-5 lg:p-7 rounded-lg shadow-md mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-lg font-semibold text-gray-800">🏠 Living Expenses & Student Comfort</h3>
+          <p className="text-gray-700">
+            The cost of living in Russia is highly economical, ranging between
+            <strong> $150 to $300 (₹12,000 to ₹25,000)</strong> per month, covering food, housing, and transportation.
+            Conversely, Western countries have <strong>substantially higher living costs</strong>, ranging from
+            <strong> ₹1 to ₹3 lakh</strong> per month. Indian students in Russia also benefit from
+            <strong>safe, well-maintained hostels, access to Indian food, and a welcoming student community</strong>.
+          </p>
+        </motion.div>
+
+        {/* Educational Standards */}
+        <motion.div
+          className="bg-gray-100 p-5 lg:p-7 rounded-lg shadow-md mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-lg font-semibold text-gray-800">🏥 Educational Standards & Facilities</h3>
+          <p className="text-gray-700">
+            Russian medical universities provide <strong>state-of-the-art infrastructure, cutting-edge laboratories,
+              and research-driven learning experiences</strong>. Many institutions have <strong>direct hospital affiliations</strong>,
+            ensuring students receive extensive practical exposure. In contrast, private Indian institutions
+            often lack access to advanced research resources, while Western universities, despite exceptional
+            facilities, come at a much higher financial investment.
+          </p>
+        </motion.div>
+
+        {/* Admission Criteria */}
+        <motion.div
+          className="bg-gray-100 p-5 lg:p-7 rounded-lg shadow-md mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.0 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-lg font-semibold text-gray-800">📋 Admission Criteria & Entrance Exams</h3>
+          <p className="text-gray-700">
+            Securing MBBS admission in Russia is <strong>straightforward</strong>, requiring only
+            <strong> NEET qualification</strong> for Indian students. Unlike India and Western nations,
+            there is <strong>no need for competitive entrance exams</strong> like AIIMS, JIPMER, MCAT (USA), or UCAT (UK).
+            Due to limited government medical seats in India, securing admission is highly competitive,
+            whereas Russia offers better availability with fewer hurdles.
+          </p>
+        </motion.div>
+
+        {/* Global Recognition */}
+        <motion.div
+          className="bg-gray-100 p-5 lg:p-7 rounded-lg shadow-md mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-lg font-semibold text-gray-800">🌍 Global Recognition & Licensing Exams</h3>
+          <p className="text-gray-700">
+            MBBS degrees from Russia are <strong>recognized by WHO, NMC (India), ECFMG (USA), GMC (UK)</strong>,
+            and other global medical organizations, allowing graduates to practice internationally.
+            Indian medical degrees are valid within the country but may require additional licensing exams abroad.
+          </p>
+        </motion.div>
+
+        {/* Final Verdict */}
+        <motion.div
+          className="bg-gradient-to-r from-[#f2312d] to-red-700 text-white p-6 lg:p-8 rounded-lg shadow-md text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.4 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-xl lg:text-2xl font-bold">Final Verdict</h3>
+          <p className="text-lg">
+            For Indian students seeking <strong>affordable, globally recognized, and high-quality medical education</strong>,
+            Russia emerges as the <strong>best option</strong>. It offers <strong>modern infrastructure, hands-on clinical training,
+              and cost-effective tuition</strong>, making it the ideal choice over India and Western nations.
+          </p>
+        </motion.div>
+      </motion.div>
 
       {/* Bottom Colorful Banner */}
       <div className="bg-[#f2312d] py-12">
