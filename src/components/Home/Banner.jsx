@@ -24,7 +24,7 @@ const Banner = () => {
         }, 50);
       };
 
-      animateCount(setClients, 1600);
+      animateCount(setClients, 3750);
       animateCount(setUniversities, 22);
       animateCount(setVisa, 100);
 
