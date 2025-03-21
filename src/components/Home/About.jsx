@@ -12,14 +12,14 @@ const About = () => {
 
     return (
         <motion.div 
-            className="container mx-auto px-6 lg:px-20 font-roboto py-14 md:flex md:items-center md:justify-between relative"
+            className="container mx-auto px-6 lg:px-20 font-roboto -mt-14 lg:mt-0 py-24 lg:py-14 md:flex md:items-center md:justify-between relative"
             initial={{ opacity: 0, y: 50 }} // Start faded & slightly below
             whileInView={{ opacity: 1, y: 0 }} // Animate to full opacity & move up
             viewport={{ once: true }} // Ensures animation happens once per refresh
             transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
         >
             <div className="md:w-1/2 space-y-4">
-                <h4 className="text-md font-semibold text-gray-500">ABOUT US</h4>
+                <h4 className="text-md font-semibold text-center lg:text-left text-gray-500">ABOUT US</h4>
                 <div className="hidden lg:flex items-center">
                     <div className="w-20 h-[2px] bg-[#f2312d]" />
                     <div className="w-2 h-[2px] bg-transparent" />
@@ -27,7 +27,7 @@ const About = () => {
                     <div className="w-2 h-[2px] bg-transparent" />
                     <div className="w-2 h-[2px] bg-[#f2312d]" />
                 </div>
-                <h2 className="text-3xl font-bold">
+                <h2 className="text-2xl text-center lg:text-justify lg:text-3xl font-bold">
                     We Provide Best <span className="text-red-600">Education</span> Services For You
                 </h2>
                 <div className="flex space-x-6 border-b pb-3">
