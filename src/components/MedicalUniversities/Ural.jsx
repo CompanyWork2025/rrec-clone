@@ -8,7 +8,7 @@ const Ural = () => {
         { label: "Year of Establishment", value: "1930" },
         { label: "Location", value: "Yekaterinburg, Russia" },
         { label: "Abbreviation", value: "USMU" },
-        { label: "Institute Type", value: "Public" },
+        { label: "Institute Type", value: "Government" },
         { label: "Intake for MBBS", value: "September" },
         { label: "Number of Faculty", value: "08" },
         { label: "Medium of Instruction", value: "English & Russian" },
@@ -49,42 +49,43 @@ const Ural = () => {
                     <h1 className="text-xl lg:text-3xl font-semibold mt-4">
                         Ural State Medical University
                     </h1>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-4">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-4">
                         About the University
                     </h2>
                     <div className="mt-4 space-y-6">
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">Ural State Medical University (USMU) stands as a leading institution for medical education in Russia. Established back in 1930, it has remained at the forefront of medical education in the country. The university offers top-tier medical education at a reasonable cost, backed by government support. Accredited by the World Health Organization (WHO) and endorsed by the Medical Council of India (MCI), USMU emerges as a prime destination for Indian students aspiring for medical education. Additionally, the university provides Indian Mess facilities, making it a comfortable choice for Indian students. With the majority of courses delivered in English, USMU ensures a seamless learning experience for international students, laying a strong foundation for their future careers.</p>
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">USMU hosts a diverse student body of over 7,000 individuals, spanning undergraduates, interns, residents, graduate students, and trainees. Across its 58 departments and 8 faculties, the university offers a structured academic environment conducive to holistic learning and development.</p>
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">The university boasts collaborations with 40 clinical bases located in prominent medical institutions and research facilities, including its state-of-the-art dental clinic. Equipped with modern amenities and cutting-edge equipment, these partnerships guarantee high-quality medical care and support. </p>
-                        <p className="text-left text-justify text-md lg:text-lg font-roboto">USMU is distinguished for its innovative programs, attracting students globally. Notably, programs in General Medicine and Pediatrics hold accreditation from the Agency of Public Education Quality Management and Career Development. Additionally, USMU excels in research, with collaborations extending to esteemed institutions both domestically and internationally. Through these partnerships, USMU plays a significant role in advancing medical knowledge on a global scale.</p>
+                        <p className="text-left text-justify text-md lg:text-lg font-roboto">USMU is renowned for its innovative programs, as a result attracting students worldwide. The degree programs in General Medicine and Paediatrics have accreditation from the Agency of Public Education Quality Management and Career Development. Furthermore, alongside Preventive Medicine and Dentistry, these programs are recognized among the paramount education initiatives in innovative Russia. It also excels in research, with collaborations extending to prestigious institutions both nationally and internationally. Through these partnerships, USMU contributes to advancing medical knowledge globally.</p>
                     </div>
 
-                    <h2 className="text-md text-red-600 lg:text-xl mt-4">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-4">
                         Our History
                     </h2>
                     <div className="mt-4 space-y-6">
-                        <p className="text-left text-justify text-md lg:text-lg font-roboto">With its establishment dating back to 1930, Ural State Medical University (USMU) is revered as one of Russia's oldest medical institutions. Over the years, USMU has evolved into a prestigious center for medical learning, marked by continuous advancements in medical education, fostering innovation, and producing skilled healthcare professionals who contribute significantly to society.</p>
+                        <p className="text-left text-justify text-md lg:text-lg font-roboto">Ural State Medical University (USMU) is regarded as one of the oldest medical institutions in Russia. Established in 1930, USMU has evolved into a prestigious hub of medical learning over the years. Its rich history is marked by continuous advancements in medical education, fostering innovation, and producing skilled healthcare professionals who contribute significantly to society.</p>
                     </div>
 
-                    <h2 className="text-2xl text-red-600 mb-4 mt-8 text-center">
-                        Why Choose Ural State Medical University for MBBS?
+                    <h2 className="text-lg font-semibold text-red-600 mb-4 mt-8 text-center">
+                        Why Choose Ural State Medical University for MBBS in 2025?
                     </h2>
                     <ul className="list-disc list-inside space-y-4 text-justify text-md lg:text-lg text-gray-700">
-                        <li><strong>No Donation:</strong> Admission to USMU is solely based on merit and previous academic performance, without the requirement of hefty donations or capitation fees.</li>
-                        <li><strong>Low-Cost MBBS:</strong> USMU offers top-tier medical education at a comparatively lower cost, making it an attractive option for Indian students seeking quality education at an affordable price.</li>
-                        <li><strong>Quality Education:</strong> USMU ensures a high standard of medical education, emphasizing practical knowledge and hands-on experience, preparing students effectively for real-life medical scenarios.</li>
-                        <li><strong>English Medium:</strong> Indian students can opt for a complete English-medium MBBS course at Ural State Medical University. This is the reason why USMU attracts a large number of Indian students seeking an MBBS degree abroad.</li>
-                        <li><strong>Hostel:</strong> The university provides well-furnished hostels for male and female students, ensuring a comfortable living environment. Additionally, Indian cuisine is available at the hostel mess, catering to students' dietary preferences.</li>
-                        <li><strong>Global Opportunity:</strong> A degree from USMU is recognized globally, opening doors to various opportunities for further education and employment worldwide.</li>
-                        <li><strong>Faculty & Staff:</strong> The university boasts highly qualified faculty and staff dedicated to nurturing and training students at a global level, ensuring quality education and student well-being.</li>
+                        <li><strong>No Donation:</strong> No hefty donation or capitation fee is required to secure admission to USMA. Admission is truly based on merit and the previous percentage and grades in your 10+2. For Indian students, NEET eligibility is mandatory. An entrance exam is required for all international students.</li>
+                        <li><strong>Low-Cost MBBS:</strong> If you are in search of a top medical institution in Russia at an affordable price, USMA provides an ideal platform. Unlike in India, the quality of education is much higher at Ural State Medical University while the cost is comparatively cheaper.</li>
+                        <li><strong>Quality Education:</strong> The level of medical education is on par with some of the high-ranked universities in the world. Moreover, the syllabus at USMU, Russia, emphasizes practical knowledge and hands-on experience in real-life situations.</li>
+                        <li><strong>English Medium:</strong> This is the reason why Indian students flock in high numbers to get an MBBS degree from Ural State Medical University in Russia.</li>
+                        <li><strong>Global Opportunity:</strong> The MBBS Degree obtained from USMU is globally recognized. Government hospitals provide practical training to medical students in Russia. Students may also apply to several countries for continuous education and can work worldwide as well.</li>
+                        <li><strong>Hostel of USMU:</strong> Hostels are available on campus and nearby. Hostels in USMU are fully furnished and well-equipped with all essential modern-day facilities.</li>
+                        <li><strong>Faculty & Staff:</strong> The university is blessed with highly qualified faculty and staff to nurture and train students at a global level. Departments, teachers, and staff all work in harmony to ensure proper education, safety, and facilities for the students without any bias.</li>
                     </ul>
+
                 </div>
 
 
                 {/* Middle Section */}
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
-                        University Summary at a Glance
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8 mb-2">
+                        Some Quick Facts about Ural State Medical University
                     </h2>
                     <div className="overflow-x-auto">
                         <table className="min-w-full border border-gray-300 shadow-md">

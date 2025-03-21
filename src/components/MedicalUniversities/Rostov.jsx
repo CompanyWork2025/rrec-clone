@@ -223,7 +223,7 @@ const Rostov = () => {
 
 
                     <h2 className="text-md text-red-600 text-justify font-semibold lg:text-lg mt-8">
-                        Document required for admission in RostSMU 2024/25
+                        Document required for admission in RostSMU 2025/25
                     </h2>
                     <ul className="text-left text-justify text-md lg:text-lg font-roboto mt-4 list-disc pl-6">
                         <li>A passport with at least 2 years of validity.</li>
@@ -243,24 +243,25 @@ const Rostov = () => {
                         Know admission process step by step
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">
-                        The most essential factor you should remember regarding RostSMU admission in 2024 is the deadline. If you apply for admission within the deadline, there will be no problem at all in accomplishing the admission process online. Here are the steps to follow for admission.
+                        The most essential factor you should remember regarding RostSMU admission in 2025 is the deadline. If you apply for admission within the deadline, there will be no problem at all in accomplishing the admission process online. Here are the steps to follow for admission.
                     </p>
                     <ul className="text-left text-justify text-md lg:text-lg font-roboto mt-4 list-decimal pl-6">
                         <li>Fill the online application form correctly. You can visit the online portal of the university for this. You can visit the authorized and official representative of the RostSMU – RREC team as well where you will be duly guided regarding a complete online form application.</li>
                         <li>Submit all relevant documents related to the admission online. The team of RREC will help students in submitting all relevant documents online.</li>
-                        <li>The applicant will receive a provisional admission letter in 2-3 working days if selected, the invitation letter within 5-7 working days for Indian students, and for others 28-30 working days.</li>
-                        <li>Once you receive the invitation letter from the Rostov State Medical University. RREC Team will help you with documentation, visa, and ticket. After getting a visa you are now ready to fly to study MBBS in RostSMU. Note please: The student must pay full fees for the first year before 5 days to departure.</li>
-                        <li>On arrival to university, the student has to pass the entrance exam of biology & chemistry successfully.</li>
+                        <li>The applicant will receive the invitation letter within 10-12 days if selected, after the final list of university.</li>
+                        <li>Once you receive the invitation letter from the Rostov State Medical University, the next step is to pay the tuition fees in the university account.</li>
+                        <li>After getting the original payment receipt and invitation letter from the University, you can apply for the Visa.  After getting a visa you are now ready to fly to study MBBS in RostSMU. </li>
                     </ul>
 
                     <h2 className="text-md text-red-600 text-justify font-semibold lg:text-lg mt-8">
                         Rostov State Medical University admission cost & duration
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">
-                        Duration for the MBBS course in RostSMU is 6 years to complete MBBS for those who have chosen English as their medium of study.<br />
-                        Undoubtedly, Rostov State Medical University’s fee structure is quite reasonable and affordable for Indian students as compared to several western universities. Though the Rostov State Medical University fee structure remains the same for six years, however, it may rarely change 3-4% every year.
+                        Duration for the MBBS course in RostSMU is 6 years to complete MBBS for those who have chosen English as their medium of study. It includes 1 year of compulsory internship as well.
                     </p>
-
+                    <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">
+                        Undoubtedly, Rostov State Medical University fees structure is quite reasonable and affordable for Indian students as RostSMU or RostSMU as compared to several western universities. Though the Rostov State Medical University tuition fee may rarely change 10-15% every year according to the annual rate of inflation.
+                    </p>
                 </div>
 
 
@@ -321,35 +322,151 @@ const Rostov = () => {
                     </div>
                 </div>
                 <div className="bg-gray-100 p-6">
-                    {/* Heading */}
-                    <h2 className="text-2xl font-semibold text-red-600 text-center mb-4">
-                        The Admission Process Explained Step by Step
+                    <h2 className="text-xl font-semibold text-red-600 mb-4 mt-8 text-center">
+                        How to Distinguish Fake Agents or Middlemen
                     </h2>
-
-                    {/* Paragraph */}
-                    <p className="text-gray-700 text-justify">
-                        The RostSMU admission process for MBBS study has been made quite simple and straightforward.
-                        However, you need to be aware of the deadline. If you apply for admission within the deadline,
-                        there will be no problem at all in completing the admission process online. Here are the steps
-                        to follow for admission:
+                    <p className="text-justify text-md lg:text-lg text-gray-700">
+                        Undoubtedly, over the years, many unauthorized or unofficial agents have surged who try to take maximum advantage of the reputation and popularity of Rostov State Medical University. During the consultation for MBBS in Russia, you may confront several agents who claim to be an official representative of RostSMU; however, they are just creating false assumptions to trap you in.
                     </p>
+                    <p className="text-justify text-md lg:text-lg text-gray-700 mt-4">
+                        Under such circumstances, both students and parents must be aware of the fact that such agents or middlemen may try to distract you with attractive schemes or several other misleading and unauthorized information regarding Rostov State Medical University admission. Here you need to be wise and clever. You should consult the appointed and official representative of RostSMU, which is RREC Pvt. Ltd.
+                    </p>
+                    <h3 className="text-xl font-semibold text-red-600 mb-4 mt-8 text-center">
+                        Some points to remember to avoid any misleading event:
+                    </h3>
+                    <ul className="list-disc list-inside space-y-4 text-justify text-md lg:text-lg text-gray-700 mt-4">
+                        <li><strong>Agent may ask for the whole 6-year amount or fees.</strong> You should not do this. The reason being, RostSMU asks you to pay fees yearly only. Moreover, you should always get written assurance for whatever promises they make regarding the fees. Remember, agents can’t force you to pay them in person.</li>
+                        <li><strong>The Rostov State Medical fee structure</strong> of the English medium MBBS program and the Russian medium MBBS program may vary considerably. However, often some agents offer you a fee structure that is Russian-based, which is comparatively cheaper than the English medium. Stay away from such misleading information often used by them to trap you.</li>
+                        <li><strong>They may ask you to pay them directly.</strong> The fact is that you are supposed to pay the fees in the RostSMU account directly and get the payment receipt, or you can pay through the official appointed representative.</li>
+                        <li><strong>They may also ask you to pay some sort of miscellaneous charges</strong> which they will not clarify upfront. They may provide excuses for several expenses or charges that incurred till the departure of the students to RostSMU, Russia. The fact is that the fees of the course generally include both tuition and hostel. If you do not want to avail of a hostel, then the amount will not be charged by the university.</li>
+                    </ul>
+                    <h3 className="text-xl font-semibold text-red-600 mb-4 mt-8 text-center">
+                        The medium of Instruction in RostSMU
+                    </h3>
+                    <p className="text-justify text-md lg:text-lg text-gray-700 mt-4">
+                        The medium of teaching RostSMU is English and Russian. Hence as an Indian student, you can choose English as your primary and preferred language for doing MBBS in Russia. It should be in your knowledge that the cost of English medium is higher than that of Russian. However, Russian is taught to all students in the first three years (As per medical curriculum of RF) so that they can get a handy knowledge of the mother tongue of Russia. Having knowledge of Russian will be quite handy to deals with people and situations both inside and outside the campus.
+                    </p>
+                    <p className="text-justify text-md lg:text-lg text-gray-700 mt-4">
+                        By and large, as a student or parent, you need to be smart enough to avoid getting trapped in any baffling assurances, misleading Rostov State Medical University fee structures, or floating schemes used by such agents. Most of the information regarding RostSMU or RostGMU is available at the Rostov State Medical University representative website
+                        <a href="https://www.rrecrostov.com" className="text-blue-600 underline"> www.rrecrostov.com</a>. Hence, you should make decisions wisely based on genuine and valid information provided by the agent and not settle for anything until you are completely convinced and satisfied by their identity as an official representative of RostSMU.
+                    </p>
+                    <p className="text-justify text-md lg:text-lg text-gray-700 mt-4">
+                        <strong>RREC Pvt. Ltd</strong> is the official and authorized representative of RostSMU. Parents and students are heartily welcome and invited for consultation and doubt clearance regarding admission in RostSMU, which is entirely free of cost.
+                    </p>
+                    <div className="bg-gray-100 font-roboto">
+                        <h2 className="text-xl font-semibold text-red-600 mb-4 mt-8 text-center">
+                            Clearing NEXT Exam or Screening Test
+                        </h2>
+                        <p className="text-justify text-md lg:text-lg text-gray-700">
+                            Foreign Medical Graduate Examination (FMGE) screening test was an indispensable exam that needed to be cracked if you wanted to pursue your career or practice medicine in India after taking Rostov State Medical University admission and completing MBBS from RostSMU or any other Russian University. However, the FMGE screening test is abolished now by the regulatory authorities. This test was essential and mandatory to pass in order to get the provisional or permanent registration licensing from the National Medical Commission of India. You will also be considered eligible for a one-year internship in India after clearing this exam.
+                        </p>
 
+                        <h3 className="text-xl font-semibold text-red-600 mb-4 mt-8 text-center">
+                            Important Information Regarding FMGE / NEXT (National Exit Test) Screening
+                        </h3>
+                        <ul className="list-disc list-inside space-y-4 text-justify text-md lg:text-lg text-gray-700 mt-4">
+                            <li>Just appearing in the FMGE/NEXT exam does not mean you are qualified to get provisional or permanent registration from NMC in India; you need to pass it as well.</li>
+                            <li>You should always provide correct or legitimate information while filing the form. Any wrong or misleading information will not only cancel your appearance but also bar you from appearing in any exam conducted by NBE in the future.</li>
+                            <li>You must be well-informed and aware of the eligibility criteria, scheme, and pattern of the examination before filling out the application form.</li>
+                            <li>To appear in the FMGE/NEXT exam, the candidate must complete their primary medical qualification (MBBS) from an NMC-approved university in Russia.</li>
+                        </ul>
 
-                    {/* Steps List */}
-                    <div className="mt-4 space-y-3 w-full">
-                        {[
-                            { step: "Step 1:", text: `Fill the online application form correctly. You can visit the online portal of the website for this. Alternatively, you can visit the authorized and official representative of RostSMU – RREC, where you will be duly guided regarding a complete online form application.` },
-                            { step: "Step 2:", text: `Submit all relevant documents related to the admission online. Alternatively, you may once again visit the RREC office.` },
-                            { step: "Step 3:", text: `The applicant will receive the admission letter in 3-5 working days and an invitation letter within 4 weeks after applying if selected.` },
-                            { step: "Step 4:", text: `Once you receive the invitation letter from the Rostov State Medical University, Russia, you would need to pay the tuition fee for the MBBS course.` },
-                            { step: "Step 5:", text: `After getting the original payment receipt of fees and invitation letter from the University, you can proceed with the student visa process. Once you obtain the visa, you are now ready to fly and study MBBS in RostSMU. RREC will assist in managing all processes in both India & Russia.` },
-                        ].map((item, index) => (
-                            <div key={index} className="flex flex-col md:flex-row md:items-start md:space-x-3 w-full">
-                                <span className="text-red-600 font-semibold flex-shrink-0">{item.step}</span>
-                                <p className="text-gray-700 text-justify md:text-left md:flex-1">{item.text}</p>
+                        <h2 className="text-xl font-semibold text-red-600 mb-4 mt-8 text-center">
+                            Opportunity After Completing MBBS/Medicine from RostSMU
+                        </h2>
+                        <p className="text-justify text-md lg:text-lg text-gray-700">
+                            After completing MBBS from RostSMU, you can opt for a variety of career options both in Russia as well as other parts of the world. Some of the best career options for you are listed below:
+                        </p>
+                        <ul className="list-disc list-inside space-y-4 text-justify text-md lg:text-lg text-gray-700 mt-4">
+                            <li>Students can prefer to continue practicing MBBS in Russia, also need to follow the local norms as per RF.</li>
+                            <li>You may come back to India and practice MBBS after passing a relevant exam (FMGE screening test).</li>
+                            <li>Students can prepare for the USMLE (USA) test.</li>
+                            <li>He/She can choose to practice in the USA after clearing the USMLE.</li>
+                            <li>He/She can apply for a Postgraduate course from Germany, the USA, or any other country, but must follow the local norms of the selected country.</li>
+                            <li>You can prepare for PLAB.</li>
+                            <li>The RostSMU MBBS degree is recognized worldwide. Hence, you have an opportunity to study and work in several prominent parts of the world.</li>
+                        </ul>
+
+                        <h2 className="text-xl font-semibold text-red-600 mb-4 mt-8 text-center">
+                            RostSMU Reviews
+                        </h2>
+                        <p className="text-justify text-md lg:text-lg text-gray-700">
+                            Needless to mention that honest and fair Rostov State Medical University reviews always come in handy when it comes to making the right decision and knowing about the firsthand experience of those who have already been to RostSMU. Several students who are pursuing or have completed their medical studies from the university provide their insight in the form of reviews, some of which are mentioned below:
+                        </p>
+                        <div className="bg-gradient-to-r from-red-600 to-red-800 p-8 mt-8 rounded-lg shadow-lg">
+                            <h2 className="text-2xl text-white mb-6 text-center font-bold">
+                                RostSMU Students Feedback
+                            </h2>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                {[
+                                    { title: "How to Get Direct Admission?", videoId: "aWRUegjs4N8" },
+                                    { title: "RostSMU Hostels", videoId: "EqdUuJZG2Fo" },
+                                    { title: "Final Year Student", videoId: "WXsS5xa3ELw" },
+                                    { title: "Few Words for RostSMU", videoId: "3XORUckYcsE" },
+                                    { title: "Hostels Reviews", videoId: "Te5FvEdj0io" },
+                                    { title: "Beautiful, Capital & Administrative City of South Russia | Join the Top Medical University of Russia", videoId: "_yoy_HK5NeA" },
+                                    { title: "Admission Open for 2025 - Rostov State Medical University Call 1800-572-5827", videoId: "WNn4v0qb574" },
+                                    { title: "Choose to study MBBS at RSMU today and grow into the best professional doctor you have been dreaming to become.", videoId: "cn1LvbvhNvU" }
+                                ].map((video, index) => (
+                                    <div key={index} className="bg-white p-4 rounded-lg shadow-md">
+                                        <iframe
+                                            className="w-full h-48 rounded-lg"
+                                            src={`https://www.youtube.com/embed/${video.videoId}`}
+                                            title={video.title}
+                                            allowFullScreen
+                                        ></iframe>
+                                        <h3 className="text-md text-gray-800 font-semibold mt-3 text-center">{video.title}</h3>
+                                    </div>
+                                ))}
                             </div>
-                        ))}
+                        </div>
+
+                        <div className="bg-white mt-8">
+                            <h2 className="text-xl text-red-600 font-bold text-gray-900 mb-4">
+                                Overall Environment, Safety and Security
+                            </h2>
+                            <p className="text-gray-700 mb-4">
+                                RostSMU offers soothing campus environment. Apart from the academic exposure, students get an opportunity to mix and learn from other students that belongs to different part of the globe. Usually, the RostSMU campus encourages and promotes cultural and extracurricular activities to get the best out of them. In this way, students get variety of exposure for both academic and non-academic activities.
+                            </p>
+                            <p className="text-gray-700 mb-4">
+                                Safety and security is another major issue that may grow serious concern for parents and students. The inside environment of the RostSMU is peaceful. Moreover, the city of Rostov-on-Don also has an impressive record on safety and security measures, particularly for foreign students. The people, police and administration are quite cooperative and friendly. They deal with foreigners with polite and tender behavior. However, there are some notable and extra safety tips you may follow to avoid any inconvenient event include:
+                            </p>
+                            <ul className="list-disc list-inside text-gray-700 mb-4">
+                                <li>Always carry some sort of identification or essential documents like passport, identity card, registration paper etc. with you.</li>
+                                <li>Always be aware and alert of your surroundings.</li>
+                                <li>Avoid travelling late at night until it is essential.</li>
+                                <li>Always keep an emergency contact or helpline number with you to refer in need.</li>
+                                <li>Avoid talking to or mingle with strangers.</li>
+                                <li>The policemen may ask you often for identification as foreigners in the city are easily spotted due to their vivid appearance. Take it easy it is normal and natural.</li>
+                                <li>Stay away from any bad habits or addiction.</li>
+                                <li>Avoid late-night parties and clubbing.</li>
+                                <li>Focus on your aim and goal.</li>
+                            </ul>
+
+                            <h2 className="text-xl text-red-600 font-bold text-gray-900 mb-4">
+                                Advantages Students Destined for While Choosing RostSMU for MBBS
+                            </h2>
+                            <p className="text-gray-700 mb-4">
+                                Some prominent advantages at Rostov State Medical University, Rostov comprise:
+                            </p>
+                            <ul className="list-disc list-inside text-gray-700 mb-4">
+                                <li>Equipped with on-campus Central Scientific Research Laboratory (CSRL).</li>
+                                <li>Comprehensive scientific-investigation activities.</li>
+                                <li>Own Military Training Center.</li>
+                                <li>Having Medical University Clinic with 860 beds.</li>
+                                <li>17+ clinical department and 20+ specialized departments in the clinic.</li>
+                                <li>Five dedicated buildings, including hostel, gym, library, etc.</li>
+                                <li>Rostov State Medical University hostel facilities are quite affordable.</li>
+                                <li>Member of the North Caucasus Research Center High School.</li>
+                                <li>Rostov State Medical University reviews are highly satisfying so far.</li>
+                            </ul>
+                            <p className="text-gray-700">
+                                In brief, RostSMU will be the right choice and wise option for medical education in Russia. RREC Pvt. Ltd the official representative of RostSMU will always be there to provide all assistance and consultation for the admission in RostSMU. Feel a free to contact us for free consultation, visit <a href="https://www.rrecrussia.com" className="text-blue-600 hover:underline">www.rrecrussia.com</a>.
+                            </p>
+                        </div>
                     </div>
+
+
                 </div>
                 {/* Heading */}
                 <h2 className="text-2xl font-semibold text-red-600 text-center mb-4">
@@ -371,23 +488,23 @@ const Rostov = () => {
 
                 {/* Phone Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="tel:+917428212236" className="text-gray-700 hover:text-red-600 block">
+                    <a href="tel:+917042284508" className="text-gray-700 hover:text-red-600 block">
                         📞 +91-7042284508, 7042284509
                     </a>
-                    <a href="tel:18004195827" className="text-gray-700 hover:text-red-600 block">
-                        📞 Toll-free 1800-57-5827 (For Indian Students)
+                    <a href="tel:18005725872" className="text-gray-700 hover:text-red-600 block">
+                        📞 Toll-free 1800-572-5827 (For Indian Students)
                     </a>
-                    <a href="tel:+79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="tel:+79515371133" className="text-gray-700 hover:text-red-600 block">
                         📞 +7-9515371133 (International Students)
                     </a>
                 </div>
 
                 {/* WhatsApp Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="https://wa.me/917428212236" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/917042284508" className="text-gray-700 hover:text-red-600 block">
                         💬 WhatsApp: +91-7042284508
                     </a>
-                    <a href="https://wa.me/79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/79515371133" className="text-gray-700 hover:text-red-600 block">
                         💬 WhatsApp: +7-9515371133
                     </a>
                 </div>
