@@ -46,7 +46,7 @@ const Ivanovo = () => {
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">Over the years, ISMU has trained more than 25,000 doctors and continues to provide high-quality medical education to nearly 3,000 students, including over 150 international students from 28+ countries. The university offers MBBS programs in both English and Russian, making it a preferred choice for foreign students. With a highly experienced faculty of more than 400 instructors, including 70 Doctors of Science and over 270 Candidates of Science, ISMU ensures an advanced learning environment. The university provides modern facilities, including three libraries, three well-equipped student hostels, and a sports center, ensuring a comfortable and enriching experience. </p>
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">ISMU emphasizes academic excellence, research, and holistic development, encouraging students to engage in extracurricular activities and cultural exchange programs. The university provides affordable tuition fees, well-equipped hostels, and hands-on clinical training in reputed hospitals. With a strong focus on practical learning, advanced research opportunities, and a student-friendly environment, ISMU remains one of the top choices for students pursuing an MBBS in Russia</p>
                     </div>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         About the City – Ivanovo
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">Ivanovo, known as the "Textile Capital of Russia," is a historic city located 250 km northeast of Moscow. It is famous for its rich cultural heritage, textile industry, and educational institutions like Ivanovo State Medical University. The city has a temperate continental climate, with cold, snowy winters and mild, pleasant summers. It is also enriched with museums, theatres and green spaces.</p>
@@ -55,7 +55,7 @@ const Ivanovo = () => {
 
                 {/* Middle Section */}
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md text-red-600  font-semibold lg:text-xl mt-8 mb-2">
                         Quick Facts about Ivanovo State Medical University
                     </h2>
                     <div className="overflow-x-auto">
@@ -71,7 +71,7 @@ const Ivanovo = () => {
                         </table>
                     </div>
 
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         Why choose RREC for MBBS in Russia?
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">Choosing RREC for your MBBS in Russia means partnering with one of India’s most trusted and experienced education consultancies. As an authorized admission partner for over 22+ NMC and WHO-recognized universities in Russia, we provide comprehensive support to help aspiring doctors achieve their dreams. With a strong success rate, we offer expert counseling, in-depth university research, and tailored assistance, ensuring a hassle-free admission process to top Russian medical universities.</p>
@@ -81,7 +81,7 @@ const Ivanovo = () => {
 
                 </div>
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8 mb-2">
                         Ivanovo State Medical University
                     </h2>
 
@@ -210,48 +210,35 @@ const Ivanovo = () => {
                         <li>Upon arrival at ISMU, complete document verification, medical check-ups, and other enrollment procedures before starting classes.</li>
                     </ol>
                 </div>
+            </div>
 
-
-
-
-                {/* Heading */}
-                <h2 className="text-2xl font-semibold text-red-600 text-center mt-8">
-                    Call for more details about the university, admission, processing, and fees at MBBS in  ISMU, Russia:
+            <div className="bg-red-700 mt-10 mb-6 font-roboto rounded-xl px-8 py-10 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
+                <h2 className="text-2xl font-semibold text-white text-center mt-6">
+                    Call for more details about the university, admission, processing, fees at MBBS in ISMU:
                 </h2>
 
                 {/* Phone Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="tel:+917428212236" className="text-gray-700 hover:text-red-600 block">
+                    <a href="tel:+917042284508" className="text-white hover:text-blue-600 block">
                         📞 +91-7042284508, 7042284509
                     </a>
-                    <a href="tel:18004195827" className="text-gray-700 hover:text-red-600 block">
-                        📞 Toll-free 1800-57-5827 (For Indian Students)
+                    <a href="tel:18005725872" className="text-white hover:text-blue-600 block">
+                        📞 Toll-free 1800-572-5827 (For Indian Students)
                     </a>
-                    <a href="tel:+79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="tel:+79515371133" className="text-white hover:text-blue-600 block">
                         📞 +7-9515371133 (International Students)
                     </a>
                 </div>
 
                 {/* WhatsApp Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="https://wa.me/917428212236" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/917042284508" className="text-white hover:text-blue-600 block">
                         💬 WhatsApp: +91-7042284508
                     </a>
-                    <a href="https://wa.me/79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/79515371133" className="text-white hover:text-blue-600 block">
                         💬 WhatsApp: +7-9515371133
                     </a>
                 </div>
-            </div>
-
-            <div className="bg-red-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
-                <h2 className="text-xl lg:text-2xl mb-4 font-semibold">
-                    Call for more details about the university admission, processing, fees at MBBS in ISMU, Russia
-                </h2>
-                <h3 className="text-lg lg:text-2xl font-semibold mb-4">
-                    Contact Us: +91-7042284508, 7042284509
-                </h3>
-                <h6 className="mb-4">Toll-free 1800-57-5827 (For Indian Students), +7-9515371133 (International Students)</h6>
-                <h6>Students or parents can write to us at WhatsApp also: +91-7042284508</h6>
             </div>
         </>
     )
