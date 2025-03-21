@@ -40,7 +40,7 @@ const Samara = () => {
                     <h1 className="text-xl lg:text-3xl font-semibold mt-4">
                         Samara State Medical University
                     </h1>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-4">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-4">
                         About the University
                     </h2>
                     <div className="mt-4 space-y-6">
@@ -49,15 +49,15 @@ const Samara = () => {
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">It consists of 10 faculties, 80 departments and clinics with 1015 beds. The faculties and teaching staff of the university offer high-quality teaching methodology and approach. Apart from above-par medical education, it has built many partnerships with more than 40 Russian and international organizations. Over 30,000 students have been trained and graduated from the university.</p>
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">It is one of the highly sought-after medical universities in Central Asia for Indian as well as global students. It is reckoned as a top-ranked medical university in Russia. The university is duly recognized by the Ministry of Higher and Secondary Specialized Education, Russia. It is also approved by WHO and NMC of India, which further enhanced its credibility as a top-grade medical university in Russia for Indian students.</p>
                     </div>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         RREC – Official & Authorized Admission Partner of Samara State Medical University
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">RREC is the officially nominated representative and authorized admission partner of SamSMU. Our team has already assisted a large chunk of Indian students in getting successful enrollment to the MBBS program at this university over the years. Many of them have completed their MBBS qualification, and today they are well-placed in leading and reputed medical organizations and institutions in India and abroad. Hence we provide the best chance to qualify and get admission to Samara State Medical University, Russia to those aspirants who have dreams to study MBBS abroad.</p>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         Hostel Facility for Foreign Students
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">Samara State Medical University provides decent and well-furnished hostel facilities to foreign students. There is a separate accommodation facility for boys and girls. The hostel has all types of essential amenities that comprise a study room, Wi-Fi network, hot and cold water, electricity and a kitchen on each floor. Apart from these, they are also provided separate wardrobes, tables, chairs, pillows, bedsheets and blankets. A mess facility is also available where students can enjoy a variety of Indian, Chinese, and continental foods. There is a provision for a common kitchen for those who love to cook themselves. Safety and security provisions are up to the mark so that parents have peace of mind too when they send their wards abroad.</p>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         Admission Procedure at Samara State Medical University, Russia
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">The admission procedure at Samara State Medical University is more and less the same as in many Russian Universities. It includes the admitting process, required set of documents, signing contract with the university, completion of medical checkups, payment of tuition fees and more. We have put the entire procedure in a crisp and clear manner for a better understanding.</p>
@@ -66,7 +66,7 @@ const Samara = () => {
 
                 {/* Middle Section */}
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md text-red-600  font-semibold lg:text-xl mt-8 mb-2">
                         Quick Information & Stats about Samara State Medical University
                     </h2>
                     <div className="overflow-x-auto">
@@ -81,18 +81,18 @@ const Samara = () => {
                             </tbody>
                         </table>
                     </div>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600  font-semibold lg:text-xl mt-8">
                         About the City
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">The City is located in Chapaevskaya, Samara which is a beautiful city in Russia. The city represents the exotic culture and traditions and it has been the epicenter of economic, political and cultural development. You can explore ancient monuments, art & craft museum and spellbound landscapes. The city has its history and glory that draws the attention of tourists from across the globe. The city is safe and peaceful. The climate is cold in winter and moderate in summer.</p>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         Why Choose RREC for MBBS in Samara State Medical University
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">RREC has been an established name operating in medical tourism for more than 17 years. We have a proven track record of successful admissions to various top-grade medical universities in Russia. Moreover, our systematic approach and guidance make it easy for medical aspirants to get admission to top-notch medical universities abroad. We have earned appreciation and respect from one and all for our years of selfless and dedicated services. Our branches are located all over India with head office in Delhi. You can visit our website to know more about the encouraging and overwhelming stories and responses from students who are doing or have completed MBBS from major medical universities abroad.</p>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">We are committed to providing complete and unconditional support and assistance throughout the MBBS course. We also held periodical counseling through seminars and group invitations to aware parents and students and solve their doubts regarding MBBS admission in NMC-approved Universities in Russia.</p>
                 </div>
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8 mb-2">
                         Samara State Medical University Fees for MBBS 2024-25
                     </h2>
                     <p className="mt-4 mb-2">The fees for MBBS at Samara State Medical University are relatively affordable and low for Indian Students. However, the quality of teaching and infrastructure are simply world-class.</p>
@@ -210,15 +210,33 @@ const Samara = () => {
                 </div>
             </div>
 
-            <div className="bg-red-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
-                <h2 className="text-xl lg:text-2xl mb-4 font-semibold">
-                    Call for more details about the university admission, processing, fees at MBBS in SSMU, Russia
+            <div className="bg-red-700 mt-10 mb-6 font-roboto rounded-xl px-8 py-10 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
+                <h2 className="text-2xl font-semibold text-white text-center mt-6">
+                    Call for more details about the university, admission, processing, fees at MBBS in SSMU:
                 </h2>
-                <h3 className="text-lg lg:text-2xl font-semibold mb-4">
-                    Contact Us: +91-7042284508, 7042284509
-                </h3>
-                <h6 className="mb-4">Toll-free 1800-57-5827 (For Indian Students), +7-9515371133 (International Students)</h6>
-                <h6>Students or parents can write to us at WhatsApp also: +91-7042284508</h6>
+
+                {/* Phone Numbers */}
+                <div className="mt-4 space-y-2 text-center">
+                    <a href="tel:+917042284508" className="text-white hover:text-blue-600 block">
+                        📞 +91-7042284508, 7042284509
+                    </a>
+                    <a href="tel:18005725872" className="text-white hover:text-blue-600 block">
+                        📞 Toll-free 1800-572-5827 (For Indian Students)
+                    </a>
+                    <a href="tel:+79515371133" className="text-white hover:text-blue-600 block">
+                        📞 +7-9515371133 (International Students)
+                    </a>
+                </div>
+
+                {/* WhatsApp Numbers */}
+                <div className="mt-4 space-y-2 text-center">
+                    <a href="https://wa.me/917042284508" className="text-white hover:text-blue-600 block">
+                        💬 WhatsApp: +91-7042284508
+                    </a>
+                    <a href="https://wa.me/79515371133" className="text-white hover:text-blue-600 block">
+                        💬 WhatsApp: +7-9515371133
+                    </a>
+                </div>
             </div>
         </>
     )

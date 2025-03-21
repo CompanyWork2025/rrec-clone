@@ -39,7 +39,7 @@ const Samarkand = () => {
                     <h1 className="text-xl lg:text-3xl font-semibold mt-4">
                         Samarkand State Medical University (Uzbekistan)
                     </h1>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-4">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-4">
                         About the University
                     </h2>
                     <div className="mt-4 space-y-6">
@@ -47,16 +47,16 @@ const Samarkand = () => {
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">Samarkand State Medical University was established in 1930. Since its inception, the university is truly renowned for its unparalleled contribution to medical science development on the global front. The university offers high-quality training to medical professionals and students because the entire medical education structure, as well as the infrastructure,is technically sound and seamless as compared to other medical universities abroad.</p>
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">The largest and one of the oldest medical universities in Uzbekistan is well-equipped with an ultra-modern medical education system that includes advanced classrooms, electronic teaching and learning materials, multimedia lecture halls, clinical laboratories, quality teaching and research programs and vastly experienced faculties. It has 7 faculties, 57 departments and 9 undergraduate studies programs. Apart from quality medical education, there is ample provision for accommodation and leisure activities for foreign students. Over 40,000 students have been trained and graduated from the university.</p>
                     </div>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 lg:text-xl mt-8 font-semibold">
                         About the City
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">The university is located in the most mesmerizing city of Samarkand. The city is the land of outstanding culture and traditions and it has been the center of scientific development and activities since time immemorial.The country is not so populated and there are many points of attraction for tourists including UNESCO World Heritage Sites. You can explore ancient time monuments, art & craft museum and spellbound landscapes. The city is known for its many beautiful mosques and mausoleums. The city is safe and peaceful.</p>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 lg:text-xl mt-8 font-semibold">
                         Why Choose RREC for MBBS in Samarkand State Medical University in Uzbekistan
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">The major concern for parents and students when choosing to study MBBS abroad is finding a trustworthy foreign education consultant. The moment you contact RREC your concern comes to an end. We are not only a reliable, established and recognized consultant but the only authorized representative and admission partner for medical education in top NMC-recognized and WHO-approved Universities in Uzbekistan, Russia, etc. We are committed to provide complete and unconditional support and assistance throughout the MBBS course. We also held periodical counseling through seminars and group invitations to aware parents and students and solve their doubts regarding MBBS admission in NMC-approved Universities.</p>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">RREC has been in this business for more than 15 years with proven track record of successful admissions in various top-grade medical universities in Russia, Uzbekistan, etc. Our truly guided services and systematic approach help thousands of medical aspirants get admission to top-notch medical universities abroad. We have earned appreciation and respect from all corners due to years of dedicated and truly guided placement services. We have a wide network and branches all over India with head office in Delhi. You can visit our website to know more about the encouraging and overwhelming stories and responses from students who are doing or have completed MBBS from major medical universities abroad.</p>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 lg:text-xl mt-8 font-semibold">
                         Admission Procedure at Samarakand State Medical University, Uzbekistan
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">The admission procedure at Samarakand State Medical University is more and less the same as in many Russian Universities. It includes the admitting process, required set of documents, signing contract with the university, completion of medical checkups, payment of tuition fees and more. We have put the entire procedure in a crisp and clear manner for a better understanding.</p>
@@ -65,7 +65,7 @@ const Samarkand = () => {
 
                 {/* Middle Section */}
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md text-red-600 lg:text-xl font-semibold mt-8 mb-2">
                         Quick Information & Stats about Samarkand State Medical University
                     </h2>
 
@@ -84,7 +84,7 @@ const Samarkand = () => {
 
                 </div>
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8 mb-2">
                         Samarakand State Medical University Fees for MBBS
                     </h2>
                     <p className="mt-4 mb-2">TheUniversity fees structure for medicine courses is not only affordable but it is relative low for Indian students as compared to various private medical colleges and universities in India.</p>
@@ -182,44 +182,35 @@ const Samarkand = () => {
                 <p className="text-gray-700 mt-4 text-justify">
                     RREC has been in this business for more than 18 years with proven track record of successful admissions in various top-grade medical universities in Russia, Uzbekistan, etc. Our truly guided services and systematic approach help thousands of medical aspirants get admission to top-notch medical universities abroad. We have earned appreciation and respect from all corners due to years of dedicated and truly guided placement services. We have a wide network and branches all over India with head office in Delhi. You can visit our website to know more about the encouraging and overwhelming stories and responses from students who are doing or have completed MBBS from major medical universities abroad.
                 </p>
+            </div>
 
-                {/* Heading */}
-                <h2 className="text-2xl font-semibold text-red-600 text-center mt-6">
-                    Call for more details about university, admission, processing fees at Samarakand State Medical University, Uzbekistan
+            <div className="bg-red-700 mt-10 mb-6 font-roboto rounded-xl px-8 py-10 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
+                <h2 className="text-2xl font-semibold text-white text-center mt-6">
+                    Call for more details about the university, admission, processing, fees at MBBS in SMSMU:
                 </h2>
+
                 {/* Phone Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="tel:+917428212236" className="text-gray-700 hover:text-red-600 block">
+                    <a href="tel:+917042284508" className="text-white hover:text-blue-600 block">
                         📞 +91-7042284508, 7042284509
                     </a>
-                    <a href="tel:18004195827" className="text-gray-700 hover:text-red-600 block">
-                        📞 Toll-free 1800-57-5827 (For Indian Students)
+                    <a href="tel:18005725872" className="text-white hover:text-blue-600 block">
+                        📞 Toll-free 1800-572-5827 (For Indian Students)
                     </a>
-                    <a href="tel:+79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="tel:+79515371133" className="text-white hover:text-blue-600 block">
                         📞 +7-9515371133 (International Students)
                     </a>
                 </div>
 
                 {/* WhatsApp Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="https://wa.me/917428212236" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/917042284508" className="text-white hover:text-blue-600 block">
                         💬 WhatsApp: +91-7042284508
                     </a>
-                    <a href="https://wa.me/79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/79515371133" className="text-white hover:text-blue-600 block">
                         💬 WhatsApp: +7-9515371133
                     </a>
                 </div>
-            </div>
-
-            <div className="bg-red-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
-                <h2 className="text-xl lg:text-2xl mb-4 font-semibold">
-                    Call for more details about the university admission, processing, fees at MBBS in SSMU, Russia
-                </h2>
-                <h3 className="text-lg lg:text-2xl font-semibold mb-4">
-                    Contact Us: +91-7042284508, 7042284509
-                </h3>
-                <h6 className="mb-4">Toll-free 1800-57-5827 (For Indian Students), +7-9515371133 (International Students)</h6>
-                <h6>Students or parents can write to us at WhatsApp also: +91-7042284508</h6>
             </div>
         </>
     )
