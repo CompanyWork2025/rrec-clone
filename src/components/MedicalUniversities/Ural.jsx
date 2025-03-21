@@ -100,7 +100,7 @@ const Ural = () => {
                         </table>
                     </div>
 
-                    <h2 className="text-md text-red-600 lg:text-xl font-semibold mt-8 text-center">
+                    <h2 className="text-md text-red-600 lg:text-xl font-semibold mt-8 text-justify">
                         Top Features of Ural State Medical Universities
                     </h2>
                     <div className="mt-4 space-y-3 w-full">
@@ -122,7 +122,7 @@ const Ural = () => {
                     <div className="space-y-10 mt-8">
                         {/* Eligibility Criteria for Admission */}
                         <div className="bg-gray-100 ">
-                            <h3 className="text-xl font-semibold text-red-600 mb-4">Eligibility Criteria for Admission</h3>
+                            <h3 className="text-xl text-justify font-semibold text-red-600 mb-4">Eligibility Criteria for Admission</h3>
                             <ul className="list-disc text-justify list-inside text-gray-700 space-y-2">
                                 <li>The candidate must be 17 years of age on or before 31st Dec of the year of admission.</li>
                                 <li>The candidate must have passed class 10th and 12th from a recognized board in India.</li>
@@ -133,7 +133,7 @@ const Ural = () => {
 
                         {/* Complete Admission Process */}
                         <div className="bg-gray-100 ">
-                            <h3 className="text-xl font-semibold text-red-600 mb-4">Complete Admission Process</h3>
+                            <h3 className="text-xl text-justify font-semibold text-red-600 mb-4">Complete Admission Process</h3>
                             <ul className="list-disc text-justify list-inside text-gray-700 space-y-2">
                                 <li>Apply for admission through the online application form.</li>
                                 <li>Fill up all the mandatory information carefully and submit it.</li>
@@ -148,7 +148,7 @@ const Ural = () => {
 
                         {/* Document Required */}
                         <div className="bg-gray-100 ">
-                            <h3 className="text-xl font-semibold text-red-600 mb-4">Documents Required</h3>
+                            <h3 className="text-xl text-justify font-semibold text-red-600 mb-4">Documents Required</h3>
                             <ul className="list-disc text-justify list-inside text-gray-700 space-y-2">
                                 <li>Copy of 10th & 12th mark sheets</li>
                                 <li>Notarized birth certificate</li>
@@ -161,6 +161,38 @@ const Ural = () => {
                                 <li>HIV test documents</li>
                                 <li>12 passport size photos</li>
                                 <li>Medical certificate</li>
+                            </ul>
+
+                            <h2 className="text-red-700 text-justify mt-4 text-xl font-bold text-center mb-4">
+                                Top Features of Ural State Medical University
+                            </h2>
+
+                            <ul className="list-disc text-justify list-inside text-gray-700 space-y-2">
+                                <li>Teaching faculties have global experience in teaching medical students.</li>
+                                <li>A modern and updated library with all kinds of medical books, journals, and WHO publications in medicine and healthcare.</li>
+                                <li>The infrastructure facilities, research labs, and pedagogical methodology are of the highest pedigree.</li>
+                                <li>The cost of living is also affordable for foreign students.</li>
+                                <li>The medical education system and teaching methodology are equivalent to global standards.</li>
+                                <li>The university follows an international standard curriculum allowing students to practice worldwide after the successful completion of the MBBS program.</li>
+                            </ul>
+
+                            <h3 className="text-red-600 text-xl text-justify font-semibold mt-6 mb-3">Accreditation and Recognition</h3>
+                            <ul className="list-disc list-inside text-justify text-gray-700 space-y-2">
+                                <li>Ministry of Health & Education of the Russian Federation</li>
+                                <li>World Health Organization (WHO)</li>
+                                <li>National Medical Commission of India (NMC)</li>
+                            </ul>
+
+                            <h3 className="text-red-600 text-xl text-justify font-semibold mt-6 mb-3">Faculties of Ural State Medical University</h3>
+                            <ul className="list-disc list-inside text-justify text-gray-700 space-y-2">
+                                <li>General Medicine (MBBS)</li>
+                                <li>Dentistry</li>
+                                <li>Pediatrics</li>
+                                <li>Medical and Preventive</li>
+                                <li>Pharmacy</li>
+                                <li>Nursing</li>
+                                <li>Social Work</li>
+                                <li>Clinical Psychology</li>
                             </ul>
                         </div>
                     </div>
@@ -251,44 +283,36 @@ const Ural = () => {
 
 
                 {/* Heading */}
-                <h2 className="text-2xl font-semibold text-red-600 text-center mt-6">
+                <div className="bg-red-700 mt-10 mb-6 font-roboto rounded-xl px-8 py-10 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
+                <h2 className="text-2xl font-semibold text-white text-center mt-6">
                     Call for more details about the university, admission, processing, fees at MBBS in USMU:
                 </h2>
 
                 {/* Phone Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="tel:+917428212236" className="text-gray-700 hover:text-red-600 block">
+                    <a href="tel:+917042284508" className="text-white hover:text-blue-600 block">
                         📞 +91-7042284508, 7042284509
                     </a>
-                    <a href="tel:18004195827" className="text-gray-700 hover:text-red-600 block">
-                        📞 Toll-free 1800-57-5827 (For Indian Students)
+                    <a href="tel:18005725872" className="text-white hover:text-blue-600 block">
+                        📞 Toll-free 1800-572-5827 (For Indian Students)
                     </a>
-                    <a href="tel:+79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="tel:+79515371133" className="text-white hover:text-blue-600 block">
                         📞 +7-9515371133 (International Students)
                     </a>
                 </div>
 
                 {/* WhatsApp Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="https://wa.me/917428212236" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/917042284508" className="text-white hover:text-blue-600 block">
                         💬 WhatsApp: +91-7042284508
                     </a>
-                    <a href="https://wa.me/79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/79515371133" className="text-white hover:text-blue-600 block">
                         💬 WhatsApp: +7-9515371133
                     </a>
                 </div>
             </div>
-
-            <div className="bg-red-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
-                <h2 className="text-xl lg:text-2xl mb-4 font-semibold">
-                    Call for more details about the university admission, processing, fees at MBBS in USMU, Russia
-                </h2>
-                <h3 className="text-lg lg:text-2xl font-semibold mb-4">
-                    Contact Us: +91-7042284508, 7042284509
-                </h3>
-                <h6 className="mb-4">Toll-free 1800-419-5827 (For Indian Students), +7-9515371133 (International Students)</h6>
-                <h6>Students or parents can write to us at WhatsApp also: +91-7042284508</h6>
             </div>
+
         </>
     )
 }
