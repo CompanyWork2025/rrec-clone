@@ -130,6 +130,7 @@ const WhatsAppSticky = () => {
           src="https://static.vecteezy.com/system/resources/thumbnails/024/398/617/small/whatsapp-logo-icon-isolated-on-transparent-background-free-png.png"
           alt="WhatsApp Us"
           className="w-20 h-20 rounded-full"
+          loading='lazy'
         />
         {showPopup && (
           <motion.div
