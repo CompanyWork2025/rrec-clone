@@ -5,14 +5,14 @@ import { motion } from 'framer-motion';
 
 const universityData = [
   { id: 1, name: 'Don State Technical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802187844524791.jpg.webp', path: '/don-state-technical-university-russia', },
-  { id: 2, name: 'Southern Federal University', img: 'https://rrecrussia.com/public/upload/subcategory/1802187883132990.webp.webp',  path: '/southern-federal-university-russia', },
+  { id: 2, name: 'Southern Federal University', img: 'https://rrecrussia.com/public/upload/subcategory/1802187883132990.webp.webp', path: '/southern-federal-university-russia', },
   { id: 3, name: 'Moscow Pedagogical State University', img: 'https://upload.wikimedia.org/wikipedia/commons/8/85/Wiki_pirogovka_clinics_1.jpg', path: '/moscow-pedagogical-state-university' },
   { id: 4, name: 'Study MBA in SfedU, Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802187968186772.webp.webp', path: "/study-mba-in-southern-federal-university-russia-in-english-medium" },
-  { id: 5, name: 'Rostov State University of Economics, Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802188006965033.jpg.webp', path: "/rostov-state-university-economics-russia"},
+  { id: 5, name: 'Rostov State University of Economics, Russia', img: 'https://rrecrussia.com/public/upload/subcategory/1802188006965033.jpg.webp', path: "/rostov-state-university-economics-russia" },
   { id: 6, name: 'Veterinary Medicine - DSTU Rostov', img: 'https://rrecrussia.com/public/upload/subcategory/1802188054847354.jpg.webp', path: "/veterinary-medicine-don-state-technical-university" },
-  { id: 7, name: 'Ukhta State Technical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188096887736.jpg.webp',  path: '/ukhta-state-technical-university-russia', },
+  { id: 7, name: 'Ukhta State Technical University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188096887736.jpg.webp', path: '/ukhta-state-technical-university-russia', },
   { id: 8, name: 'St. Petersburg Polytechnic University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188141822526.jpg.webp', path: "/saint-petersburg-polytechnic-university" },
-  { id: 9, name: 'Udmurt State University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188184507520.jpg.webp', path: '/udmurt-state-university-russia'},
+  { id: 9, name: 'Udmurt State University', img: 'https://rrecrussia.com/public/upload/subcategory/1802188184507520.jpg.webp', path: '/udmurt-state-university-russia' },
 ];
 
 function TechnicalUniversities() {
@@ -62,10 +62,13 @@ function TechnicalUniversities() {
               className="relative group bg-gray-200 rounded-xl overflow-hidden border-2 border-red-600 shadow-lg h-64"
             >
               {/* University Image */}
-              <div
-                className="w-full h-full bg-cover bg-center transition-all duration-500"
-                style={{ backgroundImage: `url(${university.img})` }}
-              ></div>
+              <img
+                src={university.img}
+                alt={university.name}
+                loading="lazy"
+                className="w-full h-full object-cover transition-opacity duration-500 ease-in-out"
+                style={{ background: `url('https://www.blog.motionisland.com/wp-content/uploads/2022/03/Loading_27.gif') center/cover no-repeat` }}
+              />
 
               {/* Hover Background Animation with darker opacity */}
               <div

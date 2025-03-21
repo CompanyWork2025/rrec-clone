@@ -68,10 +68,14 @@ function CoursesRussia() {
               className="relative group bg-gray-200 rounded-xl overflow-hidden border-2 border-red-600 shadow-lg h-64"
             >
               {/* University Image */}
-              <div
-                className="w-full h-full bg-cover bg-center transition-all duration-500"
-                style={{ backgroundImage: `url(${university.img})` }}
-              ></div>
+              <img
+                src={university.img}
+                alt={university.name}
+                loading="lazy"
+                className="w-full h-full object-cover transition-opacity duration-500 ease-in-out"
+                style={{ background: `url('https://www.blog.motionisland.com/wp-content/uploads/2022/03/Loading_27.gif') center/cover no-repeat` }}
+              />
+
 
               {/* Hover Background Animation with darker opacity */}
               <div
