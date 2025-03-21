@@ -47,7 +47,7 @@ const Yaroslavl = () => {
                     </div>
 
                     <div className="w-full text-justify text-left">
-                        <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                        <h2 className="text-md font-semibold text-red-600 lg:text-xl mt-8">
                             Faculty at Yaroslavl State Medical University
                         </h2>
                         <ul className="mt-4 text-sm lg:text-lg text-gray-700 space-y-4">
@@ -75,7 +75,7 @@ const Yaroslavl = () => {
 
                 {/* Middle Section */}
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8 mb-2">
                         Quick Facts YSMU
                     </h2>
                     <div className="overflow-x-auto">
@@ -90,16 +90,16 @@ const Yaroslavl = () => {
                             </tbody>
                         </table>
                     </div>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         Duration of MBBS Course
                     </h2>
                     <p className="text-center    text-md lg:text-lg font-roboto mt-2">The total course duration at Yaroslavl state medical university is 6 years for English Medium MBBS course.</p>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         Hostel and Accommodation at Yaroslavl State Medical University
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">Yaroslavl State Medical University has five hostel buildings to accommodate a large number of foreign students. All hostel rooms are well-equipped with essential and advanced amenities like hot and cold water, electricity, cooking gas, heating systems for rooms and internet access. There is no additional charge for it. There is a fixed exit and entry time for the students living on the hostel campus. The entire hostel campus is secured with CCTV cameras to ensure maximum security and safety for the students.</p>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">There is the facility of common kitchens for those students who want to cook their own food. Cities having many canteens, restaurants / cafes / fastfood shops, students can visit there also.</p>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         Eligibility for Admission
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">The candidate must attain 15 years before 31 December of the year of admission.</p>
@@ -109,7 +109,7 @@ const Yaroslavl = () => {
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">NEET scorecard is compulsory</p>
                 </div>
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8 mb-2">
                         Fees for Medicine (MBBS)
                     </h2>
                     <div className="overflow-x-auto">
@@ -203,15 +203,33 @@ const Yaroslavl = () => {
                 </p>
             </div>
 
-            <div className="bg-red-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
-                <h2 className="text-xl lg:text-2xl mb-4 font-semibold">
-                    Call for more details about the university admission, processing, fees at MBBS in YSMU, Russia
+            <div className="bg-red-700 mt-10 mb-6 font-roboto rounded-xl px-8 py-10 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
+                <h2 className="text-2xl font-semibold text-white text-center mt-6">
+                    Call for more details about the university, admission, processing, fees at MBBS in YSMU:
                 </h2>
-                <h3 className="text-lg lg:text-2xl font-semibold mb-4">
-                    Contact Us: +91-7042284508, 7042284509
-                </h3>
-                <h6 className="mb-4">Toll-free 1800-57-5827 (For Indian Students), +7-9515371133 (International Students)</h6>
-                <h6>Students or parents can write to us at WhatsApp also: +91-7042284508</h6>
+
+                {/* Phone Numbers */}
+                <div className="mt-4 space-y-2 text-center">
+                    <a href="tel:+917042284508" className="text-white hover:text-blue-600 block">
+                        📞 +91-7042284508, 7042284509
+                    </a>
+                    <a href="tel:18005725872" className="text-white hover:text-blue-600 block">
+                        📞 Toll-free 1800-572-5827 (For Indian Students)
+                    </a>
+                    <a href="tel:+79515371133" className="text-white hover:text-blue-600 block">
+                        📞 +7-9515371133 (International Students)
+                    </a>
+                </div>
+
+                {/* WhatsApp Numbers */}
+                <div className="mt-4 space-y-2 text-center">
+                    <a href="https://wa.me/917042284508" className="text-white hover:text-blue-600 block">
+                        💬 WhatsApp: +91-7042284508
+                    </a>
+                    <a href="https://wa.me/79515371133" className="text-white hover:text-blue-600 block">
+                        💬 WhatsApp: +7-9515371133
+                    </a>
+                </div>
             </div>
         </>
     )
