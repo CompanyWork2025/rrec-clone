@@ -285,10 +285,10 @@ const Rostov = () => {
                             </thead>
                             <tbody>
                                 {[
-                                    { label: "Tuition Fee", firstYear: "6100 USD", secondYear: "4550 USD", },
-                                    { label: "Hostel Fee", firstYear: "Excluded", secondYear: "Excluded", },
-                                    { label: "Visa Extension & Registration Fee", firstYear: "Excluded", secondYear: "Excluded", },
-                                    { label: "Medical Insurance", firstYear: "Excluded", secondYear: "Excluded", },
+                                    { label: "Tuition Fee", firstYear: "326000 RUB", secondYear: "326000 RUB", },
+                                    { label: "Hostel Fee", firstYear: "21720 RUB", secondYear: "21720 RUB", },
+                                    { label: "Visa Extension & Registration Fee", firstYear: "1920 RUB", secondYear: "1920 RUB", },
+                                    { label: "Medical Insurance", firstYear: "5800-7000 RUB", secondYear: "5800-7000 RUB", },
 
                                 ].map((item, index) => (
                                     <tr key={index} className="border-b border-gray-300 text-gray-700">
@@ -400,13 +400,14 @@ const Rostov = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {[
                                     { title: "How to Get Direct Admission?", videoId: "aWRUegjs4N8" },
-                                    { title: "RostSMU Hostels", videoId: "EqdUuJZG2Fo" },
+                                    { title: "RostSMU Hostels", videoId: "Nm-Iox9uDdE" },
                                     { title: "Final Year Student", videoId: "WXsS5xa3ELw" },
                                     { title: "Few Words for RostSMU", videoId: "3XORUckYcsE" },
-                                    { title: "Hostels Reviews", videoId: "Te5FvEdj0io" },
-                                    { title: "Beautiful, Capital & Administrative City of South Russia | Join the Top Medical University of Russia", videoId: "_yoy_HK5NeA" },
+                                    { title: "Fresher's Party 2024", videoId: "dliKGMOentA" },
+                                    { title: "Simulation Center", videoId: "kw4m5uRpygk" },
                                     { title: "Admission Open for 2025 - Rostov State Medical University Call 1800-572-5827", videoId: "WNn4v0qb574" },
-                                    { title: "Choose to study MBBS at RSMU today and grow into the best professional doctor you have been dreaming to become.", videoId: "cn1LvbvhNvU" }
+                                    { title: "Choose to study MBBS at RSMU today and grow into the best professional doctor you have been dreaming to become.", videoId: "cn1LvbvhNvU" },
+                                    { title: "Rostov City at a Glance", videoId: "k463U6miofA" }
                                 ].map((video, index) => (
                                     <div key={index} className="bg-white p-4 rounded-lg shadow-md">
                                         <iframe
