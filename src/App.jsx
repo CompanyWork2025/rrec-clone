@@ -146,7 +146,7 @@ const WhatsAppSticky = () => {
               className="w-64 h-auto"  // ✅ Fixed width to prevent shrinking
               loading='lazy'
             />
-            <span className="absolute text-black font-bold text-lg p-8 text-center w-full">
+            <span className="absolute text-black font-roboto font-bold text-lg p-8 text-center w-full">
               WhatsApp us for any queries!
             </span>
           </motion.div>
