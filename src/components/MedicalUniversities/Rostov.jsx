@@ -50,18 +50,22 @@ const Rostov = () => {
                         Rostov State Medical University – A Place To Be For Medical Education
                     </h2>
                     <div className="mt-4 space-y-6">
-                        <p className="text-left text-justify text-md lg:text-lg font-roboto">A massive number of Indian students who dream of pursuing MBBS abroad are opting for Rostov Medical University, Russia due to several advantages that include direct admission, no donation, feasible accommodation, affordable fee structure, safety, and security. However, the most exciting trait is its top quality and standard in medical education. San doubt, more than 16 lacs students appear for the MBBS exam in India every year for just 40 thousand seats. It depicts the whole scenario of fierce competition in India for MBBS. This leads many capable students to look for an MBBS course in Russia. Rostov State Medical University is a great option for such aspirants who have high aspirations for MBBS. If you want to take admission in RostSMU, consult The RREC (Reliable Russian Education Consultants) team. We are the only official representative of RostSMU that can help you to sail through to the entire admission procedure. Visit our website www.rrecrussia.com now to fix the consultation.</p>
+                        <p className="text-left text-justify text-md lg:text-lg font-roboto">A massive number of Indian students who dream of pursuing MBBS abroad are opting for <span className="text-red-600 font-semibold">Rostov Medical University</span>, Russia due to several advantages that include direct admission with entrance exams, no donation, feasible accommodation, affordable fee structure, safety and security. However the most exciting trait is its top quality and standard in medical education. </p>
+                        <p className="text-left text-justify text-md lg:text-lg mt-4 font-roboto">San doubt, more than 20 lacs students appear for MBBS exam in India every year for just 40-60 thousands seats. It depicts the whole scenario of fierce competition in India for MBBS. This leads many capable students looking for MBBS course in Russia. Rostov State Medical University is great option for such aspirants who have high aspiration for MBBS. If you want to take admission in RostSMU, consult The RREC (Reliable Russian Education Consultants) team. We are the official authorized representative of RostSMU that can help you to sail through to the entire admission procedure.</p>
+                        <p className="text-left text-justify text-md lg:text-lg mt-4 font-roboto">
+                            Visit our website <a href="https://www.rrecrussia.com" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">www.rrecrussia.com</a> now to fix the consultation.
+                        </p>
                     </div>
                     <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         About Rostov State Medical University
                     </h2>
-                    <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">Rostov State Medical University is among one of the oldest medical universities in Russia. It is also known as RostSMU or RostGMU. It is established in 1930. This is a non-profit medical education institute that is located in Rostov-on-Don City, Russia and it is the largest Government Medical University in South Russian Federation. You can visit Rostov State Medical University website for more information related to University admission, fee, scholarship, faculties, etc.</p>
-                    <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">Russia is a highly popular destination to study medicine due to several reasons and affordability is one of them. It is a frontline choice to pursue medical education for many aspirants in India and other countries due to its flexible and student-friendly admission policy. There are many medical universities in Russia that are NMC (National Medical Commission) recognized and government-affiliated as well. Consult RREC, the most reliable consultant who offers a complete service for MBBS admission in Russia and the only official representative of RostSMU.</p>
-                    <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">Rostov State Medical University ticks most of the boxes when it comes to choosing a trustworthy medical university in Russia. A large number of international and Indian students enrolled in faculties like General Medicine, Pediatrics, Dentistry, and Pharmacy. RostSMU offers a degree that is recognized and approved by WHO, ECFMG, GMC, NMC, IMED, and other organizations worldwide. Students from more than 35 countries come here to pursue medical education such as in Africa, Europe, UAE, Asia, etc. Students may also be benefitted from the Rostov State Medical University scholarship program for preparatory faculty. </p>
+                    <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">Rostov State Medical University is among one of the oldest medical universities in Russia. It is also known as RostSMU or RostGMU. It is established in 1930. This is a non-profit medical education institute that is located in Rostov-on-Don City, Russia and it is the largest Government Medical University in South Russian Federation. You can visit Rostov State Medical University website for more information related to University admission, fee, faculties, etc.</p>
+                    <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">Russia is highly popular destinations to study medicine due to several reasons and affordability is one of them. It is a frontline choice to pursue medical education for many aspirants in India due to its flexible and student friendly admission policy. There are many medical universities in Russia that are NMC (National Medical Commission) recognized and government-affiliated as well. Consult RREC, the most reliable consultant for who offer a complete service for MBBS admission in Russia and the official representative of RostSMU.</p>
+                    <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">Rostov State Medical University ticks most of the boxes when it comes to choosing a trustworthy medical university in Russia. A large number of international and Indian students enrolled in faculties like General Medicines, Pediatrics, Dentistry and Pharmacy. RostSMU offers degree that is recognized and approved by WHO, ECFMG, GMC, NMC, IMED, USMLE and other organization worldwide. Students from more than 30 countries come here to pursue medical education such as Africa, Europe, UAE, Asia, etc. </p>
                     <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         Accreditation
                     </h2>
-                    <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">RostSMU is duly accredited by the Ministry of Health and Education of the Russian Federation. It is also approved and recognized by NMC (National Medical Commission) and WHO (World Health Organization). The Rostov State Medical University, offers a wide range of pre-bachelor degrees, bachelor’s degrees, master’s degrees, and doctorate degrees in medical education and other areas of study. It is one of the esteemed choices for MBBS in Russia.</p>
+                    <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">RostSMU is duly accredited by the Ministry of Health and Education of the Russian Federation. It is also approved and recognized by NMC (National Medical Commission) and WHO (World Health Organization). The Rostov State Medical University, offers a wide range of pre-bachelor degrees, bachelor degrees, master degrees and doctorate degrees in medical education and other areas of study. It is one of the esteemed choices for MBBS in Russia.</p>
                     <div className="w-full text-justify text-left">
                         <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                             Other programmatic accreditations include:
@@ -69,12 +73,11 @@ const Rostov = () => {
                         <ul className="mt-4 text-sm lg:text-lg text-gray-700 space-y-4">
                             {[
                                 "Canadian Medical Council",
-                                "Ministry of Health & Education, Russian Federation",
+                                "Ministry of Public Health and Social Medicine, Russian Federation",
                                 "German Science and Humanities Council",
-                                "Pakistan Medical and Dental Council",
+                                "Bangladesh Medical and Dental Council",
+                                "Thailand Medical and Dental Council",
                                 "American Osteopathic Association",
-                                "Bangladesh, Nepal, Ghana, Nigeria, Swaziland Medical & Dental Councils",
-                                "Arab countries Medical Councils: Lebanon, Palestine, UAE, Egypt, and many more"
                             ].map((item, index) => (
                                 <li key={index} className="flex items-center">
                                     <img
@@ -87,32 +90,61 @@ const Rostov = () => {
                             ))}
                         </ul>
                     </div>
+                    <h2 className="text-md text-red-600 text-justify font-semibold lg:text-lg mt-4">
+                        Rostov State Medical University Ranking
+                    </h2>
+                    <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">
+                        Rostov State Medical University ranking has significantly improved recently. It only signifies consistency and productivity of the University. As per uniranking website: country rank  225, world rank  6106.
+                    </p>
                     <h2 className="text-md text-red-600 text-justify font-semibold lg:text-lg mt-8">
-                        RostSMU is the 7th oldest Medical Government University in Russia. RostSMU ranks 3rd among all medical universities in Russia (in terms of the number of budget places). The Rostov State Medical University has been training specialists for foreign countries since 1961. Since 2005, the Rostov State Medical University has got an opportunity to teach foreign students in the English Language. About 10 thousand Doctors of the South of Russia, receive Postgraduate Education at RostSMU every year. Rank 1 Government Medical University of Southern Russia as per 2021.
+                        Rostov State Medical University: Rankings Updated: March 02, 2025 EduRank
                     </h2>
-                    <h2 className="text-md text-gray-800 text-justify font-semibold lg:text-lg mt-4">
-                        As per Medical Universities in Russia and Embassy RostSMU listed in the Top 20 Medical Universities of the Russian Federation.
+                    <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">
+                        Rostov State Medical University ranked 121st in Russia, 4918th in the global 2025 rating, and scored in 87 research topics. Rostov State Medical University ranking is based on 3 factors: research output (EduRank's index has 3,457 academic publications and 8,980 citations attributed to the university), non-academic reputation, and the impact of 3 notable alumni.
+                    </p>
+                    <h2 className="text-md text-red-600 text-justify font-semibold lg:text-lg mt-8">
+                        Medicine rankings
                     </h2>
+                    <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">
+                        Rostov State Medical University ranked 24th for Medicine in Russia and 2657th in the World with 3,045 publications made and 7,925 citations received. Main research topics: Pathology, Surgery, Psychiatry, Immunology, Radiology and Nuclear medicine.
+                    </p>
+
+
+                    <div className="bg-gradient-to-r from-red-600 to-red-800 mt-8 text-white p-6 rounded-2xl flex justify-between items-center">
+                        {/* Left Side - Text Content */}
+                        <div className="text-left">
+                            <h2 className="text-xl lg:text-2xl font-semibold">
+                                Rating lists of Medical Institutions in the Russian Federation
+                            </h2>
+                        </div>
+
+                        {/* Right Side - Image and Button */}
+                        <div className="flex items-center space-x-4">
+                            <img src="https://symbl-world.akamaized.net/i/webp/21/08f7ccb39112ff90082acf32e8406e.webp" alt="Arrow Right" className="w-12 h-12" />
+                            <a href="https://cgispburg.gov.in/rating-lists-of-medical-institutions-in-the-russian-federation.php" target="_blank" rel="noopener noreferrer">
+                                <button className="bg-white text-red-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition">
+                                    See Rating
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+
+
                     <h2 className="text-md text-red-600 text-justify font-semibold lg:text-lg mt-8">
                         Courses and faculties
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">
-                        Students enrolling for MBBS (General Medicine Course) English Medium faculty duration is 6 years only. Foreign students enrolling for Russian Medium in RostSMU will have to go through the preparatory course in physics, chemistry, and biology in their first year. Once this course is over, students will be enrolled in various faculties such as medicine, pediatrics, pharmacy, dentistry, and so on.
-                    </p>
-                    <h2 className="text-md text-red-600 text-justify font-semibold lg:text-lg mt-8">
-                        RostSMU has 6 faculties
-                    </h2>
-                    <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">
-                        (General Medicine, Dentistry, Pediatrics, Pharmacy, preparatory course, Post Graduate and Continuous Education) and 91 departments, a Military Training Center, a Clinic, and Medical College. Moreover, there is a Central Scientific Research Laboratory that carries out studies and research on microbiology, genetics, etc. Graduates of the Rostov State Medical University have all the necessary knowledge, skills, and qualifications that enable them to succeed in their future careers. They are in demand in the labor market.
+                        Students can enroll in various faculties such as medicine, pediatrics, pharmacy, dentistry and so on. RostSMU has 6 faculties (General Medicine, Dentistry, Pediatrics, Pharmacy, Preparatory course, Post Graduate and Continuous Education) and 91 departments, a Military Training Center, a Clinic and Medical College. Moreover, there is a Central Scientific Research Laboratory that carries out studies and research on microbiology, genetics, etc.
                     </p>
                     <h2 className="text-md text-red-600 text-justify font-semibold lg:text-lg mt-8">
                         Infrastructure
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">
-                        RostSMU is among one of the reputed and oldest universities in Russia. It has produced a bulk of alumni that are working worldwide in reputed organizations, hospitals, and institutions. What makes the university special and indispensable is its core values and state-of-the-art infrastructure that is essential to bring forth the best from the students during their MBBS Program. This is the reason why it is considered one of the highly-rated universities to pursue medical education.
+                        RostSMU is among one of the reputed and oldest universities in Russia. It has produced a bulk of alumni that are working worldwide in reputed organizations, hospitals and institutions. What makes the university special and indispensable is its core values and state of the art infrastructure that is essential to bring forth best from the students during their MBBS Program. This is the reason why it is considered one of the highly-rated universities to pursue medical education.
                     </p>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">
-                        RostSMU or RostGMU is the largest medical research, training, and treatment center in southern Russia. No wonder it consistently involves cooperation and joint researches with many scientific institutions in Russia and also on the global front. Rostov State Medical University, Rostov, is also well equipped with advanced and high-tech academic buildings, lecture halls, comprehensive laboratories, latest diagnostic and medical equipment.
+                        RostSMU or RostGMU is the largest medical research, training and treatment center in southern Russia. No wonder it consistently involves in cooperation and joint researches with many scientific institutions in Russia and also on the global front. Rostov State Medical University, Rostov, is also well equipped with advanced and high-tech academic buildings, lecture halls, comprehensive laboratories, latest diagnostic and medical equipment.
                     </p>
                     <h1 className="text-md text-red-600 text-justify font-semibold lg:text-lg mt-8">
                         Accommodation and Hostel Facility
@@ -234,8 +266,8 @@ const Rostov = () => {
 
                 {/* Middle Section */}
                 <div className="text-center">
-                  
-                          </div>
+
+                </div>
                 <div className="text-center">
                     <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8 mb-2">
                         Fees for Medicine (MBBS)
