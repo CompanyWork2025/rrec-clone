@@ -47,12 +47,12 @@ const Bashkir = () => {
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">The university boasts an impressive academic structure, offering 56 scientific majors for postgraduate studies and 8 doctoral programs. Supported by a diverse faculty of 615 highly qualified professionals, BSMU currently caters to the educational needs of over 10,000 medical students including 2000 international students across various disciplines with the help of over 700 full-time faculty.</p>
                     </div>
 
-                    <h2 className="text-sm text-red-600 lg:text-lg mt-4">
+                    <h2 className="text-sm text-red-600 font-semibold lg:text-lg mt-4">
                         Why Choose RREC for MBBS in Russia?
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">At RREC, we pride ourselves on being one of India’s leading and most trusted education consultants. Backed by an exceptional track record, we offer expertly researched guidance and personalized counseling to help you carve a successful career in medicine. With multiple centers across the subcontinent, we follow a streamlined, results-oriented approach to ensure an excellent and seamless experience for our valued clients.</p>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">Our dedicated team of professionals works tirelessly to provide you with all the necessary resources and assistance for securing admission to top global medical universities. At RREC, we treat every applicant as part of our family, supporting you every step of the way. With years of expertise, a committed team, and access to vast resources, we have successfully helped hundreds of Indian students secure admissions to premier medical universities in Russia.</p>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 text-center">
+                    <h2 className="text-md text-red-600 lg:text-xl mt-8 font-semibold text-justify">
                         Faculties at Bashkir State Medical University
                     </h2>
                     <div className="mt-4 space-y-3 w-full">
@@ -75,7 +75,7 @@ const Bashkir = () => {
 
                 {/* Middle Section */}
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8 mb-2">
                         University Summary at a Glance
                     </h2>
                     <div className="overflow-x-auto">
@@ -90,7 +90,7 @@ const Bashkir = () => {
                             </tbody>
                         </table>
                     </div>
-                    <h2 className="text-2xl text-red-600 mb-4 mt-8 text-center">
+                    <h2 className="text-xl text-red-600 mb-4 font-semibold mt-8 text-center">
                         Why Study MBBS at Bashkir State Medical University
                     </h2>
                     <ul className="list-disc list-inside space-y-4 text-justify text-md lg:text-lg text-gray-700">
@@ -108,7 +108,7 @@ const Bashkir = () => {
                     </ul>
                 </div>
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md font-semibold text-red-600 lg:text-xl mt-8 mb-2">
                         MBBS Fees in Bashkir State Medical University
                     </h2>
 
@@ -116,13 +116,13 @@ const Bashkir = () => {
                         <table className="min-w-full border border-gray-300 shadow-md">
                             <thead>
                                 <tr className="bg-red-600 text-white">
-                                <th className="px-4 py-2 border-r border-gray-300">Fees Pattern</th>
+                                    <th className="px-4 py-2 border-r border-gray-300">Fees Pattern</th>
                                     <th className="px-4 py-2 border-r border-gray-300">1st Year</th>
                                     <th className="px-4 py-2 border-r border-gray-300">2nd Year to 6th Year</th>
                                 </tr>
                             </thead>
                             <tbody>
-                            {[
+                                {[
                                     { label: "Tuition Fee", firstYear: "495,000 RUB", secondYear: "495,000 RUB", },
                                     { label: "Hostel Fee", firstYear: "Excluded", secondYear: "Excluded", },
                                     { label: "Visa Extension & Registration Fee", firstYear: "Excluded", secondYear: "Excluded", },
@@ -158,9 +158,9 @@ const Bashkir = () => {
                         <p className="text-red-600 font-semibold text-justify font-roboto mt-4 bg-yellow-300 p-2">RREC team would like to inform you that the exchange rate is extremely volatile and is subjected to change. Candidates are requested to check the current exchange rate and your budget before initiating the admission process.</p>
                     </div>
                 </div>
-                <div className="bg-gray-100 p-6">
+                <div className="bg-gray-100 mt-8 mb-8">
                     {/* Heading */}
-                    <h2 className="text-2xl font-semibold text-red-600 text-center mb-4">
+                    <h2 className="text-xl font-semibold text-red-600 text-justify mb-4">
                         Hostel, Food and lifestyle at BMSU
                     </h2>
 
@@ -181,11 +181,11 @@ const Bashkir = () => {
                     </div>
                 </div>
                 {/* Heading */}
-                <h2 className="text-2xl font-semibold text-red-600 text-center mb-4">
+                <h2 className="text-xl font-semibold text-red-600 text-justify mb-4">
                     Eligibility Criteria for Admission
                 </h2>
 
-                <div className="mt-4 space-y-3 px-4 lg:px-8 w-full">
+                <div className="mt-4 space-y-3 w-full">
                     {[
                         { step: "*", text: `The candidate must be 17 years of age on or before 31st Dec of the year of admission.  ` },
                         { step: "*", text: `The candidate must have passed class 10th and 12th from a recognized board in India.  ` },
@@ -200,11 +200,11 @@ const Bashkir = () => {
                 </div>
 
                 {/* Heading */}
-                <h2 className="text-2xl font-semibold text-red-600 text-center mt-8 mb-4">
+                <h2 className="text-xl font-semibold text-red-600 text-justify mt-8 mb-4">
                     Admission Procedure
                 </h2>
 
-                <div className="mt-4 space-y-3 px-4 lg:px-8 w-full">
+                <div className="mt-4 space-y-3 w-full">
                     {[
                         { step: "*", text: `Apply for admission through the online application form.   ` },
                         { step: "*", text: `Fill all the mandatory information carefully and submit it. ` },
@@ -222,7 +222,7 @@ const Bashkir = () => {
                     ))}
                 </div>
 
-                <h2 className="text-2xl text-red-600 font-semibold mb-4 mt-8 text-center">
+                <h2 className="text-xl text-red-600 font-semibold mb-4 mt-8 text-justify">
                     Advantages of Consulting RREC
                 </h2>
                 <ul className="list-disc list-inside space-y-4 text-justify text-md lg:text-lg text-gray-700">
@@ -240,46 +240,36 @@ const Bashkir = () => {
                     <li><strong>Quality Assurance:</strong> Adherence to international standards with top-notch services.</li>
                     <li><strong>Extensive Details:</strong> Complete guidance on MBBS admissions, including fee structures for top medical universities in Russia.</li>
                 </ul>
+            </div>
 
-
-                {/* Heading */}
-                <h2 className="text-2xl font-semibold text-red-600 text-center mt-6">
+            {/* Heading */}
+            <div className="bg-red-700 mt-10 mb-6 font-roboto rounded-xl px-8 py-10 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
+                <h2 className="text-2xl font-semibold text-white text-center mt-6">
                     Call for more details about the university, admission, processing, fees at MBBS in BSMU:
                 </h2>
 
-                   {/* Phone Numbers */}
-                   <div className="mt-4 space-y-2 text-center">
-                    <a href="tel:+917428212236" className="text-gray-700 hover:text-red-600 block">
+                {/* Phone Numbers */}
+                <div className="mt-4 space-y-2 text-center">
+                    <a href="tel:+917042284508" className="text-white hover:text-blue-600 block">
                         📞 +91-7042284508, 7042284509
                     </a>
-                    <a href="tel:18004195827" className="text-gray-700 hover:text-red-600 block">
-                        📞 Toll-free 1800-57-5827 (For Indian Students)
+                    <a href="tel:18005725872" className="text-white hover:text-blue-600 block">
+                        📞 Toll-free 1800-572-5827 (For Indian Students)
                     </a>
-                    <a href="tel:+79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="tel:+79515371133" className="text-white hover:text-blue-600 block">
                         📞 +7-9515371133 (International Students)
                     </a>
                 </div>
 
                 {/* WhatsApp Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="https://wa.me/917428212236" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/917042284508" className="text-white hover:text-blue-600 block">
                         💬 WhatsApp: +91-7042284508
                     </a>
-                    <a href="https://wa.me/79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/79515371133" className="text-white hover:text-blue-600 block">
                         💬 WhatsApp: +7-9515371133
                     </a>
                 </div>
-            </div>
-
-            <div className="bg-red-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
-                <h2 className="text-xl lg:text-2xl mb-4 font-semibold">
-                    Call for more details about the university admission, processing, fees at MBBS in BSMU, Russia
-                </h2>
-                <h3 className="text-lg lg:text-2xl font-semibold mb-4">
-                    Contact Us: +91-7042284508, 7042284509
-                </h3>
-                <h6 className="mb-4">Toll-free 1800-57-5827 (For Indian Students), +7-9515371133 (International Students)</h6>
-                <h6>Students or parents can write to us at WhatsApp also: +91-7042284508</h6>
             </div>
         </>
     )
