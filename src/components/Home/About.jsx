@@ -33,7 +33,16 @@ const pages = universities.length % 2 === 0 ? universities : [...universities, {
 
 export default function UniversityBook() {
     return (
-        <div className="flex justify-center items-center h-[620px] bg-gray-300">
+        <div className="flex flex-row  bg-gray-200 justify-center items-center font-roboto h-[620px] ">
+            <div className="w-1/3 flex flex-col items-center p-8">
+                <h2 className="text-2xl font-bold text-gray-700 mt-4">Welcome to RREC</h2>
+                <p className="text-gray-700 text-sm mb-8 text-center mt-2"> Moscow is the capital of Russia. Within the Republic there are around 1,000 towns, including Moscow, nine cities have a population of over a million (St.Petersburg, Volgograd, Rostov on Don, Nizhny Novgorod, Kazan, Ufa, Novosibirsk, Sverdlovsk, Chelyabinsk, and Omsk).</p>
+                <div className="relative w-48 h-48 lg:h-96 lg:w-96">
+                    <img src="https://media0.giphy.com/media/3b7vKF8qZVgCo0emIe/giphy.gif?cid=6c09b9523qfkwmtf16njax0whngdu3r8jdo62ih6we45ecwp&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="University Logo" className="absolute w-96 h-96 object-cover transform rotate-3" />
+                    <img src="https://png.pngtree.com/png-vector/20240124/ourmid/pngtree-3d-illustration-of-college-student-jump-chasing-mortarboard-png-image_11476432.png" alt="University Logo" className="absolute w-96 h-96 object-cover transform translate-x-4 translate-y-4 scale-95" />
+                </div>
+
+            </div>
             <HTMLFlipBook
                 width={450}
                 height={600}
@@ -47,36 +56,16 @@ export default function UniversityBook() {
             >
                 {/* First Page - About Us */}
                 <div className="w-full h-full font-roboto flex flex-col justify-center items-center p-8 bg-white shadow-md border border-gray-300 rounded-lg">
-                    <div className="flex md:flex-row items-center w-full ml-4 lg:ml-14 mt-6">
-                        {/* Broken border line */}
-                        <div className="flex items-center mr-4 -mt-10 lg:mt-0 lg:mr-4">
-                            <div className="w-2 h-[2px] bg-[#f2312d]" />
-                            <div className="w-2 h-[2px] bg-transparent" /> {/* Gap between lines */}
-                            <div className="w-2 h-[2px] bg-[#f2312d]" />
-                            <div className="w-2 h-[2px] bg-transparent" />
-                            <div className="w-10 h-[2px] bg-[#f2312d]" />
-                        </div>
-                        <h1 className="text-lg font-bold -mt-10 lg:mt-4 md:mt-0 text-[#f2312d]">About Us</h1>
-                        {/* Broken border line */}
-                        <div className="flex items-center ml-4  -mt-10 lg:mt-0 lg:ml-4">
-                            <div className="w-10 h-[2px] bg-[#f2312d]" />
-                            <div className="w-2 h-[2px] bg-transparent" /> {/* Gap between lines */}
-                            <div className="w-2 h-[2px] bg-[#f2312d]" />
-                            <div className="w-2 h-[2px] bg-transparent" />
-                            <div className="w-2 h-[2px] bg-[#f2312d]" />
-                        </div>
-                    </div>
-                    <h1 className="text-lg lg:text-2xl font-semibold text-center mt-4">Welcome to RREC</h1>
-                    <p className="text-gray-700 mt-4 text-sm leading-relaxed text-center">
-                    Moscow is the capital of Russia. Within the Republic there are around 1,000 towns, of these, including Moscow, nine cities have a population of over a million (St.Petersburg, Volgograd, Rostov on Don, Nizhny Novgorod, Kazan, Ufa, Novosibirsk, Sverdlovsk, Chelyabinsk, and Omsk).
+                    <h1 className="text-lg lg:text-xl font-semibold text-center -mt-2 border-b-4 border-red-500 pb-2">Explore Top Medical Universities</h1>
+                    <p className="text-gray-700 mt-4 text-md leading-relaxed text-center">
+                        Discover top medical universities in Russia offering world-class education, modern facilities, and global recognition. Start your journey toward a successful medical career with expert guidance and seamless admission processes.
                     </p>
-                    <p className="text-gray-700 mt-4 text-sm leading-relaxed text-center">Rus­sia, also offi­cially known as the Russ­ian Fed­er­a­tion, is a coun­try in north­ern Eura­sia. It is a fed­eral semi-presidential repub­lic, com­pris­ing 83 fed­eral sub­jects. From north­west to south­east, Rus­sia shares land bor­ders with Nor­way, Fin­land, Esto­nia, Latvia, Lithua­nia and Poland (both with Kalin­ingrad Oblast), Belarus, Ukraine, Geor­gia, Azer­bai­jan, Kaza­khstan, China, Mon­go­lia, and North Korea. It shares mar­itime bor­ders with Japan by the Sea of Okhotsk and the U.S. state of Alaska across the Bering Strait.</p>
+                    <img src="https://image.spreadshirtmedia.com/image-server/v1/products/T1459A839PA3861PT28D1039102222W10000H6995/views/1,width=378,height=378,appearanceId=839,backgroundColor=F2F2F2/turn-the-page.jpg" alt="University Logo" className="absolute w-96 h-64 object-cover transform translate-x-4 translate-y-4 scale-95" />
                 </div>
 
                 {/* University Pages */}
                 {pages.map((uni, index) => (
                     <div key={index} className="w-full h-full flex font-roboto bg-white shadow-lg border border-gray-200 rounded-lg">
-                        {/* Left Page - University Name & Description */}
                         <div className="w-full flex flex-col justify-center p-6 border-r border-gray-300">
                             {uni.blank ? (
                                 <h2 className="text-2xl font-bold text-gray-700">No Data Available</h2>
@@ -89,8 +78,6 @@ export default function UniversityBook() {
                                 </>
                             )}
                         </div>
-
-                        {/* Right Page - University Logo & Read More Button */}
                         <div className="w-full flex flex-col items-center justify-center p-6">
                             {uni.blank ? (
                                 <h2 className="text-lg font-semibold text-gray-700">Empty Page</h2>
