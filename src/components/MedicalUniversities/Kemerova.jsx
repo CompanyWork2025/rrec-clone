@@ -45,7 +45,7 @@ const Kemerova = () => {
                     <h1 className="text-xl lg:text-3xl font-semibold mt-4">
                         Kemerovo State Medical University
                     </h1>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-4">
+                    <h2 className="text-md font-semibold text-red-600 lg:text-xl mt-4">
                         About the University
                     </h2>
                     <div className="mt-4 space-y-6">
@@ -57,7 +57,7 @@ const Kemerova = () => {
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">Furthermore, students reap benefits from a diverse library collection to enrich their studies. Graduates of Kemerovo State Medical University are employed worldwide in renowned healthcare institutions, enjoying competitive salary packages.</p>
                     </div>
 
-                    <h2 className="text-2xl text-red-600 mb-4 mt-8 text-center">
+                    <h2 className="text-xl text-red-600 font-semibold mb-4 mt-8 text-center">
                         Why Choose Kemerovo State Medical University for MBBS?
                     </h2>
                     <ul className="list-disc list-inside space-y-4 text-justify text-md lg:text-lg text-gray-700">
@@ -77,7 +77,7 @@ const Kemerova = () => {
 
                 {/* Middle Section */}
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8 mb-2">
                         University Summary at a Glance
                     </h2>
                     <div className="overflow-x-auto">
@@ -93,7 +93,7 @@ const Kemerova = () => {
                         </table>
                     </div>
 
-                    <h2 className="text-md text-red-600 lg:text-xl font-semibold mt-8 text-center">
+                    <h2 className="text-md text-red-600 lg:text-xl font-semibold mt-8 text-justify">
                         Faculties of Kemerovo State Medical University
                     </h2>
                     <div className="mt-4 space-y-3 w-full">
@@ -114,7 +114,7 @@ const Kemerova = () => {
                     <div className="space-y-10 mt-8">
                         {/* Eligibility Criteria for Admission */}
                         <div className="bg-gray-100 ">
-                            <h3 className="text-xl font-semibold text-red-600 mb-4">Eligibility Criteria for Admission</h3>
+                            <h3 className="text-xl font-semibold text-red-600 text-justify mb-4">Eligibility Criteria for Admission</h3>
                             <ul className="list-disc text-justify list-inside text-gray-700 space-y-2">
                                 <li>The candidate must be 17 years of age on or before 31st Dec of the year of admission.</li>
                                 <li>The candidate must have passed class 10th and 12th from a recognized board in India.</li>
@@ -125,7 +125,7 @@ const Kemerova = () => {
 
                         {/* Complete Admission Process */}
                         <div className="bg-gray-100 ">
-                            <h3 className="text-xl font-semibold text-red-600 mb-4">Complete Admission Process</h3>
+                            <h3 className="text-xl font-semibold text-red-600 text-justify mb-4">Complete Admission Process</h3>
                             <ul className="list-disc text-justify list-inside text-gray-700 space-y-2">
                                 <li>Apply for admission through the online application form.</li>
                                 <li>Fill up all the mandatory information carefully and submit it.</li>
@@ -140,7 +140,7 @@ const Kemerova = () => {
 
                         {/* Document Required */}
                         <div className="bg-gray-100 ">
-                            <h3 className="text-xl font-semibold text-red-600 mb-4">Documents Required</h3>
+                            <h3 className="text-xl font-semibold text-red-600 text-justify mb-4">Documents Required</h3>
                             <ul className="list-disc text-justify list-inside text-gray-700 space-y-2">
                                 <li>Copy of 10th & 12th mark sheets</li>
                                 <li>Notarized birth certificate</li>
@@ -159,7 +159,7 @@ const Kemerova = () => {
 
                 </div>
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8 mb-2">
                         Fee Structure for MBBS in Kemerovo State Medical University
                     </h2>
 
@@ -253,48 +253,37 @@ const Kemerova = () => {
 
                 <p className="text-gray-700 mt-4 text-justify">
                     RREC has been catering the industry of medical tourism for nearly two decades. We are blessed to have 100% success in securing admissions to various prestigious medical universities in Russia. We function as a trustworthy and officially authorized admission partner of 50+ medical universities in the Russian Federation, recognized by the National Medical Commission of India (NMC). The team RREC is fully committed to providing unconditional support throughout the MBBS course. Our guided services and methodical approach have aided numerous medical aspirants in gaining admission to top-tier medical universities in Russia. Reach out to us for an in-depth counseling session, free of charge, tailored for both parents and students, addressing all inquiries and concerns regarding MBBS admissions to NMC-approved Russian Universities.
-                </p>
+                </p>              
+            </div>
 
-
-
-                {/* Heading */}
-                <h2 className="text-2xl font-semibold text-red-600 text-center mt-6">
+            {/* Heading */}
+            <div className="bg-red-700 mt-10 mb-6 font-roboto rounded-xl px-8 py-10 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
+                <h2 className="text-2xl font-semibold text-white text-center mt-6">
                     Call for more details about the university, admission, processing, fees at MBBS in KSMU:
                 </h2>
 
                 {/* Phone Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="tel:+917428212236" className="text-gray-700 hover:text-red-600 block">
+                    <a href="tel:+917042284508" className="text-white hover:text-blue-600 block">
                         📞 +91-7042284508, 7042284509
                     </a>
-                    <a href="tel:18004195827" className="text-gray-700 hover:text-red-600 block">
-                        📞 Toll-free 1800-57-5827 (For Indian Students)
+                    <a href="tel:18005725872" className="text-white hover:text-blue-600 block">
+                        📞 Toll-free 1800-572-5827 (For Indian Students)
                     </a>
-                    <a href="tel:+79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="tel:+79515371133" className="text-white hover:text-blue-600 block">
                         📞 +7-9515371133 (International Students)
                     </a>
                 </div>
 
                 {/* WhatsApp Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="https://wa.me/917428212236" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/917042284508" className="text-white hover:text-blue-600 block">
                         💬 WhatsApp: +91-7042284508
                     </a>
-                    <a href="https://wa.me/79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/79515371133" className="text-white hover:text-blue-600 block">
                         💬 WhatsApp: +7-9515371133
                     </a>
                 </div>
-            </div>
-
-            <div className="bg-red-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
-                <h2 className="text-xl lg:text-2xl mb-4 font-semibold">
-                    Call for more details about the university admission, processing, fees at MBBS in KSMU, Russia
-                </h2>
-                <h3 className="text-lg lg:text-2xl font-semibold mb-4">
-                    Contact Us: +91-7042284508, 7042284509
-                </h3>
-                <h6 className="mb-4">Toll-free 1800-57-5827 (For Indian Students), +7-9515371133 (International Students)</h6>
-                <h6>Students or parents can write to us at WhatsApp also: +91-7042284508</h6>
             </div>
         </>
     )
