@@ -36,9 +36,9 @@ const MedicalUniversity = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="w-full py-6 lg:py-12 lg:px-8">
+        <div className="w-full py-8 lg:py-16 lg:px-8">
             {/* Top Heading */}
-            <div className="mx-auto items-center w-full -mt-6">
+            <div className="mx-auto items-center w-full mt-4 lg:-mt-6">
                 <div className="flex items-center justify-center">
                     <div className="flex items-center lg:ml-4">
                         <div className="w-2 lg:w-8 h-[2px] bg-[#f2312d]" />
