@@ -39,7 +39,7 @@ const FarEastern = () => {
                     <h1 className="text-xl lg:text-3xl font-semibold mt-4">
                         Far Eastern Federal University
                     </h1>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-4">
+                    <h2 className="text-md text-red-600 lg:text-xl mt-4 font-semibold">
                         (School of Medicine & Life Science)
                     </h2>
                     <div className="mt-4 space-y-6">
@@ -47,7 +47,7 @@ const FarEastern = () => {
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">Established in 1899, FEFU is among the oldest and most prestigious universities in Russia, providing a strong foundation in medical sciences with a focus on practical training and research. The MBBS program at FEFU follows international standards and is recognized by the WHO, NMC, and other global medical councils, making graduates eligible to practice in various countries. With affordable tuition fees and a cost-effective living environment, the university attracts students from around the world. FEFU provides English-medium instruction, ensuring accessibility for Indian students aspiring for MBBS in Russia. However, it also offers opportunities to learn Russian for better interaction with patients during clinical practice. </p>
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">The campus features advanced laboratories, simulation centres, and affiliated hospitals where students gain hands-on experience. Additionally, the university fosters a multicultural environment with a diverse student community and various extracurricular activities. Studying MBBS at FEFU presents an opportunity for quality education, international exposure, and a promising medical career in a well-equipped academic setting.</p>
                     </div>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         Why Study MBBS at Far Eastern Federal University
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">
@@ -79,7 +79,7 @@ const FarEastern = () => {
 
                 {/* Middle Section */}
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8 mb-2">
                         University Summary at a Glance
                     </h2>
                     <div className="overflow-x-auto">
@@ -94,14 +94,14 @@ const FarEastern = () => {
                             </tbody>
                         </table>
                     </div>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         Hostel, Food and Healthcare Facility at FEFU
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">The university's hostels are well-maintained, offering fully furnished rooms with modern amenities such as central heating, Wi-Fi, laundry services, and 24/7 security. Students can choose between shared and private accommodations based on their preferences. The hostels are located within the university campus, providing easy access to academic buildings, libraries, and recreational areas. </p>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">Many hostels have shared kitchens where students can cook their own meals, and Indian grocery stores in Vladivostok make it easier to find familiar ingredients. Vegetarian and non-vegetarian options are available, ensuring students can maintain their preferred diet.  </p>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">Healthcare facilities at FEFU are top-notch, with an on-campus medical center providing regular health check-ups and emergency care. The university has tie-ups with local hospitals for advanced medical treatment when needed. </p>
                     <div className="mt-8">
-                        <h2 className="text-md text-left text-red-600 lg:text-xl">
+                        <h2 className="text-md text-left font-semibold text-red-600 lg:text-xl">
                             Faculties at Far Eastern Federal University
                         </h2>
                         <div className="mt-4 bg-gray-100 p-4 rounded-lg">
@@ -119,7 +119,7 @@ const FarEastern = () => {
                     <div className="mt-8">
                         {/* Eligibility Criteria Section */}
                         <div className="bg-gray-100 p-4 text-left rounded-lg ">
-                            <h2 className="text-md text-red-600 lg:text-xl">
+                            <h2 className="text-md text-red-600 font-semibold lg:text-xl">
                                 Eligibility Criteria For MBBS at FEFU 2024-25
                             </h2>
                             <ul className="list-disc pl-5 text-md lg:text-lg font-roboto space-y-2 mt-4">
@@ -132,7 +132,7 @@ const FarEastern = () => {
 
                         {/* Documents Required Section */}
                         <div className="bg-gray-100 p-4 text-left rounded-lg  mt-6">
-                            <h2 className="text-md text-red-600 lg:text-xl">
+                            <h2 className="text-md text-red-600 font-semibold lg:text-xl">
                                 Documents Required
                             </h2>
                             <ul className="list-disc pl-5 text-md lg:text-lg font-roboto space-y-2 mt-4">
@@ -155,7 +155,7 @@ const FarEastern = () => {
                     <div className="mt-8">
                         {/* Admission Procedure Section */}
                         <div className="bg-gray-100 p-4 text-left rounded-lg">
-                            <h2 className="text-md text-red-600 lg:text-xl">
+                            <h2 className="text-md text-red-600 font-semibold lg:text-xl">
                                 Admission Procedure
                             </h2>
                             <ol className="list-decimal pl-5 text-md lg:text-lg font-roboto space-y-2 mt-4">
@@ -172,7 +172,7 @@ const FarEastern = () => {
 
                         {/* Medium of Teaching & About the City Section */}
                         <div className="bg-gray-100 p-4 rounded-lg mt-6">
-                            <h2 className="text-md text-red-600 lg:text-xl">
+                            <h2 className="text-md text-red-600 font-semibold lg:text-xl">
                                 Medium of Teaching and Duration of MBBS at FEFU
                             </h2>
                             <p className="text-md lg:text-lg font-roboto mt-4 text-justify">
@@ -185,7 +185,7 @@ const FarEastern = () => {
                                 The medium of instruction is English, ensuring that international students, including Indian aspirants, can comfortably complete their medical education without any language barrier. However, students also learn basic Russian to interact with patients during their clinical training.
                             </p>
 
-                            <h2 className="text-md text-red-600 lg:text-xl mt-6">
+                            <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-6">
                                 About the City - Vladivostok
                             </h2>
                             <p className="text-md lg:text-lg font-roboto mt-4 text-justify">
@@ -197,7 +197,7 @@ const FarEastern = () => {
 
                 </div>
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8 mb-2">
                         MBBS Fees Structure in Far Eastern Federal University
                     </h2>
 
@@ -252,7 +252,7 @@ const FarEastern = () => {
                     <div className="mt-8">
                         {/* Why RREC is a Top Consultant Section */}
                         <div className="bg-gray-100 p-4 rounded-lg ">
-                            <h2 className="text-md text-red-600 text-center lg:text-xl">
+                            <h2 className="text-md text-red-600 font-semibold text-center lg:text-xl">
                                 Why RREC is a Top Consultant for MBBS in Russia?
                             </h2>
                             <p className="text-md lg:text-lg font-roboto mt-4 text-justify">
@@ -265,7 +265,7 @@ const FarEastern = () => {
 
                         {/* Unparalleled Advantages of Consulting RREC Section */}
                         <div className="bg-gray-100 p-4 rounded-lg  mt-6">
-                            <h2 className="text-md text-red-600 text-center lg:text-xl">
+                            <h2 className="text-md text-red-600 font-semibold text-center lg:text-xl">
                                 Unparalleled Advantages of Consulting RREC
                             </h2>
                             <ul className="list-disc pl-5 text-md lg:text-lg font-roboto space-y-2 mt-4">
@@ -285,44 +285,37 @@ const FarEastern = () => {
 
                 </div>
 
-                {/* Heading */}
-                <h2 className="text-2xl font-semibold text-red-600 text-center mt-6">
-                    Call for more details about the university, admission, processing, fees at MBBS in FEFU:
+               
+            </div>
+
+            {/* Heading */}
+            <div className="bg-red-700 mt-10 mb-6 font-roboto rounded-xl px-8 py-10 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
+                <h2 className="text-2xl font-semibold text-white text-center mt-6">
+                    Call for more details about the university, admission, processing, fees at MBBS in FFEU:
                 </h2>
 
                 {/* Phone Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="tel:+917428212236" className="text-gray-700 hover:text-red-600 block">
+                    <a href="tel:+917042284508" className="text-white hover:text-blue-600 block">
                         📞 +91-7042284508, 7042284509
                     </a>
-                    <a href="tel:18004195827" className="text-gray-700 hover:text-red-600 block">
-                        📞 Toll-free 1800-57-5827 (For Indian Students)
+                    <a href="tel:18005725872" className="text-white hover:text-blue-600 block">
+                        📞 Toll-free 1800-572-5827 (For Indian Students)
                     </a>
-                    <a href="tel:+79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="tel:+79515371133" className="text-white hover:text-blue-600 block">
                         📞 +7-9515371133 (International Students)
                     </a>
                 </div>
 
                 {/* WhatsApp Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="https://wa.me/917428212236" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/917042284508" className="text-white hover:text-blue-600 block">
                         💬 WhatsApp: +91-7042284508
                     </a>
-                    <a href="https://wa.me/79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/79515371133" className="text-white hover:text-blue-600 block">
                         💬 WhatsApp: +7-9515371133
                     </a>
                 </div>
-            </div>
-
-            <div className="bg-red-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
-                <h2 className="text-xl lg:text-2xl mb-4 font-semibold">
-                    Call for more details about the university admission, processing, fees at MBBS in FFFU, Russia
-                </h2>
-                <h3 className="text-lg lg:text-2xl font-semibold mb-4">
-                    Contact Us: +91-7042284508, 7042284509
-                </h3>
-                <h6 className="mb-4">Toll-free 1800-57-5827 (For Indian Students), +7-9515371133 (International Students)</h6>
-                <h6>Students or parents can write to us at WhatsApp also: +91-7042284508</h6>
             </div>
         </>
     )
