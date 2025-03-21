@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaVolumeMute, FaVolumeUp, FaPause, FaPlay } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
+import { Link } from "react-router-dom";
 import video from "../../assets/Video.mp4";
 
 const HeroSection = () => {
@@ -10,7 +11,7 @@ const HeroSection = () => {
     const [isMuted, setIsMuted] = useState(true);
     const [isPlaying, setIsPlaying] = useState(true);
     const videoRef = useRef(null);
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
     const slides = [
         {
@@ -166,13 +167,15 @@ const HeroSection = () => {
             <div className="absolute bottom-0 left-0 w-full flex justify-center md:justify-start p-3 md:p-4 bg-gradient-to-t from-black via-black/50 to-transparent z-20">
                 <div className="bg-red-600 h-10 md:h-12 rounded-lg shadow-lg flex justify-center items-center px-2 space-x-1 md:space-x-2">
                     <button className="px-3 py-1 md:px-4 md:py-1 bg-white text-black font-bold shadow-lg rounded-md hover:text-red-600 transition-all">
-                        Faculties
+                        <Link to="/about-us">About Us</Link>
                     </button>
+
                     <button className="px-3 py-1 md:px-4 md:py-1 bg-white text-black font-bold shadow-lg rounded-md hover:text-red-600 transition-all">
-                        Medical Universities
+                        <Link to="/medical-universities-in-russia">Medical Universities</Link>
                     </button>
+
                     <button className="px-3 py-1 md:px-4 md:py-1 bg-white text-black font-bold shadow-lg rounded-md hover:text-red-600 transition-all">
-                        Fees
+                        <Link to="/fee-structure">Fees</Link>
                     </button>
                 </div>
             </div>
