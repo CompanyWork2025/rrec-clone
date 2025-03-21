@@ -46,20 +46,20 @@ const Kazan = () => {
                     <h1 className="text-xl lg:text-3xl font-semibold mt-4">
                         Kazan State Medical University
                     </h1>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-4">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-4">
                         Kazan State Medical University – The Best University for MBBS
                     </h2>
                     <div className="mt-4 space-y-6">
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">As per the trend in the last decade or two, Russian Universities have emerged as the top destination for MBBS aspirants. However, not all universities are equally ranked when it comes to the standard and quality of education they impart to the students. Hence ticking the right option is imperative. As a medical aspirant, if you are looking for a reliable and leading medical university in Russia, then betting on Kazan Medical State University (KSMU) will be an excellent choice whatsoever. It is one of the trusted and oldest names in the history of universities in Russia.</p>
                         <p className="text-left text-justify text-md lg:text-lg font-roboto">The number of Indian students who applied for MBBS in KSMU is quite phenomenal. Of course, there are several factors such as the opportunity to get exposure at a global level, searching assured medical career, fierce competition in India, and so on. When the number is so big, it also becomes quintessential that they have the right information and guidance about how to apply and take admission in KSMU. This is where RREC (Doctors Ideal Educational Advisors) team will be of utmost importance because we are the official representative of Kazan State Medical University, Russia. We are in this field for years and know the ins and out of every step you require to get through in your journey to get admission in MBBS at KSMU. Undoubtedly, it can be the best university where you can achieve your goal at an affordable price without compromising the quality of medical education.</p>
                     </div>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         About Kazan State Medical University
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">Undoubtedly, Kazan State Medical University is one of the most popular and leading universities for medical education. It is contemplated as one of the top universities of Russia. It is a multifunctional and multi-leveled government institution for higher learning in medicine that comes under the System of Higher Education and Scientific Research of the Ministry of Health in Russia. It is immensely appreciated for its core values and integrated medical education. It is located in the central part of Kazan city. There are 9 faculties and 65 medicine departments in this university. It has more than 5500 medical students including interns and clinical residents.</p>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">KSMU is the 3rd rank university among the top 10 list of Russian medical universities. The Kazan state medical university country ranking is 124 (As per Indian Embassy listed in top 5 Medical Universities of Russia). Moreover, the international ranking of this university is also appreciable. It has more than 200 years of experience in medical education as it was established in 1814 and truly an international university in Russia. Kazan State Medical University’s official website provides ample information to the students seeking admission in medical education courses and programs. The only intake or the admission process in KSMU follows from June to October.</p>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">The university offers world-class medical education to students who come from more than 57 countries in the world including India. The Kazan State Medical University admission is near about 40-45 percent. The selection policy of KSMU is based on the entrance examination and students’ past academic records and grades. KSMU imparts an array of academic and non-academic services and facilities that may include the Kazan State Medical University hostel, library, sports amenities, and administrative services as well as study abroad and exchange programs.</p>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         Sophisticated Infrastructure
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-4">The infrastructure of KSMU is quite excellent. The entire campus is remarkably maintained and truly equipped with modern and advanced instruments as well as laboratory machinery. The state-of-the-art infrastructure draws the attention of many foreign students. Hence seeking admission to KSMU is highly beneficial for students’ careers because not only in bestow world-class medical education but also recognized approved by WHO, NMC of India, ECFMG, and European Council.</p>
@@ -69,7 +69,7 @@ const Kazan = () => {
 
                 {/* Middle Section */}
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md font-semibold text-red-600 lg:text-xl mt-8 mb-2">
                         KazanSMU – Quick Fact check
                     </h2>
                     <div className="overflow-x-auto">
@@ -84,11 +84,11 @@ const Kazan = () => {
                             </tbody>
                         </table>
                     </div>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md font-semibold text-red-600 lg:text-xl mt-8">
                         Degree & Faculty at KSMU
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">KSMU degree is widely acknowledged and accepted around the globe. It offers medical courses and programs leading to officially recognized higher education degree comprises bachelor’s degrees, master’s degrees, and doctorate degrees.</p>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md font-semibold text-red-600 lg:text-xl mt-8">
                         What Makes KSMU the Right Place for Medical Aspirants?
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">It is established in 1814, after Moscow and St. Petersburg University, which makes it the third oldest in Russia. Kazan State Medical University ranking is 33rd among all Russian universities including medical and non-medical universities.</p>
@@ -98,30 +98,30 @@ const Kazan = () => {
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">The university has comprehensive academic contacts with doctors and scientists in France, Germany, the USA, Italy, Belgium, and the Czech Republic.</p>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">In most of the scientific conferences at KSMU, eminent professors and doctors from Canada, the USA, France, Germany delivery their valuable lectures and insight to international students.</p>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">It has more than 44 Clinical Residency & 39 Ph.D. programs.</p>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8">
                         Kazan State Medical University Hostel Facility
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">Kazan State Medical University’s hostel facility is appreciable. KSMU has 6 hostels located near to the campus. The hostel provided to the international students may differ in size and facility. The rooms are available on a sharing basis. Candidates are supposed to share a room with 3 students. As far as the facilities in hostel rooms are concerned, all rooms are well-furnished, comfortable and well-heated. The kitchen and bathroom are also there with the hostel room. All 6 buildings of the hostels are well-equipped with safety and security measures.</p>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md font-semibold text-red-600 lg:text-xl mt-8">
                         Food Facility for Foreign Student
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">There is plenty of food available Indian taste and flavor. Some of the Indian recipes are so deliciously cooked in restaurants that they will give a home feeling. There are several restaurants in the city. Moreover, students in hostels are allowed to cook their own favorite food in the common kitchen provided by the university management.</p>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md font-semibold text-red-600 lg:text-xl mt-8">
                         Weather Condition
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">The weather may not be an issue in summer, however, in winter it can be challenging especially when you are not prepared. The temperature is mild and moderate during the onset of summer, but usually, summer is dry and hot here. In winter, you will experience intense cold. It can be as low as -15 degrees in winter and snowfall is very common.</p>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md font-semibold text-red-600 lg:text-xl mt-8">
                         What advantages to students receive in KSMU?
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">Pursuing MBBS in KSMU is totally a different experience for students enrolling there from India or other countries. The teachers have abundant knowledge and experience in their fields. Teachers and professors pay equal and undivided attention to each and every student. Students are allotted to the most prolific training and research program. There is a consistent approach from the administration and teaching staff to elevate your performance and progression throughout the course. For all these exceptional teaching and training Kazan State Medical University fees is very nominal because it is a government-funded institution.</p>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">Apart from study, students are also encouraged to participate in various extracurricular activities to hone up their collateral skills and personality. They can participate in activities, games, and entertainment such as tennis, basketball, swimming, skating, football, and skiing in winter. They can mix up with international students and experience dynamic thoughts, culture, and tradition. Overall, they explore and experience healthy and soothing campus life in the university.</p>
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8">
+                    <h2 className="text-md font-semibold text-red-600 lg:text-xl mt-8">
                         MBBS Fees Structure and Course Duration in KSMU
                     </h2>
                     <p className="text-left text-justify text-md lg:text-lg font-roboto mt-2">Kazan State Medical University fees are below par as compared to the output of quality education. That is the reason why it attracts students from all over the world. Thus, it yields a great opportunity to grab the best medical education at a low price.</p>
                 </div>
                 <div className="text-center">
-                    <h2 className="text-md text-red-600 lg:text-xl mt-8 mb-2">
+                    <h2 className="text-md text-red-600 font-semibold lg:text-xl mt-8 mb-2">
                         Kazan State Medical University MBBS fee structure is given below:
                     </h2>
                     <div className="overflow-x-auto">
@@ -203,45 +203,35 @@ const Kazan = () => {
                 <p className="text-gray-700 mt-4 text-justify">
                     When you are planning to choose the best consultant for taking admission to Kazan State Medical University, you should not confuse at all by getting so many search results. The RREC is the best in the Russian Medical Universities admissions. We are the official representative of Kazan State Medical University, Russia. However, the question will arise in your mind why should you choose us and not others.
                 </p>
+            </div>
 
-                {/* Heading */}
-                <h2 className="text-2xl font-semibold text-red-600 text-center mt-6">
-                    Call for more details about the university, admission, processing, and fees at MBBS in KSMU, Russia:
+            <div className="bg-red-700 mt-10 mb-6 font-roboto rounded-xl px-8 py-10 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
+                <h2 className="text-2xl font-semibold text-white text-center mt-6">
+                    Call for more details about the university, admission, processing, fees at MBBS in KSMU:
                 </h2>
 
                 {/* Phone Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="tel:+917428212236" className="text-gray-700 hover:text-red-600 block">
+                    <a href="tel:+917042284508" className="text-white hover:text-blue-600 block">
                         📞 +91-7042284508, 7042284509
                     </a>
-                    <a href="tel:18004195827" className="text-gray-700 hover:text-red-600 block">
-                        📞 Toll-free 1800-57-5827 (For Indian Students)
+                    <a href="tel:18005725872" className="text-white hover:text-blue-600 block">
+                        📞 Toll-free 1800-572-5827 (For Indian Students)
                     </a>
-                    <a href="tel:+79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="tel:+79515371133" className="text-white hover:text-blue-600 block">
                         📞 +7-9515371133 (International Students)
                     </a>
                 </div>
 
                 {/* WhatsApp Numbers */}
                 <div className="mt-4 space-y-2 text-center">
-                    <a href="https://wa.me/917428212236" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/917042284508" className="text-white hover:text-blue-600 block">
                         💬 WhatsApp: +91-7042284508
                     </a>
-                    <a href="https://wa.me/79515190376" className="text-gray-700 hover:text-red-600 block">
+                    <a href="https://wa.me/79515371133" className="text-white hover:text-blue-600 block">
                         💬 WhatsApp: +7-9515371133
                     </a>
                 </div>
-            </div>
-
-            <div className="bg-red-700 mt-2 mb-6 rounded-xl px-8 py-16 max-w-4xl lg:max-w-7xl mx-auto text-center font-roboto text-white">
-                <h2 className="text-xl lg:text-2xl mb-4 font-semibold">
-                    Call for more details about the university admission, processing, fees at MBBS in KSMU, Russia
-                </h2>
-                <h3 className="text-lg lg:text-2xl font-semibold mb-4">
-                    Contact Us: +91-7042284508, 7042284509
-                </h3>
-                <h6 className="mb-4">Toll-free 1800-57-5827 (For Indian Students), +7-9515371133 (International Students)</h6>
-                <h6>Students or parents can write to us at WhatsApp also: +91-7042284508</h6>
             </div>
         </>
 
