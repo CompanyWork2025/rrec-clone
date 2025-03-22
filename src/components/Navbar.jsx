@@ -135,7 +135,7 @@ const Navbar = () => {
         {/* Left Side - Logo */}
         <div className="flex items-center space-x-4">
           <Link to="/">
-            <img src={logo} alt="Logo" className="h-14 w-auto p-1 md:h-24 md:w-full" />
+            <img src={logo} alt="Logo" className="h-14 w-auto p-1 md:h-24 md:w-full" loading="lazy" />
           </Link>
         </div>
 
