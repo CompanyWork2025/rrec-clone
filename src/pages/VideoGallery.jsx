@@ -13,8 +13,12 @@ const videos = [
     "https://www.youtube.com/embed/8mwHyBLRpqM",
     "https://www.youtube.com/embed/kHcfj2VEJvU",
     "https://www.youtube.com/embed/-A3mHE2mdYM",
-    "https://www.youtube.com/embed/vf0Jd-0zipo"
+    "https://www.youtube.com/embed/vf0Jd-0zipo",
+    "https://www.youtube.com/embed/f5Nwe517-pY",
+    "https://www.youtube.com/embed/21IzOxyVsNw",
+    "https://www.youtube.com/embed/YHe7G4Hu-CQ"
 ];
+
 
 const ITEMS_PER_PAGE = 6;
 
