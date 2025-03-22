@@ -22,10 +22,10 @@ const testimonialsData = [
     text: 'Dr. A.K. supported me and my brother throughout the process in the United Arab Emirates (Dubai) while clearing all our doubts about studying in Russia. He provided a very quick and amazing service specifically to us. It’s commendable how he handled everything from the start to the end. Thanks a lot 🙏 🤩'
   },
   {
-    name: 'Er. Usman D.',
-    university: 'Nigeria',
+    name: 'Waqar Ahmed',
+    university: 'Ksmu, Kursk',
     rating: 5,
-    text: 'Excellent experience from the support I got from Dr. Abhineet in getting admission for my two daughters from Nigeria. His availability and professionalism in prompt response to my queries and provision of guidance are highly commendable. Thanks and keep it up please!!'
+    text: 'Excellent work, you people are doing. I am one of their student at Kursk State Medical University. Thank you RREC team for all your support for my admission process and for clearing my all queries. Thanks, a lot.'
   },
   {
     name: 'Dr. Vikrant Suran',
@@ -44,6 +44,12 @@ const testimonialsData = [
     university: 'Usmu, Yekaterinburg',
     rating: 4.9,
     text: 'RREC truly transformed my study MBBS abroad journey. Their expert guidance and attention to detail made the entire application process smooth and stress-free. I am currently studying MBBS in Ural state medical university, Russia. Thanks to their help, I wholeheartedly recommend their service to anyone looking to study medicine in Russia. '
+  },
+  {
+    name: 'Dr. Achyut Anand Singh',
+    university: 'RSMU, Russia',
+    rating: 4.9,
+    text: 'Studying in Russia was a big decision, RREC Team made the entire process effortless. From admissions to graduation, their support never wavered. With their guidance, I successfully completed my MBBS without any difficulties. I’m grateful for their professionalism and dedication—highly recommended for anyone pursuing education in Russia!'
   },
 ];
 
