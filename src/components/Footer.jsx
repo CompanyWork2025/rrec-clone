@@ -26,7 +26,7 @@ function Footer() {
         {/* Logo and Social Links */}
         <div className="space-y-0 md:space-y-8">
           <div className="flex justify-center md:ml-24 lg:ml-0 lg:justify-start items-center">
-            <img src={logo} alt="Mercetech Innovations" className="-mt-16 lg:mt-0 lg:h-24 lg:w-48 w-40" loading='lazy' />
+            <img src={logo} alt="RREC Russia" className="-mt-16 lg:mt-0 lg:h-24 lg:w-48 w-40" loading='lazy' />
           </div>
           <div className="hidden lg:flex items-center">
             <div className="w-24 h-[2px] bg-[#f2312d]" />
@@ -38,7 +38,7 @@ function Footer() {
           <div>
             <div className="text-center mt-6 lg:-mt-4 lg:w-[500px] md:text-left">
               <p className="text-white text-sm md:text-sm text-justify">
-                {t("footerPara")}
+                RREC Pvt. Ltd is India's leading and most trusted MBBS abroad consultants, specializing in medical education in Russia. With a strong presence across India and Russia, we have been guiding thousands of Indian & International students achieving their dream of studying MBBS in Russia. Our commitment to excellence, transparency, and student success makes us the perfect partner for medical aspirants seeking a globally recognized medical degree.
               </p>
             </div>
 
