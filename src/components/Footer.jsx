@@ -289,17 +289,67 @@ function Footer() {
             </li>
             <li>
               <NavLink
-                to="/about"
+                to="/about-us"
                 className="text-white flex items-center group"
                 onClick={() => window.scrollTo(0, 0)}
               >
                 <FontAwesomeIcon icon={faArrowRight} className="mr-2 group-hover:text-red-500" />
-                <span className="group-hover:text-red-500">About</span>
+                <span className="group-hover:text-red-500">About Us</span>
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/contact"
+                to="/russia"
+                className="text-white flex items-center group"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                <FontAwesomeIcon icon={faArrowRight} className="mr-2 group-hover:text-red-500" />
+                <span className="group-hover:text-red-500">About Russia</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/study-mbbs-in-russia"
+                className="text-white flex items-center group"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                <FontAwesomeIcon icon={faArrowRight} className="mr-2 group-hover:text-red-500" />
+                <span className="group-hover:text-red-500">MBBS In Russia</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/admission-procedure"
+                className="text-white flex items-center group"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                <FontAwesomeIcon icon={faArrowRight} className="mr-2 group-hover:text-red-500" />
+                <span className="group-hover:text-red-500">Admission Procedure</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/our-services"
+                className="text-white flex items-center group"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                <FontAwesomeIcon icon={faArrowRight} className="mr-2 group-hover:text-red-500" />
+                <span className="group-hover:text-red-500">Our Services</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/career"
+                className="text-white flex items-center group"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                <FontAwesomeIcon icon={faArrowRight} className="mr-2 group-hover:text-red-500" />
+                <span className="group-hover:text-red-500">Career</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact-us"
                 className="text-white flex items-center group"
                 onClick={() => window.scrollTo(0, 0)}
               >
@@ -307,29 +357,7 @@ function Footer() {
                 <span className="group-hover:text-red-500">Contact Us</span>
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/products"
-                className="text-white flex items-center group"
-                onClick={() => window.scrollTo(0, 0)}
-              >
-                <FontAwesomeIcon icon={faArrowRight} className="mr-2 group-hover:text-red-500" />
-                <span className="group-hover:text-red-500">Our Products</span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/solutions"
-                className="text-white flex items-center group"
-                onClick={() => window.scrollTo(0, 0)}
-              >
-                <FontAwesomeIcon icon={faArrowRight} className="mr-2 group-hover:text-red-500" />
-                <span className="group-hover:text-red-500">Solutions</span>
-              </NavLink>
-            </li>
           </ul>
-
-
         </div>
 
         {/* Useful URL Links */}
@@ -344,40 +372,52 @@ function Footer() {
           </div>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="flex items-center group">
-                <FaArrowRight className="mr-2 group-hover:text-red-500" />
-                <span className="group-hover:text-red-500">About Russia</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="flex items-center group">
-                <FaArrowRight className="mr-2 group-hover:text-red-500" />
-                <span className="group-hover:text-red-500">Services for Students</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="flex items-center group">
+              <NavLink to="/medical-universities-in-russia" className="flex items-center group">
                 <FaArrowRight className="mr-2 group-hover:text-red-500" />
                 <span className="group-hover:text-red-500">Medical Universities</span>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="flex items-center group">
+              <NavLink to="/technical-universities-in-russia" className="flex items-center group">
                 <FaArrowRight className="mr-2 group-hover:text-red-500" />
                 <span className="group-hover:text-red-500">Technical Universities</span>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="flex items-center group">
+              <NavLink to="/blog" className="flex items-center group">
                 <FaArrowRight className="mr-2 group-hover:text-red-500" />
-                <span className="group-hover:text-red-500">Fee structure for MBBS, BDS, Pharmacy</span>
-              </a>
+                <span className="group-hover:text-red-500">Our Latest Blog</span>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="flex items-center group">
+              <NavLink to="/upcoming-events" className="flex items-center group">
                 <FaArrowRight className="mr-2 group-hover:text-red-500" />
-                <span className="group-hover:text-red-500">Fee structure for Technical Universities</span>
-              </a>
+                <span className="group-hover:text-red-500">Upcoming Events</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/photo/gallery" className="flex items-center group">
+                <FaArrowRight className="mr-2 group-hover:text-red-500" />
+                <span className="group-hover:text-red-500">Our Photo Gallery</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/video/gallery" className="flex items-center group">
+                <FaArrowRight className="mr-2 group-hover:text-red-500" />
+                <span className="group-hover:text-red-500">Our Video Gallery</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/refer-earn" className="flex items-center group">
+                <FaArrowRight className="mr-2 group-hover:text-red-500" />
+                <span className="group-hover:text-red-500">Refer & Earn</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/refund-policy" className="flex items-center group">
+                <FaArrowRight className="mr-2 group-hover:text-red-500" />
+                <span className="group-hover:text-red-500">Refund Policy</span>
+              </NavLink>
             </li>
           </ul>
 
