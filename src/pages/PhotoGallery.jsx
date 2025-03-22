@@ -18,7 +18,7 @@ import img11 from "../assets/img11.jpeg";
 // Loading GIF
 const loaderGif = "https://cdn.dribbble.com/userupload/24031440/file/original-09559e5c3ffd3116a53cc071716e4d88.gif";
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12];
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11];
 
 const ITEMS_PER_PAGE = 6;
 
