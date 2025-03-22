@@ -8,52 +8,75 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { useTranslation } from 'react-i18next';
 
+import img1 from "../../assets/Vikram.jpeg";
+import img2 from "../../assets/Steffi.jpeg";
+import img3 from "../../assets/Zain.jpeg";
+import img4 from "../../assets/Waqar.jpeg";
+import img5 from "../../assets/Vikrant.jpeg";
+import img6 from "../../assets/Singh.jpeg";
+import img7 from "../../assets/jadhav.jpeg";
+import img8 from "../../assets/Achyut.jpeg";
+
 const testimonialsData = [
   {
     name: 'Dr. Vikram B.',
     university: 'RSMU, Russia',
     rating: 4.8,
-    text: 'I had an amazing experience with Reliable Russian Educational Consultants From the very beginning, their team provided expert guidance on university selection, application processes, and visa assistance. They were always responsive, professional, and genuinely cared about my success. Thanks to their support, I was able to secure admission to a top Russian university without any hassle. I highly recommend their services to anyone looking for a smooth and trustworthy study-abroad journey in Russia!"'
+    text: 'I had an amazing experience with Reliable Russian Educational Consultants From the very beginning, their team provided expert guidance on university selection, application processes, and visa assistance. They were always responsive, professional, and genuinely cared about my success. Thanks to their support, I was able to secure admission to a top Russian university without any hassle. I highly recommend their services to anyone looking for a smooth and trustworthy study-abroad journey in Russia!"',
+    image: img1
+  },
+  {
+    name: 'Dr. Steffi Philips - Botswana',
+    university: 'RSMU, Russia',
+    rating: 4.8,
+    text: 'I’m a graduate of the Rostov State Medical University and i came through the RREC team. Definitely recommend them! They’ve been extremely helpful and have made my experience much better than expected. Thank you sir "',
+    image: img2
   },
   {
     name: 'Zainab Syed',
     university: 'UAE',
     rating: 4.7,
-    text: 'Dr. A.K. supported me and my brother throughout the process in the United Arab Emirates (Dubai) while clearing all our doubts about studying in Russia. He provided a very quick and amazing service specifically to us. It’s commendable how he handled everything from the start to the end. Thanks a lot 🙏 🤩'
+    text: 'Dr. A.K. supported me and my brother throughout the process in the United Arab Emirates (Dubai) while clearing all our doubts about studying in Russia. He provided a very quick and amazing service specifically to us. It’s commendable how he handled everything from the start to the end. Thanks a lot 🙏 🤩',
+    image: img3
   },
   {
     name: 'Waqar Ahmed',
     university: 'Ksmu, Kursk',
     rating: 5,
-    text: 'Excellent work, you people are doing. I am one of their student at Kursk State Medical University. Thank you RREC team for all your support for my admission process and for clearing my all queries. Thanks, a lot.'
+    text: 'Excellent work, you people are doing. I am one of their student at Kursk State Medical University. Thank you RREC team for all your support for my admission process and for clearing my all queries. Thanks, a lot.',
+    image: img4
   },
   {
     name: 'Dr. Vikrant Suran',
     university: 'KSMU, Kazan',
     rating: 4.9,
-    text: 'Reliable Russian Education Consultants made my dream of studying MBBS in Russia a reality! Their team handled everything with professionalism and care, from choosing the right university to visa processing. What stood out the most was their personalized approach—they were always available to answer my questions and guide me through every step. Thanks to them; I am a graduate of KSMU Kazan. If you’re looking for a trustworthy education service, this is the one to choose!"'
+    text: 'Reliable Russian Education Consultants made my dream of studying MBBS in Russia a reality! Their team handled everything with professionalism and care, from choosing the right university to visa processing. What stood out the most was their personalized approach—they were always available to answer my questions and guide me through every step. Thanks to them; I am a graduate of KSMU Kazan. If you’re looking for a trustworthy education service, this is the one to choose!"',
+    image: img5
   },
   {
     name: 'Singh Kapidwaj',
     university: 'Cfu, Crimea',
     rating: 4.9,
-    text: 'Choosing Reliable Russian Educational Consultants was the best decision for my study-abroad journey! Their team provided clear guidance, handled all the paperwork seamlessly, and ensured a hassle-free admission process. I never felt lost or overwhelmed because they were always there to support me. Now, I’m studying in CFU Russia with confidence, knowing I made the right choice. Highly recommended for anyone looking for a smooth and reliable education service!'
+    text: 'Choosing Reliable Russian Educational Consultants was the best decision for my study-abroad journey! Their team provided clear guidance, handled all the paperwork seamlessly, and ensured a hassle-free admission process. I never felt lost or overwhelmed because they were always there to support me. Now, I’m studying in CFU Russia with confidence, knowing I made the right choice. Highly recommended for anyone looking for a smooth and reliable education service!',
+    image: img6
   },
   {
     name: 'Jadhav Atharva Harish ',
     university: 'Usmu, Yekaterinburg',
     rating: 4.9,
-    text: 'RREC truly transformed my study MBBS abroad journey. Their expert guidance and attention to detail made the entire application process smooth and stress-free. I am currently studying MBBS in Ural state medical university, Russia. Thanks to their help, I wholeheartedly recommend their service to anyone looking to study medicine in Russia. '
+    text: 'RREC truly transformed my study MBBS abroad journey. Their expert guidance and attention to detail made the entire application process smooth and stress-free. I am currently studying MBBS in Ural state medical university, Russia. Thanks to their help, I wholeheartedly recommend their service to anyone looking to study medicine in Russia. ',
+    image: img7
   },
   {
     name: 'Dr. Achyut Anand Singh',
     university: 'RSMU, Russia',
     rating: 4.9,
-    text: 'Studying in Russia was a big decision, RREC Team made the entire process effortless. From admissions to graduation, their support never wavered. With their guidance, I successfully completed my MBBS without any difficulties. I’m grateful for their professionalism and dedication—highly recommended for anyone pursuing education in Russia!'
-  },
+    text: 'Studying in Russia was a big decision, RREC Team made the entire process effortless. From admissions to graduation, their support never wavered. With their guidance, I successfully completed my MBBS without any difficulties. I’m grateful for their professionalism and dedication—highly recommended for anyone pursuing education in Russia!',
+    image: img8 
+ },
 ];
 
-const TestimonialCard = ({ name, university, rating, text, onClick }) => {
+const TestimonialCard = ({ name, university, rating, text, image, onClick }) => {
   const truncatedText = text.length > 150 ? text.slice(0, 150) + '...' : text;
 
   return (
@@ -62,7 +85,7 @@ const TestimonialCard = ({ name, university, rating, text, onClick }) => {
       onClick={onClick} // Open modal when clicked
     >
       <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-24 h-24 rounded-full border-4 border-white overflow-hidden shadow-lg">
-        <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt={name} className="w-full h-full object-cover" />
+        <img src={image} alt={name} className="w-full h-full object-contain bg-white" />
       </div>
 
       <FaQuoteRight className="text-white p-2 bg-gray-400 text-5xl rounded-full absolute left-4 -top-4 scale-x-[-1]" />
@@ -111,7 +134,7 @@ const TestimonialModal = ({ testimonial, onClose }) => {
             </button>
 
             <div className="w-24 h-24 rounded-full border-4 border-white overflow-hidden shadow-lg">
-              <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt={testimonial.name} className="w-full h-full object-cover" />
+              <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-contain" />
             </div>
 
             <h3 className="text-xl font-bold mt-4">{testimonial.name}</h3>
