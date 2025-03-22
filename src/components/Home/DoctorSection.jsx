@@ -35,7 +35,7 @@ const DoctorSection = () => {
         <img
           src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=1200:*"
           alt="Doctor"
-          className="w-full h-full lg:h-[700px] rounded-xl transition-transform duration-500 group-hover:scale-105 border-4 border-white shadow-2xl object-cover"
+          className="w-full h-full lg:h-[660px] rounded-xl transition-transform duration-500 group-hover:scale-105 border-4 border-white shadow-2xl object-cover"
         />
       </motion.div>
 
@@ -62,7 +62,7 @@ const DoctorSection = () => {
             <div className="text-[#f2312d] mr-4 text-4xl flex-shrink-0 animate-pulse">{item.icon}</div>
             <div>
               <h3 className="text-xl font-bold text-[#f2312d] mb-1">{item.title}</h3>
-              <p className="text-gray-600 text-md lg:text-lg">{item.desc}</p>
+              <p className="text-gray-600 text-md text-justify lg:text-md">{item.desc}</p>
               <Link to={item.link} className="text-[#f2312d] flex items-center mt-3 font-medium hover:underline">
                 <span className="mr-2">{t('readMore')}</span>
                 <FaArrowRight />
