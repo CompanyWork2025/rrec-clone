@@ -529,6 +529,12 @@ const MBBS = () => {
                                     { name: "Ivanovo State Medical University", route: "/ivanovo-state-medical-university" },
                                     { name: "Pitirim Sorokin Syktyvkar State University", route: "/pitirim-sorokin-syktyvkar-state-university" },
                                     { name: "PFUR Moscow", route: "/peoples-friendship-university-russia" },
+                                    { name: "Maikop State Technical University", route: "" },
+                                    { name: "Immanuel Kant Baltic Federal University", route: "" },
+                                    { name: "Samara State Medical University", route: "" },
+                                    { name: "Novosibirsk State University", route: "" },
+                                    { name: "Saint Luka Lugansk State Medical University", route: "" },
+                                    { name: "Donestsk State Medical University named after M. Gorky", route: "" },
                                 ].map((university, index) => (
                                     <li key={index}>
                                         <a href={university.route} className="text-blue-600 hover:underline">
