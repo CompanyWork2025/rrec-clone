@@ -26,7 +26,7 @@ function Footer() {
         {/* Logo and Social Links */}
         <div className="space-y-0 md:space-y-8">
           <div className="flex justify-center md:ml-24 lg:ml-0 lg:justify-start items-center">
-            <img src={logo} alt="Mercetech Innovations" className="-mt-16 lg:mt-0 lg:h-24 w-40" />
+            <img src={logo} alt="Mercetech Innovations" className="-mt-16 lg:mt-0 lg:h-24 lg:w-48 w-40" />
           </div>
           <div className="hidden lg:flex items-center">
             <div className="w-24 h-[2px] bg-[#f2312d]" />
