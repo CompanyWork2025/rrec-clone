@@ -14,7 +14,6 @@ import img8 from "../assets/img8.jpeg";
 import img9 from "../assets/img9.jpeg";
 import img10 from "../assets/img10.jpeg";
 import img11 from "../assets/img11.jpeg";
-import img12 from "../assets/img12.jpeg";
 
 // Loading GIF
 const loaderGif = "https://cdn.dribbble.com/userupload/24031440/file/original-09559e5c3ffd3116a53cc071716e4d88.gif";
