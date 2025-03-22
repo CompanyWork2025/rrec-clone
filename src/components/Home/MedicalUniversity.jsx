@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FiMapPin } from "react-icons/fi";
 import img1 from "../../assets/rostov.jpeg";
-import img2 from "../../assets/Kazan.jpeg";
+import img2 from "../../assets/kazan.jpeg";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
