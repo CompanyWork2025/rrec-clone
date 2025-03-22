@@ -8,6 +8,7 @@ import Testimonials from '../components/Home/Testimonials.jsx';
 import TechnicalUniversity from '../components/Home/TechnicalUniversity.jsx';
 import Media from '../components/Home/Media.jsx';
 import Subscribe from '../components/Home/Subscribe.jsx';
+import Award from '../components/Home/Award.jsx';
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
      <About />
      <Banner />
      <DoctorSection />
+     <Award />
      <MedicalUniversity />
      <Testimonials />
      <TechnicalUniversity />
