@@ -176,7 +176,7 @@ const Navbar = () => {
               <img src="https://www.pngarts.com/files/8/Red-Call-Button-Free-PNG-Image.png" alt="Call Icon" className="h-10 w-10 object-contain vibrate-on-hover" />
 
               {/* Text Content */}
-              <div className="flex flex-col text-left">
+              <div className="flex flex-col font-roboto text-left">
                 <span className="text-sm text-gray-600 font-roboto">Call us Now</span>
                 <span className="font-semibold text-lg text-red-600">+91 7042284508</span>
               </div>
@@ -197,7 +197,7 @@ const Navbar = () => {
               />
 
               {/* Text Content */}
-              <div className="flex flex-col text-left">
+              <div className="flex flex-col font-roboto text-left">
                 <span className="text-sm text-gray-600 font-roboto">Mail Us</span>
                 <span className="font-semibold text-lg text-red-600">contact@rrecrussia.com</span>
               </div>

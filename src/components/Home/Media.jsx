@@ -154,7 +154,7 @@ export default function Media() {
                   className="w-full h-auto transform scale-x-[-1]"
                 />
                 {/* Content Overlay (Inside PNG) */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-20 py-6">
+                <div className="absolute inset-0 flex flex-col font-roboto items-center justify-center text-center px-20 py-6">
                   <h2 className="text-lg lg:text-xl text-red-600 pb-2 font-bold">
                     Why Study in Russia? | Top Reasons, Benefits & Opportunities
                   </h2>

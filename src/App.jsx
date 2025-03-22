@@ -141,12 +141,12 @@ const WhatsAppSticky = () => {
             className="absolute left-1/2 bottom-14 transform -translate-x-1/2 flex items-center justify-center z-50 min-w-[250px]"
           >
             <img
-              src="https://media3.giphy.com/media/JRCWaAYIhOi9zV8l9k/giphy.gif?cid=6c09b9523dml7e5p0qntq83bkjmde7rzhazcnh14y7k3r88p&ep=v1_stickers_search&rid=giphy.gif&ct=s"
+              src="https://static.vecteezy.com/system/resources/thumbnails/015/698/968/small/the-balloon-text-cartoon-style-png.png"
               alt="Cloud Popup"
               className="w-64 h-auto"  // ✅ Fixed width to prevent shrinking
               loading='lazy'
             />
-            <span className="absolute text-black font-roboto font-bold text-lg p-8 text-center w-full">
+            <span className="absolute text-black font-roboto font-bold text-lg p-8 mb-8 text-center w-full">
               WhatsApp us for any queries!
             </span>
           </motion.div>
