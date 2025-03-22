@@ -56,12 +56,12 @@ const ContactPage = () => {
           transition={{ delay: 0.7, duration: 0.8 }}
         >
           {[
-              "Free one-on-one counseling sessions.",
-              "University selection and admission assistance.",
-              "Visa and travel support.",
-              "Education loan assistance",
-              "Scholarship assistance",
-              "Accommodation and student welfare guidance.",
+            "Free one-on-one counseling sessions.",
+            "University selection and admission assistance.",
+            "Visa and travel support.",
+            "Education loan assistance",
+            "Scholarship assistance",
+            "Accommodation and student welfare guidance.",
 
           ].map((service, index) => (
             <motion.li
@@ -93,8 +93,8 @@ const ContactPage = () => {
           <img
             src="https://wallpapers.com/images/featured/contact-us-png-utzibsfm947bfa36.jpg"
             alt="Contact Illustration"
-            className="max-w-sm md:max-w-md"
-            loading="lazy"
+            className="w-[250px] md:w-[350px] h-auto object-contain"
+            loading="eager" // Ensures it loads sooner
           />
         </motion.div>
 
@@ -135,7 +135,7 @@ const ContactPage = () => {
         </div>
       </motion.div>
 
-      <div className="w-full flex flex-col lg:px-24 md:flex-row mt-6">
+      <div className="w-full flex flex-col font-roboto lg:px-24 md:flex-row mt-6">
         {/* Left Side - Contact Table */}
         <motion.div
           className="w-full md:w-1/2 p-6"
@@ -199,22 +199,20 @@ const ContactPage = () => {
       </div>
 
       {/* Downside Section with Table and Map */}
-      <div className="w-full flex flex-col lg:px-24 md:flex-row mt-6">
+      <div className="w-full flex flex-col lg:px-24 font-roboto md:flex-row mt-6">
         {/* Left Side - Map */}
         <motion.div
-          className="w-full md:w-1/2 p-6 flex justify-center"
+          className="w-full md:w-1/2 p-6 flex justify-center items-center"
           whileInView={{ x: 0, opacity: 1 }} // Animates when in viewport
           initial={{ x: -50, opacity: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }} // Ensures animation runs only once
         >
-          <iframe
-            className="w-full h-64 md:h-80 border border-gray-300 rounded-lg shadow-lg"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.864925779748!2d77.1476046!3d28.6936737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01f85ed2a037%3A0x18541e282325b6d7!2sStudy%20MBBS%20in%20Russia%3A%20Doctors-IEA%20(Top%20Educational%20Advisors)%20%7C%20Official%20Representative%20of%20Top%20Medical%20Universities%20of%20Russia.!5e0!3m2!1sen!2sin!4v1710163850201"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade">
-          </iframe>
+          <img
+            src="https://www.pngmart.com/files/23/Office-PNG-Picture.png"
+            alt="office"
+            className="w-full h-auto max-w-[200px] md:max-w-[250px] lg:max-w-[300px] object-contain"
+          />
         </motion.div>
 
 
