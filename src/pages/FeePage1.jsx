@@ -270,37 +270,13 @@ function FeePage1() {
             <li>
               Medical and biometrics charges are additional; students must pay for themselves from the first to the sixth year. Every city's cost for this procedure is different, but it is on average <strong>7500-11000 </strong>Rubles.
             </li>
+            <li>
+              Traveling from Moscow to a particular city; the student has to pay, As you, all know that from 2020 less connectivity of airlines are there; so whatever the possibilities will be there he/she has to pay whether by bus or train.
+            </li>
           </ul>
           <p className="text-yellow-400 font-semibold text-justify font-roboto mt-4 bg-blue-700 p-2">RREC team would like to inform you that the exchange rate is extremely volatile and is subjected to change. Candidates are requested to check the current exchange rate and your budget before initiating the admission process.</p>
 
         </motion.div>
-
-        <h1 className="text-xl lg:text-2xl text-red-600 font-bold">Attention Please</h1>
-
-        {/* List Section */}
-        <ul className="mt-4 space-y-2">
-          {[
-            "Yearly fees mentioned here include tuition, government hostel, medical insurance, registration & visa extension per year.",
-            "For all universities, the tuition fees mentioned here can increase from the 2nd – to the 6th year (6-12%).",
-            "1 USD = 75 Russian Rubles applied for MBBS fee structure from 2nd to 6th year, which is mentioned here.",
-            "1 USD = 75 Russian Rubles applied for MBBS fee structure from 2nd to 6th year, which is mentioned here.",
-            "First-year fees student has to pay one time only. From 2nd year students can pay semester-wise as per permission of the university.",
-            "The student has to pay for the RT-PSR report or any other medical tests in Russia if required.",
-            "First Year Medicals & Biometrics charges are included in 1st-year package. From 2nd year onwards student has to take care of the expenses.",
-            "Traveling from Moscow to a particular city; the student has to pay, As you, all know that from 2020 less connectivity of airlines are there; so whatever the possibilities will be there he/she has to pay whether by bus or train."
-          ].map((item, index) => (
-            <li key={index} className="flex items-center space-x-4">
-              {/* Image */}
-              <img
-                src="https://static.vecteezy.com/system/resources/thumbnails/011/858/556/small_2x/green-check-mark-icon-with-circle-tick-box-check-list-circle-frame-checkbox-symbol-sign-png.png"
-                alt="Attention"
-                className="w-8 h-8 object-contain"
-              />
-              {/* Text */}
-              <p className="text-gray-800 text-justify">{item}</p>
-            </li>
-          ))}
-        </ul>
       </div>
 
       <div className="container font-roboto mx-auto p-4 mb-4 -mt-6 lg:px-20">
@@ -311,14 +287,44 @@ function FeePage1() {
         <h2 className="text-md lg:text-xl text-blue-600 font-bold mb-2 mt-4">Pharmacy | 5 Years:</h2>
         <p className='text-gray-800 text-justify'>first year: 4980$ (it includes tuition, hostel, M.I, registration & Visa extension), from second year: 3690$. (it includes tuition, hostel, M.I, registration & Visa extension). If a student will not get a government hostel for that 1200$ he/she has to add to live in a private hostel/apartment, which means 6180$ for the first year. (6-10% tuition fees can be increased every year)</p>
       </div>
-
       <div className="container font-roboto mx-auto p-4 mb-4 -mt-6 lg:px-20">
-        <h1 className="text-md lg:text-xl text-green-600 font-bold mb-2">Lobachevsky State University of Nizhny novgorod</h1>
+        
+        {/* Volgograd State Medical University */}
+        <h1 className="text-md lg:text-xl text-green-600 font-bold mb-2">Volgograd State Medical University</h1>
         <h2 className="text-md lg:text-xl text-blue-600 font-bold mb-2">Stomatology (Dentistry) | Duration: 5 Years:</h2>
-        <p className='text-gray-800 text-justify'>First Year: 5590$ (it includes tuition, hostel, M.I, registration & Visa extension), from second year: 4590$. (it includes tuition, hostel, M.I, registration & Visa extension). (6-10% tuition fees can be increased every year)</p>
-        <h2 className="text-md lg:text-xl text-blue-600 font-bold mb-2 mt-4">Note Please:</h2>
-        <p className='text-gray-800 text-justify'>* 1 USD = 80 Russian Rubles applied for this fee structure.</p>
+        <p className='text-gray-800 text-justify'>
+          First year: 7500$ (includes tuition, hostel, M.I, registration & Visa extension), from second year: 6650$
+          (includes tuition, hostel, M.I, registration & Visa extension). If a student does not get a government hostel, an additional
+          1200$ is required for a private hostel/apartment, making it 8700$ for the first year. (6-10% tuition fee increase per year)
+        </p>
+
+        <h2 className="text-md lg:text-xl text-blue-600 font-bold mb-2 mt-4">Pharmacy | 5 Years:</h2>
+        <p className='text-gray-800 text-justify'>
+          First year: 5100$ (includes tuition, hostel, M.I, registration & Visa extension), from second year: 3800$
+          (includes tuition, hostel, M.I, registration & Visa extension). If a student does not get a government hostel, an additional
+          1200$ is required for a private hostel/apartment, making it 6300$ for the first year. (6-10% tuition fee increase per year)
+        </p>
+
+        {/* Crimea Federal University */}
+        <h1 className="text-md lg:text-xl text-green-600 font-bold mb-2 mt-8">Crimea Federal University (Medical Academy)</h1>
+
+        <h2 className="text-md lg:text-xl text-blue-600 font-bold mb-2">Stomatology (Dentistry) | Duration: 5 Years:</h2>
+        <p className='text-gray-800 text-justify'>
+          First year: 6800$ (includes tuition, hostel, M.I, registration & Visa extension), from second year: 5900$
+          (includes tuition, hostel, M.I, registration & Visa extension). If a student does not get a government hostel, an additional
+          1200$ is required for a private hostel/apartment, making it 8000$ for the first year. (6-10% tuition fee increase per year)
+        </p>
+
+        <h2 className="text-md lg:text-xl text-blue-600 font-bold mb-2 mt-4">Pharmacy | 5 Years:</h2>
+        <p className='text-gray-800 text-justify'>
+          First year: 4800$ (includes tuition, hostel, M.I, registration & Visa extension), from second year: 3600$
+          (includes tuition, hostel, M.I, registration & Visa extension). If a student does not get a government hostel, an additional
+          1200$ is required for a private hostel/apartment, making it 6000$ for the first year. (6-10% tuition fee increase per year)
+        </p>
       </div>
+
+
+
 
       <div className="container font-roboto mx-auto p-4 mb-4 -mt-6 lg:px-20">
         <h1 className="text-md lg:text-2xl text-blue-800 mb-4 font-bold">Fees for Faculties Like Veterinary Medicine</h1>

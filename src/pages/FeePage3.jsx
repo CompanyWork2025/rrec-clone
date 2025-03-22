@@ -52,7 +52,7 @@ function FeePage3() {
             {[
               ["Rostov State Medical University", "Rostov-On-Don", "4200"],
               ["Volgograd State Medical University", "Volgograd", "4500"],
-              ["UNN (Lobachevsky University)", "Nizhny Novgorod", "2600"],
+              ["UNN (Lobachevsky University)", "Nizhny Novgorod", "3500"],
               ["Kazan Federal University", "Kazan", "4000"],
               ["NWSMU named I.I Mechnikov", "St. Petersburg", "4600"],
               ["Kazan State Medical University", "Kazan", "3200"],
@@ -89,8 +89,8 @@ function FeePage3() {
             <li>1 USD = 80 Russian Rubles applied for this fee structure.</li>
             <li>All documentation will be done from the RREC Head office.</li>
             <li>The fees mentioned here the student has to pay one time only.</li>
-            <li>The student has to pay for the RT-PSR report or any other medical tests in Russia if required.</li>
-            <li>As per the new rule of the Russian Federation from 29.12.21, the student has to go through Biometrics and medical tests within 90 days of arrival to Russia, and the student has to pay for them (The cost will be 6500-9000 rubles).</li>
+            <li>The student has to pay for all medical tests in russia if required.</li>
+            <li>As per the new rule of the Russian Federation from 29.12.21, the student has to go through Biometrics and medical tests within 90 days of arrival to Russia, and the student has to pay for them (The cost will be 6500-11000 rubles).</li>
             <li>Traveling from Moscow to a particular city; the student has to pay. As you all know, from 2020 less connectivity of airlines is there, so whatever the possibilities will be, the student has to pay whether by bus or train.</li>
           </ul>
           <p className="mt-3 font-semibold text-gray-800">

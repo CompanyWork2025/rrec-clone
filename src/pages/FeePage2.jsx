@@ -32,7 +32,7 @@ const FeePage2 = () => {
 
         <ul className="list-disc list-inside mt-2 text-gray-700">
           <li>Southern Federal University</li>
-          <li>Lobachevsky State University of Nizhny Novgorod</li>
+          <li>Moscow Pedagogical State University</li>
           <li>Don State Technical University</li>
           <li>Saint Petersburg Polytechnic University</li>
           <li>Rostov State University of Transport</li>
@@ -275,14 +275,14 @@ const FeePage2 = () => {
           <div className="border border-gray-300 p-4 rounded-lg shadow-sm">
             <h4 className="text-blue-600 font-semibold">Sfedu</h4>
             <p className="text-gray-700">
-              <strong>3000 USD</strong> (Includes tuition, hostel, medical insurance, registration & visa extension)
+              <strong>3500 USD</strong> (Includes tuition, hostel, medical insurance, registration & visa extension)
             </p>
           </div>
 
           <div className="border border-gray-300 p-4 rounded-lg shadow-sm">
-            <h4 className="text-blue-600 font-semibold">UNN Nizhny Novgorod</h4>
+            <h4 className="text-blue-600 font-semibold">Lovachevsky </h4>
             <p className="text-gray-700">
-              <strong>2600 USD</strong> (Includes tuition, hostel, medical insurance, registration & visa extension)
+              <strong>3500 USD</strong> (Includes tuition, hostel, medical insurance, registration & visa extension)
             </p>
           </div>
 
@@ -330,8 +330,8 @@ const FeePage2 = () => {
             <li><strong>1 USD = 80 Russian Rubles</strong> applied for this fee structure.</li>
             <li>All documentation will be done from the <strong>RREC Head Office</strong>.</li>
             <li>The fees mentioned here, the student has to pay <strong>one time only</strong>.</li>
-            <li>The student has to pay for the <strong>RT-PSR report</strong> or any other medical tests in Russia if required.</li>
-            <li>As per the new rule of the Russian Federation (from 29.12.21), students must undergo <strong>biometrics and medical tests</strong> within 90 days of arrival in Russia, costing <strong>6500-9000 rubles</strong>.</li>
+            <li>The student has to pay for all medical tests in russia if required.</li>
+            <li>As per the new rule of the Russian Federation (from 29.12.21), students must undergo <strong>biometrics and medical tests</strong> within 90 days of arrival in Russia, costing <strong>6500-11000 rubles</strong>.</li>
             <li>Traveling from Moscow to a particular city must be paid by the student. Due to <strong>reduced airline connectivity</strong> since 2020, students may need to travel by bus or train based on available options.</li>
             <li><strong>For Direct Admissions:</strong> Contact us at <a href="tel:+79515371133" className="text-blue-600 font-semibold">+7-9515371133</a> or email at <a href="mailto:contact@rrecrussia.com" className="text-blue-600 font-semibold">contact@rrecrussia.com</a>.</li>
           </ul>
