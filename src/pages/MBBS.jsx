@@ -393,7 +393,153 @@ const MBBS = () => {
                             Such agents often ask to pay 6 years fees altogether which the university does not ask for. They may also bait students by offering them 60% subsidized education in Russia if they get admission through them. However, the fact is that the Russian Government provide subsidy on education that reduces the cost of doing MBBS in Russia by 50-60 percent and it is available for all without paying anything to agents. Indian students will benefit from this subsidy naturally without giving anything to agents. There are various similar fake tricks and fake promises made by agents who are neither authorized not have direct contact with the medical university in Russia. They are simply middlemen and not any education consultant. Hence, consulting them can be vulnerable for your career and money as well.
                         </p>
 
-                       
+                        <div className="space-y-6 text-gray-700">
+                            <h3 className="text-xl font-semibold">What should students and parents do then?</h3>
+                            <p>
+                                Candidates who are interested to study MBBS in Russia should always consult the most experienced and authentic official representative for MBBS admission in Russia. Here are some essential points that will help you to avoid fake agents and become a victim of forgery:
+                            </p>
+                            <ul className="list-disc pl-5 space-y-2">
+                                <li>Always consult the official representative of the MBBS admission to a top medical university in Russia.</li>
+                                <li>Do not believe the educational advisor you are consulting until you are fully satisfied with their approach, true intent, and identity as an official representative.</li>
+                                <li>The relation of the Educational advisor or consultant does not end once you are placed into the medical university of your choice, but it goes along through the entire course and up to the completion of your study, stay in RF.</li>
+                            </ul>
+
+                            <h3 className="text-xl font-semibold">Advantages to Study MBBS in Russia for Indian students through RREC</h3>
+                            <ul className="list-disc pl-5 space-y-2">
+                                <li>A one-stop solution for MBBS admission in Russia in 2025.</li>
+                                <li>Direct admission in MBBS for Indian students.</li>
+                                <li>RREC is a registered educational consultant in India & in Russia.</li>
+                                <li>Students are safe from all kinds of fraud and fake work.</li>
+                                <li>We are an Official representative and authorized consultant for admission in all NMC recognized medical universities in Russia mentioned on our website.</li>
+                                <li>Students and parents can check and see RREC contact number on the university official website for their satisfaction.</li>
+                                <li>All information under one roof, from selecting a university to getting admission.</li>
+                                <li>Authentic information provided to parents and students at every step.</li>
+                                <li>Never hides any facts and truths, sheer transparency guaranteed.</li>
+                                <li>Trusted by parents and students across the country.</li>
+                                <li>100% admission placement in the top medical universities in Russia.</li>
+                                <li>Provide 100% assurance for direct admission, including visa and travel arrangements.</li>
+                                <li>Excellent support system for Indian students.</li>
+                                <li>Opportunity to connect with students already pursuing MBBS in top Russian universities.</li>
+                                <li>True commitment, transparent policy, and unconditional assistance throughout the MBBS course.</li>
+                                <li>Complete advice and information on MBBS admission, fees, accommodation, scholarship, and loan application.</li>
+                                <li>The RREC team handles everything from pre-admission till arrival in the university and accommodation to settlement.</li>
+                                <li>Even students can contact our official representative present in the university whenever they are in need.</li>
+                                <li>History of successful MBBS admission and zero rejection.</li>
+                                <li>24x7 services and expert support.</li>
+                                <li>100% assurance for admission in MBBS.</li>
+                                <li>Tie-up with top-notch medical universities in Russia.</li>
+                                <li>Highly efficient team of consultants and support staff.</li>
+                                <li>Continuous support and assistance until the completion of course in Russia.</li>
+                                <li>The RREC team is a popular choice of students in India because of our sheer reliable and honest dealing.</li>
+                                <li>Minimum charges and fees with no hidden cost.</li>
+                            </ul>
+                        </div>
+
+                        <div className="space-y-6 mt-6 text-gray-700">
+                            <h3 className="text-xl font-semibold">Admission Procedure for Russian Universities</h3>
+                            <p>The online admission procedure for MBBS in Russia is convenient and transparent. It involves the following steps:</p>
+
+                            <h4 className="text-lg font-semibold">Step 1: Application Form</h4>
+                            <ul className="list-disc pl-5 space-y-2">
+                                <li>Fill in the application form online.</li>
+                                <li>Upload all the relevant scanned documents such as:</li>
+                                <ul className="list-disc pl-10 space-y-2">
+                                    <li>Notarized translation of document supporting identity and citizenship proof (Passport).</li>
+                                    <li>All educational documents and certificates with notarized translation (legalization of documents, if necessary).</li>
+                                    <li>Consent letter to the processing of personal data of the candidate.</li>
+                                </ul>
+                            </ul>
+
+                            <h4 className="text-lg font-semibold">Step 2: Approval of Application</h4>
+                            <p>The university authority will notify the candidate about the approval of the application after reviewing the online application form and documents. It may take 10-15 days.</p>
+
+                            <h4 className="text-lg font-semibold">Step 3: University Invitation</h4>
+                            <p>Once the candidate’s online admission application is approved, the selected candidates are sent an invitation letter from the university.</p>
+
+                            <h4 className="text-lg font-semibold">Step 4: Visa Process</h4>
+                            <p>Once the invitation letter and visa invitation are issued (by the university officials), the Embassy of the Russian Federation is contacted to acquire a student visa. Documents required:</p>
+                            <ul className="list-disc pl-5 space-y-2">
+                                <li>Passport (minimum validity – 18 months).</li>
+                                <li>Original invitation letter.</li>
+                                <li>Date of Birth certificate.</li>
+                                <li>Original 12th certificate and standard mark sheet.</li>
+                                <li>10 passport size photos (35*45 mm).</li>
+                                <li>First-year tuition fees payment receipt.</li>
+                                <li>Visa fees.</li>
+                                <li>Medical certificate issued by a reputed private clinic with a blood report of HIV specimen attached.</li>
+                                <li>Original Signed authority letter for visa collection.</li>
+                                <li>Minor Affidavit on Rs100 stamp paper from parents if the student is below 18 years.</li>
+                                <li>Photocopy of ID of parents.</li>
+                            </ul>
+
+                            <h4 className="text-lg font-semibold">Step 5: Arrival in Russia</h4>
+                            <ul className="list-disc pl-5 space-y-2">
+                                <li>Candidates should get a migration card on arrival to the Russian Federation at the airport. The stamp on the migration card will signify their entry into the Russian Federation.</li>
+                                <li>A representative from the RREC team will receive the student at the airport and assist with further formalities.</li>
+                            </ul>
+
+                            <h4 className="text-lg font-semibold">Step 6: University Formalities</h4>
+                            <ul className="list-disc pl-5 space-y-2">
+                                <li>Upon arrival at the university, students must visit the Department of Visa Support and Migration Registration to submit the migration card, which is proof of entry into Russia.</li>
+                                <li>Indian students must submit their documents for registration to the Dean’s office for international students within 3 days of arrival in Russia.</li>
+                                <li>Students will undergo a thorough medical check-up.</li>
+                            </ul>
+
+                            <h4 className="text-lg font-semibold">Step 7: Agreement and Payment</h4>
+                            <p>Students will have to sign an education agreement for studying MBBS in Russia to become legitimate students of the university and make any due payments if required.</p>
+                        </div>
+
+
+                        <div className="space-y-6 mt-6 text-gray-700">
+                            <h3 className="text-xl font-semibold">What RREC Team Do For You?</h3>
+                            <ul className="list-disc pl-5 space-y-2">
+                                <li>Online application form submission for admission.</li>
+                                <li>Receiving university invitation letter on student’s behalf.</li>
+                                <li>Provide 100% assurance and assistance for visa.</li>
+                                <li>Meeting with the Embassy of the Russian Federation.</li>
+                                <li>Flight arrangement from Delhi to Moscow.</li>
+                                <li>Receiving students at Moscow Airport.</li>
+                                <li>Pre-departure briefing and tips and guidance for comfortable settlement for MBBS in Russia.</li>
+                                <li>Procuring appropriate hostel or accommodation arrangement in Russia.</li>
+                                <li>Providing all sorts of assistance to students to settle down in Russia.</li>
+                                <li>Arrangement of food/mess for Indian students.</li>
+                                <li>Assistance after admission whenever needed.</li>
+                            </ul>
+
+                            <p>
+                                We believe all the relevant and valuable information has been delivered here, which will be adequate for your search for MBBS in Russia. For any further information on MBBS admission in an NMC-recognized medical university in Russia, you can directly contact us at the head office in Delhi and branches in India. You will find us a true companion and a trustworthy representative for admission to the MBBS program in Russia.
+                            </p>
+                        </div>
+                        <div className="space-y-6 mt-6 text-gray-700">
+                            <h3 className="text-xl font-semibold">Universities for 2025 with Us</h3>
+                            <ul className="list-disc pl-5 space-y-2">
+                                {[
+                                    { name: "Rostov State Medical University", route: "/rostov-state-medical-university" },
+                                    { name: "Ural State Medical University", route: "/ural-state-medical-university" },
+                                    { name: "Crimea Federal University", route: "/crimea-federal-university-russia" },
+                                    { name: "Kemerovo State Medical University", route: "/kemerova-state-medical-university" },
+                                    { name: "Far Eastern Federal University", route: "/fareastern-federal-university" },
+                                    { name: "Kazan State Medical University", route: "/kazan-state-medical-university" },
+                                    { name: "Bashkir State Medical University", route: "/bashkir-state-medical-university" },
+                                    { name: "Volgograd State Medical University", route: "/volgograd-state-medical-university-russia" },
+                                    { name: "Kursk State Medical University", route: "/kursk-state-medical-university-russia" },
+                                    { name: "Synergy University Moscow", route: "/synergy-university-moscow" },
+                                    { name: "NWSMU named after I.I Mechnikov", route: "/north-ossetian-state-medical-academy-russia" },
+                                    { name: "Krasnoyarsk State Medical University", route: "/krasnoyarsk-state-medical-university" },                        
+                                    { name: "Ivanovo State Medical University", route: "/ivanovo-state-medical-university" },
+                                    { name: "Pitirim Sorokin Syktyvkar State University", route: "/pitirim-sorokin-syktyvkar-state-university" },
+                                    { name: "PFUR Moscow", route: "/peoples-friendship-university-russia" },
+                                ].map((university, index) => (
+                                    <li key={index}>
+                                        <a href={university.route} className="text-blue-600 hover:underline">
+                                            {university.name}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+
                     </div>
                 </div>
 
