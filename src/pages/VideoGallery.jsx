@@ -71,12 +71,12 @@ const VideoGallery = () => {
                     {selectedVideos.map((video, index) => (
                         <div key={index} className="relative overflow-hidden rounded-lg shadow-lg">
                             {loading ? (
-                                <img src={loaderGif} alt="Loading..." className="w-96 h-80 object-cover" />
+                                <img src={loaderGif} alt="Loading..." className="w-96 h-64 object-cover" />
                             ) : (
                                 <iframe
                                     src={video}
                                     title={`Video ${index + 1}`}
-                                    className="w-96 h-80"
+                                    className="w-96 h-64"
                                     allowFullScreen
                                 ></iframe>
                             )}
