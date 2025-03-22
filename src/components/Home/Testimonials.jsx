@@ -10,29 +10,41 @@ import { useTranslation } from 'react-i18next';
 
 const testimonialsData = [
   {
-    name: 'Dr. Mbali Sindi',
-    university: 'RSMU',
+    name: 'Dr. Vikram B.',
+    university: 'RSMU, Russia',
     rating: 4.8,
-    text: 'Studying at Rostov State Medical University has been a transformative experience. The medical curriculum is comprehensive, and the city’s vibrant culture has made my educational journey even more enjoyable.'
+    text: 'I had an amazing experience with Reliable Russian Educational Consultants From the very beginning, their team provided expert guidance on university selection, application processes, and visa assistance. They were always responsive, professional, and genuinely cared about my success. Thanks to their support, I was able to secure admission to a top Russian university without any hassle. I highly recommend their services to anyone looking for a smooth and trustworthy study-abroad journey in Russia!"'
   },
   {
-    name: 'Dr. Harsh',
-    university: 'PFUR',
+    name: 'Zainab Syed',
+    university: 'UAE',
     rating: 4.7,
-    text: 'At PFUR, I received invaluable practical experience. The faculty encouraged critical thinking, helping me grow academically and personally. I have developed lifelong connections with my peers and professors.'
+    text: 'Dr. A.K. supported me and my brother throughout the process in the United Arab Emirates (Dubai) while clearing all our doubts about studying in Russia. He provided a very quick and amazing service specifically to us. It’s commendable how he handled everything from the start to the end. Thanks a lot 🙏 🤩'
   },
   {
-    name: 'Dr. Rakesh',
-    university: 'RSMU',
+    name: 'Er. Usman D.',
+    university: 'Nigeria',
     rating: 5,
-    text: 'Ural State Medical University has provided a robust medical education, with a strong focus on practical learning. The campus is inclusive, and the faculty offers excellent support to international students.'
+    text: 'Excellent experience from the support I got from Dr. Abhineet in getting admission for my two daughters from Nigeria. His availability and professionalism in prompt response to my queries and provision of guidance are highly commendable. Thanks and keep it up please!!'
   },
   {
-    name: 'Irina Sokolova',
-    university: 'Crimea Federal University',
+    name: 'Dr. Vikrant Suran',
+    university: 'KSMU, Kazan',
     rating: 4.9,
-    text: 'Studying at Crimea Federal University has been a life-changing experience. The high-quality education, combined with the university’s exceptional support for international students, made it an ideal place for both study and relaxation.'
-  }
+    text: 'Reliable Russian Education Consultants made my dream of studying MBBS in Russia a reality! Their team handled everything with professionalism and care, from choosing the right university to visa processing. What stood out the most was their personalized approach—they were always available to answer my questions and guide me through every step. Thanks to them; I am a graduate of KSMU Kazan. If you’re looking for a trustworthy education service, this is the one to choose!"'
+  },
+  {
+    name: 'Singh Kapidwaj',
+    university: 'Cfu, Crimea',
+    rating: 4.9,
+    text: 'Choosing Reliable Russian Educational Consultants was the best decision for my study-abroad journey! Their team provided clear guidance, handled all the paperwork seamlessly, and ensured a hassle-free admission process. I never felt lost or overwhelmed because they were always there to support me. Now, I’m studying in CFU Russia with confidence, knowing I made the right choice. Highly recommended for anyone looking for a smooth and reliable education service!'
+  },
+  {
+    name: 'Jadhav Atharva Harish ',
+    university: 'Usmu, Yekaterinburg',
+    rating: 4.9,
+    text: 'RREC truly transformed my study MBBS abroad journey. Their expert guidance and attention to detail made the entire application process smooth and stress-free. I am currently studying MBBS in Ural state medical university, Russia. Thanks to their help, I wholeheartedly recommend their service to anyone looking to study medicine in Russia. '
+  },
 ];
 
 const TestimonialCard = ({ name, university, rating, text, onClick }) => {
@@ -127,7 +139,7 @@ const Testimonials = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, ease: 'easeOut' }}
-        className="flex flex-col lg:flex-row justify-between bg-[#f2312d] py-8 lg:py-16 lg:px-24 px-4 overflow-visible"
+        className="flex flex-col lg:flex-row font-roboto   justify-between bg-[#f2312d] py-8 lg:py-16 lg:px-24 px-4 overflow-visible"
       >
 
         <motion.div
