@@ -59,7 +59,7 @@ const Award = () => {
                 viewport={{ once: true }}
                 className="mt-0 text-center text-md lg:text-lg font-semibold text-gray-700"
             >
-                Study MBBS Abroad in Russia top rank educational consultants in 2022 award by popular actor Sonu Sood.
+                Study MBBS Abroad in Russia top rank educational consultants in 2022 award by popular actor Mr. Sonu Sood
             </motion.p>
 
             {/* Main Image inside Frame */}

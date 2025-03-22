@@ -1,37 +1,42 @@
 import React, { useState } from "react";
 import { FiMapPin } from "react-icons/fi";
+import img1 from "../../assets/Rostov.jpeg";
+import img2 from "../../assets/Kazan.jpeg";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const universities = [
     {
         name: "Rostov State Medical University",
-        imageUrl:
-            "https://rrecrussia.com/public/upload/home-block/1801933868147775.jpg.webp",
+        imageUrl: img1,
+        path: "/rostov-state-medical-university",
     },
     {
-        name: "Kazan Federal University – IFMB",
-        imageUrl:
-            "https://rrecrussia.com/public/upload/home-block/1801933915075593.jpg.webp",
+        name: "Ural State Medical University",
+        imageUrl: "https://uralstatemedicaluniversity.com/wp-content/uploads/2024/01/ural-state-medical-university-smapse-samll.jpg",
+        path: "/ural-state-medical-university",
     },
     {
         name: "Crimea Federal University (Medical Academy)",
-        imageUrl:
-            "https://rrecrussia.com/public/upload/home-block/1801933961847881.jpg.webp",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/50/%D0%A2%D0%9D%D0%A3_-_panoramio_%284%29.jpg",
+        path: "/crimea-federal-university-russia",
     },
     {
-        name: "Volgograd State Medical University, Russia",
-        imageUrl:
-            "https://rrecrussia.com/public/upload/home-block/1801934007720643.webp.webp",
+        name: "Far Eastern Federal University",
+        imageUrl: "https://www.yashoverseas.org/wp-content/uploads/2024/01/Far-Eastern-Federal-University-scaled.jpg",
+        path: "/fareastern-federal-university",
     },
     {
-        name: "Lobachevsky State University Of Nizhny Novgorod",
-        imageUrl:
-            "https://rrecrussia.com/public/upload/home-block/1801934069924719.jpg.webp",
+        name: "Kazan State Medical University",
+        imageUrl: img2,
+        path: "/kazan-state-medical-university",
     },
 ];
 
+
 const MedicalUniversity = () => {
+    const navigate = useNavigate();
     const [selectedUniversity, setSelectedUniversity] = useState(universities[0]);
     const { t } = useTranslation();
 
@@ -131,16 +136,22 @@ const MedicalUniversity = () => {
                         {/* Hover Effect */}
                         <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                             <FiMapPin className="text-2xl text-white mb-2" />
-                            <p className="text-white text-lg px-4 font-semibold text-center">
+                            <p className="text-white text-lg px-4 mb-4 font-semibold text-center">
                                 {university.name}
                             </p>
+                            {/* Read More Button */}
                             <motion.button
-                                className="relative mt-4 px-4 py-2 text-lg font-semibold text-white border-2 border-white rounded-md bg-transparent overflow-hidden transition-all duration-300 group-hover:bg-[#f2312d]"
+                                className="relative inline-flex items-center justify-start overflow-hidden px-3 py-2 text-lg font-semibold text-white border-2 border-white rounded-md bg-transparent transition-all duration-300 ease-in-out group"
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.95 }}
+                                onClick={() => navigate(university.path)}
                             >
-                                {t("readMore")}
+                                <span className="w-0 h-0 rounded bg-[#f2312d] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                                <span className="w-full text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                                    Read More
+                                </span>
                             </motion.button>
+
                         </div>
                     </motion.div>
                 ))}

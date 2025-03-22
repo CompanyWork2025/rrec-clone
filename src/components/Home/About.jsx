@@ -45,7 +45,7 @@ const About = () => {
                 <ul className="space-y-2">
                     {[
                         "Direct admission to top Russian universities",
-                        "No entrance exam required for MBBS admission",
+                        "Entrance exam required for MBBS admission",
                         "Affordable tuition fees & low living cost",
                         "Assistance with visa & travel arrangements",
                         "English-medium programs available",

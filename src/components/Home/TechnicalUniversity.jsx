@@ -2,16 +2,18 @@ import React, { useRef } from 'react';
 import { FiMapPin } from 'react-icons/fi';
 import { motion, useInView } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from "react-router-dom";
 
 const universities = [
-  { name: 'Don State Technical University Russia', imageUrl: 'https://rrecrussia.com/public/upload/home-block/1807195337679660.jpg.webp' },
-  { name: 'Southern Federal University', imageUrl: 'https://rrecrussia.com/public/upload/home-block/1807238704018233.webp.webp' },
-  { name: 'Study MBA In Southern Federal University, Russia', imageUrl: 'https://rrecrussia.com/public/upload/home-block/1807238757258044.webp.webp' },
-  { name: 'Rostov State University Of Economics, Russia', imageUrl: 'https://rrecrussia.com/public/upload/home-block/1807239202191095.webp.webp' },
-  { name: 'Veterinary Medicine – Don State Technical University', imageUrl: 'https://rrecrussia.com/public/upload/home-block/1807239271823550.webp.webp' },
+  { name: 'Don State Technical University Russia', imageUrl: 'https://rrecrussia.com/public/upload/home-block/1807195337679660.jpg.webp', path: "/don-state-technical-university-russia" },
+  { name: 'Southern Federal University', imageUrl: 'https://rrecrussia.com/public/upload/home-block/1807238704018233.webp.webp', path: "/southern-federal-university-russia" },
+  { name: 'Study MBA In Southern Federal University, Russia', imageUrl: 'https://rrecrussia.com/public/upload/home-block/1807238757258044.webp.webp', path: "/study-mba-in-southern-federal-university-russia-in-english-medium" },
+  { name: 'Rostov State University Of Economics, Russia', imageUrl: 'https://rrecrussia.com/public/upload/home-block/1807239202191095.webp.webp', path: "/rostov-state-university-economics-russia" },
+  { name: 'Veterinary Medicine – Don State Technical University', imageUrl: 'https://rrecrussia.com/public/upload/home-block/1807239271823550.webp.webp', path: "/veterinary-medicine-don-state-technical-university" },
 ];
 
 const TechnicalUniversity = () => {
+  const navigate = useNavigate();
   const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
@@ -96,16 +98,20 @@ const TechnicalUniversity = () => {
 
             <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               <FiMapPin className="text-2xl text-white mb-2" />
-              <p className="text-white text-lg px-4 font-semibold text-center">
+              <p className="text-white text-lg px-4 mb-4 font-semibold text-center">
                 {university.name}
               </p>
-
+              {/* Read More Button */}
               <motion.button
-                className="relative mt-4 px-4 py-2 text-lg font-semibold text-white border-2 border-white rounded-md bg-transparent overflow-hidden transition-all duration-300 group-hover:bg-[#f2312d]"
+                className="relative inline-flex items-center justify-start overflow-hidden px-3 py-2 text-lg font-semibold text-white border-2 border-white rounded-md bg-transparent transition-all duration-300 ease-in-out group"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => navigate(university.path)}
               >
-                {t('readMore')}
+                <span className="w-0 h-0 rounded bg-[#f2312d] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                <span className="w-full text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                  Read More
+                </span>
               </motion.button>
             </div>
           </motion.div>

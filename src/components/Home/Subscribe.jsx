@@ -35,7 +35,7 @@ const SubscriptionForm = () => {
     >
       <div className="text-white flex flex-col items-center -mt-2 lg:-mt-2 justify-center h-full text-center">
         <h2 className="text-2xl lg:text-3xl font-roboto font-bold mb-2">
-          {t("subscribeTitle")}
+          Medical Study In Russia
         </h2>
         <p className="text-sm font-roboto lg:text-base mb-4">
           {t("subscribeText")}
